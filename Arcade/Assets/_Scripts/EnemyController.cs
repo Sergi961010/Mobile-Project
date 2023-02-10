@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour
+public class EnemyController : MonoBehaviour, IHitable
 {
     private Rigidbody2D _rb;
 
@@ -16,5 +14,10 @@ public class EnemyController : MonoBehaviour
     private void Start()
     {
         _rb.velocity = Vector2.left * _speed;
+    }
+
+    public void HandleHit()
+    {
+        Destroy(this);
     }
 }

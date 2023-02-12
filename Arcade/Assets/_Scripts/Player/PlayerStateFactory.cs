@@ -1,3 +1,5 @@
+using TheCreators.Player.ConcreteStates;
+
 namespace TheCreators.Player
 {
     public class PlayerStateFactory
@@ -11,12 +13,12 @@ namespace TheCreators.Player
 
         public PlayerBaseState Run()
         {
-            return new RunState(_context, this);
+            return new Run(_context, this);
         }
 
         public PlayerBaseState Attack()
         {
-            return new AttackState(_context, this);
+            return new Attack(_context, this);
         }
     }
 }

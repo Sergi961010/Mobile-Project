@@ -1,10 +1,10 @@
 using UnityEngine;
 
-namespace TheCreators.Player
+namespace TheCreators.Player.ConcreteStates
 {
-    public class RunState : PlayerBaseState
+    public class Run : PlayerBaseState
     {
-        public RunState(PlayerStateMachine context, PlayerStateFactory playerStateFactory) : base (context, playerStateFactory)
+        public Run(PlayerStateMachine context, PlayerStateFactory playerStateFactory) : base (context, playerStateFactory)
         {
             _context = context;
             _playerStateFactory = playerStateFactory;
@@ -17,8 +17,9 @@ namespace TheCreators.Player
 
         public override void EnterState()
         {
-            SetVeloicty(_context._playerData.Speed);
             PlayerInput.OnAttackInput += HandleAttackInput;
+            _context.Anim.Play(GetType().Name);
+            SetVeloicty(_context._playerData.Speed);
         }
 
         public override void ExitState()

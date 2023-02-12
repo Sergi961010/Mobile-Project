@@ -12,16 +12,13 @@ public class CheckEnemyContact : MonoBehaviour
     {
         PlayerInput.OnAttackInput -= OnAttackInputEvent;
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        _enemy = collision.gameObject;
-    }
     private void OnTriggerStay2D(Collider2D collision)
     {
         _enemy = collision.gameObject;
     }
     private void OnAttackInputEvent()
     {
-        Destroy(_enemy);
+        if (_enemy != null)
+            _enemy.SetActive(false);
     }
 }

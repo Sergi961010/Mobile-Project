@@ -1,8 +1,8 @@
 namespace TheCreators.Player
 {
-    public class AttackState : PlayerBaseState
+    public class Attack : PlayerBaseState
     {
-        public AttackState(PlayerStateMachine context, PlayerStateFactory playerStateFactory) : base (context, playerStateFactory)
+        public Attack(PlayerStateMachine context, PlayerStateFactory playerStateFactory) : base (context, playerStateFactory)
         {
             _context = context;
             _playerStateFactory = playerStateFactory;
@@ -15,12 +15,12 @@ namespace TheCreators.Player
 
         public override void EnterState()
         {
-            _context.Anim.SetBool("attack", true);
             PlayerAnimationController.OnAnimationFinish += HandleAnimationFinish;
+            _context.Anim.Play(GetType().Name);
         }
         public override void ExitState()
         {
-            _context.Anim.SetBool("attack", false);
+            PlayerAnimationController.OnAnimationFinish += HandleAnimationFinish;
         }
     }
 }

@@ -1,3 +1,4 @@
+using TheCreators.Player;
 using UnityEngine;
 
 public class CheckEnemyContact : MonoBehaviour

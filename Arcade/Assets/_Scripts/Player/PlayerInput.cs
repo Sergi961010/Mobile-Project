@@ -1,14 +1,18 @@
 using System;
 using UnityEngine;
 
-public class PlayerInput : MonoBehaviour
+namespace TheCreators.Player
 {
-    public static event Action OnAttackInput;
-    void Update()
+    public class PlayerInput : MonoBehaviour
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        public static event Action OnAttackInput;
+        void Update()
         {
-            OnAttackInput?.Invoke();
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                OnAttackInput?.Invoke();
+            }
         }
     }
+
 }

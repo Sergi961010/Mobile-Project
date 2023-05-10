@@ -7,7 +7,7 @@ namespace TheCreators.ScriptableObjects
     public class Pool : ScriptableObject
     {
         public string tag;
-        public List<GameObject> prefabs;
+        public GameObject prefab;
         public int size;
     }
 }

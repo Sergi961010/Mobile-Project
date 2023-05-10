@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 089facf3ff7309c4fb15a0b898586c94, type: 3}
-  m_Name: PlatformsPool
+  m_Name: Platform1
   m_EditorClassIdentifier: 
-  tag: 
-  prefab: {fileID: 0}
-  size: 0
+  tag: platform1
+  prefab: {fileID: 3010829662850249054, guid: 7cc30891429415449831e2a414258a67, type: 3}
+  size: 5

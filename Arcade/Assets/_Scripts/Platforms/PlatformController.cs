@@ -5,6 +5,7 @@ namespace TheCreators.Platforms
 {
     public class PlatformController : MonoBehaviour
     {
+        private readonly float SPAWN_OFFSET = 5;
         private float _rightBoundaryPosition;
         private float _cameraRightBoundary;
         private BoxCollider2D _collider;
@@ -35,9 +36,10 @@ namespace TheCreators.Platforms
         {
             if (!didSpawnNewPlatform)
             {
-                if (_rightBoundaryPosition <= _cameraRightBoundary)
+                if (_rightBoundaryPosition <= _cameraRightBoundary + SPAWN_OFFSET)
                 {
-                    PoolsManager.Instance.SpawnFromPool("Platform1", new Vector2(_cameraRightBoundary + 5, transform.position.y), Quaternion.identity);
+                    Vector2 spawnPosition = new(_cameraRightBoundary + _collider.size.x / 2 + SPAWN_OFFSET, transform.position.y);
+                    PoolsManager.Instance.SpawnFromPool("Platform1", spawnPosition, Quaternion.identity);
                     didSpawnNewPlatform = true;
                 }
             }

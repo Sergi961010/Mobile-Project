@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class CheckEnemyContact : MonoBehaviour
 {
-    private GameObject _enemy;
+    private IHitable _hitable;
     private void OnEnable()
     {
         PlayerInput.OnAttackInput += OnAttackInputEvent;
@@ -12,16 +12,13 @@ public class CheckEnemyContact : MonoBehaviour
     {
         PlayerInput.OnAttackInput -= OnAttackInputEvent;
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        _enemy = collision.gameObject;
-    }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        _enemy = collision.gameObject;
+        _hitable = collision.gameObject.GetComponent<IHitable>();
     }
     private void OnAttackInputEvent()
     {
-        Destroy(_enemy);
+        if (_hitable != null)
+            _hitable.HandleHit();
     }
 }

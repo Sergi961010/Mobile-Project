@@ -1,0 +1,34 @@
+{
+    "name": "PlayerAction",
+    "maps": [
+        {
+            "name": "Mobile",
+            "id": "46f876c7-e555-45b9-8eba-eff5de154103",
+            "actions": [
+                {
+                    "name": "Press",
+                    "type": "Button",
+                    "id": "4c55741e-6a4e-4582-beba-4b86fe9c9c78",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "933314a6-e03c-40d5-b2f7-3c70aa5a7843",
+                    "path": "<Touchscreen>/Press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

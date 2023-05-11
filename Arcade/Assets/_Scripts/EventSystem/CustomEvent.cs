@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace TheCreators
 {
-    public class CustomEvent : MonoBehaviour
+    public class CustomEvent
     {
         private event Action _action = delegate { };
 

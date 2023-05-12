@@ -11,25 +11,35 @@ namespace TheCreators.Player
 
         private InputAction _pressAction;
 
+        public bool IsPressHolded { get; private set; }
+
         private void Awake()
         {
             _playerInput = GetComponent<PlayerInput>();
             _pressAction = _playerInput.actions.FindAction("Press");
+            IsPressHolded = false;
         }
 
         private void OnEnable()
         {
             _pressAction.performed += OnPress;
+            _pressAction.canceled += OnReleaseTap;
         }
 
         private void OnDisable()
         {
             _pressAction.performed -= OnPress;
+            _pressAction.canceled -= OnReleaseTap;
+        }
+
+        private void OnReleaseTap(InputAction.CallbackContext obj)
+        {
+            GameEvent.onReleasePress.Invoke();
         }
 
         private void OnPress(InputAction.CallbackContext context)
         {
-            GameEvent.onPlayerJump.Invoke();
+            GameEvent.onPress.Invoke();
         }
 
     }

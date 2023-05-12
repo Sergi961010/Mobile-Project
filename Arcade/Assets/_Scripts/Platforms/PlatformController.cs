@@ -1,3 +1,4 @@
+using TheCreators.EventSystem;
 using TheCreators.Managers;
 using UnityEngine;
 
@@ -34,14 +35,9 @@ namespace TheCreators.Platforms
 
         private void SpawnNewPlatformWhenInsideOfCamera()
         {
-            if (!didSpawnNewPlatform)
+            if (_rightBoundaryPosition <= _cameraRightBoundary + SPAWN_OFFSET)
             {
-                if (_rightBoundaryPosition <= _cameraRightBoundary + SPAWN_OFFSET)
-                {
-                    Vector2 spawnPosition = new(_cameraRightBoundary + _collider.size.x / 2 + SPAWN_OFFSET, transform.position.y);
-                    PoolsManager.Instance.SpawnFromPool("Platform1", spawnPosition, Quaternion.identity);
-                    didSpawnNewPlatform = true;
-                }
+                GameEvent.onPlatformSpawn.Invoke(transform.position);
             }
         }
 

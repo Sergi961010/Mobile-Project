@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Platform2
   m_EditorClassIdentifier: 
   tag: 0
-  prefab: {fileID: 0}
+  prefab: {fileID: 5334599385191814337, guid: 3ef6f9ba552ffc3458649c99876e1c65, type: 3}

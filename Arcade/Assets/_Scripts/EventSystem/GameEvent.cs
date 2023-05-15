@@ -8,6 +8,6 @@ namespace TheCreators.EventSystem
         public static readonly CustomEvent onReleasePress = new();
         public static readonly CustomEvent onGroundCollision = new();
 
-        public static readonly CustomEvent<float> onPlatformSpawn = new();
+        public static readonly CustomEvent<Vector2> onPlatformSpawn = new();
     }
 }

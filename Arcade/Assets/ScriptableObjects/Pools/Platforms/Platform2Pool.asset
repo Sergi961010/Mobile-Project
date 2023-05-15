@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 089facf3ff7309c4fb15a0b898586c94, type: 3}
   m_Name: Platform2Pool
   m_EditorClassIdentifier: 
-  tag: Platform2
-  prefab: {fileID: 5334599385191814337, guid: 3ef6f9ba552ffc3458649c99876e1c65, type: 3}
-  size: 2
+  platform: {fileID: 11400000, guid: dd5943780e69d3f4589f5777539a79c1, type: 2}
+  size: 5

@@ -1,5 +1,4 @@
 using TheCreators.EventSystem;
-using TheCreators.Managers;
 using UnityEngine;
 
 namespace TheCreators.Platforms
@@ -44,7 +43,8 @@ namespace TheCreators.Platforms
             {
                 if (!_didSpawn)
                 {
-                    GameEvent.onPlatformSpawn.Invoke(_rightBoundaryPosition);
+                    Vector2 currentPosition = new(_rightBoundaryPosition, transform.position.y);
+                    GameEvent.onPlatformSpawn.Invoke(currentPosition);
                     _didSpawn = true;
                 }
             }

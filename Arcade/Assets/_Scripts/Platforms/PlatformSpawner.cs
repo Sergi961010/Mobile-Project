@@ -2,19 +2,25 @@ using TheCreators.EventSystem;
 using TheCreators.Managers;
 using TheCreators.Enums;
 using TheCreators.Utilities;
+using TheCreators.ScriptableObjects;
 using UnityEngine;
 using System.Collections.Generic;
-using TheCreators.ScriptableObjects;
 
 namespace TheCreators.Platforms
 {
     public class PlatformSpawner : MonoBehaviour
     {
+        private const int GAP_OFFSET = 2;
         [SerializeField] private List<Platform> _platforms;
         private Dictionary<PlatformTag, GameObject> _platformsDictionary;
+
+        private PlatformTag _newPlatformTag;
+        private int _gapCounter, _spawnWithGap;
         private void Awake()
         {
             _platformsDictionary = new Dictionary<PlatformTag, GameObject>();
+            _spawnWithGap = Utility.RandomValue(0, 10);
+            _gapCounter = 0;
         }
         private void Start()
         {
@@ -28,12 +34,28 @@ namespace TheCreators.Platforms
             GameEvent.onPlatformSpawn.AddListener(OnPlatformSpawn);
         }
 
-        private void OnPlatformSpawn(float xPosition)
+        private void OnPlatformSpawn(Vector2 previousPlatformPosition)
         {
-            PlatformTag platformTag = Utility.RandomEnumValue<PlatformTag>();
-            float xOffset = _platformsDictionary[platformTag].GetComponent<BoxCollider2D>().size.x / 2;
-            Vector2 spawnPosition = new(xPosition + xOffset, -3.64f);
-            PlatformPoolManager.Instance.SpawnFromPool(platformTag, spawnPosition, Quaternion.identity);
+            Vector2 spawnPosition = CalculateNextPlatformPosition(previousPlatformPosition);
+            PlatformPoolManager.Instance.SpawnFromPool(_newPlatformTag, spawnPosition, Quaternion.identity);
+        }
+
+        private Vector2 CalculateNextPlatformPosition(Vector2 previousPlatformPosition)
+        {
+            _newPlatformTag = Utility.RandomEnumValue<PlatformTag>();
+            float platformToSpawnHalfSize = _platformsDictionary[_newPlatformTag].GetComponent<BoxCollider2D>().size.x / 2;
+            Vector2 spawnPosition;
+            if (_gapCounter == _spawnWithGap)
+            {
+                spawnPosition = new(previousPlatformPosition.x + platformToSpawnHalfSize + GAP_OFFSET, previousPlatformPosition.y);
+                _gapCounter = 0;
+                _spawnWithGap = Utility.RandomValue(0, 10);
+            } else
+            {
+                spawnPosition = new(previousPlatformPosition.x + platformToSpawnHalfSize, previousPlatformPosition.y);
+                ++_gapCounter;
+            }
+            return spawnPosition;
         }
     }
 }

@@ -44,18 +44,24 @@ namespace TheCreators.Platforms
         {
             _newPlatformTag = Utility.RandomEnumValue<PlatformTag>();
             float platformToSpawnHalfSize = _platformsDictionary[_newPlatformTag].GetComponent<BoxCollider2D>().size.x / 2;
-            Vector2 spawnPosition;
+            Vector2 spawnPosition = new(previousPlatformPosition.x + platformToSpawnHalfSize, previousPlatformPosition.y);
+
             if (_gapCounter == _spawnWithGap)
             {
-                spawnPosition = new(previousPlatformPosition.x + platformToSpawnHalfSize + GAP_OFFSET, previousPlatformPosition.y);
-                _gapCounter = 0;
-                _spawnWithGap = Utility.RandomValue(0, 10);
+                AddGapOnX(spawnPosition);
             } else
             {
-                spawnPosition = new(previousPlatformPosition.x + platformToSpawnHalfSize, previousPlatformPosition.y);
                 ++_gapCounter;
             }
+
             return spawnPosition;
+        }
+
+        private void AddGapOnX(Vector2 positionX)
+        {
+            positionX.x += GAP_OFFSET;
+            _gapCounter = 0;
+            _spawnWithGap = Utility.RandomValue(0, 5);
         }
     }
 }

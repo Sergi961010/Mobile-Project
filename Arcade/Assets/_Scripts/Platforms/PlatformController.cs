@@ -6,15 +6,20 @@ namespace TheCreators.Platforms
 {
     public class PlatformController : MonoBehaviour
     {
-        private readonly float SPAWN_OFFSET = 5;
         private float _rightBoundaryPosition;
         private float _cameraRightBoundary;
         private BoxCollider2D _collider;
-        private bool didSpawnNewPlatform = false;
+        private bool _didSpawn;
+
         private void Awake()
         {
             _cameraRightBoundary = Camera.main.orthographicSize * Screen.width / Screen.height;
             _collider = GetComponent<BoxCollider2D>();
+        }
+
+        private void OnEnable()
+        {
+            _didSpawn = false;  
         }
 
         private void FixedUpdate()
@@ -35,9 +40,13 @@ namespace TheCreators.Platforms
 
         private void SpawnNewPlatformWhenInsideOfCamera()
         {
-            if (_rightBoundaryPosition <= _cameraRightBoundary + SPAWN_OFFSET)
+            if (_rightBoundaryPosition <= _cameraRightBoundary)
             {
-                GameEvent.onPlatformSpawn.Invoke(transform.position);
+                if (!_didSpawn)
+                {
+                    GameEvent.onPlatformSpawn.Invoke(_rightBoundaryPosition);
+                    _didSpawn = true;
+                }
             }
         }
 

@@ -1,4 +1,5 @@
 using TheCreators.EventSystem;
+using TheCreators.Managers;
 using UnityEngine;
 
 namespace TheCreators.Platforms
@@ -33,7 +34,7 @@ namespace TheCreators.Platforms
         private void Move()
         {
             Vector2 newPosition = transform.position;
-            newPosition.x -= 2f * Time.fixedDeltaTime;
+            newPosition.x -= GameManager.Instance.GameVelocity.x * Time.deltaTime;
             transform.position = newPosition;
         }
 

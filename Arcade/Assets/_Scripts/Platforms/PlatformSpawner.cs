@@ -5,21 +5,24 @@ using TheCreators.Utilities;
 using TheCreators.ScriptableObjects;
 using UnityEngine;
 using System.Collections.Generic;
+using System;
 
 namespace TheCreators.Platforms
 {
     public class PlatformSpawner : MonoBehaviour
     {
-        private const int GAP_OFFSET = 2;
+
         [SerializeField] private List<Platform> _platforms;
         private Dictionary<PlatformTag, GameObject> _platformsDictionary;
+
+        [SerializeField] private PlayerData _playerData;
 
         private PlatformTag _newPlatformTag;
         private int _gapCounter, _spawnWithGap;
         private void Awake()
         {
             _platformsDictionary = new Dictionary<PlatformTag, GameObject>();
-            _spawnWithGap = Utility.RandomValue(0, 10);
+            _spawnWithGap = 5;
             _gapCounter = 0;
         }
         private void Start()
@@ -48,7 +51,7 @@ namespace TheCreators.Platforms
 
             if (_gapCounter == _spawnWithGap)
             {
-                AddGapOnX(spawnPosition);
+                spawnPosition = AddGapOnX(spawnPosition);
             } else
             {
                 ++_gapCounter;
@@ -57,11 +60,20 @@ namespace TheCreators.Platforms
             return spawnPosition;
         }
 
-        private void AddGapOnX(Vector2 positionX)
+        private Vector2 AddGapOnX(Vector2 position)
         {
-            positionX.x += GAP_OFFSET;
+            position.x += GetRandomBetweenJumpDistances();
             _gapCounter = 0;
-            _spawnWithGap = Utility.RandomValue(0, 5);
+            _spawnWithGap = UnityEngine.Random.Range(0, 4);
+            return position;
+        }
+
+        private float GetRandomBetweenJumpDistances()
+        {
+            float minJumpXDistance = _playerData.CalculateJumpXDistance(_playerData.jumpCutGravityModifier);
+            float maxJumpXDistance = _playerData.CalculateJumpXDistance(_playerData.defaultGravityModifier);
+            float result = UnityEngine.Random.Range(minJumpXDistance, maxJumpXDistance);
+            return result;
         }
     }
 }

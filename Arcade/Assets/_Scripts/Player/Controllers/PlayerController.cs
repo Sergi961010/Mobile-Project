@@ -18,7 +18,7 @@ namespace TheCreators.Player
         private void Start()
         {
             isGrounded = true;
-            SetGravityScale(_playerData.defaultGravityModifier);
+            SetGravityScale(_playerData.defaultGravity);
         }
 
         private void OnEnable()
@@ -39,19 +39,19 @@ namespace TheCreators.Player
         {
             if (isGrounded)
             {
-                _rigidbody.AddForce(Vector2.up * _playerData.jumpForce, ForceMode2D.Impulse); 
+                _rigidbody.AddForce(Vector2.up * _playerData.JumpForce, ForceMode2D.Impulse); 
                 isGrounded = false;
             }
         }
 
         private void OnReleasePress()
         {
-            if (!isGrounded) SetGravityScale(_playerData.jumpCutGravityModifier);
+            if (!isGrounded) SetGravityScale(_playerData.jumpCutGravity);
         }
 
         private void OnGroundCollision()
         {
-            SetGravityScale(_playerData.defaultGravityModifier);
+            SetGravityScale(_playerData.defaultGravity);
             isGrounded = true;
         }
 

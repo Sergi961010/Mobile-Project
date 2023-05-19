@@ -4,10 +4,11 @@ namespace TheCreators.EventSystem
 {
     public static class GameEvent
     {
-        public static readonly CustomEvent onPress = new();
-        public static readonly CustomEvent onReleasePress = new();
-        public static readonly CustomEvent onGroundCollision = new();
+        public static readonly CustomEvent OnPress = new();
+        public static readonly CustomEvent OnReleasePress = new();
+        public static readonly CustomEvent OnGroundCollision = new();
 
-        public static readonly CustomEvent<Vector2> onPlatformSpawn = new();
+        public static readonly CustomEvent OnPlatformSpawn = new();
+        public static readonly CustomEvent OnPlatformFall = new();
     }
 }

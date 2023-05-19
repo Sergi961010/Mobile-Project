@@ -1,4 +1,4 @@
-using TheCreators.Enums;
+using TheCreators.ScriptableObjects.Platforms;
 using UnityEngine;
 
 namespace TheCreators.ScriptableObjects

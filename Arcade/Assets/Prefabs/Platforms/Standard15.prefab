@@ -2625,7 +2625,7 @@ GameObject:
   - component: {fileID: 7326853568102652086}
   - component: {fileID: -269012043901288906}
   m_Layer: 0
-  m_Name: Platform15
+  m_Name: Standard15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -1,5 +1,5 @@
 using TheCreators.ScriptableObjects;
-using TheCreators.Enums;
+using TheCreators.Enums.Platforms;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -24,11 +24,11 @@ namespace TheCreators.Managers
         #endregion
 
         [SerializeField] private List<Pool> _pools;
-        private Dictionary<PlatformTag, Queue<GameObject>> _poolDictionary;
+        private Dictionary<Tag, Queue<GameObject>> _poolDictionary;
 
         private void Awake()
         {
-            _poolDictionary = new Dictionary<PlatformTag, Queue<GameObject>>();
+            _poolDictionary = new Dictionary<Tag, Queue<GameObject>>();
 
             #region Singleton
             if (_instance != null && _instance != this)
@@ -50,7 +50,7 @@ namespace TheCreators.Managers
         {
             foreach (Pool pool in _pools)
             {
-                Queue<GameObject> objectPool = new Queue<GameObject>();
+                Queue<GameObject> objectPool = new();
 
                 for (int i = 0; i < pool.size; i++)
                 {
@@ -64,7 +64,7 @@ namespace TheCreators.Managers
             }
         }
 
-        public GameObject SpawnFromPool(PlatformTag tag, Vector2 position, Quaternion rotation)
+        public GameObject GetPooledObject(Tag tag, Vector2 position, Quaternion rotation)
         {
             if(!_poolDictionary.ContainsKey(tag))
             {

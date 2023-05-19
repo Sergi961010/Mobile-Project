@@ -23,16 +23,16 @@ namespace TheCreators.Player
 
         private void OnEnable()
         {
-            GameEvent.onPress.AddListener(OnPress);
-            GameEvent.onReleasePress.AddListener(OnReleasePress);
-            GameEvent.onGroundCollision.AddListener(OnGroundCollision);
+            GameEvent.OnPress.AddListener(OnPress);
+            GameEvent.OnReleasePress.AddListener(OnReleasePress);
+            GameEvent.OnGroundCollision.AddListener(OnGroundCollision);
         }
 
         private void OnDisable()
         {
-            GameEvent.onPress.RemoveListener(OnPress);
-            GameEvent.onReleasePress.RemoveListener(OnReleasePress);
-            GameEvent.onGroundCollision.RemoveListener(OnGroundCollision);
+            GameEvent.OnPress.RemoveListener(OnPress);
+            GameEvent.OnReleasePress.RemoveListener(OnReleasePress);
+            GameEvent.OnGroundCollision.RemoveListener(OnGroundCollision);
         }
 
         private void OnPress()

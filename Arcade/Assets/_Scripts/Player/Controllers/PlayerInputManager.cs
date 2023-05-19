@@ -34,12 +34,12 @@ namespace TheCreators.Player
 
         private void OnReleaseTap(InputAction.CallbackContext obj)
         {
-            GameEvent.onReleasePress.Invoke();
+            GameEvent.OnReleasePress.Invoke();
         }
 
         private void OnPress(InputAction.CallbackContext context)
         {
-            GameEvent.onPress.Invoke();
+            GameEvent.OnPress.Invoke();
         }
 
     }

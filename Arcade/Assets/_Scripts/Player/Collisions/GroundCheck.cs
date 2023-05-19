@@ -7,7 +7,7 @@ namespace TheCreators.Player
     {
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            GameEvent.onGroundCollision.Invoke();
+            GameEvent.OnGroundCollision.Invoke();
         }
     }
 }

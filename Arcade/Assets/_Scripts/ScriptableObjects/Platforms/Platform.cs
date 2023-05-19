@@ -1,4 +1,4 @@
-using TheCreators.Enums;
+using TheCreators.Enums.Platforms;
 using UnityEngine;
 
 namespace TheCreators.ScriptableObjects
@@ -6,7 +6,7 @@ namespace TheCreators.ScriptableObjects
     [CreateAssetMenu(fileName = "NewPlatform", menuName = "Platform")]
     public class Platform : ScriptableObject
     {
-        public PlatformTag tag;
+        public Tag tag;
         public GameObject prefab;
     }
 }

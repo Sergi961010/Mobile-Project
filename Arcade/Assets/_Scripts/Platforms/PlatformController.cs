@@ -44,10 +44,10 @@ namespace TheCreators.Platforms
             {
                 if (!_didSpawn)
                 {
-                    Vector2 currentPosition = new(_rightBoundaryPosition, transform.position.y);
-                    GameEvent.onPlatformSpawn.Invoke(currentPosition);
+                    GameEvent.OnPlatformSpawn.Invoke();
                     _didSpawn = true;
                 }
+                GameEvent.OnPlatformFall.Invoke();
             }
         }
 

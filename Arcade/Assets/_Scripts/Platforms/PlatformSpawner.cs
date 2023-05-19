@@ -1,11 +1,9 @@
 using TheCreators.EventSystem;
 using TheCreators.Managers;
-using TheCreators.Enums;
-using TheCreators.Utilities;
+using TheCreators.Enums.Platforms;
 using TheCreators.ScriptableObjects;
 using UnityEngine;
 using System.Collections.Generic;
-using System;
 
 namespace TheCreators.Platforms
 {
@@ -13,17 +11,19 @@ namespace TheCreators.Platforms
     {
 
         [SerializeField] private List<Platform> _platforms;
-        private Dictionary<PlatformTag, GameObject> _platformsDictionary;
+        private Dictionary<Tag, GameObject> _platformsDictionary;
 
         [SerializeField] private PlayerData _playerData;
 
-        private PlatformTag _newPlatformTag;
-        private int _gapCounter, _spawnWithGap;
+        private int _gapCounter, _spawnWithGap, _fallingCounter, _spawnWithFall;
+        [SerializeField] private Transform _spawnPoint;
         private void Awake()
         {
-            _platformsDictionary = new Dictionary<PlatformTag, GameObject>();
+            _platformsDictionary = new Dictionary<Tag, GameObject>();
             _spawnWithGap = 5;
+            _spawnWithFall = Random.Range(6, 10);
             _gapCounter = 0;
+            _fallingCounter = 0;
         }
         private void Start()
         {
@@ -34,20 +34,20 @@ namespace TheCreators.Platforms
         }
         private void OnEnable()
         {
-            GameEvent.onPlatformSpawn.AddListener(OnPlatformSpawn);
+            GameEvent.OnPlatformSpawn.AddListener(OnPlatformSpawn);
         }
 
-        private void OnPlatformSpawn(Vector2 previousPlatformPosition)
+        private void OnPlatformSpawn()
         {
-            Vector2 spawnPosition = CalculateNextPlatformPosition(previousPlatformPosition);
-            PlatformPoolManager.Instance.SpawnFromPool(_newPlatformTag, spawnPosition, Quaternion.identity);
+            Tag platformToSpawnTag = GetPlatformTag();
+            Vector2 spawnPosition = CalculateNextPlatformPosition(platformToSpawnTag);
+            PlatformPoolManager.Instance.GetPooledObject(platformToSpawnTag, spawnPosition, Quaternion.identity);
         }
 
-        private Vector2 CalculateNextPlatformPosition(Vector2 previousPlatformPosition)
+        private Vector2 CalculateNextPlatformPosition(Tag platformToSpawnTag)
         {
-            _newPlatformTag = Utility.RandomEnumValue<PlatformTag>();
-            float platformToSpawnHalfSize = _platformsDictionary[_newPlatformTag].GetComponent<BoxCollider2D>().size.x / 2;
-            Vector2 spawnPosition = new(previousPlatformPosition.x + platformToSpawnHalfSize, previousPlatformPosition.y);
+            float platformToSpawnHalfSize = _platformsDictionary[platformToSpawnTag].GetComponent<BoxCollider2D>().size.x / 2;
+            Vector2 spawnPosition = new(_spawnPoint.position.x + platformToSpawnHalfSize, _spawnPoint.position.y);
 
             if (_gapCounter == _spawnWithGap)
             {
@@ -64,7 +64,7 @@ namespace TheCreators.Platforms
         {
             position.x += GetRandomBetweenJumpDistances();
             _gapCounter = 0;
-            _spawnWithGap = UnityEngine.Random.Range(0, 4);
+            _spawnWithGap = Random.Range(0, 4);
             return position;
         }
 
@@ -72,8 +72,23 @@ namespace TheCreators.Platforms
         {
             float minJumpXDistance = _playerData.CalculateJumpXDistance(_playerData.jumpCutGravityModifier);
             float maxJumpXDistance = _playerData.CalculateJumpXDistance(_playerData.defaultGravityModifier);
-            float result = UnityEngine.Random.Range(minJumpXDistance, maxJumpXDistance);
+            float result = Random.Range(minJumpXDistance, maxJumpXDistance);
             return result;
+        }
+
+        private Tag GetPlatformTag()
+        {
+            int id;
+            if (_fallingCounter == _spawnWithFall)
+            {
+                id = Random.Range(3, 4);
+                _fallingCounter = 0;
+            } else
+            {
+                id = Random.Range(0, 2);
+                ++_fallingCounter;
+            }
+            return (Tag)id;
         }
     }
 }

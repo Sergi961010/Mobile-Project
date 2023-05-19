@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3288f31574df5a64e940c1f74c9909e8, type: 3}
-  m_Name: Platform2
+  m_Script: {fileID: 11500000, guid: 089facf3ff7309c4fb15a0b898586c94, type: 3}
+  m_Name: Standard15
   m_EditorClassIdentifier: 
-  tag: 0
-  prefab: {fileID: 5334599385191814337, guid: 3ef6f9ba552ffc3458649c99876e1c65, type: 3}
+  platform: {fileID: 11400000, guid: efeef9985370d3a47be2a498c523f871, type: 2}
+  size: 5

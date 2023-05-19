@@ -1,15 +1,16 @@
 using System.Collections;
-using TheCreators.EventSystem;
+using TheCreators.ScriptableObjects.Platforms;
 using UnityEngine;
 
 namespace TheCreators.Platforms
 {
     public class FallingComponent : MonoBehaviour
     {
-        private readonly float _fallSpeed = 0.1f;
+        [SerializeField] private FallingPlatform _platformData;
         private void OnEnable()
         {
-            StartCoroutine(Fall(2f));
+            float randomDelay = Random.Range(_platformData.minDelay, _platformData.maxDelay);
+            StartCoroutine(Fall(randomDelay));
         }
 
         IEnumerator Fall(float delay)
@@ -21,7 +22,7 @@ namespace TheCreators.Platforms
 
             while (startingPos.y > finalPos.y)
             {
-                transform.position += _fallSpeed * Time.deltaTime * Vector3.down;
+                transform.position += _platformData.fallSpeed * Time.deltaTime * Vector3.down;
                 yield return null;
             }
         }

@@ -47,7 +47,6 @@ namespace TheCreators.Platforms
                     GameEvent.OnPlatformSpawn.Invoke();
                     _didSpawn = true;
                 }
-                GameEvent.OnPlatformFall.Invoke();
             }
         }
 

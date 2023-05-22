@@ -1,9 +1,10 @@
 using TheCreators.EventSystem;
 using TheCreators.Managers;
 using TheCreators.Enums.Platforms;
-using TheCreators.ScriptableObjects;
+using TheCreators.ScriptableObjects.Platforms;
 using UnityEngine;
 using System.Collections.Generic;
+using TheCreators.ScriptableObjects;
 
 namespace TheCreators.Platforms
 {
@@ -49,12 +50,11 @@ namespace TheCreators.Platforms
             float platformToSpawnHalfSize = _platformsDictionary[platformToSpawnTag].GetComponent<BoxCollider2D>().size.x / 2;
             Vector2 spawnPosition = new(_spawnPoint.position.x + platformToSpawnHalfSize, _spawnPoint.position.y);
 
+            //if (_fallingCounter == _spawnWithFall) return spawnPosition;
+
             if (_gapCounter == _spawnWithGap)
             {
                 spawnPosition = AddGapOnX(spawnPosition);
-            } else
-            {
-                ++_gapCounter;
             }
 
             return spawnPosition;
@@ -63,8 +63,6 @@ namespace TheCreators.Platforms
         private Vector2 AddGapOnX(Vector2 position)
         {
             position.x += GetRandomBetweenJumpDistances();
-            _gapCounter = 0;
-            _spawnWithGap = Random.Range(0, 4);
             return position;
         }
 
@@ -78,17 +76,27 @@ namespace TheCreators.Platforms
 
         private Tag GetPlatformTag()
         {
-            int id;
-            if (_fallingCounter == _spawnWithFall)
+            int randomStandardPlatformTag = Random.Range(0, 3);
+            int randomFallingPlatformTag = Random.Range(3, 5);
+            Tag result;
+
+            if (_gapCounter == _spawnWithGap)
             {
-                id = Random.Range(3, 4);
+                result = (Tag)randomStandardPlatformTag;
+                _gapCounter = 0;
+                _spawnWithGap = Random.Range(0, 4);
+            } else if (_fallingCounter == _spawnWithFall)
+            {
+                result = (Tag)randomFallingPlatformTag;
                 _fallingCounter = 0;
+                _spawnWithFall = Random.Range(6, 10);
             } else
             {
-                id = Random.Range(0, 2);
+                result = (Tag)randomStandardPlatformTag;
+                ++_gapCounter;
                 ++_fallingCounter;
             }
-            return (Tag)id;
+            return result;
         }
     }
 }

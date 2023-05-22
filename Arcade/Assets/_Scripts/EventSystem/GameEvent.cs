@@ -9,6 +9,5 @@ namespace TheCreators.EventSystem
         public static readonly CustomEvent OnGroundCollision = new();
 
         public static readonly CustomEvent OnPlatformSpawn = new();
-        public static readonly CustomEvent OnPlatformFall = new();
     }
 }

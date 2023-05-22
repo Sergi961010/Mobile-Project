@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 089facf3ff7309c4fb15a0b898586c94, type: 3}
   m_Name: Falling2
   m_EditorClassIdentifier: 
-  platform: {fileID: 11400000, guid: e051572874c7ab34a9905dab01f31e63, type: 2}
+  platform: {fileID: 11400000, guid: 036b6882b9196104b86ebc0b65957f4e, type: 2}
   size: 2

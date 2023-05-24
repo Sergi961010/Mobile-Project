@@ -1,30 +1,37 @@
 using TheCreators.EventSystem;
 using TheCreators.Managers;
+using TheCreators.Enums;
 using TheCreators.Enums.Platforms;
 using TheCreators.ScriptableObjects.Platforms;
 using UnityEngine;
 using System.Collections.Generic;
 using TheCreators.ScriptableObjects;
+using TheCreators.Utilities;
 
 namespace TheCreators.Platforms
 {
     public class PlatformSpawner : MonoBehaviour
     {
+        private const float PLAYER_DISTANCE_TO_END_POINT = 20f;
+
+        [SerializeField] private Transform _startingPlatform;
+        [SerializeField] private Transform _playerTransform;
 
         [SerializeField] private List<Platform> _platforms;
         private Dictionary<Tag, GameObject> _platformsDictionary;
 
         [SerializeField] private PlayerData _playerData;
 
-        private int _gapCounter, _spawnWithGap, _fallingCounter, _spawnWithFall;
+        private Vector2 _lastEndPosition;
+
+        private int _gapCounter, _spawnWithGap;
         [SerializeField] private Transform _spawnPoint;
         private void Awake()
         {
             _platformsDictionary = new Dictionary<Tag, GameObject>();
             _spawnWithGap = 5;
-            _spawnWithFall = Random.Range(6, 10);
             _gapCounter = 0;
-            _fallingCounter = 0;
+            _lastEndPosition = _startingPlatform.Find("EndPosition").position;
         }
         private void Start()
         {
@@ -33,31 +40,23 @@ namespace TheCreators.Platforms
                 _platformsDictionary.Add(platform.tag, platform.prefab);
             }
         }
-        private void OnEnable()
+
+        private void Update()
         {
-            GameEvent.OnPlatformSpawn.AddListener(OnPlatformSpawn);
-        }
-
-        private void OnPlatformSpawn()
-        {
-            Tag platformToSpawnTag = GetPlatformTag();
-            Vector2 spawnPosition = CalculateNextPlatformPosition(platformToSpawnTag);
-            PlatformPoolManager.Instance.GetPooledObject(platformToSpawnTag, spawnPosition, Quaternion.identity);
-        }
-
-        private Vector2 CalculateNextPlatformPosition(Tag platformToSpawnTag)
-        {
-            float platformToSpawnHalfSize = _platformsDictionary[platformToSpawnTag].GetComponent<BoxCollider2D>().size.x / 2;
-            Vector2 spawnPosition = new(_spawnPoint.position.x + platformToSpawnHalfSize, _spawnPoint.position.y);
-
-            //if (_fallingCounter == _spawnWithFall) return spawnPosition;
-
-            if (_gapCounter == _spawnWithGap)
+            if (Vector2.Distance(_playerTransform.position, _lastEndPosition) < PLAYER_DISTANCE_TO_END_POINT)
             {
-                spawnPosition = AddGapOnX(spawnPosition);
+                SpawnLevelPart();
             }
+        }
 
-            return spawnPosition;
+        private void SpawnLevelPart()
+        {
+            GameObject platformToSpawn = PlatformPoolManager.Instance.RequestLevelPart(PoolType.Basic);
+            float platformToSpawnHalfSize = platformToSpawn.GetComponent<BoxCollider2D>().size.x / 2;
+            Vector2 spawnPosition = new(_lastEndPosition.x + platformToSpawnHalfSize, _lastEndPosition.y);
+
+            platformToSpawn.transform.position = spawnPosition;
+            _lastEndPosition = platformToSpawn.transform.Find("EndPosition").position;
         }
 
         private Vector2 AddGapOnX(Vector2 position)
@@ -74,29 +73,5 @@ namespace TheCreators.Platforms
             return result;
         }
 
-        private Tag GetPlatformTag()
-        {
-            int randomStandardPlatformTag = Random.Range(0, 3);
-            int randomFallingPlatformTag = Random.Range(3, 5);
-            Tag result;
-
-            if (_gapCounter == _spawnWithGap)
-            {
-                result = (Tag)randomStandardPlatformTag;
-                _gapCounter = 0;
-                _spawnWithGap = Random.Range(0, 4);
-            } else if (_fallingCounter == _spawnWithFall)
-            {
-                result = (Tag)randomFallingPlatformTag;
-                _fallingCounter = 0;
-                _spawnWithFall = Random.Range(6, 10);
-            } else
-            {
-                result = (Tag)randomStandardPlatformTag;
-                ++_gapCounter;
-                ++_fallingCounter;
-            }
-            return result;
-        }
     }
 }

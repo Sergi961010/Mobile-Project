@@ -35,6 +35,11 @@ namespace TheCreators.Player
             GameEvent.OnGroundCollision.RemoveListener(OnGroundCollision);
         }
 
+        private void FixedUpdate()
+        {
+            Move();
+        }
+
         private void OnPress()
         {
             if (isGrounded)
@@ -58,6 +63,11 @@ namespace TheCreators.Player
         private void SetGravityScale(float value)
         {
             _rigidbody.gravityScale = value;
+        }
+
+        private void Move()
+        {
+            _rigidbody.velocity = 100 * Time.fixedDeltaTime * Vector2.right;
         }
     }
 }

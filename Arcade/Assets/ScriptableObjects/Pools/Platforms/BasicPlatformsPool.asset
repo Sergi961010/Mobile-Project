@@ -10,7 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 089facf3ff7309c4fb15a0b898586c94, type: 3}
-  m_Name: Falling5
+  m_Name: BasicPlatformsPool
   m_EditorClassIdentifier: 
-  platform: {fileID: 11400000, guid: 75f2a0450a2df8d41af39deb1ed73e5a, type: 2}
-  size: 2
+  levelParts:
+  - {fileID: 11400000, guid: dd5943780e69d3f4589f5777539a79c1, type: 2}
+  - {fileID: 11400000, guid: 936aa7137345d1241985e79fe58c4715, type: 2}
+  - {fileID: 11400000, guid: efeef9985370d3a47be2a498c523f871, type: 2}
+  levelPartAmount: 2
+  poolType: 0

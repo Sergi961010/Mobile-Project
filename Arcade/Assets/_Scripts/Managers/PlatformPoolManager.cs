@@ -84,9 +84,7 @@ namespace TheCreators.Managers
 
         private GameObject GetRandomlevelPart(List<GameObject> gameObjects, PoolType poolType)
         {
-            int max = _pools[(int)poolType].levelParts.Count;
-            int random = Random.Range(0, max);
-            string roll = _pools[(int)poolType].levelParts[random].tag.ToString() + "(Clone)";
+            string roll = GetRandomPlatformName(poolType);
             List<GameObject> selected = gameObjects.FindAll(x => x.name.Equals(roll));
 
             for (int i = 0; i < selected.Count; i++)
@@ -97,20 +95,17 @@ namespace TheCreators.Managers
                     return selected[i];
                 }
             }
-            return null;
-        }/*
 
-        private GameObject RequestPooledObject(List<GameObject> pool)
-        {
-            foreach (GameObject go in pool)
-            {
-                if (!go.activeSelf)
-                {
-                    go.SetActive(true);
-                    return go;
-                }
-            }
+            Debug.LogWarning("Platform: " + roll + " doesn't exist");
             return null;
-        }*/
+        }
+
+        private string GetRandomPlatformName(PoolType poolType)
+        {
+            int max = _pools[(int)poolType].levelParts.Count;
+            int random = Random.Range(0, max);
+            string roll = _pools[(int)poolType].levelParts[random].tag.ToString() + "(Clone)";
+            return roll;
+        }
     }
 }

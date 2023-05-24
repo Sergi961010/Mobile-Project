@@ -12,11 +12,17 @@ namespace TheCreators.Platforms
 {
     public class PlatformSpawner : MonoBehaviour
     {
+        private const float PLAYER_DISTANCE_TO_END_POINT = 20f;
+
+        [SerializeField] private Transform _startingPlatform;
+        [SerializeField] private Transform _playerTransform;
 
         [SerializeField] private List<Platform> _platforms;
         private Dictionary<Tag, GameObject> _platformsDictionary;
 
         [SerializeField] private PlayerData _playerData;
+
+        private Vector2 _lastEndPosition;
 
         private int _gapCounter, _spawnWithGap;
         [SerializeField] private Transform _spawnPoint;
@@ -25,6 +31,7 @@ namespace TheCreators.Platforms
             _platformsDictionary = new Dictionary<Tag, GameObject>();
             _spawnWithGap = 5;
             _gapCounter = 0;
+            _lastEndPosition = _startingPlatform.Find("EndPosition").position;
         }
         private void Start()
         {
@@ -33,30 +40,23 @@ namespace TheCreators.Platforms
                 _platformsDictionary.Add(platform.tag, platform.prefab);
             }
         }
-        private void OnEnable()
+
+        private void Update()
         {
-            GameEvent.OnPlatformSpawn.AddListener(OnPlatformSpawn);
-        }
-
-        private void OnPlatformSpawn()
-        {
-            GameObject platformToSpawn = PlatformPoolManager.Instance.RequestLevelPart(GetPoolType());
-            PositionLevelPart(platformToSpawn);
-        }
-
-        private void PositionLevelPart(GameObject platformToSpawn)
-        {
-            float platformToSpawnHalfSize = platformToSpawn.GetComponent<BoxCollider2D>().size.x / 2;
-            Vector2 spawnPosition = new(_spawnPoint.position.x + platformToSpawnHalfSize, _spawnPoint.position.y);
-
-            //if (_fallingCounter == _spawnWithFall) return spawnPosition;
-
-            if (_gapCounter == _spawnWithGap)
+            if (Vector2.Distance(_playerTransform.position, _lastEndPosition) < PLAYER_DISTANCE_TO_END_POINT)
             {
-                spawnPosition = AddGapOnX(spawnPosition);
+                SpawnLevelPart();
             }
+        }
+
+        private void SpawnLevelPart()
+        {
+            GameObject platformToSpawn = PlatformPoolManager.Instance.RequestLevelPart(PoolType.Basic);
+            float platformToSpawnHalfSize = platformToSpawn.GetComponent<BoxCollider2D>().size.x / 2;
+            Vector2 spawnPosition = new(_lastEndPosition.x + platformToSpawnHalfSize, _lastEndPosition.y);
 
             platformToSpawn.transform.position = spawnPosition;
+            _lastEndPosition = platformToSpawn.transform.Find("EndPosition").position;
         }
 
         private Vector2 AddGapOnX(Vector2 position)
@@ -73,23 +73,5 @@ namespace TheCreators.Platforms
             return result;
         }
 
-        private PoolType GetPoolType()
-        {
-            PoolType result;
-
-            if (_gapCounter == _spawnWithGap)
-            {
-                result = PoolType.Basic;
-                _gapCounter = 0;
-                _spawnWithGap = Random.Range(0, 4);
-            }
-            else
-            {
-                result = Utility.RandomEnumValue<PoolType>();
-                ++_gapCounter;
-            }
-
-            return result;
-        }
     }
 }

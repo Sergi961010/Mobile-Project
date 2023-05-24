@@ -1,10 +1,12 @@
 using TheCreators.EventSystem;
 using TheCreators.Managers;
+using TheCreators.Enums;
 using TheCreators.Enums.Platforms;
 using TheCreators.ScriptableObjects.Platforms;
 using UnityEngine;
 using System.Collections.Generic;
 using TheCreators.ScriptableObjects;
+using TheCreators.Utilities;
 
 namespace TheCreators.Platforms
 {
@@ -16,15 +18,13 @@ namespace TheCreators.Platforms
 
         [SerializeField] private PlayerData _playerData;
 
-        private int _gapCounter, _spawnWithGap, _fallingCounter, _spawnWithFall;
+        private int _gapCounter, _spawnWithGap;
         [SerializeField] private Transform _spawnPoint;
         private void Awake()
         {
             _platformsDictionary = new Dictionary<Tag, GameObject>();
             _spawnWithGap = 5;
-            _spawnWithFall = Random.Range(6, 10);
             _gapCounter = 0;
-            _fallingCounter = 0;
         }
         private void Start()
         {
@@ -40,14 +40,13 @@ namespace TheCreators.Platforms
 
         private void OnPlatformSpawn()
         {
-            Tag platformToSpawnTag = GetPlatformTag();
-            Vector2 spawnPosition = CalculateNextPlatformPosition(platformToSpawnTag);
-            PlatformPoolManager.Instance.GetPooledObject(platformToSpawnTag, spawnPosition, Quaternion.identity);
+            GameObject platformToSpawn = PlatformPoolManager.Instance.RequestLevelPart(GetPoolType());
+            PositionLevelPart(platformToSpawn);
         }
 
-        private Vector2 CalculateNextPlatformPosition(Tag platformToSpawnTag)
+        private void PositionLevelPart(GameObject platformToSpawn)
         {
-            float platformToSpawnHalfSize = _platformsDictionary[platformToSpawnTag].GetComponent<BoxCollider2D>().size.x / 2;
+            float platformToSpawnHalfSize = platformToSpawn.GetComponent<BoxCollider2D>().size.x / 2;
             Vector2 spawnPosition = new(_spawnPoint.position.x + platformToSpawnHalfSize, _spawnPoint.position.y);
 
             //if (_fallingCounter == _spawnWithFall) return spawnPosition;
@@ -57,7 +56,7 @@ namespace TheCreators.Platforms
                 spawnPosition = AddGapOnX(spawnPosition);
             }
 
-            return spawnPosition;
+            platformToSpawn.transform.position = spawnPosition;
         }
 
         private Vector2 AddGapOnX(Vector2 position)
@@ -74,28 +73,22 @@ namespace TheCreators.Platforms
             return result;
         }
 
-        private Tag GetPlatformTag()
+        private PoolType GetPoolType()
         {
-            int randomStandardPlatformTag = Random.Range(0, 3);
-            int randomFallingPlatformTag = Random.Range(3, 5);
-            Tag result;
+            PoolType result;
 
             if (_gapCounter == _spawnWithGap)
             {
-                result = (Tag)randomStandardPlatformTag;
+                result = PoolType.Basic;
                 _gapCounter = 0;
                 _spawnWithGap = Random.Range(0, 4);
-            } else if (_fallingCounter == _spawnWithFall)
-            {
-                result = (Tag)randomFallingPlatformTag;
-                _fallingCounter = 0;
-                _spawnWithFall = Random.Range(6, 10);
-            } else
-            {
-                result = (Tag)randomStandardPlatformTag;
-                ++_gapCounter;
-                ++_fallingCounter;
             }
+            else
+            {
+                result = Utility.RandomEnumValue<PoolType>();
+                ++_gapCounter;
+            }
+
             return result;
         }
     }

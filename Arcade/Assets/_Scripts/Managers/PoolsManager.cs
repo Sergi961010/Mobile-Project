@@ -1,6 +1,7 @@
 using TheCreators.ScriptableObjects;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 namespace TheCreators.Managers
 {
@@ -24,12 +25,10 @@ namespace TheCreators.Managers
 
         [SerializeField] private Transform _poolsContainer;
         [SerializeField] private List<PoolInfo> _poolsInfo;
-        private Dictionary<string, Queue<GameObject>> _poolDictionary;
+        private Dictionary<string, Queue<GameObject>> _poolDictionary = new();
 
         private void Awake()
         {
-            _poolDictionary = new Dictionary<string, Queue<GameObject>>();
-
             #region Singleton
             if (_instance != null && _instance != this)
             {
@@ -41,13 +40,13 @@ namespace TheCreators.Managers
             }
             #endregion
         }
-        private void Start()
+        /*private void Start()
         {
             foreach (PoolInfo poolInfo in _poolsInfo)
             {
                 FillPool(poolInfo);
             }
-        }
+        }*/
 
         private void FillPool(PoolInfo poolInfo)
         {
@@ -78,6 +77,43 @@ namespace TheCreators.Managers
             _poolDictionary[poolType].Enqueue(objectToSpawn);
 
             return objectToSpawn;
+        }
+
+        public GameObject GetObject(GameObject gameObject)
+        {
+            if (_poolDictionary.TryGetValue(gameObject.name, out Queue<GameObject> objectList))
+            {
+                if (objectList.Count == 0)
+                    return CreateNewObject(gameObject);
+                else
+                {
+                    GameObject go = objectList.Dequeue();
+                    go.SetActive(true);
+                    return go;
+                }
+            }
+            else
+                return CreateNewObject(gameObject);
+        }
+
+        private GameObject CreateNewObject(GameObject gameObject)
+        {
+            GameObject go = Instantiate(gameObject);
+            go.name = gameObject.name;
+            return go;
+        }
+
+        public void ReturnGameObject(GameObject gameObject)
+        {
+            if (_poolDictionary.TryGetValue(gameObject.name, out Queue<GameObject> objectList))
+                objectList.Enqueue(gameObject);
+            else
+            {
+                Queue<GameObject> newObjectQueue = new();
+                newObjectQueue.Enqueue(gameObject);
+                _poolDictionary.Add(gameObject.name, newObjectQueue);
+            }
+            gameObject.SetActive(false);
         }
     }
 }

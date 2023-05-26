@@ -593,7 +593,7 @@ GameObject:
   - component: {fileID: 315906199}
   m_Layer: 0
   m_Name: MainCamera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -750,6 +750,7 @@ MonoBehaviour:
   _poolsInfo:
   - {fileID: 11400000, guid: 7d72b582fe2fb8d45863245470469edf, type: 2}
   - {fileID: 11400000, guid: 5f5f2fcc39150d447aa84e9f9fd191c9, type: 2}
+  prefab: {fileID: 4727509431472530324, guid: fdc2f01bd8e2ead469a35e3f04725f51, type: 3}
 --- !u!1 &367173190
 GameObject:
   m_ObjectHideFlags: 0

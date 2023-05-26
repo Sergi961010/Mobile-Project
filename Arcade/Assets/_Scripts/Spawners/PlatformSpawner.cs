@@ -17,6 +17,8 @@ namespace TheCreators.Platforms
 
         [SerializeField] private List<PoolInfo> _poolsInfo;
 
+        [SerializeField] private GameObject prefab;
+
         private Vector2 _lastEndPosition;
         private void Awake()
         {
@@ -37,7 +39,7 @@ namespace TheCreators.Platforms
         private void SpawnLevelPart()
         {
             string poolName = GetRandomPoolName();
-            GameObject platformToSpawn = PoolsManager.Instance.GetObjectFromPool(poolName);
+            GameObject platformToSpawn = PoolsManager.Instance.GetObject(prefab);
             float platformToSpawnHalfSize = platformToSpawn.GetComponent<BoxCollider2D>().size.x / 2;
             Vector2 spawnPosition = new(_lastEndPosition.x + platformToSpawnHalfSize, _lastEndPosition.y);
             platformToSpawn.SetActive(true);

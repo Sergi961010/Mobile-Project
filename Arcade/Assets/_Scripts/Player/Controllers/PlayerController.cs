@@ -67,7 +67,7 @@ namespace TheCreators.Player
 
         private void Move()
         {
-            _rigidbody.velocity = 100 * Time.fixedDeltaTime * Vector2.right;
+            _rigidbody.velocity = new Vector2(5, _rigidbody.velocity.y);
         }
     }
 }

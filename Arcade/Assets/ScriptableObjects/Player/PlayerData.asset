@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c30553f24a134d49a487d21afe344c6, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: 
-  jumpForce: 1183.27
+  jumpForce: 7
   defaultGravityModifier: 0.75
   jumpCutGravityModifier: 2

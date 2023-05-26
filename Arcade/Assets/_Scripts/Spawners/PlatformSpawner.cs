@@ -1,12 +1,7 @@
-using TheCreators.EventSystem;
 using TheCreators.Managers;
-using TheCreators.Enums;
-using TheCreators.Enums.Platforms;
-using TheCreators.ScriptableObjects.Platforms;
 using UnityEngine;
 using System.Collections.Generic;
 using TheCreators.ScriptableObjects;
-using TheCreators.Utilities;
 
 namespace TheCreators.Platforms
 {
@@ -16,29 +11,21 @@ namespace TheCreators.Platforms
 
         [SerializeField] private Transform _startingPlatform;
         [SerializeField] private Transform _playerTransform;
-
-        [SerializeField] private List<Platform> _platforms;
-        private Dictionary<Tag, GameObject> _platformsDictionary;
+        [SerializeField] private Transform _spawnPoint;
 
         [SerializeField] private PlayerData _playerData;
 
-        private Vector2 _lastEndPosition;
+        [SerializeField] private List<PoolInfo> _poolsInfo;
 
-        private int _gapCounter, _spawnWithGap;
-        [SerializeField] private Transform _spawnPoint;
+        [SerializeField] private GameObject prefab;
+
+        private Vector2 _lastEndPosition;
         private void Awake()
         {
-            _platformsDictionary = new Dictionary<Tag, GameObject>();
-            _spawnWithGap = 5;
-            _gapCounter = 0;
             _lastEndPosition = _startingPlatform.Find("EndPosition").position;
         }
         private void Start()
         {
-            foreach (Platform platform in _platforms)
-            {
-                _platformsDictionary.Add(platform.tag, platform.prefab);
-            }
         }
 
         private void Update()
@@ -51,12 +38,20 @@ namespace TheCreators.Platforms
 
         private void SpawnLevelPart()
         {
-            GameObject platformToSpawn = PlatformPoolManager.Instance.RequestLevelPart(PoolType.Basic);
+            string poolName = GetRandomPoolName();
+            GameObject platformToSpawn = PoolsManager.Instance.GetObject(prefab);
             float platformToSpawnHalfSize = platformToSpawn.GetComponent<BoxCollider2D>().size.x / 2;
             Vector2 spawnPosition = new(_lastEndPosition.x + platformToSpawnHalfSize, _lastEndPosition.y);
-
+            platformToSpawn.SetActive(true);
             platformToSpawn.transform.position = spawnPosition;
             _lastEndPosition = platformToSpawn.transform.Find("EndPosition").position;
+        }
+
+        private string GetRandomPoolName()
+        {
+            int random = Random.Range(0, _poolsInfo.Count);
+            string result = _poolsInfo[random].poolType;
+            return result;
         }
 
         private Vector2 AddGapOnX(Vector2 position)

@@ -1,4 +1,3 @@
-using TheCreators.Managers;
 using UnityEngine;
 
 namespace TheCreators.ScriptableObjects
@@ -6,6 +5,8 @@ namespace TheCreators.ScriptableObjects
     [CreateAssetMenu(fileName = "NewPlayerData", menuName = "Data/Player")]
     public class PlayerData : ScriptableObject
     {
+        public float Speed = 5f;
+
         #region Jump
         public float jumpForce = 5f;
         #endregion
@@ -19,7 +20,7 @@ namespace TheCreators.ScriptableObjects
         {
             float gravityModified = Physics2D.gravity.magnitude * gravityModifier;
             float timeOfJump = 2 * jumpForce / gravityModified;
-            float xDistanceTravelled = timeOfJump * GameManager.Instance.GameVelocity.x;
+            float xDistanceTravelled = timeOfJump * Speed;
             return xDistanceTravelled;
         }
     }

@@ -747,10 +747,10 @@ MonoBehaviour:
   _playerTransform: {fileID: 983756122}
   _spawnPoint: {fileID: 2027722475}
   _playerData: {fileID: 11400000, guid: 0ce8e4fecbf928449a66acc8fdebed7c, type: 2}
-  _poolsInfo:
-  - {fileID: 11400000, guid: 7d72b582fe2fb8d45863245470469edf, type: 2}
-  - {fileID: 11400000, guid: 5f5f2fcc39150d447aa84e9f9fd191c9, type: 2}
-  prefab: {fileID: 4727509431472530324, guid: fdc2f01bd8e2ead469a35e3f04725f51, type: 3}
+  _poolsInfo: []
+  prefabs:
+  - {fileID: 4727509431472530324, guid: fdc2f01bd8e2ead469a35e3f04725f51, type: 3}
+  - {fileID: 4727509431472530324, guid: cd349f7684f6a8b46b41ee60a00ed942, type: 3}
 --- !u!1 &367173190
 GameObject:
   m_ObjectHideFlags: 0

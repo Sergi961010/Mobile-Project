@@ -597,7 +597,7 @@ GameObject:
   - component: {fileID: 2979816785189841598}
   - component: {fileID: 6805288415550025887}
   m_Layer: 0
-  m_Name: Spikes5
+  m_Name: SpikesOnEdges
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

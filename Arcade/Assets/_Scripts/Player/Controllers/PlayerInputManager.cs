@@ -1,6 +1,6 @@
-using System;
-using TheCreators.EventSystem;
+using TheCreators.CustomEventSystem;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 namespace TheCreators.Player
@@ -39,7 +39,8 @@ namespace TheCreators.Player
 
         private void OnPress(InputAction.CallbackContext context)
         {
-            GameEvent.OnPress.Invoke();
+            if (!EventSystem.current.IsPointerOverGameObject())
+                GameEvent.OnPress.Invoke();
         }
 
     }

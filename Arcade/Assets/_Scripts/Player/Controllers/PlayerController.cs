@@ -1,5 +1,5 @@
 using UnityEngine;
-using TheCreators.EventSystem;
+using TheCreators.CustomEventSystem;
 using TheCreators.ScriptableObjects;
 
 namespace TheCreators.Player

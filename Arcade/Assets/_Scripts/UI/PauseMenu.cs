@@ -1,4 +1,6 @@
+using TheCreators.Enums;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace TheCreators.UI
 {
@@ -16,6 +18,12 @@ namespace TheCreators.UI
         {
             _pauseMenu.SetActive(false);
             Time.timeScale = 1f;
+        }
+
+        public void Home()
+        {
+            Time.timeScale = 1f;
+            SceneManager.LoadScene((int)SceneID.MainMenu);
         }
     }
 }

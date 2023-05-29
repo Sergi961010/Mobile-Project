@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace TheCreators
+namespace TheCreators.CustomEventSystem
 {
     public class CustomEvent
     {

@@ -1,6 +1,4 @@
-using UnityEngine;
-
-namespace TheCreators.EventSystem
+namespace TheCreators.CustomEventSystem
 {
     public static class GameEvent
     {

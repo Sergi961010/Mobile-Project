@@ -2,8 +2,9 @@ namespace TheCreators.CustomEventSystem
 {
     public static class GameEvent
     {
-        public static readonly CustomEvent OnPress = new();
-        public static readonly CustomEvent OnReleasePress = new();
+        public static readonly CustomEvent OnPerformJump = new();
+        public static readonly CustomEvent OnPerformFly = new();
+        public static readonly CustomEvent OnCancelFly = new();
         public static readonly CustomEvent OnGroundCollision = new();
 
         public static readonly CustomEvent OnPlatformSpawn = new();

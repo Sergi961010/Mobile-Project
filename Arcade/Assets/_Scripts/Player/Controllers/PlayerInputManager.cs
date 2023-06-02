@@ -9,40 +9,44 @@ namespace TheCreators.Player
     {
         private PlayerInput _playerInput;
 
-        private InputAction _pressAction;
-
-        public bool IsPressHolded { get; private set; }
+        private InputAction _jumpAction;
+        private InputAction _flyAction;
 
         private void Awake()
         {
             _playerInput = GetComponent<PlayerInput>();
-            _pressAction = _playerInput.actions.FindAction("Press");
-            IsPressHolded = false;
+            _jumpAction = _playerInput.actions.FindAction("Jump");
+            _flyAction = _playerInput.actions.FindAction("Fly");
         }
 
         private void OnEnable()
         {
-            _pressAction.performed += OnPress;
-            _pressAction.canceled += OnReleaseTap;
+            _jumpAction.performed += OnJumpAction;
+            _flyAction.performed += OnFlyAction;
+            _flyAction.canceled += OnCancelFlyAction;
         }
 
         private void OnDisable()
         {
-            _pressAction.performed -= OnPress;
-            _pressAction.canceled -= OnReleaseTap;
+            _jumpAction.performed -= OnJumpAction;
+            _flyAction.performed -= OnFlyAction;
+            _flyAction.canceled -= OnCancelFlyAction;
         }
 
-        private void OnReleaseTap(InputAction.CallbackContext obj)
+        private void OnCancelFlyAction(InputAction.CallbackContext context)
         {
-            GameEvent.OnReleasePress.Invoke();
+            GameEvent.OnCancelFly.Invoke();
         }
 
-        private void OnPress(InputAction.CallbackContext context)
+        private void OnJumpAction(InputAction.CallbackContext context)
         {
             if (!EventSystem.current.IsPointerOverGameObject())
-                GameEvent.OnPress.Invoke();
+                GameEvent.OnPerformJump.Invoke();
         }
 
+        private void OnFlyAction(InputAction.CallbackContext context)
+        {
+            GameEvent.OnPerformFly.Invoke();
+        }
     }
-
 }

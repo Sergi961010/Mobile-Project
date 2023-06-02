@@ -7,8 +7,10 @@ namespace TheCreators.Player
     public class PlayerController : MonoBehaviour
     {
         [SerializeField] private PlayerData _playerData;
+
         private Rigidbody2D _rigidbody;
-        private bool isGrounded;
+
+        private bool _isGrounded;
 
         private void Awake()
         {
@@ -17,7 +19,7 @@ namespace TheCreators.Player
 
         private void Start()
         {
-            isGrounded = true;
+            _isGrounded = true;
             SetGravityScale(_playerData.defaultGravityModifier);
         }
 
@@ -40,22 +42,17 @@ namespace TheCreators.Player
 
         private void Jump()
         {
-            if (isGrounded)
+            if (_isGrounded)
             {
                 _rigidbody.AddForce(Vector2.up * _playerData.jumpForce, ForceMode2D.Impulse); 
-                isGrounded = false;
+                _isGrounded = false;
             }
-        }
-
-        private void OnReleasePress()
-        {
-            if (!isGrounded) SetGravityScale(_playerData.jumpCutGravityModifier);
         }
 
         private void OnGroundCollision()
         {
             SetGravityScale(_playerData.defaultGravityModifier);
-            isGrounded = true;
+            _isGrounded = true;
         }
 
         private void SetGravityScale(float value)

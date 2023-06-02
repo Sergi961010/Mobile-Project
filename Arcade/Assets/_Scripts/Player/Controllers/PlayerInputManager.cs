@@ -1,4 +1,3 @@
-using System;
 using TheCreators.CustomEventSystem;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -41,7 +40,7 @@ namespace TheCreators.Player
 
         private void OnJumpAction(InputAction.CallbackContext context)
         {
-            //if (!EventSystem.current.IsPointerOverGameObject())
+            if (!EventSystem.current.IsPointerOverGameObject())
                 GameEvent.OnPerformJump.Invoke();
         }
 

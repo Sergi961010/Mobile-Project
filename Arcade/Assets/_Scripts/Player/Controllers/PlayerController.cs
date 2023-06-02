@@ -23,15 +23,13 @@ namespace TheCreators.Player
 
         private void OnEnable()
         {
-            GameEvent.OnPress.AddListener(OnPress);
-            GameEvent.OnReleasePress.AddListener(OnReleasePress);
+            GameEvent.OnPerformJump.AddListener(Jump);
             GameEvent.OnGroundCollision.AddListener(OnGroundCollision);
         }
 
         private void OnDisable()
         {
-            GameEvent.OnPress.RemoveListener(OnPress);
-            GameEvent.OnReleasePress.RemoveListener(OnReleasePress);
+            GameEvent.OnPerformJump.RemoveListener(Jump);
             GameEvent.OnGroundCollision.RemoveListener(OnGroundCollision);
         }
 
@@ -40,7 +38,7 @@ namespace TheCreators.Player
             Move();
         }
 
-        private void OnPress()
+        private void Jump()
         {
             if (isGrounded)
             {

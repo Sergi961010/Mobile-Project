@@ -49,7 +49,7 @@ namespace TheCreators.Player.Input
             if(Vector2.Dot(Vector2.down, direction) > _directionThreshold)
             {
                 Debug.Log("Swipe Down");
-                //Todo call dig
+                GameEvent.Dig.Invoke();
             }
         }
     }

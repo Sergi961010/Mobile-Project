@@ -16,7 +16,7 @@ namespace TheCreators.Player.Abilities
 
         private void Burrow()
         {
-            transform.position = new Vector2(transform.position.x, -2.88f);
+            transform.position = new Vector2(transform.position.x, -4.9f);
         }
     }
 }

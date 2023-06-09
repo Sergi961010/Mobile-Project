@@ -25,7 +25,7 @@ namespace TheCreators.Managers
 
         [SerializeField] private Transform _poolsContainer;
         [SerializeField] private List<PoolInfo> _poolsInfo;
-        private Dictionary<string, Queue<GameObject>> _poolDictionary = new();
+        private readonly Dictionary<string, Queue<GameObject>> _poolDictionary = new();
 
         private void Awake()
         {
@@ -48,7 +48,7 @@ namespace TheCreators.Managers
             }
         }*/
 
-        private void FillPool(PoolInfo poolInfo)
+        /*private void FillPool(PoolInfo poolInfo)
         {
             GameObject poolContainer = new(poolInfo.containerName);
             Queue<GameObject> objectPool = new();
@@ -63,7 +63,7 @@ namespace TheCreators.Managers
             }
 
             _poolDictionary.Add(poolInfo.poolType, objectPool);
-        }
+        }*/
 
         public GameObject GetObjectFromPool(string poolType)
         {

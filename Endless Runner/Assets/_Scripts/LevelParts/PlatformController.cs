@@ -12,7 +12,7 @@ namespace TheCreators.Platforms
 
         private IEnumerator DeactivateWhenOutOfCamera()
         {
-            yield return new WaitForSeconds(15f);
+            yield return new WaitForSeconds(5f);
             gameObject.SetActive(false);
         }
     }

@@ -3,11 +3,10 @@ using UnityEngine;
 
 namespace TheCreators.ScriptableObjects.Platforms
 {
-    [CreateAssetMenu(fileName = "NewBasicPlatform", menuName = "Platforms/BasicPlatform")]
-    public class Platform : ScriptableObject
+    [CreateAssetMenu(fileName = "NewLevelPart", menuName = "LevelPart")]
+    public class LevelPart : ScriptableObject
     {
         public Tag tag;
         public GameObject prefab;
-        public Vector2 endPosition;
     }
 }

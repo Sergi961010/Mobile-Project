@@ -18,8 +18,7 @@ namespace TheCreators.ScriptableObjects
 
         public float CalculateJumpXDistance(float gravityModifier)
         {
-            float gravityModified = Physics2D.gravity.magnitude * gravityModifier;
-            float timeOfJump = 2 * jumpForce / gravityModified;
+            float timeOfJump = 2 * jumpForce / gravityModifier;
             float xDistanceTravelled = timeOfJump * Speed;
             return xDistanceTravelled;
         }

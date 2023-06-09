@@ -899,7 +899,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300857799}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.31, y: -1.599999, z: -10}
+  m_LocalPosition: {x: 4.1525197, y: -1.599999, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -985,7 +985,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 315906195}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.31, y: -1.599999, z: -10}
+  m_LocalPosition: {x: 4.1525197, y: -1.599999, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1486,10 +1486,6 @@ PrefabInstance:
       propertyPath: _staminaProgressUI
       value: 
       objectReference: {fileID: 400458129}
-    - target: {fileID: 8917580688026551182, guid: 70942685095b3424ca8f26b97e810379, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1802262464, guid: a407a3b3fefdc4b4595de46072f1ba58, type: 3}
     - target: {fileID: 8917580688026551183, guid: 70942685095b3424ca8f26b97e810379, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2029,7 +2025,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 509954497920369375, guid: fdc2f01bd8e2ead469a35e3f04725f51, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.37
+      value: -0.72000015
       objectReference: {fileID: 0}
     - target: {fileID: 509954497920369375, guid: fdc2f01bd8e2ead469a35e3f04725f51, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2869,7 +2865,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 509954497920369375, guid: fdc2f01bd8e2ead469a35e3f04725f51, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.18
+      value: 9.09
       objectReference: {fileID: 0}
     - target: {fileID: 509954497920369375, guid: fdc2f01bd8e2ead469a35e3f04725f51, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3282,7 +3278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: -1.8373828, y: 6.1283016, z: 0}
+  m_TrackedObjectOffset: {x: -3, y: 6.1283016, z: 0}
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
@@ -3600,7 +3596,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1723163797}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 34}
+  m_LocalPosition: {x: 0, y: 0, z: 34.15}
   m_LocalScale: {x: 1, y: 1, z: 40}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4275,7 +4271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 509954497920369375, guid: fdc2f01bd8e2ead469a35e3f04725f51, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.28
+      value: 4.19
       objectReference: {fileID: 0}
     - target: {fileID: 509954497920369375, guid: fdc2f01bd8e2ead469a35e3f04725f51, type: 3}
       propertyPath: m_LocalPosition.y

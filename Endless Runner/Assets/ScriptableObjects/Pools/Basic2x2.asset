@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   poolType: Basic2x2
   size: 10
-  prefab: {fileID: 5334599385191814337, guid: 3ef6f9ba552ffc3458649c99876e1c65, type: 3}
+  prefab: {fileID: 2425247845215489570, guid: 63d42cd4ee36aa3489577bb3d6a03318, type: 3}
   containerName: Basic2x2

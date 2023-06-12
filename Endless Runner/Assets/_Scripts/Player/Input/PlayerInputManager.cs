@@ -1,4 +1,3 @@
-using System;
 using TheCreators.CustomEventSystem;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -13,10 +12,11 @@ namespace TheCreators.Player
         private InputAction _jumpAction;
         private InputAction _flyAction;
         private InputAction _primaryTouch;
-        private InputAction _primaryPosition;
 
         public float JumpBufferCounter;
         private float _jumpBufferTime = .2f;
+
+        private Vector2 _lastPrimaryTouchPosition;
 
         private Camera _mainCamera;
 
@@ -27,7 +27,6 @@ namespace TheCreators.Player
             _jumpAction = _playerControls.Mobile.Jump;
             _flyAction = _playerControls.Mobile.Fly;
             _primaryTouch = _playerControls.Mobile.PrimaryTouch;
-            _primaryPosition = _playerControls.Mobile.PrimaryPosition;
 
             _mainCamera = Camera.main;
         }
@@ -37,8 +36,9 @@ namespace TheCreators.Player
             _jumpAction.performed += OnJumpAction;
             _flyAction.performed += OnFlyAction;
             _flyAction.canceled += OnCancelFlyAction;
-            _primaryTouch.started += ctx => StartPrimaryTouch(ctx);
-            _primaryTouch.canceled += ctx => EndPrimaryTouch(ctx);
+            _primaryTouch.started += StartPrimaryTouch;
+            _primaryTouch.performed += ctx => _lastPrimaryTouchPosition = ctx.ReadValue<Vector2>();
+            _primaryTouch.canceled += EndPrimaryTouch;
         }
         private void OnDisable()
         {
@@ -71,24 +71,16 @@ namespace TheCreators.Player
         }
         private void StartPrimaryTouch(InputAction.CallbackContext context)
         {
-            Vector2 screenPosition = _primaryPosition.ReadValue<Vector2>();
-            Vector2 worldPosition = ScreenToWorld(_mainCamera, screenPosition);
+            Vector2 screenPosition = _primaryTouch.ReadValue<Vector2>();
             float startTime = (float)context.startTime;
-            GameEvent.StartTouch.Invoke(worldPosition, startTime);
+            GameEvent.StartTouch.Invoke(screenPosition, startTime);
 
         }
         private void EndPrimaryTouch(InputAction.CallbackContext context)
         {
-            Vector2 screenPosition = _primaryPosition.ReadValue<Vector2>();
-            Vector2 worldPosition = ScreenToWorld(_mainCamera, screenPosition);
             float startTime = (float)context.startTime;
-            GameEvent.EndTouch.Invoke(worldPosition, startTime);
+            GameEvent.EndTouch.Invoke(_lastPrimaryTouchPosition, startTime);
 
-        }
-        private Vector3 ScreenToWorld(Camera camera, Vector3 position)
-        {
-            position.z = camera.nearClipPlane;
-            return camera.ScreenToWorldPoint(position);
         }
     }
 }

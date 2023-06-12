@@ -47,21 +47,12 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""PrimaryTouch"",
-                    ""type"": ""Button"",
-                    ""id"": ""7879493f-05e5-4167-afa4-7c189d40443f"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": ""Press"",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""PrimaryPosition"",
-                    ""type"": ""PassThrough"",
+                    ""type"": ""Value"",
                     ""id"": ""b6caf3a4-a987-40cf-b50f-58c5b163e515"",
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
-                    ""initialStateCheck"": false
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -88,26 +79,37 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": """",
-                    ""id"": ""63dae335-7bca-4e13-b621-c150db98e3b6"",
-                    ""path"": ""<Touchscreen>/primaryTouch/press"",
+                    ""name"": ""Touch"",
+                    ""id"": ""a095f35f-3cea-4253-b728-4cf8586ee0a9"",
+                    ""path"": ""OneModifier"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PrimaryTouch"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""modifier"",
+                    ""id"": ""956f4687-b224-43dd-8036-75fc7a00844e"",
+                    ""path"": ""<Touchscreen>/touch0/press"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""PrimaryTouch"",
                     ""isComposite"": false,
-                    ""isPartOfComposite"": false
+                    ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": """",
-                    ""id"": ""021d5c23-a788-4f48-8df1-68ac128ffe87"",
-                    ""path"": ""<Touchscreen>/primaryTouch/position"",
+                    ""name"": ""binding"",
+                    ""id"": ""9043b252-ab04-4a1c-a417-cf3cb999465e"",
+                    ""path"": ""<Touchscreen>/touch0/position"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""PrimaryPosition"",
+                    ""action"": ""PrimaryTouch"",
                     ""isComposite"": false,
-                    ""isPartOfComposite"": false
+                    ""isPartOfComposite"": true
                 }
             ]
         }
@@ -119,7 +121,6 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
         m_Mobile_Jump = m_Mobile.FindAction("Jump", throwIfNotFound: true);
         m_Mobile_Fly = m_Mobile.FindAction("Fly", throwIfNotFound: true);
         m_Mobile_PrimaryTouch = m_Mobile.FindAction("PrimaryTouch", throwIfNotFound: true);
-        m_Mobile_PrimaryPosition = m_Mobile.FindAction("PrimaryPosition", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -182,7 +183,6 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
     private readonly InputAction m_Mobile_Jump;
     private readonly InputAction m_Mobile_Fly;
     private readonly InputAction m_Mobile_PrimaryTouch;
-    private readonly InputAction m_Mobile_PrimaryPosition;
     public struct MobileActions
     {
         private @PlayerControls m_Wrapper;
@@ -190,7 +190,6 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
         public InputAction @Jump => m_Wrapper.m_Mobile_Jump;
         public InputAction @Fly => m_Wrapper.m_Mobile_Fly;
         public InputAction @PrimaryTouch => m_Wrapper.m_Mobile_PrimaryTouch;
-        public InputAction @PrimaryPosition => m_Wrapper.m_Mobile_PrimaryPosition;
         public InputActionMap Get() { return m_Wrapper.m_Mobile; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -209,9 +208,6 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                 @PrimaryTouch.started -= m_Wrapper.m_MobileActionsCallbackInterface.OnPrimaryTouch;
                 @PrimaryTouch.performed -= m_Wrapper.m_MobileActionsCallbackInterface.OnPrimaryTouch;
                 @PrimaryTouch.canceled -= m_Wrapper.m_MobileActionsCallbackInterface.OnPrimaryTouch;
-                @PrimaryPosition.started -= m_Wrapper.m_MobileActionsCallbackInterface.OnPrimaryPosition;
-                @PrimaryPosition.performed -= m_Wrapper.m_MobileActionsCallbackInterface.OnPrimaryPosition;
-                @PrimaryPosition.canceled -= m_Wrapper.m_MobileActionsCallbackInterface.OnPrimaryPosition;
             }
             m_Wrapper.m_MobileActionsCallbackInterface = instance;
             if (instance != null)
@@ -225,9 +221,6 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                 @PrimaryTouch.started += instance.OnPrimaryTouch;
                 @PrimaryTouch.performed += instance.OnPrimaryTouch;
                 @PrimaryTouch.canceled += instance.OnPrimaryTouch;
-                @PrimaryPosition.started += instance.OnPrimaryPosition;
-                @PrimaryPosition.performed += instance.OnPrimaryPosition;
-                @PrimaryPosition.canceled += instance.OnPrimaryPosition;
             }
         }
     }
@@ -237,6 +230,5 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
         void OnJump(InputAction.CallbackContext context);
         void OnFly(InputAction.CallbackContext context);
         void OnPrimaryTouch(InputAction.CallbackContext context);
-        void OnPrimaryPosition(InputAction.CallbackContext context);
     }
 }

@@ -8,6 +8,7 @@ namespace TheCreators.Player.Abilities
     {
         [SerializeField] private JumpData _jumpData;
         private CollisionSenses _collisionSenses;
+        [SerializeField] private PlayerInputManager _inputManager;
         private Rigidbody2D _rigidbody;
 
         private void Awake()
@@ -19,12 +20,14 @@ namespace TheCreators.Player.Abilities
         {
             _rigidbody.gravityScale = _jumpData.gravityScale;
         }
-
         private void OnEnable()
         {
             GameEvent.OnPerformJump.AddListener(OnJumpInput);
         }
-
+        private void Update()
+        {
+            
+        }
         private void FixedUpdate()
         {
             if (_collisionSenses.Grounded)
@@ -34,12 +37,12 @@ namespace TheCreators.Player.Abilities
             else if (_rigidbody.velocity.y < 0)
                 _rigidbody.gravityScale = _jumpData.gravityScale * _jumpData.fallGravityMultiplier;
         }
-
         public void OnJumpInput()
         {
             if (_collisionSenses.Grounded)
             {
                 _rigidbody.AddForce(Vector2.up * _jumpData.jumpForce, ForceMode2D.Impulse);
+                _inputManager.JumpBufferCounter = 0f;
             }
         }
     }

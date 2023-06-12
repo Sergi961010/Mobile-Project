@@ -321,3 +321,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _jumpData: {fileID: 11400000, guid: 8d2031c57a501f441ac0beceddb550bb, type: 2}
+  _inputManager: {fileID: 0}

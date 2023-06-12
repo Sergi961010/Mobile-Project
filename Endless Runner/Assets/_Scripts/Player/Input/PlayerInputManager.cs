@@ -15,6 +15,9 @@ namespace TheCreators.Player
         private InputAction _primaryTouch;
         private InputAction _primaryPosition;
 
+        public float JumpBufferCounter;
+        private float _jumpBufferTime = .2f;
+
         private Camera _mainCamera;
 
         private void Awake()
@@ -28,7 +31,6 @@ namespace TheCreators.Player
 
             _mainCamera = Camera.main;
         }
-
         private void OnEnable()
         {
             _playerControls.Enable();
@@ -38,7 +40,6 @@ namespace TheCreators.Player
             _primaryTouch.started += ctx => StartPrimaryTouch(ctx);
             _primaryTouch.canceled += ctx => EndPrimaryTouch(ctx);
         }
-
         private void OnDisable()
         {
             _playerControls.Disable();
@@ -48,23 +49,26 @@ namespace TheCreators.Player
             _primaryTouch.started -= StartPrimaryTouch;
             _primaryTouch.canceled -= EndPrimaryTouch;
         }
-
+        private void Update()
+        {
+            JumpBufferCounter -= Time.deltaTime;
+        }
         private void OnCancelFlyAction(InputAction.CallbackContext context)
         {
             GameEvent.OnCancelFly.Invoke();
         }
-
         private void OnJumpAction(InputAction.CallbackContext context)
         {
             if (!EventSystem.current.IsPointerOverGameObject())
+            {
                 GameEvent.OnPerformJump.Invoke();
+                JumpBufferCounter = _jumpBufferTime;
+            }
         }
-
         private void OnFlyAction(InputAction.CallbackContext context)
         {
             GameEvent.OnPerformFly.Invoke();
         }
-
         private void StartPrimaryTouch(InputAction.CallbackContext context)
         {
             Vector2 screenPosition = _primaryPosition.ReadValue<Vector2>();
@@ -73,7 +77,6 @@ namespace TheCreators.Player
             GameEvent.StartTouch.Invoke(worldPosition, startTime);
 
         }
-
         private void EndPrimaryTouch(InputAction.CallbackContext context)
         {
             Vector2 screenPosition = _primaryPosition.ReadValue<Vector2>();
@@ -82,7 +85,6 @@ namespace TheCreators.Player
             GameEvent.EndTouch.Invoke(worldPosition, startTime);
 
         }
-
         private Vector3 ScreenToWorld(Camera camera, Vector3 position)
         {
             position.z = camera.nearClipPlane;

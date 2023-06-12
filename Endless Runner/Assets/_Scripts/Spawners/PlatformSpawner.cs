@@ -11,21 +11,14 @@ namespace TheCreators.Platforms
 
         [SerializeField] private Transform _startingPlatform;
         [SerializeField] private Transform _playerTransform;
-        [SerializeField] private Transform _spawnPoint;
 
-        [SerializeField] private PlayerData _playerData;
-
-        [SerializeField] private List<PoolInfo> _poolsInfo;
-
-        [SerializeField] public GameObject[] prefabs;
+        [SerializeField] private GameObject[] prefabs;
 
         private Vector2 _lastEndPosition;
-        private void Awake()
-        {
-            _lastEndPosition = _startingPlatform.Find("EndPosition").position;
-        }
+
         private void Start()
         {
+            _lastEndPosition = _startingPlatform.Find("EndPosition").position;
         }
 
         private void Update()
@@ -40,33 +33,11 @@ namespace TheCreators.Platforms
         {
             int random = Random.Range(0, prefabs.Length);
             GameObject platformToSpawn = PoolsManager.Instance.GetObject(prefabs[random]);
-            float platformToSpawnHalfSize = platformToSpawn.GetComponent<BoxCollider2D>().size.x / 2;
-            Vector2 spawnPosition = new(_lastEndPosition.x + platformToSpawnHalfSize, _lastEndPosition.y);
+            //float platformToSpawnHalfSize = platformToSpawn.GetComponent<BoxCollider2D>().size.x / 2;
+            Vector2 spawnPosition = new(_lastEndPosition.x /*+ platformToSpawnHalfSize*/, _lastEndPosition.y);
             platformToSpawn.SetActive(true);
             platformToSpawn.transform.position = spawnPosition;
             _lastEndPosition = platformToSpawn.transform.Find("EndPosition").position;
         }
-
-        private string GetRandomPoolName()
-        {
-            int random = Random.Range(0, _poolsInfo.Count);
-            string result = _poolsInfo[random].poolType;
-            return result;
-        }
-
-        private Vector2 AddGapOnX(Vector2 position)
-        {
-            position.x += GetRandomBetweenJumpDistances();
-            return position;
-        }
-
-        private float GetRandomBetweenJumpDistances()
-        {
-            float minJumpXDistance = _playerData.CalculateJumpXDistance(_playerData.jumpCutGravityModifier);
-            float maxJumpXDistance = _playerData.CalculateJumpXDistance(_playerData.defaultGravityModifier);
-            float result = Random.Range(minJumpXDistance, maxJumpXDistance);
-            return result;
-        }
-
     }
 }

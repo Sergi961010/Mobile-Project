@@ -1,11 +1,8 @@
-using UnityEngine;
-
 namespace TheCreators.Player.StateMachine
 {
-    public class FlyState : State
+    public class AbilityState : State
     {
-        public FlyState(StateMachine currentContext, StateFactory stateFactory) : base(currentContext, stateFactory) { }
-
+        public AbilityState(StateMachine currentContext, StateFactory stateFactory) : base(currentContext, stateFactory) { }
         public override void Enter()
         {
             throw new System.NotImplementedException();

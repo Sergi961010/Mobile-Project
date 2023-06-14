@@ -6,11 +6,11 @@ namespace TheCreators.Player.StateMachine
     {
         public DigState(StateMachine currentContext, StateFactory stateFactory) : base(currentContext, stateFactory) { }
 
-        public override void EnterState()
+        public override void Enter()
         {
             throw new System.NotImplementedException();
         }
-        public override void UpdateState()
+        public override void LogicUpdate()
         {
             throw new System.NotImplementedException();
         }
@@ -19,6 +19,11 @@ namespace TheCreators.Player.StateMachine
             throw new System.NotImplementedException();
         }
         public override void CheckSwitchState()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public override void PhysicsUpdate()
         {
             throw new System.NotImplementedException();
         }

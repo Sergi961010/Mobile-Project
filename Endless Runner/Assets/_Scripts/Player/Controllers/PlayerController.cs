@@ -5,7 +5,7 @@ namespace TheCreators.Player
 {
     public class PlayerController : MonoBehaviour
     {
-        [SerializeField] private PlayerData _playerData;
+        [SerializeField] private RunData _playerData;
 
         [SerializeField] private CollisionSenses _collisionSenses;
         private Rigidbody2D _rigidbody;

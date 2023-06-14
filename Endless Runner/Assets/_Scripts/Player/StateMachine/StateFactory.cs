@@ -2,8 +2,7 @@ namespace TheCreators.Player.StateMachine
 {
     public class StateFactory
     {
-        StateMachine _context;
-
+        private readonly StateMachine _context;
         public StateFactory(StateMachine currentContext)
         {
             _context = currentContext;

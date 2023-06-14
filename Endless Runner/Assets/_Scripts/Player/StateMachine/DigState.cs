@@ -4,6 +4,8 @@ namespace TheCreators.Player.StateMachine
 {
     public class DigState : State
     {
+        public DigState(StateMachine currentContext, StateFactory stateFactory) : base(currentContext, stateFactory) { }
+
         public override void EnterState()
         {
             throw new System.NotImplementedException();

@@ -11,19 +11,19 @@ namespace TheCreators.Player.StateMachine
 
         public State Run()
         {
-            return new RunState();
+            return new RunState(_context, this);
         }
         public State Jump()
         {
-            return new JumpState();
+            return new JumpState(_context, this);
         }
         public State Fly()
         {
-            return new FlyState();
+            return new FlyState(_context, this);
         }
         public State Dig()
         {
-            return new DigState();
+            return new DigState(_context, this);
         }
     }
 }

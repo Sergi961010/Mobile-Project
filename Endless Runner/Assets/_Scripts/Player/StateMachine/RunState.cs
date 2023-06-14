@@ -6,21 +6,36 @@ namespace TheCreators.Player.StateMachine
     {
         public RunState(StateMachine currentContext, StateFactory stateFactory) : base (currentContext, stateFactory) { }
 
-        public override void EnterState()
+        public override void Enter()
         {
-            throw new System.NotImplementedException();
+            HandleGravity();
+            Debug.Log("Enter Run");
         }
-        public override void UpdateState()
+        public override void LogicUpdate()
         {
-            throw new System.NotImplementedException();
+            CheckSwitchState();
         }
-        public override void ExitState()
+        public override void PhysicsUpdate()
         {
-            throw new System.NotImplementedException();
+            HandleRun();
         }
+        public override void ExitState() { }
         public override void CheckSwitchState()
         {
-            throw new System.NotImplementedException();
+            if (_context.InputManager.JumpPressed)
+            {
+                _context.InputManager.UseJumpInput();
+                Debug.Log("Switch to Jump");
+                SwitchState(_stateFactory.Jump());
+            }
+        }
+        private void HandleRun()
+        {
+            _context.Rigidbody.velocity = new Vector2(_context.RunData.Speed, _context.Rigidbody.velocity.y);
+        }
+        private void HandleGravity()
+        {
+            _context.Rigidbody.gravityScale = _context.JumpData.gravityScale;
         }
     }
 }

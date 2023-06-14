@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace TheCreators.Player.StateMachine
 {
     public abstract class State
@@ -11,14 +13,15 @@ namespace TheCreators.Player.StateMachine
             _stateFactory = stateFactory;
         }
 
-        public abstract void EnterState();
-        public abstract void UpdateState();
+        public abstract void Enter();
+        public abstract void LogicUpdate();
+        public abstract void PhysicsUpdate();
         public abstract void ExitState();
         public abstract void CheckSwitchState();
-        private void SwitchState(State newState)
+        protected void SwitchState(State newState)
         {
             ExitState();
-            newState.EnterState();
+            newState.Enter();
             _context.CurrentState = newState;
         }
     }

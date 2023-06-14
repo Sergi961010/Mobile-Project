@@ -20,3 +20,5 @@ MonoBehaviour:
   jumpTimeToApex: 0.5
   jumpHangTimeThreshold: 0.1
   jumpHangGravityMultiplier: 0.5
+  jumpBufferCounter: -2.979569
+  jumpBufferTime: 1

@@ -24,5 +24,9 @@ namespace TheCreators.Player.StateMachine
         {
             return new DigState(_context, this);
         }
+        public State Fall()
+        {
+            return new FallState(_context, this);
+        }
     }
 }

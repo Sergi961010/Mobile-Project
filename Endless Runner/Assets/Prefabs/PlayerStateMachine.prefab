@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _groundCheck: {fileID: 8917580687735459861}
-  _groundCheckRadius: 0.11
+  _groundCheckRadius: 0.1
   _groundLayer:
     serializedVersion: 2
     m_Bits: 512

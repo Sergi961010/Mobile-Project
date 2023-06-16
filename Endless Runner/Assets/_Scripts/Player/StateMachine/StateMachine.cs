@@ -1,4 +1,5 @@
 using TheCreators.CustomEventSystem;
+using TheCreators.Player.Input;
 using TheCreators.ScriptableObjects;
 using UnityEngine;
 
@@ -28,7 +29,6 @@ namespace TheCreators.Player.StateMachine
         private void Update()
         {
             CurrentState.LogicUpdate();
-            Debug.Log(CurrentState);
         }
         private void FixedUpdate()
         {

@@ -1,4 +1,5 @@
 using TheCreators.CustomEventSystem;
+using TheCreators.Player.Input;
 using TheCreators.ScriptableObjects;
 using UnityEngine;
 
@@ -33,7 +34,7 @@ namespace TheCreators.Player.Abilities
             else if (_rigidbody.velocity.y < 0)
                 _rigidbody.gravityScale = _jumpData.gravityScale * _jumpData.fallGravityMultiplier;
         }
-        public void OnJumpInput(bool value)
+        public void OnJumpInput()
         {
             if (_collisionSenses.Grounded)
             {

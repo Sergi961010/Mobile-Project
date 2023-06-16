@@ -12,7 +12,6 @@ namespace TheCreators.Player.StateMachine
             _context = currentContext;
             _stateFactory = stateFactory;
         }
-
         public abstract void Enter();
         public abstract void LogicUpdate();
         public abstract void PhysicsUpdate();

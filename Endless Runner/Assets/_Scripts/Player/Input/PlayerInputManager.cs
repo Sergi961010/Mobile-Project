@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
-namespace TheCreators.Player
+namespace TheCreators.Player.Input
 {
     public class PlayerInputManager : MonoBehaviour
     {
@@ -14,11 +14,13 @@ namespace TheCreators.Player
         private InputAction _primaryTouch;
 
         private Vector2 _lastPrimaryTouchPosition;
-
-        public bool JumpPressed { get; private set; }
-
+        public SwipeDetection SwipeDetection { get; private set; }
+        public bool JumpPerformed { get; private set; }
+        public bool FlyPerformed { get; private set; }
         private void Awake()
         {
+            SwipeDetection = GetComponent<SwipeDetection>();
+
             _playerControls = new PlayerControls();
 
             _jumpAction = _playerControls.Mobile.Jump;
@@ -45,22 +47,16 @@ namespace TheCreators.Player
             _primaryTouch.started -= StartPrimaryTouch;
             _primaryTouch.canceled -= EndPrimaryTouch;
         }
-        private void OnCancelFlyAction(InputAction.CallbackContext context)
-        {
-            GameEvent.OnCancelFly.Invoke();
-        }
         private void OnJumpInput(InputAction.CallbackContext context)
         {
             if (!EventSystem.current.IsPointerOverGameObject())
             {
-                JumpPressed = context.ReadValueAsButton();
+                JumpPerformed = context.ReadValueAsButton();
             }
         }
-        public void UseJumpInput() => JumpPressed = false;
-        private void OnFlyAction(InputAction.CallbackContext context)
-        {
-            GameEvent.OnPerformFly.Invoke();
-        }
+        public void UseJumpInput() => JumpPerformed = false;
+        private void OnFlyAction(InputAction.CallbackContext context) => FlyPerformed = true;
+        private void OnCancelFlyAction(InputAction.CallbackContext context) => FlyPerformed = false;
         private void StartPrimaryTouch(InputAction.CallbackContext context)
         {
             Vector2 screenPosition = _primaryTouch.ReadValue<Vector2>();

@@ -3439,22 +3439,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 231426259}
     m_Modifications:
-    - target: {fileID: 3403458249861174368, guid: e1e094ba20c7e2b4eb89955310031a51, type: 3}
-      propertyPath: _groundCheckRadius
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 3723861591870967510, guid: e1e094ba20c7e2b4eb89955310031a51, type: 3}
       propertyPath: <InputManager>k__BackingField
       value: 
       objectReference: {fileID: 1383797609}
-    - target: {fileID: 8917580687499550225, guid: e1e094ba20c7e2b4eb89955310031a51, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8917580687735459861, guid: e1e094ba20c7e2b4eb89955310031a51, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.357
-      objectReference: {fileID: 0}
     - target: {fileID: 8917580688026551183, guid: e1e094ba20c7e2b4eb89955310031a51, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -3502,10 +3490,6 @@ PrefabInstance:
     - target: {fileID: 8917580688026551216, guid: e1e094ba20c7e2b4eb89955310031a51, type: 3}
       propertyPath: m_Name
       value: PlayerStateMachine
-      objectReference: {fileID: 0}
-    - target: {fileID: 8917580688026551216, guid: e1e094ba20c7e2b4eb89955310031a51, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1e094ba20c7e2b4eb89955310031a51, type: 3}

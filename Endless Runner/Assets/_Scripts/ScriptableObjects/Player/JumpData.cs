@@ -12,7 +12,7 @@ namespace TheCreators.ScriptableObjects
         [Header("Jump")]
         [ReadOnly] public float jumpForce;
         public float jumpHeight = 2f;
-        public float jumpTimeToApex = 0.5f;
+        public float jumpTimeToApex = .5f;
         public float jumpHangTimeThreshold = .1f;
         [Range(0f, 1)] public float jumpHangGravityMultiplier = .5f;
         private void OnValidate()

@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
-namespace TheCreators.Player
+namespace TheCreators.Player.Input
 {
     public class PlayerInputManager : MonoBehaviour
     {
@@ -13,27 +13,25 @@ namespace TheCreators.Player
         private InputAction _flyAction;
         private InputAction _primaryTouch;
 
-        public float JumpBufferCounter;
-        private float _jumpBufferTime = .2f;
-
         private Vector2 _lastPrimaryTouchPosition;
-
-        private Camera _mainCamera;
-
+        public SwipeDetection SwipeDetection { get; private set; }
+        public bool JumpPerformed { get; private set; }
+        public bool FlyPerformed { get; private set; }
         private void Awake()
         {
+            SwipeDetection = GetComponent<SwipeDetection>();
+
             _playerControls = new PlayerControls();
 
             _jumpAction = _playerControls.Mobile.Jump;
             _flyAction = _playerControls.Mobile.Fly;
             _primaryTouch = _playerControls.Mobile.PrimaryTouch;
-
-            _mainCamera = Camera.main;
         }
         private void OnEnable()
         {
             _playerControls.Enable();
-            _jumpAction.performed += OnJumpAction;
+            _jumpAction.started += OnJumpInput;
+            _jumpAction.canceled += OnJumpInput;
             _flyAction.performed += OnFlyAction;
             _flyAction.canceled += OnCancelFlyAction;
             _primaryTouch.started += StartPrimaryTouch;
@@ -43,32 +41,22 @@ namespace TheCreators.Player
         private void OnDisable()
         {
             _playerControls.Disable();
-            _jumpAction.performed -= OnJumpAction;
+            _jumpAction.performed -= OnJumpInput;
             _flyAction.performed -= OnFlyAction;
             _flyAction.canceled -= OnCancelFlyAction;
             _primaryTouch.started -= StartPrimaryTouch;
             _primaryTouch.canceled -= EndPrimaryTouch;
         }
-        private void Update()
-        {
-            JumpBufferCounter -= Time.deltaTime;
-        }
-        private void OnCancelFlyAction(InputAction.CallbackContext context)
-        {
-            GameEvent.OnCancelFly.Invoke();
-        }
-        private void OnJumpAction(InputAction.CallbackContext context)
+        private void OnJumpInput(InputAction.CallbackContext context)
         {
             if (!EventSystem.current.IsPointerOverGameObject())
             {
-                GameEvent.OnPerformJump.Invoke();
-                JumpBufferCounter = _jumpBufferTime;
+                JumpPerformed = context.ReadValueAsButton();
             }
         }
-        private void OnFlyAction(InputAction.CallbackContext context)
-        {
-            GameEvent.OnPerformFly.Invoke();
-        }
+        public void UseJumpInput() => JumpPerformed = false;
+        private void OnFlyAction(InputAction.CallbackContext context) => FlyPerformed = true;
+        private void OnCancelFlyAction(InputAction.CallbackContext context) => FlyPerformed = false;
         private void StartPrimaryTouch(InputAction.CallbackContext context)
         {
             Vector2 screenPosition = _primaryTouch.ReadValue<Vector2>();

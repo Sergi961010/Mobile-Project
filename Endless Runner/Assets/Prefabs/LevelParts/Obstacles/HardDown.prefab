@@ -40,10 +40,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8980366224617906998}
-  - component: {fileID: 4861186279936906956}
   - component: {fileID: 418130635363048557}
   m_Layer: 0
-  m_Name: Center_2Units
+  m_Name: HardDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67,18 +66,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4861186279936906956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7482232070326527552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9211f0216849dbd4394bc7a686eca699, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &418130635363048557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,7 +310,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7272905618833520862, guid: c421d83dea5b60040ad456d8e063b6e0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.5
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 7272905618833520862, guid: c421d83dea5b60040ad456d8e063b6e0, type: 3}
       propertyPath: m_LocalPosition.y

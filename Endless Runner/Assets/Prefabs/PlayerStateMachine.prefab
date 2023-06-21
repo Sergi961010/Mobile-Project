@@ -93,12 +93,12 @@ GameObject:
   - component: {fileID: 8917580688026551182}
   - component: {fileID: 8917580688026551217}
   - component: {fileID: 8917580688026551181}
-  - component: {fileID: 8917580688026551180}
   - component: {fileID: 8917580688026551176}
   - component: {fileID: 3723861591870967510}
+  - component: {fileID: 566413531902664967}
   m_Layer: 0
   m_Name: PlayerStateMachine
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -212,32 +212,6 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!61 &8917580688026551180
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8917580688026551216}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.00020590425, y: 0.00007522106}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.66, y: 0.72}
-    newSize: {x: 0.16, y: 0.16}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.5263507, y: 0.7122991}
-  m_EdgeRadius: 0
 --- !u!114 &8917580688026551176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,3 +240,19 @@ MonoBehaviour:
   <InputManager>k__BackingField: {fileID: 0}
   <RunData>k__BackingField: {fileID: 11400000, guid: 0ce8e4fecbf928449a66acc8fdebed7c, type: 2}
   <JumpData>k__BackingField: {fileID: 11400000, guid: 8d2031c57a501f441ac0beceddb550bb, type: 2}
+--- !u!70 &566413531902664967
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8917580688026551216}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00357759, y: 0.01101011}
+  m_Size: {x: 0.5383637, y: 0.6622046}
+  m_Direction: 0

@@ -14,11 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gravityStrength: -16
   gravityScale: 1.6309887
-  fallGravityMultiplier: 2
+  fallGravityMultiplier: 3
   jumpForce: 8
   jumpHeight: 2
   jumpTimeToApex: 0.5
   jumpHangTimeThreshold: 0.1
   jumpHangGravityMultiplier: 0.5
-  jumpBufferCounter: -2.979569
-  jumpBufferTime: 1

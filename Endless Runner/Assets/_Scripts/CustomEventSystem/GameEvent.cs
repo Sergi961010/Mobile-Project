@@ -15,5 +15,8 @@ namespace TheCreators.CustomEventSystem
         public static readonly CustomEvent OnGroundCollision = new();
 
         public static readonly CustomEvent OnPlatformSpawn = new();
+
+        public static readonly CustomEvent OnScreenObstacleTrigger = new();
+        public static readonly CustomEvent OnAlertFinished = new();
     }
 }

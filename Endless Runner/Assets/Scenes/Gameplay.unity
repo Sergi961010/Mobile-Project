@@ -3360,6 +3360,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caeec3c8372e10f499269677437d8412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!50 &1400289599
 Rigidbody2D:
   serializedVersion: 4

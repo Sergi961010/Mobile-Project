@@ -1,37 +1,35 @@
-using UnityEngine;
-
-namespace TheCreators.Player.StateMachine
+namespace TheCreators.Player
 {
     public class FallState : State
     {
-        public FallState(StateMachine currentContext, StateFactory stateFactory) : base(currentContext, stateFactory) { }
-        public override void CheckSwitchState()
-        {
-            if (_context.InputManager.FlyPerformed)
-                SwitchState(_stateFactory.Fly());
-            if (_context.CollisionSenses.Grounded)
-                SwitchState(_stateFactory.Run());
-        }
+        private float fallGravityMultiplier = 3f;
+        public FallState(Player currentContext) : base(currentContext) { }
         public override void Enter()
         {
-            Debug.Log("Enter Fall");
+            ApplyGravityMultiplier();
         }
         public override void ExitState()
         {
-            Debug.Log("Exit Fall");
+            CancelGravityMultiplier();
         }
         public override void LogicUpdate()
         {
-            CheckSwitchState();
+            if (_context.CollisionSenses.Grounded)
+            {
+                _context.StateMachine.SwitchState(_context.StateFactory.Run());
+            }
+            if (_context.InputManager.FlyPerformed)
+            {
+                _context.StateMachine.SwitchState(_context.StateFactory.Fly());
+            }
         }
-        public override void PhysicsUpdate()
+        private void ApplyGravityMultiplier()
         {
-            HandleGravity();
+            _context.RB.gravityScale *= fallGravityMultiplier;
         }
-
-        private void HandleGravity()
+        private void CancelGravityMultiplier()
         {
-            _context.Rigidbody.gravityScale = _context.JumpData.gravityScale * _context.JumpData.fallGravityMultiplier;
+            _context.RB.gravityScale /= fallGravityMultiplier;
         }
     }
 }

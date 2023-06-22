@@ -2,17 +2,16 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-namespace TheCreators.Player.StateMachine
+namespace TheCreators.Player
 {
     public class DigState : State
     {
-        private readonly float _undergroundYPosition = -3.15f;
-        private readonly float _surfaceYPosition = -2.06f;
-        private readonly float duration = 1f;
+        private readonly float _undergroundYPosition = -3.2f;
+        private readonly float _surfaceYPosition = -2f;
+        private readonly float duration = .5f;
         private float elapsedTime;
         private bool burrow;
-        private bool unburrow;
-        public DigState(StateMachine currentContext, StateFactory stateFactory) : base(currentContext, stateFactory) { }
+        public DigState(Player currentContext) : base(currentContext) { }
         public override void Enter()
         {
             Debug.Log("Enter Dig");
@@ -23,10 +22,10 @@ namespace TheCreators.Player.StateMachine
             Vector2 newPosition = _context.transform.position;
             float percentageComplete = elapsedTime / duration;
             elapsedTime += Time.deltaTime;
-            newPosition.x = _context.transform.position.x + _context.RunData.Speed * Time.deltaTime;
+            newPosition.x = _context.transform.position.x + _context.RB.velocity.x * Time.deltaTime;
             newPosition.y = Mathf.Lerp(_surfaceYPosition, _undergroundYPosition, percentageComplete);
-            _context.Rigidbody.isKinematic = true;
-            _context.Rigidbody.MovePosition(newPosition);
+            _context.RB.isKinematic = true;
+            _context.RB.MovePosition(newPosition);
 
             if (elapsedTime >= duration)
             {
@@ -39,31 +38,15 @@ namespace TheCreators.Player.StateMachine
             Vector2 newPosition = _context.transform.position;
             float percentageComplete = elapsedTime / duration;
             elapsedTime += Time.deltaTime;
-            newPosition.x = _context.transform.position.x + _context.RunData.Speed * Time.deltaTime;
+            newPosition.x = _context.transform.position.x + _context.RB.velocity.x * Time.deltaTime;
             newPosition.y = Mathf.Lerp(_undergroundYPosition, _surfaceYPosition, percentageComplete);
-            _context.Rigidbody.MovePosition(newPosition);
+            _context.RB.MovePosition(newPosition);
 
             if (elapsedTime >= duration)
             {
-                _context.Rigidbody.isKinematic = false;
+                _context.RB.isKinematic = false;
                 elapsedTime = 0;
-                _context.InputManager.SwipeDetection.UseUnburrow();
-                SwitchState(_stateFactory.Run());
-            }
-        }
-        public override void LogicUpdate()
-        {
-            //CheckSwitchState();
-        }
-        public override void ExitState()
-        {
-            
-        }
-        public override void CheckSwitchState()
-        {
-            if (_context.InputManager.SwipeDetection.UnburrowPerformed)
-            {
-                SwitchState(_stateFactory.Run());
+                _context.StateMachine.SwitchState(_context.StateFactory.Run());
             }
         }
         public override void PhysicsUpdate()
@@ -74,7 +57,6 @@ namespace TheCreators.Player.StateMachine
             {
                 HandleUnburrow();
             }
-                
         }
     }
 }

@@ -44,6 +44,7 @@ namespace TheCreators.Player.Input
         {
             if(Vector2.Dot(Vector2.down, direction) > _directionThreshold)
             {
+                Debug.Log("Burrow");
                 BurrowPerformed = true;
                 UnburrowPerformed = false;
             }
@@ -54,7 +55,7 @@ namespace TheCreators.Player.Input
                 UnburrowPerformed = true;
             }
         }
-        public void UseBurrow() => BurrowPerformed = false;
-        public void UseUnburrow() => UnburrowPerformed = false;
+        //public void UseBurrow() => BurrowPerformed = false;
+        //public void UseUnburrow() => UnburrowPerformed = false;
     }
 }

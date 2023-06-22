@@ -1,6 +1,6 @@
 namespace TheCreators.Player
 {
-    public class State
+    public abstract class State
     {
         protected Player _context;
         public State(Player currentContext)

@@ -1,32 +1,31 @@
-namespace TheCreators.Player.StateMachine
+namespace TheCreators.Player
 {
     public class StateFactory
     {
-        private readonly StateMachine _context;
-        public StateFactory(StateMachine currentContext)
+        private readonly Player _context;
+        public StateFactory(Player currentContext)
         {
             _context = currentContext;
         }
-
         public State Run()
         {
-            return new RunState(_context, this);
+            return new RunState(_context);
         }
         public State Jump()
         {
-            return new JumpState(_context, this);
+            return new JumpState(_context);
         }
         public State Fly()
         {
-            return new FlyState(_context, this);
+            return new FlyState(_context);
         }
         public State Dig()
         {
-            return new DigState(_context, this);
+            return new DigState(_context);
         }
         public State Fall()
         {
-            return new FallState(_context, this);
+            return new FallState(_context);
         }
     }
 }

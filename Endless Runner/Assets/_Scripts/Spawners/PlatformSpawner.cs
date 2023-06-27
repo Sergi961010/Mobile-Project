@@ -33,8 +33,8 @@ namespace TheCreators.Platforms
         {
             int random = Random.Range(0, prefabs.Length);
             GameObject platformToSpawn = PoolsManager.Instance.GetObject(prefabs[random]);
-            //float platformToSpawnHalfSize = platformToSpawn.GetComponent<BoxCollider2D>().size.x / 2;
-            Vector2 spawnPosition = new(_lastEndPosition.x /*+ platformToSpawnHalfSize*/, _lastEndPosition.y);
+            float platformToSpawnHalfSize = platformToSpawn.GetComponentInChildren<BoxCollider2D>().size.x / 2;
+            Vector2 spawnPosition = new(_lastEndPosition.x + platformToSpawnHalfSize, _lastEndPosition.y);
             platformToSpawn.SetActive(true);
             platformToSpawn.transform.position = spawnPosition;
             _lastEndPosition = platformToSpawn.transform.Find("EndPosition").position;

@@ -8,7 +8,6 @@ namespace TheCreators
         [SerializeField] private Transform _player;
         private float _startPositionX;
         private float _startZ, _spriteWidth;
-        private float _cameraHalfWidth;
         private float DistanceFromPlayer => transform.position.z - _player.position.z;
         private float ClippingPlane => _camera.transform.position.z + (DistanceFromPlayer > 0 ? _camera.farClipPlane : _camera.nearClipPlane);
         private float ParallaxFactor => Mathf.Abs(DistanceFromPlayer / ClippingPlane);
@@ -20,14 +19,13 @@ namespace TheCreators
             _startZ = transform.position.z;
             _spriteWidth = GetComponent<SpriteRenderer>().bounds.size.x;
             _camera = Camera.main;
-            _cameraHalfWidth = _camera.aspect * _camera.orthographicSize;
         }
         void Update()
         {
             transform.position = new Vector3(_startPositionX + TravelDistance, transform.position.y, _startZ);
-            if (OffsetDistance > _startPositionX + _spriteWidth / 2 + _cameraHalfWidth)
+            if (OffsetDistance > _startPositionX + _spriteWidth)
             {
-                _startPositionX += _spriteWidth + _cameraHalfWidth * 2;
+                _startPositionX += _spriteWidth * 2;
             }
         }
     }

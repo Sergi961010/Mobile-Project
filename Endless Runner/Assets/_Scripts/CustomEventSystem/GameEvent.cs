@@ -17,5 +17,7 @@ namespace TheCreators.CustomEventSystem
 
         public static readonly CustomEvent OnScreenObstacleTrigger = new();
         public static readonly CustomEvent OnAlertFinished = new();
+
+        public static readonly CustomEvent OnPlayerDeath = new();
     }
 }

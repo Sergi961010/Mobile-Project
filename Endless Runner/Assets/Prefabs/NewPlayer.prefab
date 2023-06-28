@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8917580687499550225}
   - component: {fileID: 3403458249861174368}
+  - component: {fileID: 2938886491453647298}
   m_Layer: 0
   m_Name: Collisions
   m_TagString: Untagged
@@ -50,6 +51,22 @@ MonoBehaviour:
   _groundLayer:
     serializedVersion: 2
     m_Bits: 512
+--- !u!70 &2938886491453647298
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8917580687499550224}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 41d53d905193f6741a84396fe0e058ba, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0015609264, y: 0.019074768}
+  m_Size: {x: 0.6069341, y: 0.63814956}
+  m_Direction: 0
 --- !u!1 &8917580687735459860
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,9 +109,8 @@ GameObject:
   - component: {fileID: 8917580688026551183}
   - component: {fileID: 8917580688026551182}
   - component: {fileID: 5704432052490463877}
-  - component: {fileID: 1833708021714078648}
   - component: {fileID: 8917580688026551217}
-  - component: {fileID: 2813206924943712319}
+  - component: {fileID: 7425957287951984262}
   m_Layer: 0
   m_Name: NewPlayer
   m_TagString: Untagged
@@ -110,7 +126,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8917580688026551216}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.77, y: -2.23, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -191,22 +207,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!70 &1833708021714078648
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8917580688026551216}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0015609264, y: 0.019074768}
-  m_Size: {x: 0.6069341, y: 0.63814956}
-  m_Direction: 0
 --- !u!95 &8917580688026551217
 Animator:
   serializedVersion: 5
@@ -227,7 +227,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &2813206924943712319
+--- !u!114 &7425957287951984262
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

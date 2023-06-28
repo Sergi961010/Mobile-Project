@@ -11,11 +11,11 @@ namespace TheCreators.Player
         private float gravityScale;
 
         #region States
-        public IState runState;
-        public IState jumpState;
-        public IState fallState;
-        public IState flyState;
-        public IState digState;
+        public NewRunState runState;
+        public NewJumpState jumpState;
+        public NewFallState fallState;
+        public NewFlyState flyState;
+        public NewDigState digState;
         #endregion
 
         public NewPlayerStateMachine StateMachine { get; private set; }

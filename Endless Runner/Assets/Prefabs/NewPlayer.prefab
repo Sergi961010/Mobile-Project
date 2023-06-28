@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _groundCheck: {fileID: 8917580687735459861}
-  _groundCheckRadius: 0.2
+  _groundCheckRadius: 0.1
   _groundLayer:
     serializedVersion: 2
     m_Bits: 512
@@ -74,7 +74,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8917580687735459860}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.46, z: 0}
+  m_LocalPosition: {x: 0, y: -0.297, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -91,11 +91,12 @@ GameObject:
   m_Component:
   - component: {fileID: 8917580688026551183}
   - component: {fileID: 8917580688026551182}
+  - component: {fileID: 5704432052490463877}
+  - component: {fileID: 1833708021714078648}
   - component: {fileID: 8917580688026551217}
-  - component: {fileID: 8917580688026551181}
-  - component: {fileID: 8917580688026551180}
+  - component: {fileID: 2813206924943712319}
   m_Layer: 0
-  m_Name: Player
+  m_Name: NewPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -169,6 +170,43 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &5704432052490463877
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8917580688026551216}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 6200000, guid: 41d53d905193f6741a84396fe0e058ba, type: 2}
+  m_Interpolate: 1
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
+--- !u!70 &1833708021714078648
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8917580688026551216}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0015609264, y: 0.019074768}
+  m_Size: {x: 0.6069341, y: 0.63814956}
+  m_Direction: 0
 --- !u!95 &8917580688026551217
 Animator:
   serializedVersion: 5
@@ -189,50 +227,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!50 &8917580688026551181
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8917580688026551216}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: 41d53d905193f6741a84396fe0e058ba, type: 2}
-  m_Interpolate: 1
-  m_SleepingMode: 0
-  m_CollisionDetection: 1
-  m_Constraints: 4
---- !u!61 &8917580688026551180
-BoxCollider2D:
+--- !u!114 &2813206924943712319
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8917580688026551216}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.00020590425, y: -0.00087845325}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.66, y: 0.72}
-    newSize: {x: 0.16, y: 0.16}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.5263507, y: 0.9233124}
-  m_EdgeRadius: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d42691bbe3979419d16dca13ae6f25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runState: {fileID: 11400000, guid: aafc2e0d253ffd34ca3d4742f9714794, type: 2}
+  jumpState: {fileID: 11400000, guid: 53b3c9e932ade0f4fa26b80c7949cec6, type: 2}
+  fallState: {fileID: 11400000, guid: 105660c44ad88684583e2f13ef24eace, type: 2}
+  flyState: {fileID: 11400000, guid: b3cf32c1fa801de43bb49420051c5260, type: 2}
+  digState: {fileID: 11400000, guid: 62d709d7851c2bd499ecd6e40f1ea885, type: 2}
+  <InputManager>k__BackingField: {fileID: 0}

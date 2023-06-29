@@ -19,5 +19,6 @@ namespace TheCreators.CustomEventSystem
         public static readonly CustomEvent OnAlertFinished = new();
 
         public static readonly CustomEvent OnPlayerDeath = new();
+        public static readonly CustomEvent OnPlayerRevive = new();
     }
 }

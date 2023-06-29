@@ -1,3 +1,4 @@
+using TheCreators.CustomEventSystem;
 using TheCreators.Player.Input;
 using UnityEngine;
 
@@ -45,6 +46,10 @@ namespace TheCreators.Player
             RB.gravityScale = gravityScale;
             StateMachine.Initialize(runState);
         }
+        private void OnEnable()
+        {
+            GameEvent.OnPlayerRevive.AddListener(Revive);
+        }
         private void Update()
         {
             StateMachine.CurrentState.LogicUpdate();
@@ -57,6 +62,10 @@ namespace TheCreators.Player
         {
             gravityStrength = -(2 * jumpHeight) / Mathf.Pow(jumpTimeToApex, 2);
             gravityScale = gravityStrength / Physics2D.gravity.y;
+        }
+        private void Revive()
+        {
+            //TODO: Switch to Revive State 
         }
     }
 }

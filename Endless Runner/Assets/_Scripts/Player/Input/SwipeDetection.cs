@@ -44,13 +44,11 @@ namespace TheCreators.Player.Input
         {
             if(Vector2.Dot(Vector2.down, direction) > _directionThreshold)
             {
-                Debug.Log("Burrow");
                 BurrowPerformed = true;
                 UnburrowPerformed = false;
             }
             if (Vector2.Dot(Vector2.up, direction) > _directionThreshold)
             {
-                Debug.Log("Unburrow");
                 BurrowPerformed = false;
                 UnburrowPerformed = true;
             }

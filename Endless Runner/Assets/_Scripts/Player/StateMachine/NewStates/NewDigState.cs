@@ -12,7 +12,6 @@ namespace TheCreators.Player
         public bool burrow;
         public override void Enter()
         {
-            Debug.Log("Enter Dig");
             burrow = true;
         }
         private void HandleBurrow()

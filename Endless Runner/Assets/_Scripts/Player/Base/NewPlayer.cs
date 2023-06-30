@@ -57,7 +57,7 @@ namespace TheCreators.Player
         private void FixedUpdate()
         {
             StateMachine.CurrentState.PhysicsUpdate();
-            Debug.Log(RB.velocity);
+            //Debug.Log(RB.velocity);
         }
         private void CalculateGravityValues()
         {

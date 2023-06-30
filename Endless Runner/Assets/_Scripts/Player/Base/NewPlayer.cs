@@ -25,6 +25,7 @@ namespace TheCreators.Player
         [field: SerializeField] public PlayerInputManager InputManager { get; private set; }
         public Rigidbody2D RB { get; private set; }
         public CollisionSenses CollisionSenses { get; private set; }
+        public SpriteRenderer SpriteRenderer { get; private set; }
         private void Awake()
         {
             StateMachine = new NewPlayerStateMachine();
@@ -32,6 +33,7 @@ namespace TheCreators.Player
 
             RB = GetComponent<Rigidbody2D>();
             CollisionSenses = GetComponentInChildren<CollisionSenses>();
+            SpriteRenderer = GetComponent<SpriteRenderer>();
 
             CalculateGravityValues();
         }

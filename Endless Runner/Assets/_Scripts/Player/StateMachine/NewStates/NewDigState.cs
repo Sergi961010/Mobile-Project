@@ -12,7 +12,21 @@ namespace TheCreators.Player
         public bool burrow;
         public override void Enter()
         {
+            ChangeSortingOrder(2);
             burrow = true;
+        }
+        public override void Exit()
+        {
+            ChangeSortingOrder(0);
+        }
+        public override void PhysicsUpdate()
+        {
+            if (burrow)
+                HandleBurrow();
+            if (_context.InputManager.SwipeDetection.UnburrowPerformed)
+            {
+                HandleUnburrow();
+            }
         }
         private void HandleBurrow()
         {
@@ -46,14 +60,9 @@ namespace TheCreators.Player
                 _context.StateMachine.SwitchState(_context.runState);
             }
         }
-        public override void PhysicsUpdate()
+        private void ChangeSortingOrder(int value)
         {
-            if (burrow)
-                HandleBurrow();
-            if (_context.InputManager.SwipeDetection.UnburrowPerformed)
-            {
-                HandleUnburrow();
-            }
+            _context.SpriteRenderer.sortingOrder = value;
         }
     }
 }

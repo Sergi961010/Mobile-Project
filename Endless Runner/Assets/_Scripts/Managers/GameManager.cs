@@ -4,7 +4,7 @@ namespace TheCreators.Managers
 {
     public class GameManager : MonoBehaviour
     {
-        private void Awake()
+        private void OnEnable()
         {
             Application.targetFrameRate = 60;
         }

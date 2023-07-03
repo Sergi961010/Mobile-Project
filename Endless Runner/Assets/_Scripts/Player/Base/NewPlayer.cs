@@ -26,6 +26,7 @@ namespace TheCreators.Player
         public Rigidbody2D RB { get; private set; }
         public CollisionSenses CollisionSenses { get; private set; }
         public SpriteRenderer SpriteRenderer { get; private set; }
+        public Animator Animator { get; private set; }
         private void Awake()
         {
             StateMachine = new NewPlayerStateMachine();
@@ -34,6 +35,7 @@ namespace TheCreators.Player
             RB = GetComponent<Rigidbody2D>();
             CollisionSenses = GetComponentInChildren<CollisionSenses>();
             SpriteRenderer = GetComponent<SpriteRenderer>();
+            Animator = GetComponent<Animator>();
 
             CalculateGravityValues();
         }

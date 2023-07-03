@@ -7,7 +7,7 @@ namespace TheCreators.UI
 {
     public class RewardAdButton : MonoBehaviour
     {
-        private readonly string _adUnitId = "ca-app-pub-3940256099942544/5224354917";
+        private readonly string _adUnitId = "ca-app-pub-7489988188846347/9264193766";
         
         private RewardedAd rewardedAd;
         private void Start()
@@ -94,6 +94,7 @@ namespace TheCreators.UI
                 {
                     // TODO: Reward the user.
                     GameEvent.OnPlayerRevive.Invoke();
+                    gameObject.SetActive(false);
                     Debug.Log(string.Format(rewardMsg, reward.Type, reward.Amount));
                 });
             }

@@ -30,8 +30,7 @@ namespace TheCreators.Player.Input
         private void OnEnable()
         {
             _playerControls.Enable();
-            _jumpAction.started += OnJumpInput;
-            _jumpAction.canceled += OnJumpInput;
+            _jumpAction.performed += OnJumpInput;
             _flyAction.performed += OnFlyAction;
             _flyAction.canceled += OnCancelFlyAction;
             _primaryTouch.started += StartPrimaryTouch;
@@ -51,7 +50,7 @@ namespace TheCreators.Player.Input
         {
             if (!EventSystem.current.IsPointerOverGameObject())
             {
-                JumpPerformed = context.ReadValueAsButton();
+                JumpPerformed = true;
             }
         }
         public void UseJumpInput() => JumpPerformed = false;

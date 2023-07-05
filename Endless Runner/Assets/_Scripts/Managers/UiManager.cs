@@ -1,4 +1,3 @@
-using System;
 using TheCreators.CustomEventSystem;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,12 +11,12 @@ namespace TheCreators
         private void OnEnable()
         {
             GameEvent.OnScreenObstacleTrigger.AddListener(EnableAlert);
-            GameEvent.OnScreenObstacleTrigger.AddListener(EnableRewardAdButton);
+            GameEvent.OnPlayerDeath.AddListener(EnableRewardAdButton);
         }
         private void OnDisable()
         {
             GameEvent.OnScreenObstacleTrigger.RemoveListener(EnableAlert);
-            GameEvent.OnScreenObstacleTrigger.RemoveListener(EnableRewardAdButton);
+            GameEvent.OnPlayerDeath.RemoveListener(EnableRewardAdButton);
         }
         private void EnableAlert()
         {

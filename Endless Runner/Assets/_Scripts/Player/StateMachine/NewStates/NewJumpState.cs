@@ -17,6 +17,7 @@ namespace TheCreators.Player
         {
             CalculateJumpForce();
             HandleJump();
+            _context.Animator.SetBool("Jump", true);
         }
         public override void LogicUpdate()
         {
@@ -31,7 +32,7 @@ namespace TheCreators.Player
         }
         public override void Exit()
         {
-            
+            _context.Animator.SetBool("Jump", false);
         }
         private void HandleJump()
         {

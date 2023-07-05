@@ -14,7 +14,6 @@ namespace TheCreators.Player
         public DigState(Player currentContext) : base(currentContext) { }
         public override void Enter()
         {
-            Debug.Log("Enter Dig");
             burrow = true;
         }
         private void HandleBurrow()

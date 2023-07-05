@@ -71,7 +71,7 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""8c8d4fe2-3988-47d7-bcb1-869a5ebf4ebf"",
                     ""path"": ""<Touchscreen>/Press"",
-                    ""interactions"": """",
+                    ""interactions"": ""Hold(duration=0.1)"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Fly"",

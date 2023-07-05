@@ -19,7 +19,7 @@ namespace TheCreators.Player
         private void OnCollisionEnter2D(Collision2D collision)
         {
             if (collision.gameObject.CompareTag("Obstacle"))
-                Debug.Log("Kill player");
+                //Debug.Log("Kill player");
                 GameEvent.OnPlayerDeath.Invoke();
         }
     }

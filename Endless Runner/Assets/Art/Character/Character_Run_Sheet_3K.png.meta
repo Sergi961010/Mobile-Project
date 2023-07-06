@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 135
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -67,7 +67,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -115,7 +115,490 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Character_Run_Sheet_3K_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 250
+        width: 255
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf7996647109f8645a8f2ab33defa662
+      internalID: 1848837274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Run_Sheet_3K_1
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 250
+        width: 255
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f94689252a9eb458230b89e6551bcb
+      internalID: -2099577321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Run_Sheet_3K_2
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 250
+        width: 255
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b163a778ac440943a50fe72fa2b1888
+      internalID: 256129509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Run_Sheet_3K_3
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 250
+        width: 255
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e67dcc075bec834b809232ff4c492ab
+      internalID: 175473817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Run_Sheet_3K_4
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 250
+        width: 255
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b8e0912293aa04fbcd9ab10540024a
+      internalID: -1846838249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Run_Sheet_3K_5
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 250
+        width: 255
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c40129792459954a970d675d4529868
+      internalID: -1728741071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Run_Sheet_3K_6
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 250
+        width: 255
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c4376bf53e6e854793a59002548388b
+      internalID: 1446925713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Run_Sheet_3K_7
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 250
+        width: 255
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 554ad48093f71c141a5e5ecb8286f148
+      internalID: -609137411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Run_Sheet_3K_8
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 250
+        width: 255
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1656305ea390c46448c4d4c3c6f9b1e9
+      internalID: -1048145073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Run_Sheet_3K_9
+      rect:
+        serializedVersion: 2
+        x: 2295
+        y: 250
+        width: 255
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d1c130f92ce4f4e964cbdb3f83b3f3
+      internalID: -824789150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Run_Sheet_3K_10
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 250
+        width: 255
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67dedaa997b92dd408a3e925cbb28013
+      internalID: 921259299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Run_Sheet_3K_11
+      rect:
+        serializedVersion: 2
+        x: 2805
+        y: 250
+        width: 255
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94f58ae08beed94392c221c6a3a921c
+      internalID: 1325389208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Run_Sheet_3K_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 255
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd4c69f548a2f14190a1770e355a853
+      internalID: 940860776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Run_Sheet_3K_13
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 0
+        width: 255
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ab7568b2492391488dba0c41593e3db
+      internalID: -1834073599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Run_Sheet_3K_14
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 0
+        width: 255
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0d6f79a8efe7df41aeb3a4547bb3449
+      internalID: 1826446658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Run_Sheet_3K_15
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 0
+        width: 255
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbdbab56ca4b319468a8136744d22911
+      internalID: -178747377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Run_Sheet_3K_16
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 0
+        width: 255
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 050433fb70d164648b144937fc9fb2c4
+      internalID: 1117127608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Run_Sheet_3K_17
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 0
+        width: 255
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d22b775d50941f4ca4dba0a4cd6e5aa
+      internalID: 1510854702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Run_Sheet_3K_18
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 0
+        width: 255
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad5649c18ae94b4dbc7c3465ff002f0
+      internalID: 824498247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Run_Sheet_3K_19
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 0
+        width: 255
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f51aa6f115f2684e9e1b722a8178014
+      internalID: -803073657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Run_Sheet_3K_20
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 0
+        width: 255
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a89f7847b3533d4388ca3df80047ca8
+      internalID: 1170925176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Run_Sheet_3K_21
+      rect:
+        serializedVersion: 2
+        x: 2295
+        y: 0
+        width: 255
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc7884bd509e314e8a7a46830527c8c
+      internalID: 498675628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Run_Sheet_3K_22
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 0
+        width: 255
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e5659cab82b9664794d563e97d6fcc6
+      internalID: -720871417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +609,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Character_Run_Sheet_3K_2: 256129509
+      Character_Run_Sheet_3K_3: 175473817
+      Character_Run_Sheet_3K_13: -1834073599
+      Character_Run_Sheet_3K_19: -803073657
+      Character_Run_Sheet_3K_5: -1728741071
+      Character_Run_Sheet_3K_15: -178747377
+      Character_Run_Sheet_3K_20: 1170925176
+      Character_Run_Sheet_3K_1: -2099577321
+      Character_Run_Sheet_3K_10: 921259299
+      Character_Run_Sheet_3K_11: 1325389208
+      Character_Run_Sheet_3K_6: 1446925713
+      Character_Run_Sheet_3K_7: -609137411
+      Character_Run_Sheet_3K_18: 824498247
+      Character_Run_Sheet_3K_21: 498675628
+      Character_Run_Sheet_3K_14: 1826446658
+      Character_Run_Sheet_3K_23: -1056858196
+      Character_Run_Sheet_3K_12: 940860776
+      Character_Run_Sheet_3K_4: -1846838249
+      Character_Run_Sheet_3K_0: 1848837274
+      Character_Run_Sheet_3K_9: -824789150
+      Character_Run_Sheet_3K_17: 1510854702
+      Character_Run_Sheet_3K_22: -720871417
+      Character_Run_Sheet_3K_16: 1117127608
+      Character_Run_Sheet_3K_8: -1048145073
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

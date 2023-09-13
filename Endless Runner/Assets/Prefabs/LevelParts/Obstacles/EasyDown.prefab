@@ -87,7 +87,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5256623074721553668, guid: 47d98f4ea0b3260488719958b7768d57, type: 3}
       propertyPath: m_Name
-      value: Obstacle_1Unit
+      value: GroundTrap
       objectReference: {fileID: 0}
     - target: {fileID: 7272905618833520862, guid: 47d98f4ea0b3260488719958b7768d57, type: 3}
       propertyPath: m_RootOrder
@@ -99,7 +99,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7272905618833520862, guid: 47d98f4ea0b3260488719958b7768d57, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7272905618833520862, guid: 47d98f4ea0b3260488719958b7768d57, type: 3}
       propertyPath: m_LocalPosition.z
@@ -132,6 +132,10 @@ PrefabInstance:
     - target: {fileID: 7272905618833520862, guid: 47d98f4ea0b3260488719958b7768d57, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965911695596676195, guid: 47d98f4ea0b3260488719958b7768d57, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47d98f4ea0b3260488719958b7768d57, type: 3}

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1047ef77c75f93a4a965656a26268d52
+guid: 1c3b8eb816b93604f9f8bcf77bef056a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -67,7 +67,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Character_Jump_Sheet_0
+      name: GroundTrapIddleSpriteSheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 230
-        width: 255
-        height: 270
+        y: 920
+        width: 612
+        height: 460
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 246119fc2f54f0a4d8a0e9bba1bfd586
-      internalID: 1111154139
+      spriteID: 729161cd0846ef24bbd4f9a74d73c8f1
+      internalID: -397636512
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_Jump_Sheet_1
+      name: GroundTrapIddleSpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 255
-        y: 231
-        width: 255
-        height: 269
+        x: 612
+        y: 920
+        width: 612
+        height: 460
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b26865f7a7ee32489d0841910073c31
-      internalID: -146076983
+      spriteID: 223637291282cd745ad42d248ed021b7
+      internalID: 490809434
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_Jump_Sheet_2
+      name: GroundTrapIddleSpriteSheet_2
       rect:
         serializedVersion: 2
-        x: 510
-        y: 250
-        width: 255
-        height: 250
+        x: 1224
+        y: 920
+        width: 612
+        height: 460
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bf0c06c66a2e1546a6d0df5d1883aea
-      internalID: -127774373
+      spriteID: 173c5ab9e7fc932418f879667188956a
+      internalID: 993897785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_Jump_Sheet_3
+      name: GroundTrapIddleSpriteSheet_3
       rect:
         serializedVersion: 2
-        x: 765
-        y: 250
-        width: 255
-        height: 250
+        x: 1836
+        y: 920
+        width: 612
+        height: 460
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f0bdb4269f4c8e4988e8b92bc3028c9
-      internalID: 473019178
+      spriteID: 7d897498b621bfa499289404671fed74
+      internalID: -1945537741
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_Jump_Sheet_4
+      name: GroundTrapIddleSpriteSheet_4
       rect:
         serializedVersion: 2
-        x: 1020
-        y: 250
-        width: 255
-        height: 250
+        x: 2448
+        y: 920
+        width: 612
+        height: 460
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3073d006777284b49a7deee96c9a617f
-      internalID: 1456486563
+      spriteID: d983fc3c5352df34fb4a93021b715e5a
+      internalID: -1627428042
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_Jump_Sheet_5
+      name: GroundTrapIddleSpriteSheet_5
       rect:
         serializedVersion: 2
-        x: 1275
-        y: 250
-        width: 255
-        height: 250
+        x: 0
+        y: 460
+        width: 612
+        height: 460
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,20 +236,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: adac71bc4325d054da834870bde4ebd0
-      internalID: 2132760892
+      spriteID: 4e4173f81b6957f4dbe7f7482329020c
+      internalID: 218855710
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_Jump_Sheet_6
+      name: GroundTrapIddleSpriteSheet_6
       rect:
         serializedVersion: 2
-        x: 1530
-        y: 250
-        width: 255
-        height: 250
+        x: 612
+        y: 460
+        width: 612
+        height: 460
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,20 +257,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 064e473679eeed04488d7b227611e6da
-      internalID: 1303677988
+      spriteID: 8cad0dd8cef4ed14eb827322ddaa29ad
+      internalID: -116554209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_Jump_Sheet_7
+      name: GroundTrapIddleSpriteSheet_7
       rect:
         serializedVersion: 2
-        x: 1785
-        y: 250
-        width: 255
-        height: 250
+        x: 1224
+        y: 460
+        width: 612
+        height: 460
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,20 +278,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f38c2f8c855d0944bafcdbddc8b16964
-      internalID: 1318158712
+      spriteID: 36c612f2b6060264f80e8f089d82079e
+      internalID: -960237426
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_Jump_Sheet_8
+      name: GroundTrapIddleSpriteSheet_8
       rect:
         serializedVersion: 2
-        x: 2040
-        y: 250
-        width: 255
-        height: 250
+        x: 1836
+        y: 460
+        width: 612
+        height: 460
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,20 +299,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82a174989ac9a9f4ba402c7e75eb301c
-      internalID: 980506649
+      spriteID: 1b6e856dc9212b44788ab4cbf831bff3
+      internalID: -473929235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_Jump_Sheet_9
+      name: GroundTrapIddleSpriteSheet_9
       rect:
         serializedVersion: 2
-        x: 2295
-        y: 250
-        width: 255
-        height: 250
+        x: 2448
+        y: 460
+        width: 612
+        height: 460
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,62 +320,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edfe91143eed9dc48b6467d3ac234600
-      internalID: 1891388111
+      spriteID: e99546b8b5cf57644a83e10fba6c3ec6
+      internalID: -1150261294
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_Jump_Sheet_10
-      rect:
-        serializedVersion: 2
-        x: 2550
-        y: 250
-        width: 255
-        height: 250
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: febf9d02c785d914abafbe86c83a67a8
-      internalID: 1073694041
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_Jump_Sheet_11
-      rect:
-        serializedVersion: 2
-        x: 2805
-        y: 250
-        width: 255
-        height: 250
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7668f92d7e15a6c4d96874d4163a35ca
-      internalID: -1628498788
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_Jump_Sheet_12
+      name: GroundTrapIddleSpriteSheet_10
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 255
-        height: 231
+        width: 612
+        height: 460
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -383,20 +341,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ace0a967c946ea4cb09c28d682997f0
-      internalID: -894592089
+      spriteID: 61f6bc7e4c2187240b6e4e2940da2de7
+      internalID: -974047426
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_Jump_Sheet_13
+      name: GroundTrapIddleSpriteSheet_11
       rect:
         serializedVersion: 2
-        x: 255
+        x: 612
         y: 0
-        width: 255
-        height: 229
+        width: 612
+        height: 460
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -404,8 +362,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8fc6f1e49b22b5498c7d484ab4f6ec2
-      internalID: -1670731731
+      spriteID: add49a17183344e40a6db06b723118c5
+      internalID: 1792371916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundTrapIddleSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 0
+        width: 612
+        height: 460
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a5eccd61f78ef4799e70b8c3dd6d2a
+      internalID: -997962869
       vertices: []
       indices: 
       edges: []
@@ -421,30 +400,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Character_Jump_Sheet_4: 1456486563
-      Character_Jump_Sheet_10: 1073694041
-      Character_Jump_Sheet_12: -894592089
-      Character_Jump_Sheet_22: 2118423514
-      Character_Jump_Sheet_5: 2132760892
-      Character_Jump_Sheet_3: 473019178
-      Character_Jump_Sheet_20: 1376354733
-      Character_Jump_Sheet_16: -113713854
-      Character_Jump_Sheet_14: 714870285
-      Character_Jump_Sheet_9: 1891388111
-      Character_Jump_Sheet_18: 1210147725
-      Character_Jump_Sheet_0: 1111154139
-      Character_Jump_Sheet_8: 980506649
-      Character_Jump_Sheet_7: 1318158712
-      Character_Jump_Sheet_21: -1212080644
-      Character_Jump_Sheet_23: -369442319
-      Character_Jump_Sheet_17: 125930505
-      Character_Jump_Sheet_1: -146076983
-      Character_Jump_Sheet_2: -127774373
-      Character_Jump_Sheet_6: 1303677988
-      Character_Jump_Sheet_13: -1670731731
-      Character_Jump_Sheet_11: -1628498788
-      Character_Jump_Sheet_15: -560656150
-      Character_Jump_Sheet_19: -698888427
+      GroundTrapIddleSpriteSheet_8: -473929235
+      GroundTrapIddleSpriteSheet_3: -1945537741
+      GroundTrapIddleSpriteSheet_12: -997962869
+      GroundTrapIddleSpriteSheet_1: 490809434
+      GroundTrapIddleSpriteSheet_6: -116554209
+      GroundTrapIddleSpriteSheet_11: 1792371916
+      GroundTrapIddleSpriteSheet_5: 218855710
+      GroundTrapIddleSpriteSheet_10: -974047426
+      GroundTrapIddleSpriteSheet_4: -1627428042
+      GroundTrapIddleSpriteSheet_2: 993897785
+      GroundTrapIddleSpriteSheet_9: -1150261294
+      GroundTrapIddleSpriteSheet_14: 853643127
+      GroundTrapIddleSpriteSheet_13: -821168011
+      GroundTrapIddleSpriteSheet_0: -397636512
+      GroundTrapIddleSpriteSheet_7: -960237426
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

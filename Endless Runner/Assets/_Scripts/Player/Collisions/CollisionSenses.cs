@@ -16,10 +16,9 @@ namespace TheCreators.Player
         {
             Gizmos.DrawWireSphere(_groundCheck.position, _groundCheckRadius);
         }
-        private void OnCollisionEnter2D(Collision2D collision)
+        private void OnTriggerEnter2D(Collider2D collider)
         {
-            if (collision.gameObject.CompareTag("Obstacle"))
-                //Debug.Log("Kill player");
+            if (collider.gameObject.CompareTag("Obstacle"))
                 GameEvent.OnPlayerDeath.Invoke();
         }
     }

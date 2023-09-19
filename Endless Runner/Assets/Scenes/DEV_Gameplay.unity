@@ -231,30 +231,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 231426259}
     m_Modifications:
-    - target: {fileID: 2938886491453647298, guid: 068976800da4df24e9625e76fd309b95, type: 3}
-      propertyPath: m_Size.y
-      value: 1.1294091
-      objectReference: {fileID: 0}
-    - target: {fileID: 2938886491453647298, guid: 068976800da4df24e9625e76fd309b95, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.17840374
-      objectReference: {fileID: 0}
     - target: {fileID: 7425957287951984262, guid: 068976800da4df24e9625e76fd309b95, type: 3}
       propertyPath: <InputManager>k__BackingField
       value: 
       objectReference: {fileID: 1383797609}
-    - target: {fileID: 8917580687499550225, guid: 068976800da4df24e9625e76fd309b95, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8917580688026551182, guid: 068976800da4df24e9625e76fd309b95, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 2104191022, guid: 53d0bccce87988649bd63b00f970fca6, type: 3}
-    - target: {fileID: 8917580688026551182, guid: 068976800da4df24e9625e76fd309b95, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8917580688026551183, guid: 068976800da4df24e9625e76fd309b95, type: 3}
       propertyPath: m_RootOrder
       value: 0

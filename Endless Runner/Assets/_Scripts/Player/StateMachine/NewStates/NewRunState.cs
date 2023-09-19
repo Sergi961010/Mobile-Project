@@ -8,10 +8,10 @@ namespace TheCreators.Player
         public float _speed = 6f;
         public override void Enter()
         {
-            _context.Animator.SetBool("Run", true);
         }
         public override void LogicUpdate()
         {
+            _context.PlayerAnimator.PlayAnimation(animations[0]);
             if (_context.InputManager.JumpPerformed)
             {
                 _context.StateMachine.SwitchState(_context.jumpState);
@@ -28,7 +28,7 @@ namespace TheCreators.Player
         }
         public override void Exit()
         {
-            _context.Animator.SetBool("Run", false);
+
         }
     }
 }

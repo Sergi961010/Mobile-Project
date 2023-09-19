@@ -11,10 +11,12 @@ namespace TheCreators.Player
         {
             ApplyGravityMultiplier();
             HandleYVelocity();
+            _context.PlayerAnimator.PlayLockedAnimation(animations[0]);
         }
 
         public override void LogicUpdate()
         {
+            _context.PlayerAnimator.PlayAnimation(animations[1]);
             if (!_context.InputManager.FlyPerformed)
             {
                 _context.StateMachine.SwitchState(_context.fallState);
@@ -22,6 +24,7 @@ namespace TheCreators.Player
         }
         public override void Exit()
         {
+            _context.PlayerAnimator.PlayAnimation(animations[2]);
             CancelGravityMultiplier();
         }
         public override void PhysicsUpdate()

@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40a28a293acac2a429c07b5acbe489a1, type: 3}
   m_Name: FallState
   m_EditorClassIdentifier: 
+  animations:
+  - {fileID: 7400000, guid: 228c4a38529a0cf46b4e7d68326f1dc2, type: 2}
   fallGravityMultiplier: 3

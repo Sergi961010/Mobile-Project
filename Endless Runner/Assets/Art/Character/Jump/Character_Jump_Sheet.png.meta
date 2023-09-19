@@ -243,7 +243,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_Jump_Sheet_6
+      name: Character_Fall_0
       rect:
         serializedVersion: 2
         x: 1530
@@ -264,7 +264,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_Jump_Sheet_7
+      name: Character_Fall_1
       rect:
         serializedVersion: 2
         x: 1785
@@ -285,7 +285,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_Jump_Sheet_8
+      name: Character_Fall_2
       rect:
         serializedVersion: 2
         x: 2040
@@ -422,8 +422,11 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Character_Jump_Sheet_4: 1456486563
+      Character_Fall_1: 1318158712
+      Character_Fall_0: 1303677988
       Character_Jump_Sheet_10: 1073694041
       Character_Jump_Sheet_12: -894592089
+      Character_Fall_2: 980506649
       Character_Jump_Sheet_22: 2118423514
       Character_Jump_Sheet_5: 2132760892
       Character_Jump_Sheet_3: 473019178
@@ -433,17 +436,14 @@ TextureImporter:
       Character_Jump_Sheet_9: 1891388111
       Character_Jump_Sheet_18: 1210147725
       Character_Jump_Sheet_0: 1111154139
-      Character_Jump_Sheet_8: 980506649
-      Character_Jump_Sheet_7: 1318158712
       Character_Jump_Sheet_21: -1212080644
       Character_Jump_Sheet_23: -369442319
       Character_Jump_Sheet_17: 125930505
       Character_Jump_Sheet_1: -146076983
       Character_Jump_Sheet_2: -127774373
-      Character_Jump_Sheet_6: 1303677988
       Character_Jump_Sheet_13: -1670731731
-      Character_Jump_Sheet_11: -1628498788
       Character_Jump_Sheet_15: -560656150
+      Character_Jump_Sheet_11: -1628498788
       Character_Jump_Sheet_19: -698888427
   spritePackingTag: 
   pSDRemoveMatte: 0

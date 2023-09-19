@@ -12,6 +12,7 @@ namespace TheCreators.Player
         public bool burrow;
         public override void Enter()
         {
+            _context.PlayerAnimator.PlayLockedAnimation(animations[0]);
             ChangeSortingOrder(2);
             burrow = true;
         }
@@ -19,12 +20,17 @@ namespace TheCreators.Player
         {
             ChangeSortingOrder(0);
         }
+        public override void LogicUpdate()
+        {
+            _context.PlayerAnimator.PlayAnimation(animations[1]);
+        }
         public override void PhysicsUpdate()
         {
             if (burrow)
                 HandleBurrow();
             if (_context.InputManager.SwipeDetection.UnburrowPerformed)
             {
+                _context.PlayerAnimator.PlayLockedAnimation(animations[2]);
                 HandleUnburrow();
             }
         }

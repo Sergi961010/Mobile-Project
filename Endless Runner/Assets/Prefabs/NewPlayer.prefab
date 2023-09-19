@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8917580687499550224}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -64,8 +64,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0931083}
-  m_Size: {x: 0.45, y: 1.3}
+  m_Offset: {x: 0, y: -0.17840374}
+  m_Size: {x: 0.45, y: 1.1294091}
   m_Direction: 0
 --- !u!1 &8917580687735459860
 GameObject:
@@ -111,6 +111,7 @@ GameObject:
   - component: {fileID: 5704432052490463877}
   - component: {fileID: 8917580688026551217}
   - component: {fileID: 7425957287951984262}
+  - component: {fileID: 3627963102196781168}
   m_Layer: 0
   m_Name: NewPlayer
   m_TagString: Player
@@ -245,3 +246,15 @@ MonoBehaviour:
   flyState: {fileID: 11400000, guid: b3cf32c1fa801de43bb49420051c5260, type: 2}
   digState: {fileID: 11400000, guid: 62d709d7851c2bd499ecd6e40f1ea885, type: 2}
   <InputManager>k__BackingField: {fileID: 0}
+--- !u!114 &3627963102196781168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8917580688026551216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b49b863b67ad13f4dbddfbfd605f8d4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

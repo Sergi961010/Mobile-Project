@@ -8,6 +8,7 @@ namespace TheCreators.Player
         public float fallGravityMultiplier = 3f;
         public override void Enter()
         {
+            _context.PlayerAnimator.PlayAnimation(animations[0]);
             ApplyGravityMultiplier();
         }
         public override void Exit()

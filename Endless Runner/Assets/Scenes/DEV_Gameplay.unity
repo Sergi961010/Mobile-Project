@@ -235,6 +235,22 @@ PrefabInstance:
       propertyPath: <InputManager>k__BackingField
       value: 
       objectReference: {fileID: 1383797609}
+    - target: {fileID: 8917580688026551182, guid: 068976800da4df24e9625e76fd309b95, type: 3}
+      propertyPath: m_Size.x
+      value: 1.8925114
+      objectReference: {fileID: 0}
+    - target: {fileID: 8917580688026551182, guid: 068976800da4df24e9625e76fd309b95, type: 3}
+      propertyPath: m_Size.y
+      value: 1.8518518
+      objectReference: {fileID: 0}
+    - target: {fileID: 8917580688026551182, guid: 068976800da4df24e9625e76fd309b95, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1755898802, guid: 91079b2672b74e348963480ca72f95a0, type: 3}
+    - target: {fileID: 8917580688026551182, guid: 068976800da4df24e9625e76fd309b95, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8917580688026551183, guid: 068976800da4df24e9625e76fd309b95, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -898,7 +914,6 @@ MonoBehaviour:
   _playerTransform: {fileID: 199376517}
   prefabs:
   - {fileID: 2425247845215489570, guid: 63d42cd4ee36aa3489577bb3d6a03318, type: 3}
-  - {fileID: 7482232070326527552, guid: 82bcc983b0b1a4f44923f9922ecdd59a, type: 3}
 --- !u!1 &367173190
 GameObject:
   m_ObjectHideFlags: 0

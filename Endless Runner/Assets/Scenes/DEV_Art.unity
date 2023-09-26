@@ -914,6 +914,7 @@ MonoBehaviour:
   _playerTransform: {fileID: 199376517}
   prefabs:
   - {fileID: 2425247845215489570, guid: 63d42cd4ee36aa3489577bb3d6a03318, type: 3}
+  - {fileID: 7482232070326527552, guid: 82bcc983b0b1a4f44923f9922ecdd59a, type: 3}
 --- !u!1 &367173190
 GameObject:
   m_ObjectHideFlags: 0

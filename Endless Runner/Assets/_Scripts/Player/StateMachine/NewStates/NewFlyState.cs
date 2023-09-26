@@ -7,11 +7,13 @@ namespace TheCreators.Player
     {
         public float defaultForce = 20f;
         public float smoothFactor = .2f;
+        public float staminaCost = .5f;
         public override void Enter()
         {
             ApplyGravityMultiplier();
             HandleYVelocity();
             _context.PlayerAnimator.PlayLockedAnimation(animations[0]);
+            _context.EnergyBarController.StaminaAbilityStart(staminaCost);
         }
 
         public override void LogicUpdate()
@@ -26,6 +28,7 @@ namespace TheCreators.Player
         {
             _context.PlayerAnimator.PlayAnimation(animations[2]);
             CancelGravityMultiplier();
+            _context.EnergyBarController.StaminaAbilityEnd();
         }
         public override void PhysicsUpdate()
         {

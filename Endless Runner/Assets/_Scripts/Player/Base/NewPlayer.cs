@@ -28,6 +28,7 @@ namespace TheCreators.Player
         public CollisionSenses CollisionSenses { get; private set; }
         public SpriteRenderer SpriteRenderer { get; private set; }
         public PlayerAnimator PlayerAnimator { get; private set; }
+        public EnergyBarController EnergyBarController { get; private set; }
         private void Awake()
         {
             StateMachine = new NewPlayerStateMachine();
@@ -37,6 +38,7 @@ namespace TheCreators.Player
             CollisionSenses = GetComponentInChildren<CollisionSenses>();
             PlayerAnimator = GetComponent<PlayerAnimator>();
             SpriteRenderer = GetComponent<SpriteRenderer>();
+            EnergyBarController = GetComponent<EnergyBarController>();
 
             CalculateGravityValues();
         }

@@ -10,15 +10,18 @@ namespace TheCreators.Player
         public float duration = .5f;
         public float elapsedTime;
         public bool burrow;
+        public float staminaCost = 5f;
         public override void Enter()
         {
             _context.PlayerAnimator.PlayLockedAnimation(animations[0]);
             ChangeSortingOrder(2);
             burrow = true;
+            _context.EnergyBarController.StaminaAbilityStart(staminaCost);
         }
         public override void Exit()
         {
             ChangeSortingOrder(0);
+            _context.EnergyBarController.StaminaAbilityEnd();
         }
         public override void LogicUpdate()
         {

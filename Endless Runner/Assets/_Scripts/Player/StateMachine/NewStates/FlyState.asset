@@ -18,3 +18,4 @@ MonoBehaviour:
   - {fileID: 7400000, guid: 4fb5137038fdac0489bebda44487e21e, type: 2}
   defaultForce: 20
   smoothFactor: 0.2
+  staminaCost: 5

@@ -5,9 +5,8 @@ namespace TheCreators.CustomEventSystem
     public static class GameEvent
     {
         public static readonly CustomEvent OnPerformJump = new();
-        public static readonly CustomEvent OnPerformFly = new();
-        public static readonly CustomEvent OnCancelFly = new();
-        public static readonly CustomEvent Dig = new();
+        public static readonly CustomEvent<float> OnPerformStaminaAbility = new();
+        public static readonly CustomEvent<float> OnCancelStaminaAbility = new();
         public static readonly CustomEvent<Vector2, float> StartTouch = new();
         public static readonly CustomEvent<Vector2, float> EndTouch = new();
 

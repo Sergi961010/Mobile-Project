@@ -9,58 +9,56 @@ namespace TheCreators.Player
         private const float MAX_ENERGY = 100f;
 
         private float _currentEnergy = 100f;
-        public float _energyRegeneration = 0.5f;
-        public float _flyCost = 0.5f;
+        public float _energyRegeneration = 5f;
+        private float _abilityStaminaCost;
 
-        public bool isFlying = false;
+        public bool regenerateStamina = false;
 
         [SerializeField] private Image _staminaProgressUI;
 
-        private void OnEnable()
-        {
-            GameEvent.OnPerformFly.AddListener(UseAbility);
-            GameEvent.OnCancelFly.AddListener(StopAbility);
-        }
-
-        private void OnDisable()
-        {
-            GameEvent.OnPerformFly.RemoveListener(UseAbility);
-            GameEvent.OnCancelFly.RemoveListener(StopAbility);
-        }
-
-
         private void Update()
         {
-            if (!isFlying)
+            if (regenerateStamina)
             {
-                if (_currentEnergy < MAX_ENERGY)
-                {
-                    _currentEnergy += _energyRegeneration * Time.deltaTime;
-                    UpdateStaminaBar();
-                }
+                AddStamina();
+            } else
+            {
+                SubstractStamina();
             }
         }
-
-        private void UpdateStaminaBar()
+        private void AddStamina()
         {
-            _staminaProgressUI.fillAmount = _currentEnergy / MAX_ENERGY;
+            _currentEnergy += _energyRegeneration * Time.deltaTime;
+            UpdateStaminaBar();
+            
+            if (_currentEnergy >= MAX_ENERGY)
+            {
+                regenerateStamina = false;
+            }
         }
-
-        public void UseAbility()
+        private void SubstractStamina()
         {
-            isFlying = true;
-            _currentEnergy -= _flyCost * Time.deltaTime;
+            _currentEnergy -= _abilityStaminaCost * Time.deltaTime;
             UpdateStaminaBar();
 
             if (_currentEnergy <= 0)
             {
-                StopAbility();
+                regenerateStamina = true;
             }
         }
-
-        public void StopAbility()
+        private void UpdateStaminaBar()
         {
-            isFlying = false;
+            _staminaProgressUI.fillAmount = _currentEnergy / MAX_ENERGY;
+        }
+        public void StaminaAbilityStart(float staminaCost)
+        {
+            _abilityStaminaCost = staminaCost;
+            regenerateStamina = false;
+        }
+        public void StaminaAbilityEnd()
+        {
+            _abilityStaminaCost = 0;
+            regenerateStamina = true;
         }
     }
 }

@@ -1243,8 +1243,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 615cce1cce6bec24e90b05a8da0daddb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _musicSource: {fileID: 0}
-  _effectsSource: {fileID: 0}
+  _musicSource: {fileID: 831358736}
+  _effectsSource: {fileID: 2031975542}
 --- !u!1 &2031975540
 GameObject:
   m_ObjectHideFlags: 0

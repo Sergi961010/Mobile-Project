@@ -1,4 +1,5 @@
 using System;
+using TheCreators.Persistance;
 using UnityEngine;
 
 namespace TheCreators.Managers
@@ -7,22 +8,9 @@ namespace TheCreators.Managers
     {
         public static SoundManager Instance;
         [SerializeField] private AudioSource _musicSource, _effectsSource;
-        private void Awake()
-        {
-            if(Instance == null)
-            {
-                Instance = this;
-                DontDestroyOnLoad(gameObject);
-            }
-            else
-            {
-                Destroy(gameObject);
-            }
-        }
         private void Start()
         {
-            int soundState = PlayerPrefs.GetInt("soundState");
-            if (soundState == 0) MuteSound();
+            if (!Settings.SoundEnabled) MuteSound();
         }
         private void MuteSound()
         {

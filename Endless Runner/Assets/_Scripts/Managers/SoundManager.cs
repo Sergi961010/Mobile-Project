@@ -8,6 +8,17 @@ namespace TheCreators.Managers
     {
         public static SoundManager Instance;
         [SerializeField] private AudioSource _musicSource, _effectsSource;
+        private void Awake()
+        {
+            if(Instance == null)
+            {
+                Instance = this;
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+        }
         private void Start()
         {
             if (!Settings.SoundEnabled) MuteSound();

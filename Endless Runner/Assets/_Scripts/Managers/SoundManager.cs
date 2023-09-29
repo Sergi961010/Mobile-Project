@@ -33,5 +33,20 @@ namespace TheCreators.Managers
             _musicSource.mute = !_musicSource.mute;
             _effectsSource.mute = !_effectsSource.mute;
         }
+        public void PlayLoopedSound(AudioClip audioClip)
+        {
+            _effectsSource.clip = audioClip;
+            _effectsSource.loop = true;
+            _effectsSource.Play();
+        }
+        public void StopLoopedSound()
+        {
+            _effectsSource.loop = false;
+            _effectsSource.Stop();
+        }
+        public void PlaySound(AudioClip audioClip)
+        {
+            _effectsSource.PlayOneShot(audioClip);
+        }
     }
 }

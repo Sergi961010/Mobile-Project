@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4ceaf799132a9048bc6fb01e373ec65, type: 3}
   m_Name: RunState
   m_EditorClassIdentifier: 
-  animations:
+  _animations:
   - {fileID: 7400000, guid: f2264bf24cedf15489a01a48b35803aa, type: 2}
+  _audioClip: {fileID: 8300000, guid: 485d55b3a2a9b95449f263105e37dbc9, type: 3}
   _speed: 6

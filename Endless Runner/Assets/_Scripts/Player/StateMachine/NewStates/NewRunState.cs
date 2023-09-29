@@ -1,3 +1,4 @@
+using TheCreators.Managers;
 using UnityEngine;
 
 namespace TheCreators.Player
@@ -8,10 +9,11 @@ namespace TheCreators.Player
         public float _speed = 6f;
         public override void Enter()
         {
+            //SoundManager.Instance.PlayLoopedSound(_audioClip);
         }
         public override void LogicUpdate()
         {
-            _context.PlayerAnimator.PlayAnimation(animations[0]);
+            _context.PlayerAnimator.PlayAnimation(_animations[0]);
             if (_context.InputManager.JumpPerformed)
             {
                 _context.StateMachine.SwitchState(_context.jumpState);
@@ -28,7 +30,7 @@ namespace TheCreators.Player
         }
         public override void Exit()
         {
-
+            //SoundManager.Instance.StopLoopedSound();
         }
     }
 }

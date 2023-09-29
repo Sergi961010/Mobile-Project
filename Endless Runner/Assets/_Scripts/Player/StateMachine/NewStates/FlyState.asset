@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cceef17a4d985f042a38c3a445d21198, type: 3}
   m_Name: FlyState
   m_EditorClassIdentifier: 
-  animations:
+  _animations:
   - {fileID: 7400000, guid: 8aebae88e34fd0649b61050cc5bef4ba, type: 2}
   - {fileID: 7400000, guid: a4db8dbacb7d9f0419374a7fb213cf5a, type: 2}
   - {fileID: 7400000, guid: 4fb5137038fdac0489bebda44487e21e, type: 2}
+  _audioClip: {fileID: 8300000, guid: 1312fecd02a9d54488395522cf242e91, type: 3}
   defaultForce: 20
   smoothFactor: 0.2
   staminaCost: 5

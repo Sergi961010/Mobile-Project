@@ -1,3 +1,4 @@
+using TheCreators.Managers;
 using UnityEngine;
 
 namespace TheCreators.Player
@@ -12,13 +13,13 @@ namespace TheCreators.Player
         {
             ApplyGravityMultiplier();
             HandleYVelocity();
-            _context.PlayerAnimator.PlayLockedAnimation(animations[0]);
+            _context.PlayerAnimator.PlayLockedAnimation(_animations[0]);
             _context.EnergyBarController.StaminaAbilityStart(staminaCost);
+            SoundManager.Instance.PlayLoopedSound(_audioClip);
         }
-
         public override void LogicUpdate()
         {
-            _context.PlayerAnimator.PlayAnimation(animations[1]);
+            _context.PlayerAnimator.PlayAnimation(_animations[1]);
             if (!_context.InputManager.FlyPerformed)
             {
                 _context.StateMachine.SwitchState(_context.fallState);
@@ -26,9 +27,10 @@ namespace TheCreators.Player
         }
         public override void Exit()
         {
-            _context.PlayerAnimator.PlayAnimation(animations[2]);
+            _context.PlayerAnimator.PlayAnimation(_animations[2]);
             CancelGravityMultiplier();
             _context.EnergyBarController.StaminaAbilityEnd();
+            SoundManager.Instance.StopLoopedSound();
         }
         public override void PhysicsUpdate()
         {

@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 413696b4d6dc0944486322d6fb8113a5, type: 3}
   m_Name: JumpState
   m_EditorClassIdentifier: 
-  animations:
+  _animations:
   - {fileID: 7400000, guid: 2892c92b1771d2242aa0b810a377f7d2, type: 2}
+  _audioClip: {fileID: 8300000, guid: 239324bca071f08409012e6d84814cec, type: 3}
   gravityStrength: -16
   gravityScale: 1.6309887
   jumpForce: 8

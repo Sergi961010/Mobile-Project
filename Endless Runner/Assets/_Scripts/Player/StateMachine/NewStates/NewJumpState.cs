@@ -1,3 +1,4 @@
+using TheCreators.Managers;
 using UnityEngine;
 
 namespace TheCreators.Player
@@ -17,7 +18,8 @@ namespace TheCreators.Player
         {
             CalculateJumpForce();
             HandleJump();
-            _context.PlayerAnimator.PlayAnimation(animations[0]);
+            _context.PlayerAnimator.PlayAnimation(_animations[0]);
+            SoundManager.Instance.PlaySound(_audioClip);
         }
         public override void LogicUpdate()
         {

@@ -6,7 +6,8 @@ namespace TheCreators.Player
     public abstract class NewPlayerState : ScriptableObject, IState
     {
         protected NewPlayer _context;
-        public List<AnimationClip> animations;
+        public List<AnimationClip> _animations;
+        public AudioClip _audioClip;
         public virtual void Init(NewPlayer currentContext)
         {
             _context = currentContext;

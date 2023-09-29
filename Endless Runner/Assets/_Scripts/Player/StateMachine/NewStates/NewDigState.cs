@@ -1,3 +1,4 @@
+using TheCreators.Managers;
 using UnityEngine;
 
 namespace TheCreators.Player
@@ -13,19 +14,21 @@ namespace TheCreators.Player
         public float staminaCost = 5f;
         public override void Enter()
         {
-            _context.PlayerAnimator.PlayLockedAnimation(animations[0]);
+            _context.PlayerAnimator.PlayLockedAnimation(_animations[0]);
             ChangeSortingOrder(2);
             burrow = true;
             _context.EnergyBarController.StaminaAbilityStart(staminaCost);
+            SoundManager.Instance.PlayLoopedSound(_audioClip);
         }
         public override void Exit()
         {
             ChangeSortingOrder(0);
             _context.EnergyBarController.StaminaAbilityEnd();
+            SoundManager.Instance.StopLoopedSound();
         }
         public override void LogicUpdate()
         {
-            _context.PlayerAnimator.PlayAnimation(animations[1]);
+            _context.PlayerAnimator.PlayAnimation(_animations[1]);
         }
         public override void PhysicsUpdate()
         {
@@ -33,7 +36,7 @@ namespace TheCreators.Player
                 HandleBurrow();
             if (_context.InputManager.SwipeDetection.UnburrowPerformed)
             {
-                _context.PlayerAnimator.PlayLockedAnimation(animations[2]);
+                _context.PlayerAnimator.PlayLockedAnimation(_animations[2]);
                 HandleUnburrow();
             }
         }

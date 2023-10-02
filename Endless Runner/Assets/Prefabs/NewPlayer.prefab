@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20285910d90ef1546a9a3c9d44c5d831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _footstepClip: {fileID: 8300000, guid: cd81b97e202a9de4cb8097d4974d1c1f, type: 3}
+  _footstep: {fileID: 11400000, guid: 78d3fd303c823ea40a2a0dfc6d3b0272, type: 2}
 --- !u!1 &8917580687499550224
 GameObject:
   m_ObjectHideFlags: 0

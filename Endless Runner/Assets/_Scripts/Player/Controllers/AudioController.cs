@@ -1,10 +1,11 @@
+using TheCreators.Scripts.ScriptableObjects.Audio;
 using UnityEngine;
 
 namespace TheCreators.Player.Controllers
 {
-    public class SoundController : MonoBehaviour
+    public class AudioController : MonoBehaviour
     {
-        [SerializeField] private AudioClip _footstepClip;
+        [SerializeField] private SimpleAudioEvent _footstep;
         private AudioSource _audioSource;
         private void Awake()
         {
@@ -12,8 +13,7 @@ namespace TheCreators.Player.Controllers
         }
         public void PlayFootstep()
         {
-            _audioSource.clip = _footstepClip;
-            _audioSource.Play();
+            _footstep.Play(_audioSource);
         }
     }
 }

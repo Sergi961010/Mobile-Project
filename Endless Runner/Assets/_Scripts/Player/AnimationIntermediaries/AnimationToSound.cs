@@ -5,10 +5,10 @@ namespace TheCreators.Player.AnimationIntermediaries
 {
     public class AnimationToSound : MonoBehaviour
     {
-        private SoundController _soundController;
+        private AudioController _soundController;
         private void Awake()
         {
-            _soundController = GetComponentInChildren<SoundController>();
+            _soundController = GetComponentInChildren<AudioController>();
         }
         public void PlayFootstep()
         {

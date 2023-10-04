@@ -122,8 +122,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 606
-        height: 920
+        width: 310
+        height: 460
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f58490692e6b8c449823273ab37698e0
-      internalID: -1967486881
+      spriteID: 559f1f1f1640daf44a9ad5dc1b0dc44b
+      internalID: -706087947
       vertices: []
       indices: 
       edges: []
@@ -141,10 +141,10 @@ TextureImporter:
       name: WallTrapAttackSpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 606
+        x: 310
         y: 0
-        width: 606
-        height: 920
+        width: 310
+        height: 460
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 182bac197eae61146a30bb92123e15a1
-      internalID: -453126827
+      spriteID: 6186fb88fe7dea74d9387b493c8baec8
+      internalID: -2023890333
       vertices: []
       indices: 
       edges: []
@@ -162,10 +162,10 @@ TextureImporter:
       name: WallTrapAttackSpriteSheet_2
       rect:
         serializedVersion: 2
-        x: 1212
+        x: 620
         y: 0
-        width: 606
-        height: 920
+        width: 310
+        height: 460
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,8 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18e3012aa00e6974cb2ca0abe42f79b4
-      internalID: 1290750965
+      spriteID: ce83e24032ddc9842b827869aa0a195c
+      internalID: -1910940729
       vertices: []
       indices: 
       edges: []
@@ -183,10 +183,10 @@ TextureImporter:
       name: WallTrapAttackSpriteSheet_3
       rect:
         serializedVersion: 2
-        x: 1818
+        x: 930
         y: 0
-        width: 606
-        height: 920
+        width: 310
+        height: 460
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,8 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7dae5ea633ef99d4daab59086af785c5
-      internalID: 1706173175
+      spriteID: b012dfdeccbd20c43817817ebf486af8
+      internalID: 157090671
       vertices: []
       indices: 
       edges: []
@@ -204,10 +204,10 @@ TextureImporter:
       name: WallTrapAttackSpriteSheet_4
       rect:
         serializedVersion: 2
-        x: 2424
+        x: 1240
         y: 0
-        width: 606
-        height: 920
+        width: 310
+        height: 460
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,8 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 058e3e13405f3b1409dd888e43bd3849
-      internalID: -1289721424
+      spriteID: b0bbaf634d6a6b74fae310ef48b27c83
+      internalID: 1288996596
       vertices: []
       indices: 
       edges: []
@@ -225,10 +225,10 @@ TextureImporter:
       name: WallTrapAttackSpriteSheet_5
       rect:
         serializedVersion: 2
-        x: 3030
+        x: 1550
         y: 0
-        width: 606
-        height: 920
+        width: 310
+        height: 460
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,8 +236,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0b643ad1bfc9e448966e5fbc90b5581
-      internalID: -1315025057
+      spriteID: 9eec9abf9565f0c4ead6b30b10a3ecd5
+      internalID: 1785337227
       vertices: []
       indices: 
       edges: []
@@ -246,10 +246,10 @@ TextureImporter:
       name: WallTrapAttackSpriteSheet_6
       rect:
         serializedVersion: 2
-        x: 3636
+        x: 1860
         y: 0
-        width: 606
-        height: 920
+        width: 310
+        height: 460
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,8 +257,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 107d4a51a16eb9b4ca621a8325e5ee81
-      internalID: -371110647
+      spriteID: b5d601c92c41fc547ba922c123947931
+      internalID: 1330724484
       vertices: []
       indices: 
       edges: []
@@ -267,10 +267,10 @@ TextureImporter:
       name: WallTrapAttackSpriteSheet_7
       rect:
         serializedVersion: 2
-        x: 4242
+        x: 2170
         y: 0
-        width: 606
-        height: 920
+        width: 310
+        height: 460
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,8 +278,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c4d409d0a5101f47ad1c45435951625
-      internalID: 624636488
+      spriteID: fe5396952542cff4497e892d74f79510
+      internalID: 1968371154
       vertices: []
       indices: 
       edges: []
@@ -288,10 +288,10 @@ TextureImporter:
       name: WallTrapAttackSpriteSheet_8
       rect:
         serializedVersion: 2
-        x: 4848
+        x: 2480
         y: 0
-        width: 606
-        height: 920
+        width: 310
+        height: 460
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,8 +299,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aba85c566b404c04dbc300d0005ae77f
-      internalID: 625294133
+      spriteID: e2826b6a4d0bf1649ba0f53c96820031
+      internalID: 858774574
       vertices: []
       indices: 
       edges: []
@@ -309,10 +309,10 @@ TextureImporter:
       name: WallTrapAttackSpriteSheet_9
       rect:
         serializedVersion: 2
-        x: 5454
+        x: 2790
         y: 0
-        width: 606
-        height: 920
+        width: 310
+        height: 460
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,8 +320,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f900ef243e3e30b45992c8120145edd2
-      internalID: -1404587919
+      spriteID: 6d8cfc3230faa274e89e88866f8554c0
+      internalID: -1439097667
       vertices: []
       indices: 
       edges: []
@@ -330,10 +330,10 @@ TextureImporter:
       name: WallTrapAttackSpriteSheet_10
       rect:
         serializedVersion: 2
-        x: 6060
+        x: 3100
         y: 0
-        width: 606
-        height: 920
+        width: 310
+        height: 460
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,8 +341,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 376cd57174bf49e40941605545c566cd
-      internalID: 1406850580
+      spriteID: 218cb34462245b74a95aad00595b7536
+      internalID: -1644750181
       vertices: []
       indices: 
       edges: []
@@ -351,10 +351,10 @@ TextureImporter:
       name: WallTrapAttackSpriteSheet_11
       rect:
         serializedVersion: 2
-        x: 6666
+        x: 3410
         y: 0
-        width: 606
-        height: 920
+        width: 310
+        height: 460
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -362,8 +362,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9192c53598f2afd4b8d5d237e403ab26
-      internalID: -1080300891
+      spriteID: b3ddb3ce27b468942adb7c928d30d615
+      internalID: -1660163497
       vertices: []
       indices: 
       edges: []
@@ -372,10 +372,10 @@ TextureImporter:
       name: WallTrapAttackSpriteSheet_12
       rect:
         serializedVersion: 2
-        x: 7272
+        x: 3720
         y: 0
-        width: 606
-        height: 920
+        width: 310
+        height: 460
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -383,8 +383,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd44eb25646b2934e8a8508bee2961b8
-      internalID: -1395198958
+      spriteID: cecdabc407bf521429c7c4fc5cbccb40
+      internalID: -978979597
       vertices: []
       indices: 
       edges: []
@@ -393,10 +393,10 @@ TextureImporter:
       name: WallTrapAttackSpriteSheet_13
       rect:
         serializedVersion: 2
-        x: 7878
+        x: 4030
         y: 0
-        width: 606
-        height: 920
+        width: 310
+        height: 460
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -404,8 +404,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46726a2e61dc731429744de5bbcc3248
-      internalID: -386842797
+      spriteID: 5cc6265fd728e6647a97878d7da743d6
+      internalID: -26538184
       vertices: []
       indices: 
       edges: []
@@ -414,10 +414,10 @@ TextureImporter:
       name: WallTrapAttackSpriteSheet_14
       rect:
         serializedVersion: 2
-        x: 8484
+        x: 4340
         y: 0
-        width: 606
-        height: 920
+        width: 310
+        height: 460
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -425,8 +425,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cce25be34510e244186595451323133f
-      internalID: 361891940
+      spriteID: 7c6b8079a90940e48a4fa25bc4ad4d66
+      internalID: -486529491
       vertices: []
       indices: 
       edges: []
@@ -435,10 +435,10 @@ TextureImporter:
       name: WallTrapAttackSpriteSheet_15
       rect:
         serializedVersion: 2
-        x: 9090
+        x: 4650
         y: 0
-        width: 606
-        height: 920
+        width: 310
+        height: 460
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -446,8 +446,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22dc4e064c1c07f4db519eedded35d3c
-      internalID: 493238386
+      spriteID: 7d36d8bccef8ff3438bf601ce4f37923
+      internalID: -1162714442
       vertices: []
       indices: 
       edges: []
@@ -456,10 +456,10 @@ TextureImporter:
       name: WallTrapAttackSpriteSheet_16
       rect:
         serializedVersion: 2
-        x: 9696
+        x: 4960
         y: 0
-        width: 606
-        height: 920
+        width: 310
+        height: 460
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -467,8 +467,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3e31fb685cc4c04fa3e65262a9cc666
-      internalID: 1890112461
+      spriteID: fe0e12885ccbcb5478185063d3946ab9
+      internalID: 624492072
       vertices: []
       indices: 
       edges: []
@@ -477,10 +477,10 @@ TextureImporter:
       name: WallTrapAttackSpriteSheet_17
       rect:
         serializedVersion: 2
-        x: 10302
+        x: 5270
         y: 0
-        width: 606
-        height: 920
+        width: 310
+        height: 460
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -488,8 +488,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16ded7481a7d8684fa9d49e4cf031eaa
-      internalID: 548905259
+      spriteID: bb4a85f0e1130984dadfbc3a4e514c6b
+      internalID: 957888932
       vertices: []
       indices: 
       edges: []
@@ -498,10 +498,10 @@ TextureImporter:
       name: WallTrapAttackSpriteSheet_18
       rect:
         serializedVersion: 2
-        x: 10908
+        x: 5580
         y: 0
-        width: 606
-        height: 920
+        width: 310
+        height: 460
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -509,8 +509,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee00ae67b95999e4f913be53a99b2ab0
-      internalID: 19144484
+      spriteID: c8ea3e3fa10859c4897a79e686ddd34e
+      internalID: 1677019062
       vertices: []
       indices: 
       edges: []
@@ -519,10 +519,10 @@ TextureImporter:
       name: WallTrapAttackSpriteSheet_19
       rect:
         serializedVersion: 2
-        x: 11514
+        x: 5890
         y: 0
-        width: 606
-        height: 920
+        width: 310
+        height: 460
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -530,8 +530,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cb1ff8251bc27446a8826b62811cd74
-      internalID: -84370734
+      spriteID: 7738c275439a703429da88820cb410cb
+      internalID: -2109095059
       vertices: []
       indices: 
       edges: []
@@ -540,10 +540,10 @@ TextureImporter:
       name: WallTrapAttackSpriteSheet_20
       rect:
         serializedVersion: 2
-        x: 12120
+        x: 6200
         y: 0
-        width: 606
-        height: 920
+        width: 310
+        height: 460
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -551,8 +551,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5085dcb890efd8847b1559efdad04c20
-      internalID: -1126634178
+      spriteID: 504973b0041b7ed4ea39d2d0a7d5af44
+      internalID: -1527591747
       vertices: []
       indices: 
       edges: []
@@ -561,10 +561,10 @@ TextureImporter:
       name: WallTrapAttackSpriteSheet_21
       rect:
         serializedVersion: 2
-        x: 12726
+        x: 6510
         y: 0
-        width: 606
-        height: 920
+        width: 310
+        height: 460
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -572,8 +572,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47fcd272420c5134ab210606f4f1812b
-      internalID: -258346627
+      spriteID: 42dd0ab7ea6dfbe46b8f371e5fc32f11
+      internalID: 509263681
       vertices: []
       indices: 
       edges: []
@@ -582,10 +582,10 @@ TextureImporter:
       name: WallTrapAttackSpriteSheet_22
       rect:
         serializedVersion: 2
-        x: 13332
+        x: 6820
         y: 0
-        width: 606
-        height: 920
+        width: 310
+        height: 460
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -593,8 +593,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1d04a9418effa54ea595d04ea4224a9
-      internalID: -2138405653
+      spriteID: b7787fd3be1113d48a4a5fe560fda4af
+      internalID: 261733626
       vertices: []
       indices: 
       edges: []
@@ -603,10 +603,10 @@ TextureImporter:
       name: WallTrapAttackSpriteSheet_23
       rect:
         serializedVersion: 2
-        x: 13938
+        x: 7130
         y: 0
-        width: 606
-        height: 920
+        width: 310
+        height: 460
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -614,8 +614,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7d90cf652667e6438c235dfafdb7c0f
-      internalID: -655049351
+      spriteID: b3e543b4e848ce04ba6fc2da087d0e08
+      internalID: 1749783966
       vertices: []
       indices: 
       edges: []
@@ -631,30 +631,30 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      WallTrapAttackSpriteSheet_11: -1080300891
-      WallTrapAttackSpriteSheet_7: 624636488
-      WallTrapAttackSpriteSheet_15: 493238386
-      WallTrapAttackSpriteSheet_4: -1289721424
-      WallTrapAttackSpriteSheet_12: -1395198958
-      WallTrapAttackSpriteSheet_6: -371110647
-      WallTrapAttackSpriteSheet_16: 1890112461
-      WallTrapAttackSpriteSheet_0: -1967486881
-      WallTrapAttackSpriteSheet_22: -2138405653
-      WallTrapAttackSpriteSheet_2: 1290750965
-      WallTrapAttackSpriteSheet_21: -258346627
-      WallTrapAttackSpriteSheet_23: -655049351
-      WallTrapAttackSpriteSheet_17: 548905259
-      WallTrapAttackSpriteSheet_18: 19144484
-      WallTrapAttackSpriteSheet_3: 1706173175
-      WallTrapAttackSpriteSheet_10: 1406850580
-      WallTrapAttackSpriteSheet_5: -1315025057
-      WallTrapAttackSpriteSheet_13: -386842797
-      WallTrapAttackSpriteSheet_19: -84370734
-      WallTrapAttackSpriteSheet_8: 625294133
-      WallTrapAttackSpriteSheet_14: 361891940
-      WallTrapAttackSpriteSheet_9: -1404587919
-      WallTrapAttackSpriteSheet_20: -1126634178
-      WallTrapAttackSpriteSheet_1: -453126827
+      WallTrapAttackSpriteSheet_11: -1660163497
+      WallTrapAttackSpriteSheet_7: 1968371154
+      WallTrapAttackSpriteSheet_15: -1162714442
+      WallTrapAttackSpriteSheet_4: 1288996596
+      WallTrapAttackSpriteSheet_12: -978979597
+      WallTrapAttackSpriteSheet_6: 1330724484
+      WallTrapAttackSpriteSheet_16: 624492072
+      WallTrapAttackSpriteSheet_0: -706087947
+      WallTrapAttackSpriteSheet_22: 261733626
+      WallTrapAttackSpriteSheet_2: -1910940729
+      WallTrapAttackSpriteSheet_21: 509263681
+      WallTrapAttackSpriteSheet_23: 1749783966
+      WallTrapAttackSpriteSheet_17: 957888932
+      WallTrapAttackSpriteSheet_18: 1677019062
+      WallTrapAttackSpriteSheet_3: 157090671
+      WallTrapAttackSpriteSheet_10: -1644750181
+      WallTrapAttackSpriteSheet_5: 1785337227
+      WallTrapAttackSpriteSheet_13: -26538184
+      WallTrapAttackSpriteSheet_19: -2109095059
+      WallTrapAttackSpriteSheet_8: 858774574
+      WallTrapAttackSpriteSheet_14: -486529491
+      WallTrapAttackSpriteSheet_9: -1439097667
+      WallTrapAttackSpriteSheet_20: -1527591747
+      WallTrapAttackSpriteSheet_1: -2023890333
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

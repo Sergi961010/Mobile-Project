@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2700598588588969473}
   - component: {fileID: 4224711571104473581}
   m_Layer: 0
-  m_Name: GroundTrap
+  m_Name: Obstacle_GroundTrap
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

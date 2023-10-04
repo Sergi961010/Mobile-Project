@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 052adedd8b47aaf409857e3bbe109088
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 135
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WallTrapIddleSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 606
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ac3d73a564f5694ca49e3bc56007de2
+      internalID: -1957272572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTrapIddleSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 0
+        width: 606
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 272dd468d0c19164a82e70cece433608
+      internalID: 143560369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTrapIddleSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 0
+        width: 606
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60c406f0fd1bb254b9db451339fee35f
+      internalID: -1170711011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTrapIddleSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 0
+        width: 606
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd2852708af35a4980bee3ffe5ee075
+      internalID: 1416631130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTrapIddleSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 2424
+        y: 0
+        width: 606
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a51fcbc2710eda141a233658b9e0ebf3
+      internalID: 2098553339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTrapIddleSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 3030
+        y: 0
+        width: 606
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b834639a08e485f46bfa296de2816724
+      internalID: -949527585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTrapIddleSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 3636
+        y: 0
+        width: 606
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f146d9224234af42bbf10cab5516daf
+      internalID: -943447634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTrapIddleSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 4242
+        y: 0
+        width: 606
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 488970f971f25bc47a715cb50c32921e
+      internalID: -74218720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTrapIddleSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 4848
+        y: 0
+        width: 606
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d83d3e24acefc14db9cc68516438326
+      internalID: -1590282844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTrapIddleSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 5454
+        y: 0
+        width: 606
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682e479f94aa5ed4e8e006c162d3c6d9
+      internalID: -1857088137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTrapIddleSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 6060
+        y: 0
+        width: 606
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f3893361e9d444989604126bfafbb3
+      internalID: 1520530925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTrapIddleSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 6666
+        y: 0
+        width: 606
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5133a89b8e10ae4689bafa132de2d87
+      internalID: 718384580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTrapIddleSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 7272
+        y: 0
+        width: 606
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8d0844e04ae80a4099ccae68f80e6b2
+      internalID: 1659548793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTrapIddleSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 7878
+        y: 0
+        width: 606
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74070eb4ac2b81f49ae217911229f88e
+      internalID: -1947664635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTrapIddleSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 8484
+        y: 0
+        width: 606
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c835550bca5024241b6aaae78ba81c90
+      internalID: 947533173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTrapIddleSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 9090
+        y: 0
+        width: 606
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc620f3f154167c42a70e2114c259de9
+      internalID: 1103699600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTrapIddleSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 9696
+        y: 0
+        width: 606
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8bf53f38454a39409d37f226f0ef606
+      internalID: -384089720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTrapIddleSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 10302
+        y: 0
+        width: 606
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4aa31fffdce04845b0332f02371b43a
+      internalID: -958765608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTrapIddleSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 10908
+        y: 0
+        width: 606
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f713cf48de29c40b1b6938f5889ea1
+      internalID: 427830863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTrapIddleSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 11514
+        y: 0
+        width: 606
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24172da8b4a221649b6e4890c3382c6e
+      internalID: 1532868008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTrapIddleSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 12120
+        y: 0
+        width: 606
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c82c1131a8ac4f449af812649614bedd
+      internalID: 1161899554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTrapIddleSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 12726
+        y: 0
+        width: 606
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19452714d677222419c3d40a5f1070f6
+      internalID: -841100136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTrapIddleSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 13332
+        y: 0
+        width: 606
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d47e978d324b79642aaa7a5b1b093e40
+      internalID: 1546479185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTrapIddleSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 13938
+        y: 0
+        width: 606
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c07a127a7e313ed44ba2dde573214308
+      internalID: -1247955656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      WallTrapIddleSpriteSheet_22: 1546479185
+      WallTrapIddleSpriteSheet_17: -958765608
+      WallTrapIddleSpriteSheet_19: 1532868008
+      WallTrapIddleSpriteSheet_9: -1857088137
+      WallTrapIddleSpriteSheet_15: 1103699600
+      WallTrapIddleSpriteSheet_16: -384089720
+      WallTrapIddleSpriteSheet_8: -1590282844
+      WallTrapIddleSpriteSheet_3: 1416631130
+      WallTrapIddleSpriteSheet_0: -1957272572
+      WallTrapIddleSpriteSheet_12: 1659548793
+      WallTrapIddleSpriteSheet_4: 2098553339
+      WallTrapIddleSpriteSheet_2: -1170711011
+      WallTrapIddleSpriteSheet_13: -1947664635
+      WallTrapIddleSpriteSheet_7: -74218720
+      WallTrapIddleSpriteSheet_21: -841100136
+      WallTrapIddleSpriteSheet_14: 947533173
+      WallTrapIddleSpriteSheet_18: 427830863
+      WallTrapIddleSpriteSheet_10: 1520530925
+      WallTrapIddleSpriteSheet_23: -1247955656
+      WallTrapIddleSpriteSheet_1: 143560369
+      WallTrapIddleSpriteSheet_20: 1161899554
+      WallTrapIddleSpriteSheet_6: -943447634
+      WallTrapIddleSpriteSheet_11: 718384580
+      WallTrapIddleSpriteSheet_5: -949527585
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

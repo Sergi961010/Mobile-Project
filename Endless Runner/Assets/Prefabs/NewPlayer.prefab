@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 941084709559435287}
   - component: {fileID: 6824193355922302065}
-  - component: {fileID: 905592559837032735}
+  - component: {fileID: 2874762601620002635}
   m_Layer: 0
   m_Name: Sound
   m_TagString: Untagged
@@ -129,7 +129,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &905592559837032735
+--- !u!114 &2874762601620002635
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1112159694776310856}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20285910d90ef1546a9a3c9d44c5d831, type: 3}
+  m_Script: {fileID: 11500000, guid: 51f808d3def76264a9567f680b1b09b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _footstep: {fileID: 11400000, guid: 78d3fd303c823ea40a2a0dfc6d3b0272, type: 2}

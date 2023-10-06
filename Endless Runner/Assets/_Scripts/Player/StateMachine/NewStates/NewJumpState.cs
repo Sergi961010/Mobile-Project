@@ -19,7 +19,7 @@ namespace TheCreators.Player
             CalculateJumpForce();
             HandleJump();
             _context.PlayerAnimator.PlayAnimation(_animations[0]);
-            SoundManager.Instance.PlaySound(_audioClip);
+            //SoundManager.Instance.PlaySound(_audioClip);
         }
         public override void LogicUpdate()
         {

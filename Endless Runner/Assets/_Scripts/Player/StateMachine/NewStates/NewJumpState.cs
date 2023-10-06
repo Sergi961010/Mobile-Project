@@ -20,6 +20,8 @@ namespace TheCreators.Player
             HandleJump();
             _context.PlayerAnimator.PlayAnimation(_animations[0]);
             SoundManager.Instance.PlaySound(_audioClip);
+            _context.InputManager.JumpAction.Disable();
+            _context.InputManager.PrimaryTouch.Disable();
         }
         public override void LogicUpdate()
         {

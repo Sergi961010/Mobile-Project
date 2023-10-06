@@ -9,7 +9,8 @@ namespace TheCreators.Player
         public float _speed = 6f;
         public override void Enter()
         {
-            //SoundManager.Instance.PlayLoopedSound(_audioClip);
+            _context.InputManager.JumpAction.Enable();
+            _context.InputManager.PrimaryTouch.Enable();
         }
         public override void LogicUpdate()
         {

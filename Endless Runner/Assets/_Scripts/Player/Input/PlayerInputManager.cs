@@ -9,9 +9,9 @@ namespace TheCreators.Player.Input
     {
         private PlayerControls _playerControls;
 
-        private InputAction _jumpAction;
-        private InputAction _flyAction;
-        private InputAction _primaryTouch;
+        public InputAction JumpAction { get; private set; }
+        public InputAction FlyAction { get; private set; }
+        public InputAction PrimaryTouch { get; private set; }
 
         private Vector2 _lastPrimaryTouchPosition;
         public SwipeDetection SwipeDetection { get; private set; }
@@ -23,28 +23,28 @@ namespace TheCreators.Player.Input
 
             _playerControls = new PlayerControls();
 
-            _jumpAction = _playerControls.Mobile.Jump;
-            _flyAction = _playerControls.Mobile.Fly;
-            _primaryTouch = _playerControls.Mobile.PrimaryTouch;
+            JumpAction = _playerControls.Mobile.Jump;
+            FlyAction = _playerControls.Mobile.Fly;
+            PrimaryTouch = _playerControls.Mobile.PrimaryTouch;
         }
         private void OnEnable()
         {
             _playerControls.Enable();
-            _jumpAction.performed += OnJumpInput;
-            _flyAction.performed += OnFlyAction;
-            _flyAction.canceled += OnCancelFlyAction;
-            _primaryTouch.started += StartPrimaryTouch;
-            _primaryTouch.performed += ctx => _lastPrimaryTouchPosition = ctx.ReadValue<Vector2>();
-            _primaryTouch.canceled += EndPrimaryTouch;
+            JumpAction.performed += OnJumpInput;
+            FlyAction.performed += OnFlyAction;
+            FlyAction.canceled += OnCancelFlyAction;
+            PrimaryTouch.started += StartPrimaryTouch;
+            PrimaryTouch.performed += ctx => _lastPrimaryTouchPosition = ctx.ReadValue<Vector2>();
+            PrimaryTouch.canceled += EndPrimaryTouch;
         }
         private void OnDisable()
         {
             _playerControls.Disable();
-            _jumpAction.performed -= OnJumpInput;
-            _flyAction.performed -= OnFlyAction;
-            _flyAction.canceled -= OnCancelFlyAction;
-            _primaryTouch.started -= StartPrimaryTouch;
-            _primaryTouch.canceled -= EndPrimaryTouch;
+            JumpAction.performed -= OnJumpInput;
+            FlyAction.performed -= OnFlyAction;
+            FlyAction.canceled -= OnCancelFlyAction;
+            PrimaryTouch.started -= StartPrimaryTouch;
+            PrimaryTouch.canceled -= EndPrimaryTouch;
         }
         private void OnJumpInput(InputAction.CallbackContext context)
         {
@@ -58,7 +58,7 @@ namespace TheCreators.Player.Input
         private void OnCancelFlyAction(InputAction.CallbackContext context) => FlyPerformed = false;
         private void StartPrimaryTouch(InputAction.CallbackContext context)
         {
-            Vector2 screenPosition = _primaryTouch.ReadValue<Vector2>();
+            Vector2 screenPosition = PrimaryTouch.ReadValue<Vector2>();
             float startTime = (float)context.startTime;
             GameEvent.StartTouch.Invoke(screenPosition, startTime);
 

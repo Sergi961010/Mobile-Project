@@ -19,13 +19,9 @@ namespace TheCreators.Player
             CalculateJumpForce();
             HandleJump();
             _context.PlayerAnimator.PlayAnimation(_animations[0]);
-<<<<<<< HEAD
-            //SoundManager.Instance.PlaySound(_audioClip);
-=======
             SoundManager.Instance.PlaySound(_audioClip);
             _context.InputManager.JumpAction.Disable();
             _context.InputManager.PrimaryTouch.Disable();
->>>>>>> input-buffer
         }
         public override void LogicUpdate()
         {

@@ -53,7 +53,5 @@ namespace TheCreators.Player.Input
                 UnburrowPerformed = true;
             }
         }
-        //public void UseBurrow() => BurrowPerformed = false;
-        //public void UseUnburrow() => UnburrowPerformed = false;
     }
 }

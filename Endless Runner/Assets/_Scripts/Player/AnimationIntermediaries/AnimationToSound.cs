@@ -1,15 +1,11 @@
-using TheCreators.Player.Controllers;
+using TheCreators.CoreSystem.CoreComponents;
 using UnityEngine;
 
 namespace TheCreators.Player.AnimationIntermediaries
 {
     public class AnimationToSound : MonoBehaviour
     {
-        private AudioController _soundController;
-        private void Awake()
-        {
-            _soundController = GetComponentInChildren<AudioController>();
-        }
+        [SerializeField] private AudioController _soundController;
         public void PlayFootstep()
         {
             _soundController.PlayFootstep();

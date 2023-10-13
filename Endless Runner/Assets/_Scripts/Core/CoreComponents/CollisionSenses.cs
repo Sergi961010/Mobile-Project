@@ -1,4 +1,4 @@
-using TheCreators.CustomEventSystem;
+using System.Collections;
 using UnityEngine;
 
 namespace TheCreators.CoreSystem.CoreComponents
@@ -19,7 +19,7 @@ namespace TheCreators.CoreSystem.CoreComponents
         private void OnTriggerEnter2D(Collider2D collider)
         {
             if (collider.gameObject.CompareTag("Obstacle"))
-                GameEvent.OnPlayerDeath.Invoke();
+                StartCoroutine(Core.Death.Die());
         }
     }
 }

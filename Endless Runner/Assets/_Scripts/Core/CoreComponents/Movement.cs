@@ -13,7 +13,11 @@ namespace TheCreators.CoreSystem.CoreComponents
             base.Awake();
             Rigidbody = GetComponentInParent<Rigidbody2D>();
         }
-        public void Run(float value)
+        private void Start()
+        {
+            SetXVelocity(6);
+        }
+        public void SetXVelocity(float value)
         {
             workspace.Set(value, workspace.y);
             Rigidbody.velocity = workspace;

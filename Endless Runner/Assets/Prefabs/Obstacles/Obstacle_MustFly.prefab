@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3518995735774740331}
   - component: {fileID: 3310247635220462147}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5412686771230300281}
   - component: {fileID: 7401197419039967607}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle_MustFly
   m_TagString: Obstacle
   m_Icon: {fileID: 0}

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7a0e31d125d86f04bb1ccaeccfe93c2b
+guid: c4f568e8fafa89c4b918a2f5e5b7691f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,12 +117,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Character Start_Digg_Spritesheet_0
+      name: Character Start_Dig_Spritesheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 255
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -131,19 +131,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc834d3f597dc5540af52dfc87cc1ba0
-      internalID: 806406386
+      spriteID: 4e87ff0363d3a1742af4a1b41586e282
+      internalID: -703011863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Start_Digg_Spritesheet_1
+      name: Character Start_Dig_Spritesheet_1
       rect:
         serializedVersion: 2
-        x: 255
+        x: 250
         y: 0
-        width: 255
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -152,19 +152,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a7df792ae2e36d4cbd483807c5fc9e6
-      internalID: 1170301001
+      spriteID: c36d8849184a2314fb984f3cc0890d30
+      internalID: -1408356846
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Start_Digg_Spritesheet_2
+      name: Character Start_Dig_Spritesheet_2
       rect:
         serializedVersion: 2
-        x: 510
+        x: 500
         y: 0
-        width: 255
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -173,19 +173,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96b7ce28f01b01f4ab1d821256aea80d
-      internalID: 1869148653
+      spriteID: cebf038f35f164049a36e44834ba798a
+      internalID: 21827841
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Start_Digg_Spritesheet_3
+      name: Character Start_Dig_Spritesheet_3
       rect:
         serializedVersion: 2
-        x: 765
+        x: 750
         y: 0
-        width: 255
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -194,19 +194,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 342e480412e27784e9aa0d9607302387
-      internalID: -767834080
+      spriteID: 34f7ff4a8435c014a88e588f018856d8
+      internalID: -1689719483
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Start_Digg_Spritesheet_4
+      name: Character Start_Dig_Spritesheet_4
       rect:
         serializedVersion: 2
-        x: 1020
+        x: 1000
         y: 0
-        width: 255
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -215,19 +215,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1ed1b2b3103d0443971a69739e13194
-      internalID: 1737090960
+      spriteID: 214399d3acbf35a4bb91334d75681c4b
+      internalID: 1029059464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Start_Digg_Spritesheet_5
+      name: Character Start_Dig_Spritesheet_5
       rect:
         serializedVersion: 2
-        x: 1275
+        x: 1250
         y: 0
-        width: 255
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -236,19 +236,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20113a943783c434a8b405d2abdaa612
-      internalID: 678600169
+      spriteID: e92fe1675e57ffe40b2c66c0259cb911
+      internalID: -208883047
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Start_Digg_Spritesheet_6
+      name: Character Start_Dig_Spritesheet_6
       rect:
         serializedVersion: 2
-        x: 1530
+        x: 1500
         y: 0
-        width: 255
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -257,19 +257,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e085209757e23346b0e7b402f596750
-      internalID: -484022096
+      spriteID: e025ca65d2577da4a9071e368aca869d
+      internalID: 1644996393
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Start_Digg_Spritesheet_7
+      name: Character Start_Dig_Spritesheet_7
       rect:
         serializedVersion: 2
-        x: 1785
+        x: 1750
         y: 0
-        width: 255
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -278,19 +278,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfb94ed5389580547b93335ee8baa388
-      internalID: -586553489
+      spriteID: f8ff3f1ade79239479befed2bf0867d5
+      internalID: -1740398410
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Start_Digg_Spritesheet_8
+      name: Character Start_Dig_Spritesheet_8
       rect:
         serializedVersion: 2
-        x: 2040
+        x: 2000
         y: 0
-        width: 255
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -299,8 +299,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b59a5babc5c507748ae2433fae99c5ee
-      internalID: 1772853353
+      spriteID: 65a21291d80d98a4380687757177f12b
+      internalID: -416393677
       vertices: []
       indices: 
       edges: []
@@ -316,16 +316,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Character Start_Digg_Spritesheet_6: -484022096
-      Character Start_Digg_Spritesheet_2: 1869148653
-      Character Start_Digg_Spritesheet_5: 678600169
-      Character Start_Digg_Spritesheet_9: 649399956
-      Character Start_Digg_Spritesheet_4: 1737090960
-      Character Start_Digg_Spritesheet_1: 1170301001
-      Character Start_Digg_Spritesheet_3: -767834080
-      Character Start_Digg_Spritesheet_7: -586553489
-      Character Start_Digg_Spritesheet_8: 1772853353
-      Character Start_Digg_Spritesheet_0: 806406386
+      Character Start_Dig_Spritesheet_0: -703011863
+      Character Start_Dig_Spritesheet_1: -1408356846
+      Character Start_Dig_Spritesheet_8: -416393677
+      Character Start_Dig_Spritesheet_2: 21827841
+      Character Start_Dig_Spritesheet_3: -1689719483
+      Character Start_Dig_Spritesheet_5: -208883047
+      Character Start_Dig_Spritesheet_9: 1735526160
+      Character Start_Dig_Spritesheet_6: 1644996393
+      Character Start_Dig_Spritesheet_7: -1740398410
+      Character Start_Dig_Spritesheet_4: 1029059464
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

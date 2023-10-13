@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 174b2d0687345b14192a1e0f6fc16826
+guid: dc841f70e8fe9584bb421c5776a33b79
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,148 +117,148 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Character Loop_Digg_Spritesheet_0
+      name: Character Loop_Dig_Spritesheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 255
+        width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b3c1a367a770394e816ce5864333a31
-      internalID: -912098026
+      spriteID: cfd4fd64872ab6a498f9a15258f810e6
+      internalID: 1447727308
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Loop_Digg_Spritesheet_1
+      name: Character Loop_Dig_Spritesheet_1
       rect:
         serializedVersion: 2
-        x: 255
+        x: 250
         y: 0
-        width: 255
+        width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10c188e8ef5354f48871d8f6d7854ad9
-      internalID: 1835379374
+      spriteID: 4e9eacd7af006044186f67dbe9b8117c
+      internalID: -396287435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Loop_Digg_Spritesheet_2
+      name: Character Loop_Dig_Spritesheet_2
       rect:
         serializedVersion: 2
-        x: 510
+        x: 500
         y: 0
-        width: 255
+        width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4cecbf50e49e71c40b9685a447af3ee7
-      internalID: 1769326510
+      spriteID: ca96ad4d57f34e0458c5993b5ac68f77
+      internalID: -823953963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Loop_Digg_Spritesheet_3
+      name: Character Loop_Dig_Spritesheet_3
       rect:
         serializedVersion: 2
-        x: 765
+        x: 750
         y: 0
-        width: 255
+        width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84e63e718e406104cb5689b585969aab
-      internalID: -428278124
+      spriteID: 2c4f2b0d76eabaf42acdfa67101897ab
+      internalID: -1017459202
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Loop_Digg_Spritesheet_4
+      name: Character Loop_Dig_Spritesheet_4
       rect:
         serializedVersion: 2
-        x: 1020
+        x: 1000
         y: 0
-        width: 255
+        width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ae763a50fcaf9244a85e6ea72fd732e
-      internalID: 539707785
+      spriteID: 4479b7ea7c98e92449afc9eb6aa2334a
+      internalID: 1856520705
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Loop_Digg_Spritesheet_5
+      name: Character Loop_Dig_Spritesheet_5
       rect:
         serializedVersion: 2
-        x: 1275
+        x: 1250
         y: 0
-        width: 255
+        width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73df71c099cc0384a91c7b76dd74aa5e
-      internalID: -1673562195
+      spriteID: 5dd083525348489429716ea0709ceedb
+      internalID: 687048137
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Loop_Digg_Spritesheet_6
+      name: Character Loop_Dig_Spritesheet_6
       rect:
         serializedVersion: 2
-        x: 1530
+        x: 1500
         y: 0
-        width: 255
+        width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a58333acfe2a4a64bbd06fe97c5258e0
-      internalID: 1681398589
+      spriteID: 91668568381039341b98bbaf5588626c
+      internalID: 173739494
       vertices: []
       indices: 
       edges: []
@@ -274,14 +274,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Character Loop_Digg_Spritesheet_4: 539707785
-      Character Loop_Digg_Spritesheet_1: 1835379374
-      Character Loop_Digg_Spritesheet_3: -428278124
-      Character Loop_Digg_Spritesheet_6: 1681398589
-      Character Loop_Digg_Spritesheet_7: 242715016
-      Character Loop_Digg_Spritesheet_5: -1673562195
-      Character Loop_Digg_Spritesheet_0: -912098026
-      Character Loop_Digg_Spritesheet_2: 1769326510
+      Character Loop_Dig_Spritesheet_5: 687048137
+      Character Loop_Dig_Spritesheet_4: 1856520705
+      Character Loop_Dig_Spritesheet_2: -823953963
+      Character Loop_Dig_Spritesheet_8: 1903077568
+      Character Loop_Dig_Spritesheet_6: 173739494
+      Character Loop_Dig_Spritesheet_0: 1447727308
+      Character Loop_Dig_Spritesheet_3: -1017459202
+      Character Loop_Dig_Spritesheet_7: -1324315658
+      Character Loop_Dig_Spritesheet_1: -396287435
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

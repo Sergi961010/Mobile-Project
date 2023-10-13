@@ -1,7 +1,7 @@
 using GoogleMobileAds.Api;
-using System;
 using TheCreators.CustomEventSystem;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace TheCreators.UI
 {
@@ -10,6 +10,10 @@ namespace TheCreators.UI
         private readonly string _adUnitId = "ca-app-pub-5793753632569791/8153296224";
         
         private RewardedAd rewardedAd;
+
+        public UnityEvent RewardAdWatched;
+        public UnityEvent RewardAdClosed;
+
         private void Start()
         {
             MobileAds.Initialize(initStatus => { });    
@@ -73,6 +77,7 @@ namespace TheCreators.UI
             ad.OnAdFullScreenContentClosed += () =>
             {
                 Debug.Log("Rewarded ad full screen content closed.");
+                RewardAdClosed.Invoke();
                 LoadRewardedAd();
             };
             // Raised when the ad failed to open full screen content.
@@ -93,7 +98,7 @@ namespace TheCreators.UI
                 rewardedAd.Show((Reward reward) =>
                 {
                     // TODO: Reward the user.
-                    GameEvent.OnPlayerRevive.Invoke();
+                    RewardAdWatched.Invoke();
                     gameObject.SetActive(false);
                     Debug.Log(string.Format(rewardMsg, reward.Type, reward.Amount));
                 });

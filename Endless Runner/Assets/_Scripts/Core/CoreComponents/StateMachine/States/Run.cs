@@ -26,7 +26,7 @@ namespace TheCreators.Player.StateMachine.States
         }
         public override void PhysicsUpdate()
         {
-            //_context.Movement.SetXVelocity(_speed);
+            _context.Movement.Run(_speed);
         }
         public override void Exit()
         {

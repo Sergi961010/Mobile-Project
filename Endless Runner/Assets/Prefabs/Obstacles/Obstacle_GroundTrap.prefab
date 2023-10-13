@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8159183780093073980}
   - component: {fileID: 2700598588588969473}
   - component: {fileID: 4224711571104473581}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Obstacle_GroundTrap
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8486325451444467827}
   - component: {fileID: 6401670638503652763}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

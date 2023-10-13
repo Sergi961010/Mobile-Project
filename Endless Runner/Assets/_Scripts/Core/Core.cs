@@ -16,8 +16,6 @@ namespace TheCreators.CoreSystem
         public PlayerAnimator PlayerAnimator { get; private set; }
         public SpriteRendererComponent SpriteRenderer { get; private set; }
         public AudioController AudioController { get; private set; }
-        public Death Death { get; private set; }
-        public Invulnerability Invulnerability { get; private set; }
         private void Awake()
         {
             Movement = GetComponentInChildren<Movement>();
@@ -26,8 +24,6 @@ namespace TheCreators.CoreSystem
             CollisionSenses = GetComponentInChildren<CollisionSenses>();
             PlayerAnimator = GetComponentInChildren<PlayerAnimator>();
             SpriteRenderer = GetComponentInChildren<SpriteRendererComponent>();
-            Death = GetComponentInChildren<Death>();
-            Invulnerability = GetComponentInChildren<Invulnerability>();
         }
     }
 }

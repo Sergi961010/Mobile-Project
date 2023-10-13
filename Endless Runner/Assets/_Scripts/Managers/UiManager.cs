@@ -8,24 +8,21 @@ namespace TheCreators
     {
         [SerializeField] private GameObject _alert;
         [SerializeField] private Button _rewardAdButton;
-        [SerializeField] private GameObject _pauseMenu;
         private void OnEnable()
         {
             GameEvent.OnScreenObstacleTrigger.AddListener(EnableAlert);
+            GameEvent.OnPlayerDeath.AddListener(EnableRewardAdButton);
         }
         private void OnDisable()
         {
             GameEvent.OnScreenObstacleTrigger.RemoveListener(EnableAlert);
+            GameEvent.OnPlayerDeath.RemoveListener(EnableRewardAdButton);
         }
         private void EnableAlert()
         {
             _alert.SetActive(true);
         }
-        public void EnablePauseMenu()
-        {
-            _pauseMenu.SetActive(true);
-        }
-        public void EnableRewardAdButton()
+        private void EnableRewardAdButton()
         {
             _rewardAdButton.gameObject.SetActive(true);
         }

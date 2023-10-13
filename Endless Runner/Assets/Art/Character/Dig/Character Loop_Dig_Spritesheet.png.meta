@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c8d91005400f52c4ea29bb205b16d154
+guid: dc841f70e8fe9584bb421c5776a33b79
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,12 +117,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Character End_Fly_Spritesheet_2.0_0
+      name: Character Loop_Dig_Spritesheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 255
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -131,19 +131,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 572d0acd4300f86409c31dd72c755095
-      internalID: 1529490719
+      spriteID: cfd4fd64872ab6a498f9a15258f810e6
+      internalID: 1447727308
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character End_Fly_Spritesheet_2.0_1
+      name: Character Loop_Dig_Spritesheet_1
       rect:
         serializedVersion: 2
-        x: 255
+        x: 250
         y: 0
-        width: 255
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -152,19 +152,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcd35aed08eba6947ac24f00bcd3a65d
-      internalID: -205217717
+      spriteID: 4e9eacd7af006044186f67dbe9b8117c
+      internalID: -396287435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character End_Fly_Spritesheet_2.0_2
+      name: Character Loop_Dig_Spritesheet_2
       rect:
         serializedVersion: 2
-        x: 510
+        x: 500
         y: 0
-        width: 255
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -173,19 +173,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b367cd961cc86ea499b1b5c2d88292bd
-      internalID: -742656706
+      spriteID: ca96ad4d57f34e0458c5993b5ac68f77
+      internalID: -823953963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character End_Fly_Spritesheet_2.0_3
+      name: Character Loop_Dig_Spritesheet_3
       rect:
         serializedVersion: 2
-        x: 765
+        x: 750
         y: 0
-        width: 255
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -194,8 +194,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81b53c9434716ed4b8305aefe7418aa2
-      internalID: 1988451034
+      spriteID: 2c4f2b0d76eabaf42acdfa67101897ab
+      internalID: -1017459202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Loop_Dig_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4479b7ea7c98e92449afc9eb6aa2334a
+      internalID: 1856520705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Loop_Dig_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dd083525348489429716ea0709ceedb
+      internalID: 687048137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Loop_Dig_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91668568381039341b98bbaf5588626c
+      internalID: 173739494
       vertices: []
       indices: 
       edges: []
@@ -211,10 +274,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Character End_Fly_Spritesheet_2.0_3: 1988451034
-      Character End_Fly_Spritesheet_2.0_1: -205217717
-      Character End_Fly_Spritesheet_2.0_2: -742656706
-      Character End_Fly_Spritesheet_2.0_0: 1529490719
+      Character Loop_Dig_Spritesheet_5: 687048137
+      Character Loop_Dig_Spritesheet_4: 1856520705
+      Character Loop_Dig_Spritesheet_2: -823953963
+      Character Loop_Dig_Spritesheet_8: 1903077568
+      Character Loop_Dig_Spritesheet_6: 173739494
+      Character Loop_Dig_Spritesheet_0: 1447727308
+      Character Loop_Dig_Spritesheet_3: -1017459202
+      Character Loop_Dig_Spritesheet_7: -1324315658
+      Character Loop_Dig_Spritesheet_1: -396287435
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

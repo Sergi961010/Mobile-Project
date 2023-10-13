@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b010bfae3d07da647847ddd1a997dc47
+guid: c4f568e8fafa89c4b918a2f5e5b7691f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,12 +117,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Character Exit_Digg_Spritesheet_0
+      name: Character Start_Dig_Spritesheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 255
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -131,19 +131,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22a25fe92c4c3e24198bc7dd90187487
-      internalID: -1049017988
+      spriteID: 4e87ff0363d3a1742af4a1b41586e282
+      internalID: -703011863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Exit_Digg_Spritesheet_1
+      name: Character Start_Dig_Spritesheet_1
       rect:
         serializedVersion: 2
-        x: 255
+        x: 250
         y: 0
-        width: 255
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -152,19 +152,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66526215e8e97634fb8912ecbbb30d70
-      internalID: 483882024
+      spriteID: c36d8849184a2314fb984f3cc0890d30
+      internalID: -1408356846
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Exit_Digg_Spritesheet_2
+      name: Character Start_Dig_Spritesheet_2
       rect:
         serializedVersion: 2
-        x: 510
+        x: 500
         y: 0
-        width: 255
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -173,19 +173,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28aeabbc58c616f4da355a98924011d2
-      internalID: -828581233
+      spriteID: cebf038f35f164049a36e44834ba798a
+      internalID: 21827841
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Exit_Digg_Spritesheet_3
+      name: Character Start_Dig_Spritesheet_3
       rect:
         serializedVersion: 2
-        x: 765
+        x: 750
         y: 0
-        width: 255
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -194,19 +194,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4aa4fc581c3ea594689b773b11e9738c
-      internalID: -282555590
+      spriteID: 34f7ff4a8435c014a88e588f018856d8
+      internalID: -1689719483
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Exit_Digg_Spritesheet_4
+      name: Character Start_Dig_Spritesheet_4
       rect:
         serializedVersion: 2
-        x: 1020
+        x: 1000
         y: 0
-        width: 255
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -215,19 +215,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 785266751b6bbca4ca050be8a228d169
-      internalID: -1916277540
+      spriteID: 214399d3acbf35a4bb91334d75681c4b
+      internalID: 1029059464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Exit_Digg_Spritesheet_5
+      name: Character Start_Dig_Spritesheet_5
       rect:
         serializedVersion: 2
-        x: 1275
+        x: 1250
         y: 0
-        width: 255
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -236,19 +236,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 172608a4aca053b44927b3b8631241ee
-      internalID: 1477032869
+      spriteID: e92fe1675e57ffe40b2c66c0259cb911
+      internalID: -208883047
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Exit_Digg_Spritesheet_6
+      name: Character Start_Dig_Spritesheet_6
       rect:
         serializedVersion: 2
-        x: 1530
+        x: 1500
         y: 0
-        width: 255
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -257,19 +257,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ed70dc6e69160c46a1d4e7eda54e2f9
-      internalID: 844249640
+      spriteID: e025ca65d2577da4a9071e368aca869d
+      internalID: 1644996393
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Exit_Digg_Spritesheet_7
+      name: Character Start_Dig_Spritesheet_7
       rect:
         serializedVersion: 2
-        x: 1785
+        x: 1750
         y: 0
-        width: 255
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -278,19 +278,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 270f5cd57ef751a4383ce2b4583a67c3
-      internalID: -1472925113
+      spriteID: f8ff3f1ade79239479befed2bf0867d5
+      internalID: -1740398410
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character Exit_Digg_Spritesheet_8
+      name: Character Start_Dig_Spritesheet_8
       rect:
         serializedVersion: 2
-        x: 2040
+        x: 2000
         y: 0
-        width: 255
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -299,71 +299,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be2440378349bd2419efd102c7a38d9e
-      internalID: -1335129778
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character Exit_Digg_Spritesheet_9
-      rect:
-        serializedVersion: 2
-        x: 2295
-        y: 0
-        width: 255
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d7d00e255972c2446a7ba7ca506fc484
-      internalID: 663413815
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character Exit_Digg_Spritesheet_10
-      rect:
-        serializedVersion: 2
-        x: 2550
-        y: 0
-        width: 255
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bb658d4f226e6d949be10a446c1733ec
-      internalID: -308334394
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character Exit_Digg_Spritesheet_11
-      rect:
-        serializedVersion: 2
-        x: 2805
-        y: 0
-        width: 255
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b2035ac6227cd7442b383acba92c1413
-      internalID: -1505717435
+      spriteID: 65a21291d80d98a4380687757177f12b
+      internalID: -416393677
       vertices: []
       indices: 
       edges: []
@@ -379,18 +316,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Character Exit_Digg_Spritesheet_3: -282555590
-      Character Exit_Digg_Spritesheet_6: 844249640
-      Character Exit_Digg_Spritesheet_4: -1916277540
-      Character Exit_Digg_Spritesheet_5: 1477032869
-      Character Exit_Digg_Spritesheet_9: 663413815
-      Character Exit_Digg_Spritesheet_11: -1505717435
-      Character Exit_Digg_Spritesheet_0: -1049017988
-      Character Exit_Digg_Spritesheet_7: -1472925113
-      Character Exit_Digg_Spritesheet_8: -1335129778
-      Character Exit_Digg_Spritesheet_2: -828581233
-      Character Exit_Digg_Spritesheet_1: 483882024
-      Character Exit_Digg_Spritesheet_10: -308334394
+      Character Start_Dig_Spritesheet_0: -703011863
+      Character Start_Dig_Spritesheet_1: -1408356846
+      Character Start_Dig_Spritesheet_8: -416393677
+      Character Start_Dig_Spritesheet_2: 21827841
+      Character Start_Dig_Spritesheet_3: -1689719483
+      Character Start_Dig_Spritesheet_5: -208883047
+      Character Start_Dig_Spritesheet_9: 1735526160
+      Character Start_Dig_Spritesheet_6: 1644996393
+      Character Start_Dig_Spritesheet_7: -1740398410
+      Character Start_Dig_Spritesheet_4: 1029059464
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 91079b2672b74e348963480ca72f95a0
+guid: e2c489c032ffb5b4f905f8eb7920ebee
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,12 +117,264 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Character_Run_Sheet_0
+      name: Character Exit_Dig_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e7e377427c2f314db441501b41df873
+      internalID: -2013850339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Exit_Dig_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7723b66f8cf45f34ababe72ad51168f1
+      internalID: 35496804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Exit_Dig_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f807a5f2315708429ae1f4f6eeffccf
+      internalID: -2090268037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Exit_Dig_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6661559f56bf46547a673100a650daa6
+      internalID: 1143507362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Exit_Dig_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa1c89fbab05bab4cbfce24b2ffbd427
+      internalID: -305979241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Exit_Dig_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cd31d2686e13c7408f2dd973e9224da
+      internalID: -258020220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Exit_Dig_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 143158aa73fc6654e96909d4fe052115
+      internalID: -1301220909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Exit_Dig_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ce0775e156e1b4b863739a0ed80e6d
+      internalID: -644218690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Exit_Dig_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3beecedc76b5ecc4a80cb451afcc95a4
+      internalID: 1766815880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Exit_Dig_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 517754d9d6dc5044ea4a31488fd9a01f
+      internalID: -402916862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Exit_Dig_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477ae3bcd02359e4ead708d750d6d9ae
+      internalID: 2083512378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Exit_Dig_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da450519fb65bce49b1e65b5666fb3de
+      internalID: 2084413693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Exit_Dig_Spritesheet_12
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 255
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -131,19 +383,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cd641112f06cb748977686ae1be5d69
-      internalID: -1755898802
+      spriteID: 203306539024287468ffd934add1524b
+      internalID: -1130050969
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_Run_Sheet_1
+      name: Character Exit_Dig_Spritesheet_13
       rect:
         serializedVersion: 2
-        x: 255
+        x: 250
         y: 0
-        width: 255
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -152,218 +404,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b94d52db7de0c8429acf739d609d125
-      internalID: -1157082098
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_Run_Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 510
-        y: 0
-        width: 255
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06165a6c968e3bc40a2964cf7492b6f2
-      internalID: 125657110
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_Run_Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 765
-        y: 0
-        width: 255
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7eaf07640089d3a42a1028c54a843027
-      internalID: 1913397277
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_Run_Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 1020
-        y: 0
-        width: 255
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f8254cbc98ffa4b429f5e45120fd370b
-      internalID: 162173458
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_Run_Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 1275
-        y: 0
-        width: 255
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 20f405c263e046445beb3f9a1b149e92
-      internalID: -2065924156
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_Run_Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 1530
-        y: 0
-        width: 255
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5f04e6dd85b3eb24a89dc79afcbfa974
-      internalID: -751455652
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_Run_Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 1785
-        y: 0
-        width: 255
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aee38e0e33cdc23438fe9bbe90a4167f
-      internalID: -500190705
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_Run_Sheet_8
-      rect:
-        serializedVersion: 2
-        x: 2040
-        y: 0
-        width: 255
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f4a90e89801257448ac0369ebe773c02
-      internalID: -1983557744
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_Run_Sheet_9
-      rect:
-        serializedVersion: 2
-        x: 2295
-        y: 0
-        width: 255
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a994a834970c9134cbda2b17c33e6e05
-      internalID: 1845174219
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_Run_Sheet_10
-      rect:
-        serializedVersion: 2
-        x: 2550
-        y: 0
-        width: 255
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8aee51588183cc64a97d4df94f8e2b33
-      internalID: 885311414
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_Run_Sheet_11
-      rect:
-        serializedVersion: 2
-        x: 2805
-        y: 0
-        width: 255
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 10a17398f688755409982b83774d7659
-      internalID: 1994431125
+      spriteID: 05ba29d45f0ac134d81d09c96f5bc872
+      internalID: 1884447818
       vertices: []
       indices: 
       edges: []
@@ -379,18 +421,30 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Character_Run_Sheet_0: -1755898802
-      Character_Run_Sheet_5: -2065924156
-      Character_Run_Sheet_7: -500190705
-      Character_Run_Sheet_9: 1845174219
-      Character_Run_Sheet_6: -751455652
-      Character_Run_Sheet_3: 1913397277
-      Character_Run_Sheet_10: 885311414
-      Character_Run_Sheet_2: 125657110
-      Character_Run_Sheet_1: -1157082098
-      Character_Run_Sheet_8: -1983557744
-      Character_Run_Sheet_11: 1994431125
-      Character_Run_Sheet_4: 162173458
+      Character Exit_Dig_Spritesheet_16: 1087231438
+      Character Exit_Dig_Spritesheet_18: 144754444
+      Character Exit_Dig_Spritesheet_8: 1766815880
+      Character Exit_Dig_Spritesheet_4: -305979241
+      Character Exit_Dig_Spritesheet_20: -235739309
+      Character Exit_Dig_Spritesheet_14: -14515729
+      Character Exit_Dig_Spritesheet_21: -85066377
+      Character Exit_Dig_Spritesheet_6: -1301220909
+      Character Exit_Dig_Spritesheet_9: -402916862
+      Character Exit_Dig_Spritesheet_13: 1884447818
+      Character Exit_Dig_Spritesheet_15: -2136432318
+      Character Exit_Dig_Spritesheet_0: -2013850339
+      Character Exit_Dig_Spritesheet_23: 1842103674
+      Character Exit_Dig_Spritesheet_1: 35496804
+      Character Exit_Dig_Spritesheet_17: -984237154
+      Character Exit_Dig_Spritesheet_5: -258020220
+      Character Exit_Dig_Spritesheet_10: 2083512378
+      Character Exit_Dig_Spritesheet_22: -1581311042
+      Character Exit_Dig_Spritesheet_11: 2084413693
+      Character Exit_Dig_Spritesheet_3: 1143507362
+      Character Exit_Dig_Spritesheet_19: 1567499598
+      Character Exit_Dig_Spritesheet_7: -644218690
+      Character Exit_Dig_Spritesheet_12: -1130050969
+      Character Exit_Dig_Spritesheet_2: -2090268037
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

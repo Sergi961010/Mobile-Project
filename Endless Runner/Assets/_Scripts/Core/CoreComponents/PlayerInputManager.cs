@@ -71,5 +71,13 @@ namespace TheCreators.CoreSystem.CoreComponents
             GameEvent.EndTouch.Invoke(_lastPrimaryTouchPosition, startTime);
 
         }
+        public void DisablePlayerControls()
+        {
+            _playerControls.Disable();
+        }
+        public void EnablePlayerControls()
+        {
+            _playerControls.Enable();
+        }
     }
 }

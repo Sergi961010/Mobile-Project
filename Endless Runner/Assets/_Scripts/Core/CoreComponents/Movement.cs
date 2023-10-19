@@ -38,32 +38,43 @@ namespace TheCreators.CoreSystem.CoreComponents
         {
             Rigidbody.velocity = new Vector2(Rigidbody.velocity.x, Rigidbody.velocity.y * value);
         }
-        public IEnumerator HandleBurrow(float duration, float surfaceYPosition, float undergroundYPosition)
+        public void Burrow(float duration, float surfaceYPosition, float undergroundYPosition)
         {
-            Vector2 newPosition = transform.position;
-            float percentageComplete = digElapsedTime / duration;
-            digElapsedTime += Time.deltaTime;
-            newPosition.x = transform.position.x + Rigidbody.velocity.x * Time.deltaTime;
-            newPosition.y = Mathf.Lerp(surfaceYPosition, undergroundYPosition, percentageComplete);
-            Rigidbody.isKinematic = true;
-            Rigidbody.MovePosition(newPosition);
-            yield return new WaitForSeconds(duration);
-            digElapsedTime = 0;
+            StartCoroutine(BurrowCoroutine(duration, surfaceYPosition, undergroundYPosition));
         }
-        public void HandleUnburrow(float duration, float surfaceYPosition, float undergroundYPosition)
+        public void Unburrow(float duration, float surfaceYPosition, float undergroundYPosition)
         {
+            StartCoroutine(UnburrowCoroutine(duration, surfaceYPosition, undergroundYPosition));
+        }
+        private IEnumerator BurrowCoroutine(float duration, float surfaceYPosition, float undergroundYPosition)
+        {
+            float elapsedTime = 0;
             Vector2 newPosition = transform.position;
-            float percentageComplete = digElapsedTime / duration;
-            digElapsedTime += Time.deltaTime;
-            newPosition.x = transform.position.x + Rigidbody.velocity.x * Time.deltaTime;
-            newPosition.y = Mathf.Lerp(undergroundYPosition, surfaceYPosition, percentageComplete);
-            Rigidbody.MovePosition(newPosition);
-
-            if (digElapsedTime >= duration)
+            Rigidbody.isKinematic = true;
+            while (elapsedTime < duration)
             {
-                Rigidbody.isKinematic = false;
-                digElapsedTime = 0;
+                float percentageComplete = elapsedTime / duration;
+                newPosition.x = transform.position.x + Rigidbody.velocity.x * Time.deltaTime;
+                newPosition.y = Mathf.Lerp(surfaceYPosition, undergroundYPosition, percentageComplete);
+                Rigidbody.MovePosition(newPosition);
+                elapsedTime += Time.deltaTime;
+                yield return new WaitForEndOfFrame();
             }
+        }
+        private IEnumerator UnburrowCoroutine(float duration, float undergroundYPosition, float surfaceYPosition)
+        {
+            float elapsedTime = 0;
+            Vector2 newPosition = transform.position;
+            while (elapsedTime < duration)
+            {
+                float percentageComplete = elapsedTime / duration;
+                newPosition.x = transform.position.x + Rigidbody.velocity.x * Time.deltaTime;
+                newPosition.y = Mathf.Lerp(undergroundYPosition, surfaceYPosition, percentageComplete);
+                Rigidbody.MovePosition(newPosition);
+                elapsedTime += Time.deltaTime;
+                yield return new WaitForEndOfFrame();
+            }
+            Rigidbody.isKinematic = false;
         }
         private float CalculateJumpForce(float jumpHeight, float jumpTimeToApex)
         {

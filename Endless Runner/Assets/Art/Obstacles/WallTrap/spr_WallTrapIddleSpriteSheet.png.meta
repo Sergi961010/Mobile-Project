@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 115
+  spritePixelsToUnits: 135
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -631,7 +631,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      WallTrapIddleSpriteSheet_22: -603628036
+      WallTrapIddleSpriteSheet_5: -549645165
       WallTrapIddleSpriteSheet_17: -1126015303
       WallTrapIddleSpriteSheet_19: 376204245
       WallTrapIddleSpriteSheet_9: -607028059
@@ -652,9 +652,9 @@ TextureImporter:
       WallTrapIddleSpriteSheet_23: 2009033633
       WallTrapIddleSpriteSheet_1: 420164550
       WallTrapIddleSpriteSheet_20: 116491271
-      WallTrapIddleSpriteSheet_6: -1194876081
       WallTrapIddleSpriteSheet_11: -1545493492
-      WallTrapIddleSpriteSheet_5: -549645165
+      WallTrapIddleSpriteSheet_22: -603628036
+      WallTrapIddleSpriteSheet_6: -1194876081
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -52,12 +52,11 @@ namespace TheCreators.CoreSystem.CoreComponents
         {
             if (!EventSystem.current.IsPointerOverGameObject())
             {
-                JumpPerformed = true;
+                GameEvent.OnPerformJump.Invoke();
             }
         }
-        public void UseJumpInput() => JumpPerformed = false;
-        private void OnFlyAction(InputAction.CallbackContext context) => FlyPerformed = true;
-        private void OnCancelFlyAction(InputAction.CallbackContext context) => FlyPerformed = false;
+        private void OnFlyAction(InputAction.CallbackContext context) => GameEvent.OnPerformFly.Invoke();
+        private void OnCancelFlyAction(InputAction.CallbackContext context) => GameEvent.OnCancelFly.Invoke();
         private void StartPrimaryTouch(InputAction.CallbackContext context)
         {
             Vector2 screenPosition = PrimaryTouch.ReadValue<Vector2>();
@@ -73,12 +72,11 @@ namespace TheCreators.CoreSystem.CoreComponents
         }
         public void DisablePlayerControls()
         {
-            _playerControls.Disable();
+            _playerControls.Mobile.Disable();
         }
         public void EnablePlayerControls()
         {
-            _playerControls.Enable();
-
+            _playerControls.Mobile.Enable();
         }
     }
 }

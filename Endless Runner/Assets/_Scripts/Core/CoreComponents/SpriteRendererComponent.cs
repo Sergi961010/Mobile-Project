@@ -4,16 +4,15 @@ namespace TheCreators.CoreSystem.CoreComponents
 {
     public class SpriteRendererComponent : BaseCoreComponent
     {
-        private SpriteRenderer _spriteRenderer;
-
+        public SpriteRenderer SpriteRenderer { get; private set; }
         protected override void Awake()
         {
             base.Awake();
-            _spriteRenderer = GetComponentInParent<SpriteRenderer>();
+            SpriteRenderer = GetComponentInParent<SpriteRenderer>();
         }
         public void ChangeSortingOrder(int value)
         {
-            _spriteRenderer.sortingOrder = value;
+            SpriteRenderer.sortingOrder = value;
         }
     }
 }

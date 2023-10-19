@@ -1088,7 +1088,6 @@ MonoBehaviour:
   _playerTransform: {fileID: 199376517}
   prefabs:
   - {fileID: 2425247845215489570, guid: 63d42cd4ee36aa3489577bb3d6a03318, type: 3}
-  - {fileID: 7482232070326527552, guid: 82bcc983b0b1a4f44923f9922ecdd59a, type: 3}
 --- !u!1 &367173190
 GameObject:
   m_ObjectHideFlags: 0
@@ -2618,7 +2617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc04ed9c80ddd984cad020653c56c0da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: e08837bcb83bf034cb9f888c8a28f92d, type: 2}
+  Event: {fileID: 11400000, guid: c37d38a7359d91745a351f71b9536ea6, type: 2}
   Response:
     m_PersistentCalls:
       m_Calls:

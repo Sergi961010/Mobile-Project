@@ -1,3 +1,4 @@
+using TheCreators.CustomEventSystem;
 using UnityEngine;
 
 namespace TheCreators.Player.StateMachine.States
@@ -10,11 +11,11 @@ namespace TheCreators.Player.StateMachine.States
         {
             _context.PlayerAnimator.PlayAnimation(_animations[0]);
             _context.Movement.ModifyGravity(fallGravityMultiplier);
-            _context.InputManager.FlyAction.Enable();
+            GameEvent.OnPerformFly.AddListener(TransitionToFly);
         }
         public override void Exit()
         {
-            //_context.Movement.ResetGravityScale();
+            GameEvent.OnPerformFly.RemoveListener(TransitionToFly);
         }
         public override void LogicUpdate()
         {
@@ -26,6 +27,10 @@ namespace TheCreators.Player.StateMachine.States
             {
                 _context.StateMachine.StateMachine.SwitchState(_context.StateMachine.flyState);
             }
+        }
+        private void TransitionToFly()
+        {
+            _context.StateMachine.StateMachine.SwitchState(_context.StateMachine.flyState);
         }
     }
 }

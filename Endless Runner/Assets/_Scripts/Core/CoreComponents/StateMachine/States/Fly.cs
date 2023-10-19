@@ -1,3 +1,5 @@
+using System;
+using TheCreators.CustomEventSystem;
 using TheCreators.Managers;
 using UnityEngine;
 
@@ -16,14 +18,11 @@ namespace TheCreators.Player.StateMachine.States
             _context.PlayerAnimator.PlayLockedAnimation(_animations[0]);
             //_context.EnergyBarController.StaminaAbilityStart(staminaCost);
             SoundManager.Instance.PlayLoopedSound(_audioClip);
+            GameEvent.OnCancelFly.AddListener(TransitionToInAir);
         }
         public override void LogicUpdate()
         {
             _context.PlayerAnimator.PlayAnimation(_animations[1]);
-            if (!_context.InputManager.FlyPerformed)
-            {
-                _context.StateMachine.StateMachine.SwitchState(_context.StateMachine.inAirState);
-            }
         }
         public override void PhysicsUpdate()
         {
@@ -35,6 +34,11 @@ namespace TheCreators.Player.StateMachine.States
             _context.Movement.ResetGravityScale();
             //_context.EnergyBarController.StaminaAbilityEnd();
             SoundManager.Instance.StopLoopedSound();
+            GameEvent.OnCancelFly.RemoveListener(TransitionToInAir);
+        }
+        private void TransitionToInAir()
+        {
+            _context.StateMachine.StateMachine.SwitchState(_context.StateMachine.inAirState);
         }
     }
 }

@@ -10,7 +10,7 @@ namespace TheCreators.CoreSystem.CoreComponents
         public UnityEvent DeathEvent;
         public IEnumerator Die()
         {
-            Core.Movement.SetXVelocity(0);
+            Core.InputManager.DisablePlayerControls();
             //Core.PlayerAnimator.PlayAnimation(_animationClip);
             yield return new WaitForSeconds(1f);
             DeathEvent.Invoke();

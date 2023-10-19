@@ -13,9 +13,6 @@ namespace TheCreators.Player.Input
         private Vector2 _startPosition, _endPosition;
         private float _startTime, _endTime;
 
-        public bool BurrowPerformed { get; private set; }
-        public bool UnburrowPerformed { get; private set; }
-
         private void OnEnable()
         {
             GameEvent.StartTouch.AddListener(SwipeStart);
@@ -44,13 +41,11 @@ namespace TheCreators.Player.Input
         {
             if(Vector2.Dot(Vector2.down, direction) > _directionThreshold)
             {
-                BurrowPerformed = true;
-                UnburrowPerformed = false;
+                GameEvent.OnPerformBurrow.Invoke();
             }
             if (Vector2.Dot(Vector2.up, direction) > _directionThreshold)
             {
-                BurrowPerformed = false;
-                UnburrowPerformed = true;
+                GameEvent.OnPerformUnburrow.Invoke();
             }
         }
     }

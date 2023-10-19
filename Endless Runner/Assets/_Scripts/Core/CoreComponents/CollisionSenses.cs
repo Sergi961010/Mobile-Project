@@ -16,10 +16,12 @@ namespace TheCreators.CoreSystem.CoreComponents
         {
             Gizmos.DrawWireSphere(_groundCheck.position, _groundCheckRadius);
         }
-        private void OnTriggerEnter2D(Collider2D collider)
+        private void OnCollisionEnter2D(Collision2D collision)
         {
-            if (collider.gameObject.CompareTag("Obstacle"))
+            if (collision.gameObject.CompareTag("Obstacle"))
+            {
                 StartCoroutine(Core.Death.Die());
+            }
         }
     }
 }

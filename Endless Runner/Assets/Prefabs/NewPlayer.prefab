@@ -1,5 +1,141 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1333089893
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1333089894}
+  - component: {fileID: 1333089896}
+  - component: {fileID: 1333089895}
+  m_Layer: 7
+  m_Name: Invulnerability
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1333089894
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333089893}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6346719088022597075}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1333089896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333089893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca869c9a5ccb7e848833a82133e04052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerLayer: 7
+  _obstaclesLayer: 8
+--- !u!114 &1333089895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333089893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc04ed9c80ddd984cad020653c56c0da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: c37d38a7359d91745a351f71b9536ea6, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1333089896}
+        m_TargetAssemblyTypeName: TheCreators.CoreSystem.CoreComponents.Invulnerability,
+          Assembly-CSharp
+        m_MethodName: StartInvulnerability
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 2
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &1442072957
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1442072958}
+  - component: {fileID: 1442072959}
+  m_Layer: 7
+  m_Name: Death
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1442072958
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442072957}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6346719088022597075}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1442072959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442072957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32900c1a8e2563c42a8eb11e5b3ae6c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animationClip: {fileID: 0}
+  DeathEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 3809794cf2f819641a3d6d5b84163f31, type: 2}
+        m_TargetAssemblyTypeName: TheCreators.CustomEventSystem.NewGameEvent, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &518054411637792717
 GameObject:
   m_ObjectHideFlags: 0
@@ -10,7 +146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3157642247138852660}
   - component: {fileID: 701441942406689406}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StateMachine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,7 +195,7 @@ GameObject:
   m_Component:
   - component: {fileID: 941084709559435287}
   - component: {fileID: 2874762601620002635}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +240,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6346719088022597075}
   - component: {fileID: 3540471266125530869}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Core
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,6 +266,8 @@ Transform:
   - {fileID: 6474050208707294523}
   - {fileID: 7929318394054274131}
   - {fileID: 941084709559435287}
+  - {fileID: 1442072958}
+  - {fileID: 1333089894}
   m_Father: {fileID: 8917580688026551183}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -155,7 +293,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7929318394054274131}
   - component: {fileID: 926277267488004129}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpriteRenderer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -199,7 +337,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5813478299296144303}
   - component: {fileID: 197454811902307468}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Movement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -244,7 +382,7 @@ GameObject:
   - component: {fileID: 152339086079455188}
   - component: {fileID: 6886130528166182053}
   - component: {fileID: 8425805478125364284}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: InputManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -303,7 +441,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8917580687499550225}
   - component: {fileID: 3403458249861174368}
-  m_Layer: 0
+  - component: {fileID: 527173391}
+  m_Layer: 7
   m_Name: CollisionSenses
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -343,6 +482,22 @@ MonoBehaviour:
   _groundLayer:
     serializedVersion: 2
     m_Bits: 512
+--- !u!70 &527173391
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8917580687499550224}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.09297973, y: -0.09239733}
+  m_Size: {x: 0.6359595, y: 1.3014219}
+  m_Direction: 0
 --- !u!1 &8917580687735459860
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,7 +507,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8917580687735459861}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GroundCheck
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -384,12 +539,11 @@ GameObject:
   m_Component:
   - component: {fileID: 8917580688026551183}
   - component: {fileID: 1591129642}
-  - component: {fileID: 1591129646}
   - component: {fileID: 1591129643}
   - component: {fileID: 1591129644}
   - component: {fileID: 1591129645}
   - component: {fileID: 1591129647}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: NewPlayer
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -433,22 +587,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!70 &1591129646
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8917580688026551216}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.17840374}
-  m_Size: {x: 0.45, y: 1.1294091}
-  m_Direction: 0
 --- !u!82 &1591129643
 AudioSource:
   m_ObjectHideFlags: 0
@@ -641,7 +779,7 @@ GameObject:
   - component: {fileID: 6474050208707294523}
   - component: {fileID: 8065613207637207387}
   - component: {fileID: 8474502788923989018}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Animator
   m_TagString: Untagged
   m_Icon: {fileID: 0}

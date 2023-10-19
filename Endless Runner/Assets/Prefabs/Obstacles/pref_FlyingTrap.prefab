@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: -1575558819211300821}
   - component: {fileID: 2145712813770118430}
   - component: {fileID: 2764693448581826144}
+  - component: {fileID: 7936378785546448358}
   m_Layer: 8
   m_Name: pref_FlyingTrap
   m_TagString: Obstacle
@@ -122,3 +123,15 @@ CircleCollider2D:
   m_Offset: {x: 0.046691984, y: -0.081710994}
   serializedVersion: 2
   m_Radius: 0.40154612
+--- !u!114 &7936378785546448358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5728717067649320182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47935760080ff9d42928aefe7c775555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

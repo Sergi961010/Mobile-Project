@@ -58,7 +58,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: acont_GroundTrap
+  m_Name: acont_1blockTrap
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Collision

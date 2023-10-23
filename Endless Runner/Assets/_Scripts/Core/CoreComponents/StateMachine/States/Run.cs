@@ -9,18 +9,15 @@ namespace TheCreators.Player.StateMachine.States
         public float _speed = 6f;
         public override void Enter()
         {
-            /*_context.InputManager.JumpAction.Enable();
-            _context.InputManager.SwipeDetection.enabled = true;*/
             GameEvent.OnPerformJump.AddListener(TransitionToJump);
             GameEvent.OnPerformBurrow.AddListener(TransitionToDig);
+            _context.PlayerAnimator.PlayAnimation(_animations[0]);
         }
         public override void LogicUpdate()
         {
-            _context.PlayerAnimator.PlayAnimation(_animations[0]);
         }
         public override void PhysicsUpdate()
         {
-            //_context.Movement.Run(_speed);
         }
         public override void Exit()
         {

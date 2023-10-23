@@ -11,8 +11,9 @@ namespace TheCreators.CoreSystem.CoreComponents
         public IEnumerator Die()
         {
             Core.InputManager.DisablePlayerControls();
-            //Core.PlayerAnimator.PlayAnimation(_animationClip);
-            yield return new WaitForSeconds(1f);
+            Core.PlayerAnimator.PlayAnimation(_animationClip);
+            yield return new WaitForSeconds(_animationClip.length);
+            Core.SpriteRenderer.SpriteRenderer.enabled = false;
             DeathEvent.Invoke();
         }
     }

@@ -2,7 +2,7 @@ using System;
 using TheCreators.CustomEventSystem;
 using UnityEngine;
 
-namespace TheCreators.Player.Input
+namespace TheCreators.Input
 {
     public class SwipeDetection : MonoBehaviour
     {

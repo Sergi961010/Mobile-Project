@@ -1,5 +1,5 @@
 using TheCreators.CustomEventSystem;
-using TheCreators.Player.Input;
+using TheCreators.Input;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -9,7 +9,6 @@ namespace TheCreators.CoreSystem.CoreComponents
     public class PlayerInputManager : BaseCoreComponent
     {
         private PlayerControls _playerControls;
-
         public InputAction JumpAction { get; private set; }
         public InputAction FlyAction { get; private set; }
         public InputAction PrimaryTouch { get; private set; }

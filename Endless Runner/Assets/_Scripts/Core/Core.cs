@@ -1,6 +1,6 @@
 using TheCreators.CoreSystem.CoreComponents;
 using TheCreators.Player;
-using TheCreators.Player.Input;
+using TheCreators.Input;
 using TheCreators.Player.StateMachine;
 using TheCreators.Player.StateMachine.States;
 using UnityEngine;

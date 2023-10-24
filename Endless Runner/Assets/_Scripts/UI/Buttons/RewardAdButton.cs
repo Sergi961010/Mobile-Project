@@ -7,7 +7,7 @@ namespace TheCreators.UI
 {
     public class RewardAdButton : MonoBehaviour
     {
-        private readonly string _adUnitId = "ca-app-pub-5793753632569791/8153296224";
+        private readonly string _adUnitId = "ca-app-pub-7489988188846347/9264193766";
         
         private RewardedAd rewardedAd;
 

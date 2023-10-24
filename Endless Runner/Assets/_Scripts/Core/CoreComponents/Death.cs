@@ -10,7 +10,7 @@ namespace TheCreators.CoreSystem.CoreComponents
         public UnityEvent DeathEvent;
         public IEnumerator Die()
         {
-            //Core.InputController.DisablePlayerControls();
+            Core.InputController.DisableInput();
             Core.PlayerAnimator.PlayAnimation(_animationClip);
             yield return new WaitForSeconds(_animationClip.length);
             Core.SpriteRenderer.SpriteRenderer.enabled = false;

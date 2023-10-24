@@ -17,26 +17,27 @@ namespace TheCreators.Player.StateMachine.States
             _context.Movement.Jump(jumpHeight, jumpTimeToApex);
             _context.PlayerAnimator.PlayAnimation(_animations[0]);
             SoundManager.Instance.PlaySound(_audioClip);
-            GameEvent.OnPerformFly.AddListener(TransitionToFly);
         }
         public override void LogicUpdate()
         {
-            if (_context.Movement.Rigidbody.velocity.y < -jumpHangTimeThreshold)
-            {
-                _context.StateMachine.StateMachine.SwitchState(_context.StateMachine.inAirState);
-            }
+            if (_context.InputController.IsFlying) TransitionToFly();
+
+            if (_context.Movement.Rigidbody.velocity.y < -jumpHangTimeThreshold) TransitionToInAir();
         }
         public override void PhysicsUpdate()
         {
         }
         public override void Exit()
         {
-            GameEvent.OnPerformFly.AddListener(TransitionToFly);
         }
         private void TransitionToFly()
         {
             if(_context.Movement.Rigidbody.position.y >= -transitionToFlyThreshold)
                 _context.StateMachine.StateMachine.SwitchState(_context.StateMachine.flyState);
+        }
+        private void TransitionToInAir()
+        {
+            _context.StateMachine.StateMachine.SwitchState(_context.StateMachine.inAirState);
         }
     }
 }

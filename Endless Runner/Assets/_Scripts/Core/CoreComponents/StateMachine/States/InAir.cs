@@ -11,22 +11,18 @@ namespace TheCreators.Player.StateMachine.States
         {
             _context.PlayerAnimator.PlayAnimation(_animations[0]);
             _context.Movement.ModifyGravity(fallGravityMultiplier);
-            GameEvent.OnPerformFly.AddListener(TransitionToFly);
         }
         public override void Exit()
         {
-            GameEvent.OnPerformFly.RemoveListener(TransitionToFly);
         }
         public override void LogicUpdate()
         {
-            if (_context.CollisionSenses.Grounded)
-            {
-                _context.StateMachine.StateMachine.SwitchState(_context.StateMachine.runState);
-            }
-            if (_context.InputManager.FlyPerformed)
-            {
-                _context.StateMachine.StateMachine.SwitchState(_context.StateMachine.flyState);
-            }
+            if (_context.CollisionSenses.Grounded) TransitionToRun();
+            if (_context.InputController.IsFlying) TransitionToFly();
+        }
+        private void TransitionToRun()
+        {
+            _context.StateMachine.StateMachine.SwitchState(_context.StateMachine.runState);
         }
         private void TransitionToFly()
         {

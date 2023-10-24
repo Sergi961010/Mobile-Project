@@ -26,8 +26,22 @@ namespace TheCreators.CoreSystem.CoreComponents
         public bool CanUnburrow { get; private set; }
         protected override void Awake()
         {
+            EnableInput();
             SetUpControlProperties();
             SetUpTimers();
+        }
+        private void OnEnable()
+        {
+            _inputReader.Jump += OnJump;
+            _inputReader.Fly += OnFly;
+            _inputReader.Dig += OnDig;
+        }
+        private void Update()
+        {
+            foreach (var timer in timers)
+            {
+                timer.Tick(Time.deltaTime);
+            }
         }
         private void SetUpTimers()
         {
@@ -46,12 +60,6 @@ namespace TheCreators.CoreSystem.CoreComponents
             IsFlying = false;
             CanBurrow = false;
             CanUnburrow = false;
-        }
-        private void OnEnable()
-        {
-            _inputReader.Jump += OnJump;
-            _inputReader.Fly += OnFly;
-            _inputReader.Dig += OnDig;
         }
         private void OnJump()
         {
@@ -81,12 +89,13 @@ namespace TheCreators.CoreSystem.CoreComponents
             CanBurrow = false;
             CanUnburrow = false;
         }
-        private void Update()
+        public void EnableInput()
         {
-            foreach (var timer in timers)
-            {
-                timer.Tick(Time.deltaTime);
-            }
+            _inputReader.GameInput.Enable();
+        }
+        public void DisableInput()
+        {
+            _inputReader.GameInput.Disable();
         }
     }
 }

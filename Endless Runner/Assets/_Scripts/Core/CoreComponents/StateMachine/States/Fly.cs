@@ -18,11 +18,11 @@ namespace TheCreators.Player.StateMachine.States
             _context.PlayerAnimator.PlayLockedAnimation(_animations[0]);
             //_context.EnergyBarController.StaminaAbilityStart(staminaCost);
             SoundManager.Instance.PlayLoopedSound(_audioClip);
-            GameEvent.OnCancelFly.AddListener(TransitionToInAir);
         }
         public override void LogicUpdate()
         {
             _context.PlayerAnimator.PlayAnimation(_animations[1]);
+            if (!_context.InputController.IsFlying) TransitionToInAir();
         }
         public override void PhysicsUpdate()
         {
@@ -34,7 +34,6 @@ namespace TheCreators.Player.StateMachine.States
             _context.Movement.ResetGravityScale();
             //_context.EnergyBarController.StaminaAbilityEnd();
             SoundManager.Instance.StopLoopedSound();
-            GameEvent.OnCancelFly.RemoveListener(TransitionToInAir);
         }
         private void TransitionToInAir()
         {

@@ -18,7 +18,6 @@ namespace TheCreators.Player.StateMachine.States
             _context.SpriteRenderer.ChangeSortingOrder(2);
             //_context.EnergyBarController.StaminaAbilityStart(staminaCost);
             SoundManager.Instance.PlayLoopedSound(_audioClip);
-            GameEvent.OnPerformUnburrow.AddListener(TransitionToRun);
             _context.Movement.Burrow(duration, surfaceYPosition, undergroundYPosition);
         }
         public override void Exit()
@@ -26,11 +25,11 @@ namespace TheCreators.Player.StateMachine.States
             //_context.SpriteRenderer.ChangeSortingOrder(0);
             //_context.EnergyBarController.StaminaAbilityEnd();
             SoundManager.Instance.StopLoopedSound();
-            GameEvent.OnPerformUnburrow.RemoveListener(TransitionToRun);
         }
         public override void LogicUpdate()
         {
             _context.PlayerAnimator.PlayAnimation(_animations[1]);
+            if (_context.InputController.CanUnburrow) TransitionToRun();
         }
         public override void PhysicsUpdate()
         {

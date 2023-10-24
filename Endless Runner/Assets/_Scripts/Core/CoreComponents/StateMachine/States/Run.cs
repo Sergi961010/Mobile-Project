@@ -9,20 +9,20 @@ namespace TheCreators.Player.StateMachine.States
         public float _speed = 6f;
         public override void Enter()
         {
-            GameEvent.OnPerformJump.AddListener(TransitionToJump);
-            GameEvent.OnPerformBurrow.AddListener(TransitionToDig);
             _context.PlayerAnimator.PlayAnimation(_animations[0]);
         }
         public override void LogicUpdate()
         {
+            if (_context.InputController.CanJump) 
+                TransitionToJump();
+            if (_context.InputController.CanBurrow)
+                TransitionToDig();
         }
         public override void PhysicsUpdate()
         {
         }
         public override void Exit()
         {
-            GameEvent.OnPerformJump.RemoveListener(TransitionToJump);
-            GameEvent.OnPerformBurrow.RemoveListener(TransitionToDig);
         }
         private void TransitionToJump()
         {

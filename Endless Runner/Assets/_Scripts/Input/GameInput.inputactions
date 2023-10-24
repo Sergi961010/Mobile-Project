@@ -1,8 +1,8 @@
 {
-    "name": "PlayerControls",
+    "name": "GameInput",
     "maps": [
         {
-            "name": "Mobile",
+            "name": "Gameplay",
             "id": "46f876c7-e555-45b9-8eba-eff5de154103",
             "actions": [
                 {

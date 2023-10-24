@@ -10,7 +10,7 @@ namespace TheCreators.CoreSystem
     public class Core : MonoBehaviour
     {
         public Movement Movement { get; private set; }
-        public PlayerInputManager InputManager { get; private set; }
+        public InputController InputController { get; private set; }
         public StateMachineComponent StateMachine { get; private set; }
         public CollisionSenses CollisionSenses { get; private set; }
         public PlayerAnimator PlayerAnimator { get; private set; }
@@ -22,7 +22,7 @@ namespace TheCreators.CoreSystem
         private void Awake()
         {
             Movement = GetComponentInChildren<Movement>();
-            InputManager = GetComponentInChildren<PlayerInputManager>();
+            InputController = GetComponentInChildren<InputController>();
             StateMachine = GetComponentInChildren<StateMachineComponent>();
             CollisionSenses = GetComponentInChildren<CollisionSenses>();
             PlayerAnimator = GetComponentInChildren<PlayerAnimator>();

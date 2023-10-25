@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 8980366224617906998}
   - component: {fileID: 3986380578410463595}
   m_Layer: 0
-  m_Name: WithMovingObstacle
+  m_Name: LevelPart_WithMovingObstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

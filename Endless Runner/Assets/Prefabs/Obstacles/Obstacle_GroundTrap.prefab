@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1929101910010014037}
   - component: {fileID: 6784642619195023963}
   m_Layer: 8
-  m_Name: pref_GroundTrap
+  m_Name: Obstacle_GroundTrap
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

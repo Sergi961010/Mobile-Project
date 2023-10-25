@@ -1,7 +1,5 @@
-using TheCreators.Managers;
 using UnityEngine;
-using System.Collections.Generic;
-using TheCreators.ScriptableObjects;
+using TheCreators.PoolingSystem;
 
 namespace TheCreators.Platforms
 {
@@ -20,7 +18,6 @@ namespace TheCreators.Platforms
         {
             _lastEndPosition = _startingPlatform.Find("EndPosition").position;
         }
-
         private void Update()
         {
             if (Vector2.Distance(_playerTransform.position, _lastEndPosition) < PLAYER_DISTANCE_TO_END_POINT)
@@ -28,7 +25,6 @@ namespace TheCreators.Platforms
                 SpawnLevelPart();
             }
         }
-
         private void SpawnLevelPart()
         {
             int random = Random.Range(0, prefabs.Length);

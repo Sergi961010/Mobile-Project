@@ -1,7 +1,7 @@
 using TheCreators.Managers;
 using UnityEngine;
 
-namespace TheCreators
+namespace TheCreators.PoolingSystem
 {
     public class PooledObject : MonoBehaviour
     {

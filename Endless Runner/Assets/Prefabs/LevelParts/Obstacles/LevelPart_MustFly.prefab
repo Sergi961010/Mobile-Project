@@ -95,7 +95,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5412686771230300281, guid: 9d632db982ebc8e42a8110d84e522159, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: -0.18
       objectReference: {fileID: 0}
     - target: {fileID: 5412686771230300281, guid: 9d632db982ebc8e42a8110d84e522159, type: 3}
       propertyPath: m_LocalPosition.z
@@ -147,10 +147,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8980366224617906998}
     m_Modifications:
+    - target: {fileID: 315487075925534709, guid: 044ffbf513789dc4cbe6c5df05557586, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 315487075925534709, guid: 044ffbf513789dc4cbe6c5df05557586, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 407780856979230547, guid: 044ffbf513789dc4cbe6c5df05557586, type: 3}
       propertyPath: m_Name
       value: Ground_8
       objectReference: {fileID: 0}
+    - target: {fileID: 2521139041764254032, guid: 044ffbf513789dc4cbe6c5df05557586, type: 3}
+      propertyPath: m_Size.x
+      value: 1.9048061
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521139041764254032, guid: 044ffbf513789dc4cbe6c5df05557586, type: 3}
+      propertyPath: m_Offset.x
+      value: -3.047597
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767987987395264568, guid: 044ffbf513789dc4cbe6c5df05557586, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 735fef5363f193b4d8ad5fdd6508ca7c, type: 3}
     - target: {fileID: 4837005265542917656, guid: 044ffbf513789dc4cbe6c5df05557586, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -195,6 +215,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4858690134103754756, guid: 044ffbf513789dc4cbe6c5df05557586, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4858690134103754756, guid: 044ffbf513789dc4cbe6c5df05557586, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5007143632829266723, guid: 044ffbf513789dc4cbe6c5df05557586, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5007143632829266723, guid: 044ffbf513789dc4cbe6c5df05557586, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7020093021672005532, guid: 044ffbf513789dc4cbe6c5df05557586, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 45299475fc0f563478ebbdd9f32a5b5e, type: 3}
+    - target: {fileID: 8448396607041982719, guid: 044ffbf513789dc4cbe6c5df05557586, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8448396607041982719, guid: 044ffbf513789dc4cbe6c5df05557586, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 044ffbf513789dc4cbe6c5df05557586, type: 3}
 --- !u!4 &3766703610057823170 stripped
@@ -202,3 +250,34 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4837005265542917656, guid: 044ffbf513789dc4cbe6c5df05557586, type: 3}
   m_PrefabInstance: {fileID: 8603698625086537178}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8272761598544654985 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 407780856979230547, guid: 044ffbf513789dc4cbe6c5df05557586, type: 3}
+  m_PrefabInstance: {fileID: 8603698625086537178}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &6195564629774713983
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8272761598544654985}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 3.05, y: 0.25}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.9048061, y: 0.25}
+  m_EdgeRadius: 0

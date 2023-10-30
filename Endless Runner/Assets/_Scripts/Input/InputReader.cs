@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 namespace TheCreators.Input
@@ -27,7 +28,11 @@ namespace TheCreators.Input
         }
         public void OnJump(InputAction.CallbackContext context)
         {
-            if (context.phase == InputActionPhase.Started) Jump.Invoke();
+            if (context.phase == InputActionPhase.Started)
+            {
+                if (!EventSystem.current.IsPointerOverGameObject())
+                    Jump.Invoke();
+            }
         }
         public void OnFly(InputAction.CallbackContext context)
         {

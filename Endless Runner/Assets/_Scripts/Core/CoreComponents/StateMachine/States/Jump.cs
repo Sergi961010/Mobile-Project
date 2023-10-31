@@ -1,5 +1,6 @@
 using TheCreators.CustomEventSystem;
 using TheCreators.Managers;
+using TheCreators.Scripts.ScriptableObjects.Audio;
 using UnityEngine;
 
 namespace TheCreators.Player.StateMachine.States
@@ -15,8 +16,8 @@ namespace TheCreators.Player.StateMachine.States
         public override void Enter()
         {
             _context.Movement.Jump(jumpHeight, jumpTimeToApex);
-            _context.PlayerAnimator.PlayAnimation(_animations[0]);
-            SoundManager.Instance.PlaySound(_audioClip);
+            _context.PlayerAnimator.PlayAnimation(animations[0]);
+            _context.AudioController.PlayAudioEvent(audioEvent);
         }
         public override void LogicUpdate()
         {

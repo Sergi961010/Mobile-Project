@@ -14,10 +14,10 @@ namespace TheCreators.Player.StateMachine.States
         public float staminaCost = 5f;
         public override void Enter()
         {
-            _context.PlayerAnimator.PlayLockedAnimation(_animations[0]);
+            _context.PlayerAnimator.PlayLockedAnimation(animations[0]);
             _context.SpriteRenderer.ChangeSortingOrder(2);
             //_context.EnergyBarController.StaminaAbilityStart(staminaCost);
-            SoundManager.Instance.PlayLoopedSound(_audioClip);
+            _context.AudioController.PlayAudioEvent(audioEvent);
             _context.Movement.Burrow(duration, surfaceYPosition, undergroundYPosition);
         }
         public override void Exit()
@@ -28,7 +28,7 @@ namespace TheCreators.Player.StateMachine.States
         }
         public override void LogicUpdate()
         {
-            _context.PlayerAnimator.PlayAnimation(_animations[1]);
+            _context.PlayerAnimator.PlayAnimation(animations[1]);
             if (_context.InputController.CanUnburrow) TransitionToRun();
         }
         public override void PhysicsUpdate()
@@ -36,7 +36,7 @@ namespace TheCreators.Player.StateMachine.States
         }
         private void TransitionToRun()
         {
-            _context.PlayerAnimator.PlayLockedAnimation(_animations[2]);
+            _context.PlayerAnimator.PlayLockedAnimation(animations[2]);
             _context.Movement.Unburrow(duration, undergroundYPosition, surfaceYPosition);
             _context.StateMachine.StateMachine.SwitchState(_context.StateMachine.runState);
         }

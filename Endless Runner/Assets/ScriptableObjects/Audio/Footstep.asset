@@ -13,6 +13,13 @@ MonoBehaviour:
   m_Name: Footstep
   m_EditorClassIdentifier: 
   clips:
-  - {fileID: 8300000, guid: f1c7e36221e7d0c4293fe6a4ea79189a, type: 3}
-  - {fileID: 8300000, guid: d5fb84d35d45e4240af430227cff6c67, type: 3}
-  - {fileID: 8300000, guid: cd81b97e202a9de4cb8097d4974d1c1f, type: 3}
+  - {fileID: 8300000, guid: be0748b8f9e358343b2ff90919eb70ca, type: 3}
+  - {fileID: 8300000, guid: 11cbd3710a1480e4a9642d5eeb24ef3e, type: 3}
+  - {fileID: 8300000, guid: 408022de4eda1d746b0c7ec465c69603, type: 3}
+  - {fileID: 8300000, guid: d19fd3b9f9df33b4da760ccbc82fb30b, type: 3}
+  - {fileID: 8300000, guid: 227ad8324fb644543aad9e1090d4e209, type: 3}
+  - {fileID: 8300000, guid: 0394901f0dfd4b44e906ae580994a8b6, type: 3}
+  - {fileID: 8300000, guid: 8f23f4eac039e9146bf883263a56df39, type: 3}
+  - {fileID: 8300000, guid: b75f0bbb01174d741b1534cd7140685e, type: 3}
+  - {fileID: 8300000, guid: 55d2c970e3b2a4b40998499ea519e145, type: 3}
+  - {fileID: 8300000, guid: ac2a179e29c260a4e84f7830e1143fe9, type: 3}

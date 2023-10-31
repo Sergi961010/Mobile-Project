@@ -12,14 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8491b7c62f48e2d4bb93a1c07ea4abeb, type: 3}
   m_Name: DigState
   m_EditorClassIdentifier: 
-  _animations:
+  animations:
   - {fileID: 7400000, guid: 49dcae6796d59974892b8e193a705b00, type: 2}
   - {fileID: 7400000, guid: b98e33c0f2718be44a2922b843bfcb89, type: 2}
   - {fileID: 7400000, guid: 63ad1a765ec7c474881caf4b58069135, type: 2}
-  _audioClip: {fileID: 8300000, guid: 9c984a12e675e654daa9e2cef564f2b8, type: 3}
-  _undergroundYPosition: -3.2
-  _surfaceYPosition: -2
+  audioEvent: {fileID: 0}
+  undergroundYPosition: -3.2
+  surfaceYPosition: -2
   duration: 0.5
   elapsedTime: 0
-  burrow: 0
   staminaCost: 5

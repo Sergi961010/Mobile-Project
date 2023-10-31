@@ -17,14 +17,14 @@ namespace TheCreators.Player.StateMachine.States
             _context.PlayerAnimator.PlayLockedAnimation(animations[0]);
             _context.SpriteRenderer.ChangeSortingOrder(2);
             //_context.EnergyBarController.StaminaAbilityStart(staminaCost);
-            _context.AudioController.PlayAudioEvent(audioEvent);
+            _context.AudioController.PlayLoopedAudioEvent(audioEvent);
             _context.Movement.Burrow(duration, surfaceYPosition, undergroundYPosition);
         }
         public override void Exit()
         {
             //_context.SpriteRenderer.ChangeSortingOrder(0);
             //_context.EnergyBarController.StaminaAbilityEnd();
-            SoundManager.Instance.StopLoopedSound();
+            _context.AudioController.StopLoopedAudioEvent();
         }
         public override void LogicUpdate()
         {

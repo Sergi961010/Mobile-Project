@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 010ff05d1731899488b136c23cb96a19, type: 3}
   m_Name: JumpState
   m_EditorClassIdentifier: 
-  _animations:
+  animations:
   - {fileID: 7400000, guid: 2892c92b1771d2242aa0b810a377f7d2, type: 2}
-  _audioClip: {fileID: 8300000, guid: 239324bca071f08409012e6d84814cec, type: 3}
+  audioEvent: {fileID: 11400000, guid: 5b57192adf6e9d94ba0efd777f5cf838, type: 2}
   jumpHeight: 2
   jumpTimeToApex: 0.5
   jumpHangTimeThreshold: 0.1
   jumpHangGravityMultiplier: 0.5
+  transitionToFlyThreshold: 0.5

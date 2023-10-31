@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using TheCreators.CoreSystem;
+using TheCreators.Scripts.ScriptableObjects.Audio;
 using UnityEngine;
 
 namespace TheCreators.Player.StateMachine
@@ -7,8 +8,8 @@ namespace TheCreators.Player.StateMachine
     public abstract class PlayerState : ScriptableObject, IState
     {
         protected Core _context;
-        public List<AnimationClip> _animations;
-        public AudioClip _audioClip;
+        public List<AnimationClip> animations;
+        public AudioEvent audioEvent;
         public virtual void Init(Core currentContext)
         {
             _context = currentContext;

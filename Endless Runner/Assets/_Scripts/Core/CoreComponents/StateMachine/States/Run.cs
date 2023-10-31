@@ -9,7 +9,7 @@ namespace TheCreators.Player.StateMachine.States
         public float _speed = 6f;
         public override void Enter()
         {
-            _context.PlayerAnimator.PlayAnimation(_animations[0]);
+            _context.PlayerAnimator.PlayAnimation(animations[0]);
         }
         public override void LogicUpdate()
         {

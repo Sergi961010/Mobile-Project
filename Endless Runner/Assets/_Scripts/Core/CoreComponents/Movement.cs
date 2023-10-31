@@ -19,11 +19,16 @@ namespace TheCreators.CoreSystem.CoreComponents
         }
         private void OnDisable()
         {
-            SetXVelocity(0);
+            ResetVelocity();
         }
         public void SetXVelocity(float value)
         {
             workspace.Set(value, workspace.y);
+            Rigidbody.velocity = workspace;
+        }
+        public void ResetVelocity()
+        {
+            workspace.Set(0, 0);
             Rigidbody.velocity = workspace;
         }
         public void Jump(float jumpHeight, float jumpTimeToApex)

@@ -27,6 +27,7 @@ namespace TheCreators.CoreSystem
             CollisionSenses = GetComponentInChildren<CollisionSenses>();
             PlayerAnimator = GetComponentInChildren<PlayerAnimator>();
             SpriteRenderer = GetComponentInChildren<SpriteRendererComponent>();
+            AudioController = GetComponentInChildren<AudioController>();
             Death = GetComponentInChildren<Death>();
             Invulnerability = GetComponentInChildren<Invulnerability>();
 

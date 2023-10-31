@@ -15,5 +15,15 @@ namespace TheCreators.CoreSystem.CoreComponents
         {
             audioEvent.Play(_audioSource);
         }
+        public void PlayLoopedAudioEvent(AudioEvent audioEvent)
+        {
+            _audioSource.loop = true;
+            audioEvent.Play(_audioSource);
+        }
+        public void StopLoopedAudioEvent()
+        {
+            _audioSource.loop = false;
+            _audioSource.Stop();
+        }
     }
 }

@@ -229,7 +229,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51f808d3def76264a9567f680b1b09b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _footstep: {fileID: 11400000, guid: 78d3fd303c823ea40a2a0dfc6d3b0272, type: 2}
 --- !u!1 &2381080032258948686
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,12 +368,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2072243450, guid: 7aad584e244556a419c9e398b684a883, type: 3}
+  m_Sprite: {fileID: 470891697, guid: e429e642fcd22dc4daf2d3490dad15a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.888889, y: 1.8353027}
+  m_Size: {x: 1.8925114, y: 1.8518518}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -535,7 +534,7 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.40052176, y: -0.09239733}
+  m_Offset: {x: 0.2, y: -0.09239733}
   m_Size: {x: 0.38092458, y: 1.3014219}
   m_Direction: 0
 --- !u!1 &8917580687735459860

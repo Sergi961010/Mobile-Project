@@ -5,16 +5,15 @@ namespace TheCreators.CoreSystem.CoreComponents
 {
     public class AudioController : BaseCoreComponent
     {
-        [SerializeField] private SimpleAudioEvent _footstep;
         private AudioSource _audioSource;
         protected override void Awake()
         {
             base.Awake();
             _audioSource = GetComponentInParent<AudioSource>();
         }
-        public void PlayFootstep()
+        public void PlayAudioEvent(AudioEvent audioEvent)
         {
-            _footstep.Play(_audioSource);
+            audioEvent.Play(_audioSource);
         }
     }
 }

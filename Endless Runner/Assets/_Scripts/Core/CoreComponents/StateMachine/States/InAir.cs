@@ -7,6 +7,7 @@ namespace TheCreators.Player.StateMachine.States
     public class InAir : PlayerState
     {
         public float fallGravityMultiplier = 3f;
+        public float flyTransitionStaminaTreshold = 20f;
         public override void Enter()
         {
             _context.PlayerAnimator.PlayAnimation(animations[0]);
@@ -18,7 +19,8 @@ namespace TheCreators.Player.StateMachine.States
         public override void LogicUpdate()
         {
             if (_context.CollisionSenses.Grounded) TransitionToRun();
-            if (_context.InputController.IsFlying) TransitionToFly();
+            if (_context.InputController.IsFlying && _context.Stamina.CurrentStamina >= flyTransitionStaminaTreshold)
+                TransitionToFly();
         }
         private void TransitionToRun()
         {

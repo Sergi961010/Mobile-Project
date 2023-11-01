@@ -161,6 +161,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2204326015225657944}
+  - component: {fileID: 7235503390291488198}
+  - component: {fileID: 400458130}
   m_Layer: 5
   m_Name: StaminaSlider
   m_TagString: Untagged
@@ -190,3 +192,44 @@ RectTransform:
   m_AnchoredPosition: {x: 304, y: -37}
   m_SizeDelta: {x: 565, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &7235503390291488198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2204326015225657947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbd3b240e4ffb3240aec20c742803b08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  staminaProgressUI: {fileID: 2204326014095028987}
+--- !u!114 &400458130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2204326015225657947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc04ed9c80ddd984cad020653c56c0da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: e83f383cf4f0d364aafc67b510362a59, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7235503390291488198}
+        m_TargetAssemblyTypeName: TheCreators.UI.StaminaSlider, Assembly-CSharp
+        m_MethodName: UpdateStaminaBar
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

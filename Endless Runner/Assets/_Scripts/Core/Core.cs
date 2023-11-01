@@ -18,7 +18,7 @@ namespace TheCreators.CoreSystem
         public AudioController AudioController { get; private set; }
         public Death Death { get; private set; }
         public Invulnerability Invulnerability { get; private set; }
-
+        public Stamina Stamina { get; private set; }
         private void Awake()
         {
             Movement = GetComponentInChildren<Movement>();
@@ -30,7 +30,7 @@ namespace TheCreators.CoreSystem
             AudioController = GetComponentInChildren<AudioController>();
             Death = GetComponentInChildren<Death>();
             Invulnerability = GetComponentInChildren<Invulnerability>();
-
+            Stamina = GetComponentInChildren<Stamina>();
         }
     }
 }

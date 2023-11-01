@@ -10,19 +10,21 @@ namespace TheCreators.Player.StateMachine.States
     {
         public float defaultForce = 20f;
         public float smoothFactor = .2f;
-        public float staminaCost = .5f;
+        public float staminaCost = 20f;
         public override void Enter()
         {
             _context.Movement.ModifyGravity(smoothFactor);
             _context.Movement.ModifyYVelocity(smoothFactor);
             _context.PlayerAnimator.PlayAnimation(animations[0]);
-            //_context.EnergyBarController.StaminaAbilityStart(staminaCost);
             _context.AudioController.PlayAudioEvent(audioEvent);
+            _context.Stamina.CanRegenerate = false;
         }
         public override void LogicUpdate()
         {
             _context.PlayerAnimator.PlayAnimation(animations[1]);
-            if (!_context.InputController.IsFlying) TransitionToInAir();
+            _context.Stamina.SubstractStamina(staminaCost);
+            if (!_context.InputController.IsFlying || _context.Stamina.CurrentStamina == 0)
+                TransitionToInAir();
         }
         public override void PhysicsUpdate()
         {
@@ -32,7 +34,7 @@ namespace TheCreators.Player.StateMachine.States
         {
             _context.PlayerAnimator.PlayLockedAnimation(animations[2]);
             _context.Movement.ResetGravityScale();
-            //_context.EnergyBarController.StaminaAbilityEnd();
+            _context.Stamina.CanRegenerate = true;
         }
         private void TransitionToInAir()
         {

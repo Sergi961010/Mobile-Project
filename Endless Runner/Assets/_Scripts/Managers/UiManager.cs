@@ -11,11 +11,11 @@ namespace TheCreators
         [SerializeField] private GameObject _pauseMenu;
         private void OnEnable()
         {
-            GameEventBus.OnScreenObstacleTrigger.AddListener(EnableAlert);
+            GameEvent.OnScreenObstacleTrigger.AddListener(EnableAlert);
         }
         private void OnDisable()
         {
-            GameEventBus.OnScreenObstacleTrigger.RemoveListener(EnableAlert);
+            GameEvent.OnScreenObstacleTrigger.RemoveListener(EnableAlert);
         }
         private void EnableAlert()
         {

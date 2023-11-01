@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace TheCreators.CustomEventSystem
 {
-    public static class GameEventBus
+    public static class GameEvent
     {
         #region Input
         public static readonly CustomEvent OnPerformJump = new();
@@ -24,7 +24,5 @@ namespace TheCreators.CustomEventSystem
 
         public static readonly CustomEvent OnPlayerDeath = new();
         public static readonly CustomEvent OnPlayerRevive = new();
-
-        public static readonly CustomEvent<float, float> OnStaminaBarUpdate = new();
     }
 }

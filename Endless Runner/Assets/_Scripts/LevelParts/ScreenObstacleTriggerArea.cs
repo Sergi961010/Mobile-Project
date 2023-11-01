@@ -10,7 +10,7 @@ namespace TheCreators.LevelParts
         {
             if (collision.CompareTag(_tagOfInterest))
             {
-                GameEventBus.OnScreenObstacleTrigger.Invoke();
+                GameEvent.OnScreenObstacleTrigger.Invoke();
             }
         }
     }

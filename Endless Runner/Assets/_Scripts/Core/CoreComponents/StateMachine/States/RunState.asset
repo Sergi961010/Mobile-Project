@@ -16,4 +16,3 @@ MonoBehaviour:
   - {fileID: 7400000, guid: f2264bf24cedf15489a01a48b35803aa, type: 2}
   audioEvent: {fileID: 0}
   _speed: 6
-  digTransitionStaminaTreshold: 5

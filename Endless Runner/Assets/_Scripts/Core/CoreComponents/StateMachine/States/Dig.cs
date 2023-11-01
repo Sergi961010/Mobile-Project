@@ -1,4 +1,5 @@
 using TheCreators.CustomEventSystem;
+using TheCreators.Managers;
 using UnityEngine;
 
 namespace TheCreators.Player.StateMachine.States
@@ -10,27 +11,25 @@ namespace TheCreators.Player.StateMachine.States
         public float surfaceYPosition = -2f;
         public float duration = .5f;
         public float elapsedTime;
-        public float staminaCost = 20f;
+        public float staminaCost = 5f;
         public override void Enter()
         {
             _context.PlayerAnimator.PlayLockedAnimation(animations[0]);
             _context.SpriteRenderer.ChangeSortingOrder(2);
+            //_context.EnergyBarController.StaminaAbilityStart(staminaCost);
             _context.AudioController.PlayLoopedAudioEvent(audioEvent);
             _context.Movement.Burrow(duration, surfaceYPosition, undergroundYPosition);
-            _context.Stamina.CanRegenerate = false;
         }
         public override void Exit()
         {
             //_context.SpriteRenderer.ChangeSortingOrder(0);
+            //_context.EnergyBarController.StaminaAbilityEnd();
             _context.AudioController.StopLoopedAudioEvent();
-            _context.Stamina.CanRegenerate = true;
         }
         public override void LogicUpdate()
         {
             _context.PlayerAnimator.PlayAnimation(animations[1]);
-            _context.Stamina.SubstractStamina(staminaCost);
-            if (_context.InputController.CanUnburrow || _context.Stamina.CurrentStamina == 0) 
-                TransitionToRun();
+            if (_context.InputController.CanUnburrow) TransitionToRun();
         }
         public override void PhysicsUpdate()
         {

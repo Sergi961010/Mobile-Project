@@ -22,7 +22,7 @@ namespace TheCreators
             yield return new WaitForSeconds(_autoDisableTimer);
             _blinkEffect.StopBlinking();
             gameObject.SetActive(false);
-            GameEventBus.OnAlertFinished.Invoke();
+            GameEvent.OnAlertFinished.Invoke();
         }
     }
 }

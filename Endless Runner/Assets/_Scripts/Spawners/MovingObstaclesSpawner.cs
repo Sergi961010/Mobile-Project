@@ -9,7 +9,7 @@ namespace TheCreators
         [SerializeField] private Transform _spawnPoint;
         private void OnEnable()
         {
-            GameEvent.OnAlertFinished.AddListener(Spawn);   
+            GameEventBus.OnAlertFinished.AddListener(Spawn);   
         }
         private void Spawn()
         {

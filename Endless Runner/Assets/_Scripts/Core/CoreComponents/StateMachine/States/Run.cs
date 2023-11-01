@@ -1,4 +1,3 @@
-using TheCreators.CustomEventSystem;
 using UnityEngine;
 
 namespace TheCreators.Player.StateMachine.States
@@ -7,6 +6,7 @@ namespace TheCreators.Player.StateMachine.States
     public class Run : PlayerState
     {
         public float _speed = 6f;
+        public float digTransitionStaminaTreshold = 20f;
         public override void Enter()
         {
             _context.PlayerAnimator.PlayAnimation(animations[0]);
@@ -15,7 +15,7 @@ namespace TheCreators.Player.StateMachine.States
         {
             if (_context.InputController.CanJump) 
                 TransitionToJump();
-            if (_context.InputController.CanBurrow)
+            if (_context.InputController.CanBurrow && _context.Stamina.CurrentStamina >= digTransitionStaminaTreshold)
                 TransitionToDig();
         }
         public override void PhysicsUpdate()

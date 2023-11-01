@@ -16,3 +16,4 @@ MonoBehaviour:
   - {fileID: 7400000, guid: 228c4a38529a0cf46b4e7d68326f1dc2, type: 2}
   audioEvent: {fileID: 0}
   fallGravityMultiplier: 3
+  flyTransitionStaminaTreshold: 5

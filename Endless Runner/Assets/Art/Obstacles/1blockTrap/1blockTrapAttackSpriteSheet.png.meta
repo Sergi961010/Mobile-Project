@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3db63b295ee7dfc4fa0000f12a41d47e
+guid: f0dd45a114b4c0b45b28a0649d1bb2f1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,13 +117,265 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GroundTrapIddleSpriteSheet_0
+      name: 1blockTrapAttackSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a03b8e415544e7644b0ddb92f831479d
+      internalID: 1022367580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1blockTrapAttackSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c83ddad565df4d24483506c3a93d9c90
+      internalID: 203237140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1blockTrapAttackSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42bfd6f51e419b9428b86a9c9c97aa65
+      internalID: 178047326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1blockTrapAttackSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d7816f2fe82c4409cc1bcf408926b8
+      internalID: 564810136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1blockTrapAttackSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a53b993fa486004b91f43234e14e38f
+      internalID: 1959828966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1blockTrapAttackSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b14c9b5f25df294eabfd694ace8a4ba
+      internalID: -1231969847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1blockTrapAttackSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85af9dde511e77747864183213a741f1
+      internalID: 1300359175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1blockTrapAttackSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8542fb5b651ce604a9d979f92df6f537
+      internalID: -1819862386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1blockTrapAttackSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb852251b4c403448b86a03f2a796a7a
+      internalID: 731193183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1blockTrapAttackSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d96207560120a34c917413f3c98e3cf
+      internalID: 1523234007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1blockTrapAttackSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65606e21692345642b178f61a2aaa539
+      internalID: 1436791544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1blockTrapAttackSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b49d385bd50e7e489d07c082ee5b501
+      internalID: 415555747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1blockTrapAttackSpriteSheet_12
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 608
-        height: 462
+        width: 500
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,260 +383,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f515852da68465c449809cd867656880
-      internalID: 1572133835
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GroundTrapIddleSpriteSheet_1
-      rect:
-        serializedVersion: 2
-        x: 608
-        y: 0
-        width: 608
-        height: 462
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1b6a8097597596941b3cad68446c8eeb
-      internalID: -1676222751
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GroundTrapIddleSpriteSheet_2
-      rect:
-        serializedVersion: 2
-        x: 1216
-        y: 0
-        width: 608
-        height: 462
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87bf76156fc397d4e96d454176161899
-      internalID: 455001999
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GroundTrapIddleSpriteSheet_3
-      rect:
-        serializedVersion: 2
-        x: 1824
-        y: 0
-        width: 608
-        height: 462
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c9d5247db06723747bcf99f526f106f4
-      internalID: -2048003970
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GroundTrapIddleSpriteSheet_4
-      rect:
-        serializedVersion: 2
-        x: 2432
-        y: 0
-        width: 608
-        height: 462
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42d5d38ab69130943ba00d04b1e52741
-      internalID: 425889691
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GroundTrapIddleSpriteSheet_5
-      rect:
-        serializedVersion: 2
-        x: 3040
-        y: 0
-        width: 608
-        height: 462
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 797adecd8131dec48b50ee9bdc4622d9
-      internalID: -1874242642
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GroundTrapIddleSpriteSheet_6
-      rect:
-        serializedVersion: 2
-        x: 3648
-        y: 0
-        width: 608
-        height: 462
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e7c461c4167061a4d8e56e3ff3984886
-      internalID: -67241887
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GroundTrapIddleSpriteSheet_7
-      rect:
-        serializedVersion: 2
-        x: 4256
-        y: 0
-        width: 608
-        height: 462
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd3052965ec9d234c8b41285df863e51
-      internalID: -1910089353
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GroundTrapIddleSpriteSheet_8
-      rect:
-        serializedVersion: 2
-        x: 4864
-        y: 0
-        width: 608
-        height: 462
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d3e68ed2c768c84db57768051b1ac2e
-      internalID: 1045310331
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GroundTrapIddleSpriteSheet_9
-      rect:
-        serializedVersion: 2
-        x: 5472
-        y: 0
-        width: 608
-        height: 462
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea2f7507bca58bc4dac2d1148a5e7a5d
-      internalID: -650788116
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GroundTrapIddleSpriteSheet_10
-      rect:
-        serializedVersion: 2
-        x: 6080
-        y: 0
-        width: 608
-        height: 462
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d171d1cc3c953240af5eaf7d4a4fd4a
-      internalID: -291331745
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GroundTrapIddleSpriteSheet_11
-      rect:
-        serializedVersion: 2
-        x: 6688
-        y: 0
-        width: 608
-        height: 462
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f5523f2f6ea1fd34d822cb08f1c56b81
-      internalID: -1989040877
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GroundTrapIddleSpriteSheet_12
-      rect:
-        serializedVersion: 2
-        x: 7296
-        y: 0
-        width: 608
-        height: 462
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f78ba61418dfe194d9b1f49abbbfa8ca
-      internalID: -578375856
+      spriteID: a3d713301143e09438fd3e68b0ee670f
+      internalID: 1169352639
       vertices: []
       indices: 
       edges: []
@@ -400,19 +400,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      GroundTrapIddleSpriteSheet_8: 1045310331
-      GroundTrapIddleSpriteSheet_3: -2048003970
-      GroundTrapIddleSpriteSheet_12: -578375856
-      GroundTrapIddleSpriteSheet_1: -1676222751
-      GroundTrapIddleSpriteSheet_6: -67241887
-      GroundTrapIddleSpriteSheet_11: -1989040877
-      GroundTrapIddleSpriteSheet_5: -1874242642
-      GroundTrapIddleSpriteSheet_10: -291331745
-      GroundTrapIddleSpriteSheet_4: 425889691
-      GroundTrapIddleSpriteSheet_2: 455001999
-      GroundTrapIddleSpriteSheet_9: -650788116
-      GroundTrapIddleSpriteSheet_0: 1572133835
-      GroundTrapIddleSpriteSheet_7: -1910089353
+      1blockTrapAttackSpriteSheet_11: 415555747
+      1blockTrapAttackSpriteSheet_10: 1436791544
+      1blockTrapAttackSpriteSheet_0: 1022367580
+      1blockTrapAttackSpriteSheet_9: 1523234007
+      1blockTrapAttackSpriteSheet_8: 731193183
+      1blockTrapAttackSpriteSheet_6: 1300359175
+      1blockTrapAttackSpriteSheet_3: 564810136
+      1blockTrapAttackSpriteSheet_12: 1169352639
+      1blockTrapAttackSpriteSheet_5: -1231969847
+      1blockTrapAttackSpriteSheet_7: -1819862386
+      1blockTrapAttackSpriteSheet_4: 1959828966
+      1blockTrapAttackSpriteSheet_2: 178047326
+      1blockTrapAttackSpriteSheet_1: 203237140
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

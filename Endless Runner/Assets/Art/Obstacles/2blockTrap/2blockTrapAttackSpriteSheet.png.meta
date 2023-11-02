@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 73b5517053b605449b179496c9aba4bc
+guid: 9b5d7f2bd6d72e6459d8a5d2a76c4ec0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WallTrapAttackSpriteSheet_0
+      name: 2blockTrapAttackSpriteSheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4dc462bc61b6b8448d798f293bc41f6
-      internalID: 104053560
+      spriteID: d0d3aa8a6728a944b922a9037ea0f3a4
+      internalID: -1515228977
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapAttackSpriteSheet_1
+      name: 2blockTrapAttackSpriteSheet_1
       rect:
         serializedVersion: 2
         x: 250
@@ -152,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95b31c12b5fc1584b8aaec59be16c859
-      internalID: 1772079490
+      spriteID: dc5fda516412b694b8672b683f8132c4
+      internalID: 1213408059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapAttackSpriteSheet_2
+      name: 2blockTrapAttackSpriteSheet_2
       rect:
         serializedVersion: 2
         x: 500
@@ -173,14 +173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30c648f1daf98be419b8e587455022ac
-      internalID: 1408841507
+      spriteID: 0c6060a77961d7446ac3abe6a87a55d0
+      internalID: -536879645
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapAttackSpriteSheet_3
+      name: 2blockTrapAttackSpriteSheet_3
       rect:
         serializedVersion: 2
         x: 750
@@ -194,14 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfd62b8e82c8769478c8b6b7f2a5ea67
-      internalID: -1291740397
+      spriteID: 9d5fc017e076e4f4388b32951f9191a0
+      internalID: 1184625261
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapAttackSpriteSheet_4
+      name: 2blockTrapAttackSpriteSheet_4
       rect:
         serializedVersion: 2
         x: 1000
@@ -215,14 +215,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0828cabb80dac2499d41489d7d0bc31
-      internalID: -2134536323
+      spriteID: 1be4542b3e803674ea077ee449599d18
+      internalID: -964964324
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapAttackSpriteSheet_5
+      name: 2blockTrapAttackSpriteSheet_5
       rect:
         serializedVersion: 2
         x: 1250
@@ -236,14 +236,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 477083431d3dc784981d97ba520f7be6
-      internalID: 1084841853
+      spriteID: 97e9874ad8173c4409d106820cd9f5b4
+      internalID: 718577528
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapAttackSpriteSheet_6
+      name: 2blockTrapAttackSpriteSheet_6
       rect:
         serializedVersion: 2
         x: 1500
@@ -257,14 +257,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2042fee6ff8a122429c27c1805b367a0
-      internalID: -387023673
+      spriteID: 36779f7e140b95048ac94eba66e454a6
+      internalID: -362676728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapAttackSpriteSheet_7
+      name: 2blockTrapAttackSpriteSheet_7
       rect:
         serializedVersion: 2
         x: 1750
@@ -278,14 +278,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9213e4ecde5bd04396351b659fac8e3
-      internalID: 1128831301
+      spriteID: f67bedadbc640354695faba3d880c694
+      internalID: -1465489845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapAttackSpriteSheet_8
+      name: 2blockTrapAttackSpriteSheet_8
       rect:
         serializedVersion: 2
         x: 2000
@@ -299,14 +299,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c67371584befbf498a38309a4e03e9f
-      internalID: 676566055
+      spriteID: a56134187d7f41146a4a4fdd63839cba
+      internalID: -904778803
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapAttackSpriteSheet_9
+      name: 2blockTrapAttackSpriteSheet_9
       rect:
         serializedVersion: 2
         x: 2250
@@ -320,14 +320,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9bf5e45aeadf654baf56eda6e3899a1
-      internalID: -800906928
+      spriteID: dd781556b5cb36e49b371125b688c0a5
+      internalID: 144120332
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapAttackSpriteSheet_10
+      name: 2blockTrapAttackSpriteSheet_10
       rect:
         serializedVersion: 2
         x: 2500
@@ -341,14 +341,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bda6b8d00a1a13b4e846d4c04237a75a
-      internalID: 674273469
+      spriteID: 84a9cd2041006044594a946e72ca7f35
+      internalID: 1020970722
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapAttackSpriteSheet_11
+      name: 2blockTrapAttackSpriteSheet_11
       rect:
         serializedVersion: 2
         x: 2750
@@ -362,14 +362,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d49c4b604e8c4d429bd3b5ffb91a823
-      internalID: -1402906692
+      spriteID: 62c1dd695f6b3cf4897d0a635ea12876
+      internalID: 534568702
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapAttackSpriteSheet_12
+      name: 2blockTrapAttackSpriteSheet_12
       rect:
         serializedVersion: 2
         x: 0
@@ -383,14 +383,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef68e0fb4318cf743960ce098157213a
-      internalID: -1433678723
+      spriteID: 1f5963b36b69b424792317c270146a04
+      internalID: 1669227455
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapAttackSpriteSheet_13
+      name: 2blockTrapAttackSpriteSheet_13
       rect:
         serializedVersion: 2
         x: 250
@@ -404,14 +404,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a36e929ea9499c0478eaf1673a1dad52
-      internalID: 439496352
+      spriteID: 0f891dc01fae36c439d70e2834059867
+      internalID: -97084411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapAttackSpriteSheet_14
+      name: 2blockTrapAttackSpriteSheet_14
       rect:
         serializedVersion: 2
         x: 500
@@ -425,14 +425,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18bc78c1d04aa184db93633165abd453
-      internalID: -1311981233
+      spriteID: 5463d1c372105fd4da56d0c676f4cbc8
+      internalID: 1965534592
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapAttackSpriteSheet_15
+      name: 2blockTrapAttackSpriteSheet_15
       rect:
         serializedVersion: 2
         x: 750
@@ -446,14 +446,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2594c18df79060f4ba1ce8c6ce8808ba
-      internalID: 1423081182
+      spriteID: e6d9315896a0b4149a38101f75517eb3
+      internalID: -776401851
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapAttackSpriteSheet_16
+      name: 2blockTrapAttackSpriteSheet_16
       rect:
         serializedVersion: 2
         x: 1000
@@ -467,14 +467,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 898e22e8d49da484390b9663b9757336
-      internalID: -680855711
+      spriteID: 4c10b72ddd195964294819ebdf675f35
+      internalID: 189616166
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapAttackSpriteSheet_17
+      name: 2blockTrapAttackSpriteSheet_17
       rect:
         serializedVersion: 2
         x: 1250
@@ -488,14 +488,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08afec63be4b6dd4994af59303e47562
-      internalID: 2059000270
+      spriteID: e831c7b095e6a83448793536e1618319
+      internalID: -495273243
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapAttackSpriteSheet_18
+      name: 2blockTrapAttackSpriteSheet_18
       rect:
         serializedVersion: 2
         x: 1500
@@ -509,14 +509,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4505f1b9dbaeb3f40be4beb7bf899b6b
-      internalID: -1152109590
+      spriteID: bcc1aa2b83057ea498edfb85342b30b7
+      internalID: -1712282919
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapAttackSpriteSheet_19
+      name: 2blockTrapAttackSpriteSheet_19
       rect:
         serializedVersion: 2
         x: 1750
@@ -530,14 +530,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83242d1e7578cc04f9c5787acbadd99b
-      internalID: -1360484336
+      spriteID: 246a40f1a73fcf44dbddc6859c6047f8
+      internalID: 1516007216
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapAttackSpriteSheet_20
+      name: 2blockTrapAttackSpriteSheet_20
       rect:
         serializedVersion: 2
         x: 2000
@@ -551,14 +551,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03faac39e8363cc4b931dd8dd4bcdc23
-      internalID: -13338988
+      spriteID: 5f01677617b47884284dc461a7dfc046
+      internalID: 1541541984
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapAttackSpriteSheet_21
+      name: 2blockTrapAttackSpriteSheet_21
       rect:
         serializedVersion: 2
         x: 2250
@@ -572,14 +572,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cd2bf54d590aef4b95b0e9710a3ce90
-      internalID: 1542261697
+      spriteID: 71736e7df572aa84fb55ba73f84a9c88
+      internalID: 839426320
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapAttackSpriteSheet_22
+      name: 2blockTrapAttackSpriteSheet_22
       rect:
         serializedVersion: 2
         x: 2500
@@ -593,14 +593,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: beeaeaef23373534687c5459b97f6278
-      internalID: 1984961960
+      spriteID: 15d3324958d8c5848ab2121e94103313
+      internalID: -1643887847
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapAttackSpriteSheet_23
+      name: 2blockTrapAttackSpriteSheet_23
       rect:
         serializedVersion: 2
         x: 2750
@@ -614,8 +614,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 016c564334bfa58418fcec621d847f9c
-      internalID: 94315823
+      spriteID: d868adb043e8c7d4d8fdf2d9103c83a0
+      internalID: 1825530725
       vertices: []
       indices: 
       edges: []
@@ -631,30 +631,30 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      WallTrapAttackSpriteSheet_11: -1402906692
-      WallTrapAttackSpriteSheet_7: 1128831301
-      WallTrapAttackSpriteSheet_15: 1423081182
-      WallTrapAttackSpriteSheet_4: -2134536323
-      WallTrapAttackSpriteSheet_12: -1433678723
-      WallTrapAttackSpriteSheet_6: -387023673
-      WallTrapAttackSpriteSheet_16: -680855711
-      WallTrapAttackSpriteSheet_0: 104053560
-      WallTrapAttackSpriteSheet_22: 1984961960
-      WallTrapAttackSpriteSheet_2: 1408841507
-      WallTrapAttackSpriteSheet_21: 1542261697
-      WallTrapAttackSpriteSheet_23: 94315823
-      WallTrapAttackSpriteSheet_17: 2059000270
-      WallTrapAttackSpriteSheet_18: -1152109590
-      WallTrapAttackSpriteSheet_3: -1291740397
-      WallTrapAttackSpriteSheet_10: 674273469
-      WallTrapAttackSpriteSheet_5: 1084841853
-      WallTrapAttackSpriteSheet_13: 439496352
-      WallTrapAttackSpriteSheet_19: -1360484336
-      WallTrapAttackSpriteSheet_8: 676566055
-      WallTrapAttackSpriteSheet_14: -1311981233
-      WallTrapAttackSpriteSheet_9: -800906928
-      WallTrapAttackSpriteSheet_20: -13338988
-      WallTrapAttackSpriteSheet_1: 1772079490
+      2blockTrapAttackSpriteSheet_10: 1020970722
+      2blockTrapAttackSpriteSheet_22: -1643887847
+      2blockTrapAttackSpriteSheet_4: -964964324
+      2blockTrapAttackSpriteSheet_18: -1712282919
+      2blockTrapAttackSpriteSheet_23: 1825530725
+      2blockTrapAttackSpriteSheet_8: -904778803
+      2blockTrapAttackSpriteSheet_7: -1465489845
+      2blockTrapAttackSpriteSheet_15: -776401851
+      2blockTrapAttackSpriteSheet_12: 1669227455
+      2blockTrapAttackSpriteSheet_2: -536879645
+      2blockTrapAttackSpriteSheet_0: -1515228977
+      2blockTrapAttackSpriteSheet_5: 718577528
+      2blockTrapAttackSpriteSheet_21: 839426320
+      2blockTrapAttackSpriteSheet_9: 144120332
+      2blockTrapAttackSpriteSheet_11: 534568702
+      2blockTrapAttackSpriteSheet_20: 1541541984
+      2blockTrapAttackSpriteSheet_19: 1516007216
+      2blockTrapAttackSpriteSheet_6: -362676728
+      2blockTrapAttackSpriteSheet_14: 1965534592
+      2blockTrapAttackSpriteSheet_17: -495273243
+      2blockTrapAttackSpriteSheet_16: 189616166
+      2blockTrapAttackSpriteSheet_1: 1213408059
+      2blockTrapAttackSpriteSheet_13: -97084411
+      2blockTrapAttackSpriteSheet_3: 1184625261
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

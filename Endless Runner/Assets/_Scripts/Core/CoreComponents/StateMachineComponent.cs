@@ -1,6 +1,5 @@
 using TheCreators.Player.StateMachine;
 using TheCreators.Player.StateMachine.States;
-using UnityEngine;
 
 namespace TheCreators.CoreSystem.CoreComponents
 {
@@ -37,7 +36,6 @@ namespace TheCreators.CoreSystem.CoreComponents
         private void Update()
         {
             StateMachine.CurrentState.LogicUpdate();
-            Debug.Log(StateMachine.CurrentState);
         }
         private void FixedUpdate()
         {

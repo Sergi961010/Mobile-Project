@@ -13,9 +13,8 @@ namespace TheCreators.Input
         public event UnityAction<bool> Fly = delegate { };
         public event UnityAction<bool> Dig = delegate { };
 
-        public float minimumDistance = .2f;
-        public float maximumTime = 1f;
-        public float directionThreshold = .9f;
+        private readonly float minimumDistance = 100f;
+        private readonly float directionThreshold = .9f;
 
         private Vector2 touchStartPosition, touchEndPosition;
         private void OnEnable()
@@ -38,7 +37,7 @@ namespace TheCreators.Input
         {
             switch (context.phase)
             {
-                case InputActionPhase.Started:
+                case InputActionPhase.Performed:
                     Fly.Invoke(true);
                     break;
                 case InputActionPhase.Canceled:

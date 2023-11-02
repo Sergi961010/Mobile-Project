@@ -30,7 +30,7 @@ namespace TheCreators.Player.StateMachine.States
         }
         private void TransitionToDig()
         {
-            _context.StateMachine.StateMachine.SwitchState(_context.StateMachine.digState);
+            _context.StateMachine.StateMachine.SwitchState(_context.StateMachine.digEnterState);
         }
     }
 }

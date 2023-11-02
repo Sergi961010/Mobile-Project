@@ -184,7 +184,9 @@ MonoBehaviour:
   jumpState: {fileID: 11400000, guid: e325e89fb45898547a90bc673bf74f57, type: 2}
   inAirState: {fileID: 11400000, guid: 61be7ff803e0c6544b7fa8f6169fea1d, type: 2}
   flyState: {fileID: 11400000, guid: b3cf32c1fa801de43bb49420051c5260, type: 2}
-  digState: {fileID: 11400000, guid: 62d709d7851c2bd499ecd6e40f1ea885, type: 2}
+  digEnterState: {fileID: 11400000, guid: 15a203e782756dc489a51e6bfa96495d, type: 2}
+  digLoopState: {fileID: 11400000, guid: aff6c37948336e5489fc1e801da81cea, type: 2}
+  digExitState: {fileID: 11400000, guid: 3c68fc5f15f11f84c96d0f80d2bb079a, type: 2}
 --- !u!1 &1112159694776310856
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,7 +527,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8917580687499550225}
   - component: {fileID: 3403458249861174368}
-  - component: {fileID: 527173391}
+  - component: {fileID: 2070509218}
   m_Layer: 7
   m_Name: CollisionSenses
   m_TagString: Player
@@ -566,8 +568,8 @@ MonoBehaviour:
   _groundLayer:
     serializedVersion: 2
     m_Bits: 512
---- !u!70 &527173391
-CapsuleCollider2D:
+--- !u!61 &2070509218
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -579,9 +581,19 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.2, y: -0.09239733}
-  m_Size: {x: 0.38092458, y: 1.3014219}
-  m_Direction: 0
+  m_Offset: {x: 0.10000001, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.4, y: 1.45}
+  m_EdgeRadius: 0
 --- !u!1 &8917580687735459860
 GameObject:
   m_ObjectHideFlags: 0

@@ -31,7 +31,7 @@ namespace TheCreators.Player.StateMachine
         }
         public PlayerState Dig()
         {
-            PlayerState state = ScriptableObject.CreateInstance<Dig>();
+            PlayerState state = ScriptableObject.CreateInstance<DigLoop>();
             state.Init(_context);
             return state;
         }

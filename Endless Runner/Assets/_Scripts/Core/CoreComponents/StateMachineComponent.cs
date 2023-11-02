@@ -1,5 +1,6 @@
 using TheCreators.Player.StateMachine;
 using TheCreators.Player.StateMachine.States;
+using UnityEngine;
 
 namespace TheCreators.CoreSystem.CoreComponents
 {
@@ -10,7 +11,9 @@ namespace TheCreators.CoreSystem.CoreComponents
         public Jump jumpState;
         public InAir inAirState;
         public Fly flyState;
-        public Dig digState;
+        public DigEnter digEnterState;
+        public DigLoop digLoopState;
+        public DigExit digExitState;
         #endregion
 
         public NewPlayerStateMachine StateMachine { get; private set; }
@@ -25,13 +28,16 @@ namespace TheCreators.CoreSystem.CoreComponents
             jumpState.Init(Core);
             inAirState.Init(Core);
             flyState.Init(Core);
-            digState.Init(Core);
+            digEnterState.Init(Core);
+            digLoopState.Init(Core);
+            digExitState.Init(Core);
 
             StateMachine.Initialize(runState);
         }
         private void Update()
         {
             StateMachine.CurrentState.LogicUpdate();
+            Debug.Log(StateMachine.CurrentState);
         }
         private void FixedUpdate()
         {

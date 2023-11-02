@@ -14,7 +14,6 @@ namespace TheCreators.Player.StateMachine.States
             _stateDuration = animations[0].length;
             _context.PlayerAnimator.PlayAnimation(animations[0]);
             _context.AudioController.PlayAudioEvent(audioEvent);
-            _context.Movement.StartHandleDigTranslationCoroutine(animations[0].length, startYPosition, endYPosition);
         }
         public override void Exit()
         {
@@ -30,7 +29,7 @@ namespace TheCreators.Player.StateMachine.States
         }
         public override void PhysicsUpdate()
         {
-            
+            _context.Movement.HandleDigTranslation(endYPosition);
         }
         private void TransitionToRun()
         {

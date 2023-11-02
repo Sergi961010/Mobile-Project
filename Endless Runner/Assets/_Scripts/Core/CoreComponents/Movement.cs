@@ -46,23 +46,12 @@ namespace TheCreators.CoreSystem.CoreComponents
         {
             Rigidbody.velocity = new Vector2(Rigidbody.velocity.x, Rigidbody.velocity.y * value);
         }
-        public void StartHandleDigTranslationCoroutine(float duration, float startYPosition, float endYPosition)
+        public void HandleDigTranslation(float endYPosition)
         {
-            StartCoroutine(HandleDigTranslation(duration, startYPosition, endYPosition));
-        }
-        public IEnumerator HandleDigTranslation(float duration, float startYPosition, float endYPosition)
-        {
-            float elapsedTime = 0;
-            Vector2 newPosition = transform.position;
-            while (elapsedTime < duration)
-            {
-                float percentageComplete = elapsedTime / duration;
-                newPosition.x = transform.position.x + Rigidbody.velocity.x * Time.deltaTime;
-                newPosition.y = Mathf.Lerp(startYPosition, endYPosition, percentageComplete);
-                Rigidbody.MovePosition(newPosition);
-                elapsedTime += Time.deltaTime;
-                yield return null;
-            }
+            float newPositionX = Mathf.MoveTowards(transform.position.x, transform.position.x + Rigidbody.velocity.x, (Rigidbody.velocity.x * 1.5f) * Time.fixedDeltaTime);
+            float newPositionY = Mathf.MoveTowards(transform.position.y, endYPosition, (Rigidbody.velocity.x * 1.5f) * Time.fixedDeltaTime);
+            Vector2 newPosition = new(newPositionX, newPositionY);
+            Rigidbody.MovePosition(newPosition);
         }
         private float CalculateJumpForce(float jumpHeight, float jumpTimeToApex)
         {

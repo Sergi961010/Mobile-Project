@@ -17,7 +17,6 @@ namespace TheCreators.Player.StateMachine.States
             _context.SpriteRenderer.ChangeSortingOrder(2);
             _context.AudioController.PlayAudioEvent(audioEvent);
             _context.Stamina.CanRegenerate = false;
-            _context.Movement.StartHandleDigTranslationCoroutine(animations[0].length, startYPosition, endYPosition);
         }
         public override void Exit()
         {
@@ -31,7 +30,7 @@ namespace TheCreators.Player.StateMachine.States
         }
         public override void PhysicsUpdate()
         {
-            
+            _context.Movement.HandleDigTranslation(endYPosition);
         }
         private void TransitionToDigLoop()
         {

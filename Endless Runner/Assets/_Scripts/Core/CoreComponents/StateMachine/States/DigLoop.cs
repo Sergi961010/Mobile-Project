@@ -1,4 +1,4 @@
-using TheCreators.CustomEventSystem;
+using TheCreators.Managers;
 using UnityEngine;
 
 namespace TheCreators.Player.StateMachine.States
@@ -10,11 +10,11 @@ namespace TheCreators.Player.StateMachine.States
         public override void Enter()
         {
             _context.PlayerAnimator.PlayLockedAnimation(animations[0]);
-            _context.AudioController.PlayLoopedAudioEvent(audioEvent);
+            SoundManager.Instance.PlayLoopedAudioEvent(audioEvent);
         }
         public override void Exit()
         {
-            _context.AudioController.StopLoopedAudioEvent();
+            SoundManager.Instance.StopLoopedAudioEvent();
         }
         public override void LogicUpdate()
         {

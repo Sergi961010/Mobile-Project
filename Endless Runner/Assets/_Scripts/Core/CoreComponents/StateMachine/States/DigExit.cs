@@ -1,4 +1,4 @@
-using TheCreators.Utilities;
+using TheCreators.Managers;
 using UnityEngine;
 
 namespace TheCreators.Player.StateMachine.States
@@ -13,7 +13,7 @@ namespace TheCreators.Player.StateMachine.States
         {
             _stateDuration = animations[0].length;
             _context.PlayerAnimator.PlayAnimation(animations[0]);
-            _context.AudioController.PlayAudioEvent(audioEvent);
+            SoundManager.Instance.PlayAudioEvent(audioEvent);
         }
         public override void Exit()
         {

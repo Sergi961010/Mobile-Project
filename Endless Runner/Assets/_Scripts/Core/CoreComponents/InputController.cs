@@ -36,6 +36,12 @@ namespace TheCreators.CoreSystem.CoreComponents
             _inputReader.Fly += OnFly;
             _inputReader.Dig += OnDig;
         }
+        private void OnDisable()
+        {
+            _inputReader.Jump -= OnJump;
+            _inputReader.Fly -= OnFly;
+            _inputReader.Dig -= OnDig;
+        }
         private void Update()
         {
             foreach (var timer in timers)

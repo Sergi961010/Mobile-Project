@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4837005265542917656}
   - component: {fileID: 2000146483787907326}
-  - component: {fileID: -220425517729988717}
-  - component: {fileID: -1945166857258081738}
+  - component: {fileID: 6409397206357968982}
+  - component: {fileID: 8804653017254322758}
   m_Layer: 9
   m_Name: Ground_8_WithGap
   m_TagString: Untagged
@@ -68,8 +68,8 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8, y: 0.5}
   m_EdgeRadius: 0
---- !u!61 &-220425517729988717
-BoxCollider2D:
+--- !u!68 &6409397206357968982
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -81,21 +81,17 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -3, y: 0.25}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2, y: 0.25}
+  m_Offset: {x: -3, y: 0.32}
   m_EdgeRadius: 0
---- !u!61 &-1945166857258081738
-BoxCollider2D:
+  m_Points:
+  - {x: 0.9, y: 0}
+  - {x: -1, y: 0}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &8804653017254322758
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -107,19 +103,15 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 3, y: 0.25}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2, y: 0.25}
+  m_Offset: {x: 3, y: 0.32}
   m_EdgeRadius: 0
+  m_Points:
+  - {x: 1, y: 0}
+  - {x: -0.9, y: 0}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1001 &376260146914432326
 PrefabInstance:
   m_ObjectHideFlags: 0

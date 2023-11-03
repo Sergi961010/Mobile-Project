@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: DigExitFX
   m_EditorClassIdentifier: 
   clips:
-  - {fileID: 8300000, guid: de3d5e2e90ff3ba469ed33cf89cd816f, type: 3}
+  - {fileID: 8300000, guid: 6ddcabb2869be0b40b1b6bf3ef2727f9, type: 3}

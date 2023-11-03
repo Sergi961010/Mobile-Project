@@ -30,7 +30,7 @@ namespace TheCreators.Player.StateMachine.States
         }
         public override void Exit()
         {
-            _context.PlayerAnimator.PlayLockedAnimation(animations[2]);
+            _context.PlayerAnimator.PlayAnimation(animations[2]);
             _context.Movement.ResetGravityScale();
             _context.Stamina.CanRegenerate = true;
         }

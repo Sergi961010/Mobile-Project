@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f0dd45a114b4c0b45b28a0649d1bb2f1
+guid: ce671702f1ee82e44a4aba2196ba7cb1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,265 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1blockTrapAttackSpriteSheet_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1000
-        width: 500
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: caaf2420b3279e44d97890fc8c57fabb
-      internalID: -1184135482
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1blockTrapAttackSpriteSheet_1
-      rect:
-        serializedVersion: 2
-        x: 500
-        y: 1000
-        width: 500
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 50f328db143896741bacf598777701cb
-      internalID: 156848010
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1blockTrapAttackSpriteSheet_2
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 1000
-        width: 500
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f91a1756419bcd428654a0e0875f379
-      internalID: 934240204
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1blockTrapAttackSpriteSheet_3
-      rect:
-        serializedVersion: 2
-        x: 1500
-        y: 1000
-        width: 500
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ef1c38fe10d24ec44b44e3ad856d08c6
-      internalID: 1056971931
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1blockTrapAttackSpriteSheet_4
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 1000
-        width: 500
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0725ee1ed2d98e844ae7f186ae46318c
-      internalID: -1579138733
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1blockTrapAttackSpriteSheet_5
-      rect:
-        serializedVersion: 2
-        x: 2500
-        y: 1000
-        width: 500
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4bd737bca0ed7c74db244dc34056cb33
-      internalID: -1612948885
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1blockTrapAttackSpriteSheet_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 500
-        width: 500
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 095be56154445c44e811d5763b0bc021
-      internalID: 169578912
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1blockTrapAttackSpriteSheet_7
-      rect:
-        serializedVersion: 2
-        x: 500
-        y: 500
-        width: 500
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 429c69767debbd24c984876db8b548a0
-      internalID: 1753469684
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1blockTrapAttackSpriteSheet_8
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 500
-        width: 500
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3bc0c2e4ecef6f3409bddff2852ff8d3
-      internalID: 1581922121
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1blockTrapAttackSpriteSheet_9
-      rect:
-        serializedVersion: 2
-        x: 1500
-        y: 500
-        width: 500
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6563c964e20188b4f98a7bfd8d78ee75
-      internalID: 371991355
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1blockTrapAttackSpriteSheet_10
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 500
-        width: 500
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e9e9357ab1bb464aa7b8225acc20c52
-      internalID: -339016150
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1blockTrapAttackSpriteSheet_11
-      rect:
-        serializedVersion: 2
-        x: 2500
-        y: 500
-        width: 500
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 32297679e8e12de4bb4421e48e8d7dd6
-      internalID: 93487710
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1blockTrapAttackSpriteSheet_12
+      name: Character Fly_Spritesheet_2.0_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 500
-        height: 500
+        width: 250
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -383,8 +131,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b152503b4febf374bbbe07eca1b520b4
-      internalID: 1522733854
+      spriteID: e0072727d818d87498e81e43e0ab41b9
+      internalID: 1124921456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Fly_Spritesheet_2.0_1
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9136c55c0660d8146b21d64155bb7838
+      internalID: -801691202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Fly_Spritesheet_2.0_2
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 584e1719e74501c4d83599805d4401f7
+      internalID: 1555855603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Fly_Spritesheet_2.0_3
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e9891457ece9e4d8b85e42ffdce125
+      internalID: 1776170402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Fly_Spritesheet_2.0_4
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60c54d2c5cc8d5b46bf6c7db084edeb4
+      internalID: -1643320347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Fly_Spritesheet_2.0_5
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e361c60bc655b4baa0de9d9ff5cbdb
+      internalID: -1191272693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Fly_Spritesheet_2.0_6
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641eafb951cc86b4997c1afbc5f850c8
+      internalID: 474730066
       vertices: []
       indices: 
       edges: []
@@ -400,19 +274,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      1blockTrapAttackSpriteSheet_11: 93487710
-      1blockTrapAttackSpriteSheet_10: -339016150
-      1blockTrapAttackSpriteSheet_0: -1184135482
-      1blockTrapAttackSpriteSheet_9: 371991355
-      1blockTrapAttackSpriteSheet_8: 1581922121
-      1blockTrapAttackSpriteSheet_6: 169578912
-      1blockTrapAttackSpriteSheet_3: 1056971931
-      1blockTrapAttackSpriteSheet_12: 1522733854
-      1blockTrapAttackSpriteSheet_5: -1612948885
-      1blockTrapAttackSpriteSheet_7: 1753469684
-      1blockTrapAttackSpriteSheet_4: -1579138733
-      1blockTrapAttackSpriteSheet_2: 934240204
-      1blockTrapAttackSpriteSheet_1: 156848010
+      Character Fly_Spritesheet_2.0_4: -1643320347
+      Character Fly_Spritesheet_2.0_6: 474730066
+      Character Fly_Spritesheet_2.0_0: 1124921456
+      Character Fly_Spritesheet_2.0_3: 1776170402
+      Character Fly_Spritesheet_2.0_1: -801691202
+      Character Fly_Spritesheet_2.0_2: 1555855603
+      Character Fly_Spritesheet_2.0_5: -1191272693
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

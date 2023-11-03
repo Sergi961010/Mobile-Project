@@ -265,7 +265,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1598,6 +1598,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &696471265 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8917580687499550224, guid: 068976800da4df24e9625e76fd309b95, type: 3}
+  m_PrefabInstance: {fileID: 2112399006}
+  m_PrefabAsset: {fileID: 0}
+--- !u!70 &696471269
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696471265}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.066624105}
+  m_Size: {x: 0.5, y: 1.3532482}
+  m_Direction: 0
 --- !u!1 &703124765
 GameObject:
   m_ObjectHideFlags: 0
@@ -2731,7 +2752,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b448b78c7a9256c4e9ecd9bb40ac98de, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4456,7 +4477,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2070509218, guid: 068976800da4df24e9625e76fd309b95, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 068976800da4df24e9625e76fd309b95, type: 3}
 --- !u!1 &2125846423
 GameObject:

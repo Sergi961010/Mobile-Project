@@ -326,12 +326,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 470891697, guid: e429e642fcd22dc4daf2d3490dad15a4, type: 3}
+  m_Sprite: {fileID: 1571354652, guid: eb849779fc6f24942b2bf0b96b0330c9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.8925114, y: 1.8518518}
+  m_Size: {x: 1.8536621, y: 1.8518518}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -724,7 +724,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0d5f2356b8ab2b4899500111deef508, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _soundController: {fileID: 0}
 --- !u!95 &5949712073818123990
 Animator:
   serializedVersion: 5
@@ -823,4 +822,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0d5f2356b8ab2b4899500111deef508, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _soundController: {fileID: 0}

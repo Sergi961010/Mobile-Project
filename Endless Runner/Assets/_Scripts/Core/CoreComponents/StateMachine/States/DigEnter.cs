@@ -1,4 +1,4 @@
-using TheCreators.Utilities;
+using TheCreators.Managers;
 using UnityEngine;
 
 namespace TheCreators.Player.StateMachine.States
@@ -15,7 +15,7 @@ namespace TheCreators.Player.StateMachine.States
             _context.Movement.Rigidbody.isKinematic = true;
             _context.PlayerAnimator.PlayAnimation(animations[0]);
             _context.SpriteRenderer.ChangeSortingOrder(2);
-            _context.AudioController.PlayAudioEvent(audioEvent);
+            SoundManager.Instance.PlayAudioEvent(audioEvent);
             _context.Stamina.CanRegenerate = false;
         }
         public override void Exit()

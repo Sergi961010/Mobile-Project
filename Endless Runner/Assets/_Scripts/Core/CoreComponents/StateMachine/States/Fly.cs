@@ -1,5 +1,3 @@
-using System;
-using TheCreators.CustomEventSystem;
 using TheCreators.Managers;
 using UnityEngine;
 
@@ -16,7 +14,7 @@ namespace TheCreators.Player.StateMachine.States
             _context.Movement.ModifyGravity(smoothFactor);
             _context.Movement.ModifyYVelocity(smoothFactor);
             _context.PlayerAnimator.PlayAnimation(animations[0]);
-            _context.AudioController.PlayAudioEvent(audioEvent);
+            SoundManager.Instance.PlayAudioEvent(audioEvent);
             _context.Stamina.CanRegenerate = false;
         }
         public override void LogicUpdate()

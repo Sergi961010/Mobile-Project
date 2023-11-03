@@ -11,7 +11,8 @@ namespace TheCreators.Input
         public GameInput GameInput { get; private set; }
         public event UnityAction Jump = delegate { };
         public event UnityAction<bool> Fly = delegate { };
-        public event UnityAction<bool> Dig = delegate { };
+        public event UnityAction Burrow = delegate { };
+        public event UnityAction Unburrow = delegate { };
 
         private readonly float minimumDistance = 100f;
         private readonly float directionThreshold = .9f;
@@ -72,11 +73,11 @@ namespace TheCreators.Input
         {
             if (Vector2.Dot(Vector2.down, direction) > directionThreshold)
             {
-                Dig.Invoke(true);
+                Burrow.Invoke();
             }
             if (Vector2.Dot(Vector2.up, direction) > directionThreshold)
             {
-                Dig.Invoke(false);
+                Unburrow.Invoke();
             }
         }
     }

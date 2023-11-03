@@ -1,5 +1,5 @@
-using System;
 using TheCreators.Persistance;
+using TheCreators.Scripts.ScriptableObjects.Audio;
 using UnityEngine;
 
 namespace TheCreators.Managers
@@ -47,6 +47,20 @@ namespace TheCreators.Managers
         public void PlaySound(AudioClip audioClip)
         {
             _effectsSource.PlayOneShot(audioClip);
+        }
+        public void PlayAudioEvent(AudioEvent audioEvent)
+        {
+            audioEvent.Play(_effectsSource);
+        }
+        public void PlayLoopedAudioEvent(AudioEvent audioEvent)
+        {
+            _effectsSource.loop = true;
+            audioEvent.Play(_effectsSource);
+        }
+        public void StopLoopedAudioEvent()
+        {
+            _effectsSource.loop = false;
+            _effectsSource.Stop();
         }
     }
 }

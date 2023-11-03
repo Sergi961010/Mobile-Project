@@ -13,6 +13,7 @@ namespace TheCreators.Player.StateMachine.States
         {
             _stateDuration = animations[0].length;
             _context.Movement.Rigidbody.isKinematic = true;
+            _context.Movement.Rigidbody.useFullKinematicContacts = true;
             _context.PlayerAnimator.PlayAnimation(animations[0]);
             _context.SpriteRenderer.ChangeSortingOrder(2);
             SoundManager.Instance.PlayAudioEvent(audioEvent);

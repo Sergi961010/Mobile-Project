@@ -14,11 +14,15 @@ namespace TheCreators.CoreSystem.CoreComponents
         [SerializeField] private float _jumpInputBufferTime = 0.2f;
 
         [Header("Dig Settings")]
-        [SerializeField] private float _digInputCooldownTime = 1f;
+        [SerializeField] private float _digInputCooldownTime = 0.1f;
+        [SerializeField] private float _digInputBufferTime = 0.2f;
 
         private List<Timer> timers;
         private CountdownTimer _jumpInputBufferTimer;
-        private CountdownTimer _digInputCooldownTimer;
+        private CountdownTimer _burrowInputBufferTimer;
+        private CountdownTimer _unburrowInputBufferTimer;
+        private CountdownTimer _burrowInputCooldownTimer;
+        private CountdownTimer _unburrowInputCooldownTimer;
 
         public bool CanJump { get; private set; }
         public bool IsFlying { get; private set; }
@@ -26,6 +30,7 @@ namespace TheCreators.CoreSystem.CoreComponents
         public bool CanUnburrow { get; private set; }
         protected override void Awake()
         {
+            base.Awake();
             EnableInput();
             SetUpControlProperties();
             SetUpTimers();
@@ -34,13 +39,15 @@ namespace TheCreators.CoreSystem.CoreComponents
         {
             _inputReader.Jump += OnJump;
             _inputReader.Fly += OnFly;
-            _inputReader.Dig += OnDig;
+            _inputReader.Burrow += OnBurrow;
+            _inputReader.Unburrow += OnUnburrow;
         }
         private void OnDisable()
         {
             _inputReader.Jump -= OnJump;
             _inputReader.Fly -= OnFly;
-            _inputReader.Dig -= OnDig;
+            _inputReader.Burrow -= OnBurrow;
+            _inputReader.Unburrow -= OnUnburrow;
         }
         private void Update()
         {
@@ -52,13 +59,25 @@ namespace TheCreators.CoreSystem.CoreComponents
         private void SetUpTimers()
         {
             _jumpInputBufferTimer = new CountdownTimer(_jumpInputBufferTime);
-            _digInputCooldownTimer = new CountdownTimer(_digInputCooldownTime);
+            _burrowInputBufferTimer = new CountdownTimer(_digInputBufferTime);
+            _unburrowInputBufferTimer = new CountdownTimer(_digInputBufferTime);
+            _burrowInputCooldownTimer = new CountdownTimer(_digInputCooldownTime);
+            _unburrowInputCooldownTimer = new CountdownTimer(_digInputCooldownTime);
 
             _jumpInputBufferTimer.OnTimerStart += () => CanJump = true;
             _jumpInputBufferTimer.OnTimerStop += () => CanJump = false;
-            _digInputCooldownTimer.OnTimerStart += LockDig;
 
-            timers = new(2) { _jumpInputBufferTimer, _digInputCooldownTimer };
+            _burrowInputBufferTimer.OnTimerStart += () => CanBurrow = true;
+            _burrowInputBufferTimer.OnTimerStop += () => CanBurrow = false;
+            _unburrowInputBufferTimer.OnTimerStart += () => CanUnburrow = true;
+            _unburrowInputBufferTimer.OnTimerStop += () => CanUnburrow = false;
+
+            _burrowInputCooldownTimer.OnTimerStart += () => CanBurrow = false;
+            _burrowInputCooldownTimer.OnTimerStop += () => Debug.Log("Burrow timer finishes");
+            _unburrowInputCooldownTimer.OnTimerStart += () => CanUnburrow = false;
+            _unburrowInputCooldownTimer.OnTimerStop += () => Debug.Log("Unburrow timer finishes");
+
+            timers = new(5) { _jumpInputBufferTimer, _burrowInputBufferTimer, _unburrowInputBufferTimer, _burrowInputCooldownTimer, _unburrowInputCooldownTimer };
         }
         private void SetUpControlProperties()
         {
@@ -73,27 +92,25 @@ namespace TheCreators.CoreSystem.CoreComponents
         }
         private void OnFly(bool performed)
         {
-            if (performed) IsFlying = true;
+            Debug.Log(Core.CollisionSenses.CanFly);
+            if (performed && Core.CollisionSenses.CanFly) IsFlying = true;
             else IsFlying = false;
         }
-        private void OnDig(bool performed)
+        private void OnBurrow()
         {
-            if (_digInputCooldownTimer.IsFinished)
+            if (_burrowInputCooldownTimer.IsFinished)
             {
-                StartCoroutine(OnDigCoroutine(performed));
+                _burrowInputBufferTimer.Start();
+                _unburrowInputCooldownTimer.Start();
             }
         }
-        private IEnumerator OnDigCoroutine(bool value)
+        private void OnUnburrow()
         {
-            if (value) CanBurrow = true;
-            else CanUnburrow = true;
-            yield return new WaitForEndOfFrame();
-            _digInputCooldownTimer.Start();
-        }
-        private void LockDig()
-        {
-            CanBurrow = false;
-            CanUnburrow = false;
+            if (_unburrowInputCooldownTimer.IsFinished)
+            {
+                _unburrowInputBufferTimer.Start();
+                _burrowInputCooldownTimer.Start();
+            }
         }
         public void EnableInput()
         {

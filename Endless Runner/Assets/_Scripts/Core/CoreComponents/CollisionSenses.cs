@@ -1,4 +1,3 @@
-using TheCreators.CustomEventSystem;
 using UnityEngine;
 
 namespace TheCreators.CoreSystem.CoreComponents
@@ -11,6 +10,10 @@ namespace TheCreators.CoreSystem.CoreComponents
         public bool Grounded
         {
             get => Physics2D.OverlapCircle(_groundCheck.position, _groundCheckRadius, _groundLayer);
+        }
+        public bool CanFly
+        {
+            get => !Physics2D.Raycast(transform.position, Vector2.down, 1f, _groundLayer);
         }
         private void OnDrawGizmos()
         {

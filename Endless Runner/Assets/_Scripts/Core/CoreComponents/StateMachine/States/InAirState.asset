@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40a28a293acac2a429c07b5acbe489a1, type: 3}
+  m_Name: InAirState
+  m_EditorClassIdentifier: 
+  animations:
+  - {fileID: 7400000, guid: 228c4a38529a0cf46b4e7d68326f1dc2, type: 2}
+  audioEvent: {fileID: 0}
+  fallGravityMultiplier: 3
+  flyTransitionStaminaTreshold: 5

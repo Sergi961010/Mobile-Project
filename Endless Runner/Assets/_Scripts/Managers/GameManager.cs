@@ -1,21 +1,27 @@
+using TheCreators.Enums;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace TheCreators.Managers
 {
     public class GameManager : MonoBehaviour
     {
+        private bool _adDisplayed = false;
+        [SerializeField] private UiManager _uiManager;
         private void OnEnable()
         {
             Application.targetFrameRate = 60;
         }
-        public void Pause()
+        public void GameOver()
         {
-            Time.timeScale = 0f;
+            if (!_adDisplayed)
+            {
+                _uiManager.EnableRewardAdButton();
+                _adDisplayed = true;
+            } else
+            {
+                SceneManager.LoadScene((int)SceneID.MainMenu);
+            }
         }
-        public void Resume()
-        {
-            Time.timeScale = 1f;
-        }
-
     }
 }

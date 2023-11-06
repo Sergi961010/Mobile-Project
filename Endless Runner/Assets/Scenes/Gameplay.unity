@@ -497,6 +497,7 @@ GameObject:
   - component: {fileID: 269175465}
   - component: {fileID: 269175464}
   - component: {fileID: 269175466}
+  - component: {fileID: 269175467}
   m_Layer: 0
   m_Name: Score
   m_TagString: Untagged
@@ -633,6 +634,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d198fd0ba2498d742aaf4244df1d123a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &269175467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269175462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc04ed9c80ddd984cad020653c56c0da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 3809794cf2f819641a3d6d5b84163f31, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 269175466}
+        m_TargetAssemblyTypeName: TheCreators.UI.Score, Assembly-CSharp
+        m_MethodName: StopScoring
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &275900485 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 249083139749176656, guid: 077bba0981c88384eb5470b433c24986, type: 3}
@@ -1615,6 +1644,7 @@ GameObject:
   m_Component:
   - component: {fileID: 703124766}
   - component: {fileID: 703124767}
+  - component: {fileID: 703124768}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1649,6 +1679,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e65e2f0357580745a59edd13c1090fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _uiManager: {fileID: 421914742}
+--- !u!114 &703124768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703124765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc04ed9c80ddd984cad020653c56c0da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 3809794cf2f819641a3d6d5b84163f31, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 703124767}
+        m_TargetAssemblyTypeName: TheCreators.Managers.GameManager, Assembly-CSharp
+        m_MethodName: GameOver
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &740106411
 GameObject:
   m_ObjectHideFlags: 0
@@ -4399,6 +4458,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 231426259}
     m_Modifications:
+    - target: {fileID: 5368435870352406649, guid: 068976800da4df24e9625e76fd309b95, type: 3}
+      propertyPath: _digInputCooldownTime
+      value: 0.51
+      objectReference: {fileID: 0}
     - target: {fileID: 8917580688026551183, guid: 068976800da4df24e9625e76fd309b95, type: 3}
       propertyPath: m_RootOrder
       value: 0

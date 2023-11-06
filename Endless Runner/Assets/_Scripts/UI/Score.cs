@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using TheCreators.Utilities;
 
 namespace TheCreators.UI
 {
@@ -7,16 +8,21 @@ namespace TheCreators.UI
     public class Score : MonoBehaviour
     {
         private TMP_Text _textMeshPro;
-        private float score = 0;
+        private StopwatchTimer _scoreTimer;
         private void Awake()
         {
             _textMeshPro = GetComponent<TMP_Text>();
+            _scoreTimer = new StopwatchTimer();
+        }
+        private void Start()
+        {
+            _scoreTimer.Start();
         }
         private void Update()
         {
-            score += Time.deltaTime;
-            _textMeshPro.text = "Score: " + Mathf.Round(score);
-
+            _scoreTimer.Tick(Time.deltaTime);
+            _textMeshPro.text = "Score: " + Mathf.Round(_scoreTimer.GetTime());
         }
+        public void StopScoring() => _scoreTimer.Stop();
     }
 }

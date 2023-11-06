@@ -1,6 +1,4 @@
-using TheCreators.CoreSystem;
-
-namespace TheCreators.Player
+namespace TheCreators.CoreSystem.CoreComponents.StateMachine
 {
     public interface IState
     {

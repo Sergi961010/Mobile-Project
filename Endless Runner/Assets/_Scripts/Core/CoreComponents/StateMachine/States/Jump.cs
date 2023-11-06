@@ -1,11 +1,36 @@
 using TheCreators.Managers;
 using UnityEngine;
 
-namespace TheCreators.Player.StateMachine.States
+namespace TheCreators.CoreSystem.CoreComponents.StateMachine
 {
     [CreateAssetMenu(fileName = "JumpState", menuName = "PlayerStates/Jump")]
     public class Jump : PlayerState
     {
+        private readonly PlayerAnimator _playerAnimator;
+        private PlayerAnimator PlayerAnimator
+        {
+            get => _playerAnimator != null ? _playerAnimator : _context.GetCoreComponent<PlayerAnimator>();
+        }
+        private readonly Movement _movement;
+        private Movement Movement
+        {
+            get => _movement != null ? _movement : _context.GetCoreComponent<Movement>();
+        }
+        private readonly InputController _inputController;
+        private InputController InputController
+        {
+            get => _inputController != null ? _inputController : _context.GetCoreComponent<InputController>();
+        }
+        private readonly Stamina _stamina;
+        private Stamina Stamina
+        {
+            get => _stamina != null ? _stamina : _context.GetCoreComponent<Stamina>();
+        }
+        private readonly StateMachineComponent _stateMachine;
+        private StateMachineComponent StateMachine
+        {
+            get => _stateMachine != null ? _stateMachine : _context.GetCoreComponent<StateMachineComponent>();
+        }
         public float jumpHeight = 2f;
         public float jumpTimeToApex = .5f;
         public float jumpHangTimeThreshold = .1f;
@@ -13,15 +38,15 @@ namespace TheCreators.Player.StateMachine.States
         public float transitionToFlyThreshold = .5f;
         public override void Enter()
         {
-            _context.Movement.Jump(jumpHeight, jumpTimeToApex);
-            _context.PlayerAnimator.PlayAnimation(animations[0]);
+            Movement.Jump(jumpHeight, jumpTimeToApex);
+            PlayerAnimator.PlayAnimation(animations[0]);
             SoundManager.Instance.PlayAudioEvent(audioEvent);
         }
         public override void LogicUpdate()
         {
-            if (_context.InputController.IsFlying) TransitionToFly();
+            if (InputController.IsFlying) TransitionToFly();
 
-            if (_context.Movement.Rigidbody.velocity.y < -jumpHangTimeThreshold) TransitionToInAir();
+            if (Movement.Rigidbody.velocity.y < -jumpHangTimeThreshold) TransitionToInAir();
         }
         public override void PhysicsUpdate()
         {
@@ -31,12 +56,12 @@ namespace TheCreators.Player.StateMachine.States
         }
         private void TransitionToFly()
         {
-            if(_context.Movement.Rigidbody.position.y >= -transitionToFlyThreshold)
-                _context.StateMachine.StateMachine.SwitchState(_context.StateMachine.flyState);
+            if(Movement.Rigidbody.position.y >= -transitionToFlyThreshold)
+                StateMachine.StateMachine.SwitchState(StateMachine.flyState);
         }
         private void TransitionToInAir()
         {
-            _context.StateMachine.StateMachine.SwitchState(_context.StateMachine.inAirState);
+            StateMachine.StateMachine.SwitchState(StateMachine.inAirState);
         }
     }
 }

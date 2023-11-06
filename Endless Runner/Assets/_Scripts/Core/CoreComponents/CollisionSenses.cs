@@ -4,6 +4,11 @@ namespace TheCreators.CoreSystem.CoreComponents
 {
     public class CollisionSenses : BaseCoreComponent
     {
+        private readonly Death _death;
+        private Death Death
+        {
+            get => _death != null ? _death : Core.GetCoreComponent<Death>();
+        }
         [SerializeField] private Transform _groundCheck;
         [SerializeField] private float _groundCheckRadius;
         [SerializeField] private LayerMask _groundLayer;
@@ -23,7 +28,7 @@ namespace TheCreators.CoreSystem.CoreComponents
         {
             if (collision.gameObject.CompareTag("Obstacle"))
             {
-                StartCoroutine(Core.Death.Die());
+                StartCoroutine(Death.Die());
             }
         }
     }

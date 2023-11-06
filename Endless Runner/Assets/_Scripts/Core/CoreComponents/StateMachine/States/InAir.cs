@@ -44,6 +44,7 @@ namespace TheCreators.CoreSystem.CoreComponents.StateMachine
         }
         public override void Exit()
         {
+            Stamina.CanRegenerate = true;
         }
         public override void LogicUpdate()
         {

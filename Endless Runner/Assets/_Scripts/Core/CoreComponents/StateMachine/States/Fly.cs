@@ -57,7 +57,6 @@ namespace TheCreators.CoreSystem.CoreComponents.StateMachine
         {
             PlayerAnimator.PlayAnimation(animations[2]);
             Movement.ResetGravityScale();
-            Stamina.CanRegenerate = true;
         }
         private void TransitionToInAir()
         {

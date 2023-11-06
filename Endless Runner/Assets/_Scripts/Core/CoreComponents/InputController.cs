@@ -97,7 +97,6 @@ namespace TheCreators.CoreSystem.CoreComponents
         }
         private void OnFly(bool performed)
         {
-            Debug.Log(CollisionSenses.CanFly);
             if (performed && CollisionSenses.CanFly) IsFlying = true;
             else IsFlying = false;
         }

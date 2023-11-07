@@ -114,14 +114,14 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0
+  - time: 0.041666668
     functionName: PlayAudioEvent
     data: 
     objectReferenceParameter: {fileID: 11400000, guid: 78d3fd303c823ea40a2a0dfc6d3b0272, type: 2}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.29166666
+  - time: 0.375
     functionName: PlayAudioEvent
     data: 
     objectReferenceParameter: {fileID: 11400000, guid: 78d3fd303c823ea40a2a0dfc6d3b0272, type: 2}

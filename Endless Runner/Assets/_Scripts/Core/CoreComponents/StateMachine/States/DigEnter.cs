@@ -16,10 +16,10 @@ namespace TheCreators.CoreSystem.CoreComponents.StateMachine
         {
             get => _movement != null ? _movement : _context.GetCoreComponent<Movement>();
         }
-        private readonly Stamina _stamina;
-        private Stamina Stamina
+        private readonly StaminaComponent _stamina;
+        private StaminaComponent Stamina
         {
-            get => _stamina != null ? _stamina : _context.GetCoreComponent<Stamina>();
+            get => _stamina != null ? _stamina : _context.GetCoreComponent<StaminaComponent>();
         }
         private readonly SpriteRendererComponent _spriteRendererComponent;
         private SpriteRendererComponent SpriteRendererComponent

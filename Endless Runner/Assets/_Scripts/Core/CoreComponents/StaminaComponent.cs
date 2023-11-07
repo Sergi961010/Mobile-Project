@@ -1,14 +1,14 @@
 using TheCreators.CustomEventSystem;
+using TheCreators.ProgrammingPatterns.Visitor;
 using UnityEngine;
-using UnityEngine.Events;
 
 namespace TheCreators.CoreSystem.CoreComponents
 {
-    public class Stamina : BaseCoreComponent
+    public class StaminaComponent : BaseCoreComponent, IVisitable
     {
         private const float MAX_STAMINA = 100f;
         public float CurrentStamina { get; private set; }
-        private readonly float _regenerationValue = 5f;
+        [SerializeField] private float _regenerationValue = 5f;
         public bool CanRegenerate { get; set; }
         private void Start()
         {
@@ -19,10 +19,10 @@ namespace TheCreators.CoreSystem.CoreComponents
         {
             if (CanRegenerate && CurrentStamina < MAX_STAMINA)
             {
-                AddStamina();
+                RegenerateStamina();
             }
         }
-        private void AddStamina()
+        private void RegenerateStamina()
         {
             CurrentStamina += _regenerationValue * Time.deltaTime;
             GameEventBus.OnStaminaBarUpdate.Invoke(CurrentStamina, MAX_STAMINA);
@@ -39,6 +39,16 @@ namespace TheCreators.CoreSystem.CoreComponents
             {
                 CurrentStamina = 0;
             }
+        }
+        public void Accept(IVisitor visitor)
+        {
+            visitor.Visit(this);
+        }
+        public void AddStamina(float amount)
+        {
+            CurrentStamina += amount;
+            if (CurrentStamina > MAX_STAMINA) CurrentStamina = MAX_STAMINA;
+            GameEventBus.OnStaminaBarUpdate.Invoke(CurrentStamina, MAX_STAMINA);
         }
     }
 }

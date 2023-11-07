@@ -15,10 +15,10 @@ namespace TheCreators.CoreSystem.CoreComponents.StateMachine
         {
             get => _inputController != null ? _inputController : _context.GetCoreComponent<InputController>();
         }
-        private readonly Stamina _stamina;
-        private Stamina Stamina
+        private readonly StaminaComponent _stamina;
+        private StaminaComponent Stamina
         {
-            get => _stamina != null ? _stamina : _context.GetCoreComponent<Stamina>();
+            get => _stamina != null ? _stamina : _context.GetCoreComponent<StaminaComponent>();
         }
         private readonly StateMachineComponent _stateMachine;
         private StateMachineComponent StateMachine

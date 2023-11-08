@@ -208,6 +208,11 @@ MonoBehaviour:
   prefabs:
   - {fileID: 2425247845215489570, guid: 63d42cd4ee36aa3489577bb3d6a03318, type: 3}
   - {fileID: 2425247845215489570, guid: 108b395b39ec89940a26cb9438e1353b, type: 3}
+--- !u!20 &361328403 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 8778291928766585884, guid: 2f9173dfa3883e4409c45065d54fbf2c, type: 3}
+  m_PrefabInstance: {fileID: 8778291928519918729}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &537272747 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8778291927983187234, guid: 2f9173dfa3883e4409c45065d54fbf2c, type: 3}
@@ -769,6 +774,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 9079907972817374736, guid: 0d57430e06328824b9b70bb0dceba817, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 361328403}
+    - target: {fileID: 9079907972817374736, guid: 0d57430e06328824b9b70bb0dceba817, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9079907973012404091, guid: 0d57430e06328824b9b70bb0dceba817, type: 3}
       propertyPath: m_Name
       value: Canvases

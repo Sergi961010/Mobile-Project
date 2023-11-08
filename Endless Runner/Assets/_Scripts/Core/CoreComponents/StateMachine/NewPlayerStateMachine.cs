@@ -1,4 +1,4 @@
-namespace TheCreators.CoreSystem.CoreComponents.StateMachine
+namespace TheCreators.Player.StateMachine
 {
     public class NewPlayerStateMachine
     {

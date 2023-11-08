@@ -1,4 +1,5 @@
-using TheCreators.CoreSystem.CoreComponents.StateMachine;
+using TheCreators.Player.StateMachine;
+using TheCreators.Player.StateMachine.States;
 
 namespace TheCreators.CoreSystem.CoreComponents
 {

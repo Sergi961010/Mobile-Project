@@ -7,6 +7,7 @@ namespace TheCreators.UI
     public class PauseMenu : MonoBehaviour
     {
         [SerializeField] private GameObject _pauseMenu;
+
         public void Pause()
         {
             _pauseMenu.SetActive(true);

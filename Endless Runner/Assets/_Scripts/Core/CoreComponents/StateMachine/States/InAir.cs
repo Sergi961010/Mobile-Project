@@ -1,64 +1,34 @@
+using TheCreators.CustomEventSystem;
 using UnityEngine;
 
-namespace TheCreators.CoreSystem.CoreComponents.StateMachine
+namespace TheCreators.Player.StateMachine.States
 {
     [CreateAssetMenu(fileName = "InAirState", menuName = "PlayerStates/InAir")]
     public class InAir : PlayerState
     {
-        private readonly PlayerAnimator _playerAnimator;
-        private PlayerAnimator PlayerAnimator
-        {
-            get => _playerAnimator != null ? _playerAnimator : _context.GetCoreComponent<PlayerAnimator>();
-        }
-        private readonly Movement _movement;
-        private Movement Movement
-        {
-            get => _movement != null ? _movement : _context.GetCoreComponent<Movement>();
-        }
-        private readonly CollisionSenses _collisionSenses;
-        private CollisionSenses CollisionSenses
-        {
-            get => _collisionSenses != null ? _collisionSenses : _context.GetCoreComponent<CollisionSenses>();
-        }
-        private readonly InputController _inputController;
-        private InputController InputController
-        {
-            get => _inputController != null ? _inputController : _context.GetCoreComponent<InputController>();
-        }
-        private readonly StaminaComponent _stamina;
-        private StaminaComponent Stamina
-        {
-            get => _stamina != null ? _stamina : _context.GetCoreComponent<StaminaComponent>();
-        }
-        private readonly StateMachineComponent _stateMachine;
-        private StateMachineComponent StateMachine
-        {
-            get => _stateMachine != null ? _stateMachine : _context.GetCoreComponent<StateMachineComponent>();
-        }
         public float fallGravityMultiplier = 3f;
         public float flyTransitionStaminaTreshold = 20f;
         public override void Enter()
         {
-            PlayerAnimator.PlayAnimation(animations[0]);
-            Movement.ModifyGravity(fallGravityMultiplier);
+            _context.PlayerAnimator.PlayAnimation(animations[0]);
+            _context.Movement.ModifyGravity(fallGravityMultiplier);
         }
         public override void Exit()
         {
-            Stamina.CanRegenerate = true;
         }
         public override void LogicUpdate()
         {
-            if (CollisionSenses.Grounded) TransitionToRun();
-            if (InputController.IsFlying && Stamina.CurrentStamina >= flyTransitionStaminaTreshold)
+            if (_context.CollisionSenses.Grounded) TransitionToRun();
+            if (_context.InputController.IsFlying && _context.Stamina.CurrentStamina >= flyTransitionStaminaTreshold)
                 TransitionToFly();
         }
         private void TransitionToRun()
         {
-            StateMachine.StateMachine.SwitchState(StateMachine.runState);
+            _context.StateMachine.StateMachine.SwitchState(_context.StateMachine.runState);
         }
         private void TransitionToFly()
         {
-            StateMachine.StateMachine.SwitchState(StateMachine.flyState);
+            _context.StateMachine.StateMachine.SwitchState(_context.StateMachine.flyState);
         }
     }
 }

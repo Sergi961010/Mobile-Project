@@ -1,8 +1,9 @@
 using System.Collections.Generic;
+using TheCreators.CoreSystem;
 using TheCreators.Scripts.ScriptableObjects.Audio;
 using UnityEngine;
 
-namespace TheCreators.CoreSystem.CoreComponents.StateMachine
+namespace TheCreators.Player.StateMachine
 {
     public abstract class PlayerState : ScriptableObject, IState
     {

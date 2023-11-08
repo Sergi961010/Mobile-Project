@@ -9,7 +9,6 @@ namespace TheCreators.CoreSystem.CoreComponents
         protected virtual void Awake()
         {
             Core = GetComponentInParent<Core>();
-            Core.AddComponent(this);
         }
     }
 }

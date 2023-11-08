@@ -306,11 +306,14 @@ MonoBehaviour:
   _startingPlatform: {fileID: 591340839}
   _playerTransform: {fileID: 591340838}
   prefabs:
-  - {fileID: 2425247845215489570, guid: 63d42cd4ee36aa3489577bb3d6a03318, type: 3}
+  - {fileID: 7482232070326527552, guid: 82bcc983b0b1a4f44923f9922ecdd59a, type: 3}
   - {fileID: 2425247845215489570, guid: 108b395b39ec89940a26cb9438e1353b, type: 3}
-  - {fileID: 7482232070326527552, guid: 2d0a4a1fe304af445b87d0a137f9062a, type: 3}
-  - {fileID: 7482232070326527552, guid: 18655bb3b6c73c34e8a45b520877eb92, type: 3}
-  - {fileID: 7482232070326527552, guid: 0f18a216d04ee2a41bd23e6a05a350b7, type: 3}
+  - {fileID: 7482232070326527552, guid: 8351a5eca3ee127498f124a2a6e002b8, type: 3}
+  - {fileID: 7482232070326527552, guid: 7f5ef6dfb4f883c43a4b05acacded5a5, type: 3}
+  - {fileID: 7482232070326527552, guid: e076a25b0b6069a4aa0432393e3f3f09, type: 3}
+  - {fileID: 7482232070326527552, guid: fee1d829b061c4e4ea06354a329b9bff, type: 3}
+  - {fileID: 7482232070326527552, guid: b42a051ae82ef8742b2c5dd597ac0f10, type: 3}
+  - {fileID: 7482232070326527552, guid: 946337682cd04c54a9f80ee6d9809a83, type: 3}
 --- !u!1001 &443486550
 PrefabInstance:
   m_ObjectHideFlags: 0

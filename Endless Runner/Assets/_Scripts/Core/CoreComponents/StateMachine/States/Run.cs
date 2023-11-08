@@ -1,21 +1,41 @@
 using UnityEngine;
 
-namespace TheCreators.Player.StateMachine.States
+namespace TheCreators.CoreSystem.CoreComponents.StateMachine
 {
     [CreateAssetMenu(fileName = "RunState", menuName = "PlayerStates/Run")]
     public class Run : PlayerState
     {
+        private readonly PlayerAnimator _playerAnimator;
+        private PlayerAnimator PlayerAnimator
+        {
+            get => _playerAnimator != null ? _playerAnimator : _context.GetCoreComponent<PlayerAnimator>();
+        }
+        private readonly InputController _inputController;
+        private InputController InputController
+        {
+            get => _inputController != null ? _inputController : _context.GetCoreComponent<InputController>();
+        }
+        private readonly StaminaComponent _stamina;
+        private StaminaComponent Stamina
+        {
+            get => _stamina != null ? _stamina : _context.GetCoreComponent<StaminaComponent>();
+        }
+        private readonly StateMachineComponent _stateMachine;
+        private StateMachineComponent StateMachine
+        {
+            get => _stateMachine != null ? _stateMachine : _context.GetCoreComponent<StateMachineComponent>();
+        }
         public float _speed = 6f;
         public float digTransitionStaminaTreshold = 20f;
         public override void Enter()
         {
-            _context.PlayerAnimator.PlayAnimation(animations[0]);
+            PlayerAnimator.PlayAnimation(animations[0]);
         }
         public override void LogicUpdate()
         {
-            if (_context.InputController.CanJump) 
+            if (InputController.CanJump) 
                 TransitionToJump();
-            if (_context.InputController.CanBurrow && _context.Stamina.CurrentStamina >= digTransitionStaminaTreshold)
+            if (InputController.CanBurrow && Stamina.CurrentStamina >= digTransitionStaminaTreshold)
                 TransitionToDig();
         }
         public override void PhysicsUpdate()
@@ -26,11 +46,11 @@ namespace TheCreators.Player.StateMachine.States
         }
         private void TransitionToJump()
         {
-            _context.StateMachine.StateMachine.SwitchState(_context.StateMachine.jumpState);
+            StateMachine.StateMachine.SwitchState(StateMachine.jumpState);
         }
         private void TransitionToDig()
         {
-            _context.StateMachine.StateMachine.SwitchState(_context.StateMachine.digEnterState);
+            StateMachine.StateMachine.SwitchState(StateMachine.digEnterState);
         }
     }
 }

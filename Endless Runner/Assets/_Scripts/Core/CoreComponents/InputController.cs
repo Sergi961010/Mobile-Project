@@ -8,6 +8,11 @@ namespace TheCreators.CoreSystem.CoreComponents
 {
     public class InputController : BaseCoreComponent
     {
+        private readonly CollisionSenses _collisionSenses;
+        private CollisionSenses CollisionSenses
+        {
+            get => _collisionSenses != null ? _collisionSenses : Core.GetCoreComponent<CollisionSenses>();
+        }
         [SerializeField] private InputReader _inputReader;
 
         [Header("Jump Settings")]
@@ -92,8 +97,7 @@ namespace TheCreators.CoreSystem.CoreComponents
         }
         private void OnFly(bool performed)
         {
-            Debug.Log(Core.CollisionSenses.CanFly);
-            if (performed && Core.CollisionSenses.CanFly) IsFlying = true;
+            if (performed && CollisionSenses.CanFly) IsFlying = true;
             else IsFlying = false;
         }
         private void OnBurrow()

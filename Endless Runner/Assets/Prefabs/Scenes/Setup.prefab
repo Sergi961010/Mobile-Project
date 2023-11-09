@@ -770,6 +770,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8778291928615652442}
     m_Modifications:
+    - target: {fileID: 5368435870352406649, guid: 068976800da4df24e9625e76fd309b95, type: 3}
+      propertyPath: _digInputCooldownTime
+      value: 0.55
+      objectReference: {fileID: 0}
     - target: {fileID: 8917580688026551183, guid: 068976800da4df24e9625e76fd309b95, type: 3}
       propertyPath: m_RootOrder
       value: 0

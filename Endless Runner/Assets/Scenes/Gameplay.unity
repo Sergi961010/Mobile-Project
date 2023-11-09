@@ -284,6 +284,14 @@ PrefabInstance:
       propertyPath: _startingPlatform
       value: 
       objectReference: {fileID: 1810544606}
+    - target: {fileID: 1967339752417507698, guid: 3c2374828f07b284c9cf61b141e68f12, type: 3}
+      propertyPath: levelParts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1967339752417507698, guid: 3c2374828f07b284c9cf61b141e68f12, type: 3}
+      propertyPath: levelParts.Array.data[0]
+      value: 
+      objectReference: {fileID: 7482232070326527552, guid: 82bcc983b0b1a4f44923f9922ecdd59a, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c2374828f07b284c9cf61b141e68f12, type: 3}
 --- !u!4 &78820297 stripped

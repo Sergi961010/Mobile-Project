@@ -6,7 +6,10 @@ namespace TheCreators
     {
         private void OnTriggerExit2D(Collider2D collision)
         {
-            collision.transform.parent.gameObject.SetActive(false);
+            if (collision.transform.parent == null)
+                collision.gameObject.SetActive(false);
+            else
+                collision.transform.parent.gameObject.SetActive(false);
         }
     }
 }

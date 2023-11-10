@@ -286,7 +286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _inputReader: {fileID: 11400000, guid: 09be0b414b0ec47489171bc0fbaf3026, type: 2}
   _jumpInputBufferTime: 0.2
-  _digInputCooldownTime: 0.51
+  _digInputCooldownTime: 0.55
   _digInputBufferTime: 0.2
 --- !u!1 &3584926059133058169
 GameObject:
@@ -373,7 +373,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 1571354652, guid: eb849779fc6f24942b2bf0b96b0330c9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -473,7 +473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b3ba717c5218304589a6be27f4b626f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _regenerationValue: 5
+  _regenerationValue: 0
 --- !u!1 &8917580687499550224
 GameObject:
   m_ObjectHideFlags: 0

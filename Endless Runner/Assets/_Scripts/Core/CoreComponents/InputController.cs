@@ -78,10 +78,7 @@ namespace TheCreators.CoreSystem.CoreComponents
             _unburrowInputBufferTimer.OnTimerStop += () => CanUnburrow = false;
 
             _burrowInputCooldownTimer.OnTimerStart += () => CanBurrow = false;
-            _burrowInputCooldownTimer.OnTimerStop += () => Debug.Log("Burrow timer finishes");
             _unburrowInputCooldownTimer.OnTimerStart += () => CanUnburrow = false;
-            _unburrowInputCooldownTimer.OnTimerStop += () => Debug.Log("Unburrow timer finishes");
-
             timers = new(5) { _jumpInputBufferTimer, _burrowInputBufferTimer, _unburrowInputBufferTimer, _burrowInputCooldownTimer, _unburrowInputCooldownTimer };
         }
         private void SetUpControlProperties()

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: LevelPart_EasyDownUpSequence
   m_EditorClassIdentifier: 
   prefab: {fileID: 7482232070326527552, guid: 1baa9cd90855d704782c0c11ce21f5b7, type: 3}
-  chance: 50
-  weight: 200
+  chance: 30
+  weight: 145

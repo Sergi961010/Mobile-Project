@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: LevelPart_FlyDownScreen
   m_EditorClassIdentifier: 
   prefab: {fileID: 7482232070326527552, guid: 18655bb3b6c73c34e8a45b520877eb92, type: 3}
-  chance: 50
-  weight: 250
+  chance: 20
+  weight: 165

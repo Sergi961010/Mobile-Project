@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: LevelPart_MustDig
   m_EditorClassIdentifier: 
   prefab: {fileID: 7482232070326527552, guid: 2be6cd5bdc84480409ae1ca6b5d028b0, type: 3}
-  chance: 20
-  weight: 470
+  chance: 35
+  weight: 315

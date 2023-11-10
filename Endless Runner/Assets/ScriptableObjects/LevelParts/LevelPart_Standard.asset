@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: LevelPart_Standard
   m_EditorClassIdentifier: 
   prefab: {fileID: 2425247845215489570, guid: 63d42cd4ee36aa3489577bb3d6a03318, type: 3}
-  chance: 100
-  weight: 100
+  chance: 65
+  weight: 65

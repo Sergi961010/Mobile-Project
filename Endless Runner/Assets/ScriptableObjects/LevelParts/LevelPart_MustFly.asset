@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: LevelPart_MustFly
   m_EditorClassIdentifier: 
   prefab: {fileID: 7482232070326527552, guid: 2df9f67c6468b2a4d9420d38432abb9b, type: 3}
-  chance: 20
-  weight: 490
+  chance: 35
+  weight: 350

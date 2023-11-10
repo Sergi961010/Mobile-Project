@@ -7,6 +7,8 @@ namespace TheCreators
     public class StaminaPropSpawner : MonoBehaviour
     {
         [SerializeField] private GameObject _staminaProp;
+        [SerializeField] private int minNumberOfProps = 0;
+        [SerializeField] private int maxNumberOfProps = 2;
         private void OnEnable()
         {
             GameEventBus.OnPlatformSpawn.AddListener(SpawnProps);
@@ -18,7 +20,7 @@ namespace TheCreators
         private void SpawnProps(GameObject levelPart)
         {
             List<Transform> spawnPoints = GetSpawnPoints(levelPart);
-            int numberOfProps = Random.Range(1, spawnPoints.Count);
+            int numberOfProps = Random.Range(minNumberOfProps, maxNumberOfProps);
             for (int i = 0; i < numberOfProps; i++)
             {
                 int random = Random.Range(0, spawnPoints.Count);
@@ -31,6 +33,7 @@ namespace TheCreators
         {
             Transform spawnPointsContainer = levelPart.transform.Find("StaminaSpawns");
             List<Transform> spawnPointsTransforms = new(spawnPointsContainer.GetComponentsInChildren<Transform>());
+            spawnPointsTransforms.RemoveAt(0);
             return spawnPointsTransforms;
         }
     }

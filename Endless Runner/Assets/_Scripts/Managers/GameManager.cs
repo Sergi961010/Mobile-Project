@@ -1,5 +1,6 @@
 using TheCreators.Enums;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 namespace TheCreators.Managers
@@ -8,20 +9,24 @@ namespace TheCreators.Managers
     {
         private bool _adDisplayed = false;
         [SerializeField] private UiManager _uiManager;
+        public UnityEvent GameOverEvent;
         private void OnEnable()
         {
             Application.targetFrameRate = 60;
         }
-        public void GameOver()
+        public void CheckIfShouldDisplayAd()
         {
             if (!_adDisplayed)
             {
                 _uiManager.EnableRewardAdButton();
                 _adDisplayed = true;
-            } else
-            {
-                SceneManager.LoadScene((int)SceneID.MainMenu);
             }
+            else
+                GameOver();
+        }
+        public void GameOver()
+        {
+            GameOverEvent.Invoke();
         }
     }
 }

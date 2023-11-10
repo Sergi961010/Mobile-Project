@@ -1,6 +1,7 @@
 using UnityEngine;
 using TheCreators.PoolingSystem;
 using TheCreators.CustomEventSystem;
+using TheCreators.ScriptableObjects.Spawners;
 
 namespace TheCreators.Platforms
 {
@@ -11,16 +12,13 @@ namespace TheCreators.Platforms
         [SerializeField] private Transform _startingPlatform;
         [SerializeField] private Transform _playerTransform;
 
-        [SerializeField] private GameObject[] levelParts;
+        [SerializeField] private LevelPartSpawnerConfiguration _configuration;
 
-        private readonly int amountOfRegularLevelParts = 5;
-        private int _counter;
         private Vector2 _lastEndPosition;
 
         private void Start()
         {
             _lastEndPosition = _startingPlatform.Find("EndPosition").position;
-            _counter = 1;
         }
         private void Update()
         {
@@ -31,11 +29,15 @@ namespace TheCreators.Platforms
         }
         private GameObject GetRandomLevelPart()
         {
-            int random = Random.Range(0, levelParts.Length);
-            GameObject platformToSpawn = PoolsManager.Instance.GetObject(levelParts[random]);
-            return platformToSpawn;
+            System.Random random = new();
+            double roll = random.NextDouble() * _configuration.accumulatedWeights;
+            for (int i = 0; i < _configuration.levelParts.Count; i++)
+            {
+                if (_configuration.levelParts[i].weight >= roll)
+                    return PoolsManager.Instance.GetObject(_configuration.levelParts[i].prefab);
+            }
+            return PoolsManager.Instance.GetObject(_configuration.levelParts[0].prefab);
         }
-
         private void SpawnLevelPart()
         {
             GameObject levelPartToSpawn = GetRandomLevelPart();

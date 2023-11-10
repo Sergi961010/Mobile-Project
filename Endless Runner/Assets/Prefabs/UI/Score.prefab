@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 302715399423737525}
   - component: {fileID: 302715399423737527}
   - component: {fileID: 302715399423737526}
+  - component: {fileID: 302715399692776480}
+  - component: {fileID: 302715399692776481}
   m_Layer: 0
   m_Name: Score
   m_TagString: Untagged
@@ -168,6 +170,62 @@ MonoBehaviour:
       - m_Target: {fileID: 302715399423737527}
         m_TargetAssemblyTypeName: TheCreators.UI.Score, Assembly-CSharp
         m_MethodName: StopScoring
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &302715399692776480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302715399423737531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc04ed9c80ddd984cad020653c56c0da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 853d713812e83c545b0443ba21248b59, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 302715399423737527}
+        m_TargetAssemblyTypeName: TheCreators.UI.Score, Assembly-CSharp
+        m_MethodName: StoreHighScore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &302715399692776481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302715399423737531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc04ed9c80ddd984cad020653c56c0da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: e08837bcb83bf034cb9f888c8a28f92d, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 302715399423737527}
+        m_TargetAssemblyTypeName: TheCreators.UI.Score, Assembly-CSharp
+        m_MethodName: ResumeScoring
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -1,13 +1,12 @@
 using TheCreators.CustomEventSystem;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace TheCreators
 {
     public class UiManager : MonoBehaviour
     {
         [SerializeField] private GameObject _alert;
-        [SerializeField] private Button _rewardAdButton;
+        [SerializeField] private GameObject _rewardAdButton;
         [SerializeField] private GameObject _pauseMenu;
         private void OnEnable()
         {
@@ -27,7 +26,7 @@ namespace TheCreators
         }
         public void EnableRewardAdButton()
         {
-            _rewardAdButton.gameObject.SetActive(true);
+            _rewardAdButton.SetActive(true);
         }
     }
 }

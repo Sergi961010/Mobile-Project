@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using TheCreators.Utilities;
+using TheCreators.Persistance;
 
 namespace TheCreators.UI
 {
@@ -9,6 +10,7 @@ namespace TheCreators.UI
     {
         private TMP_Text _textMeshPro;
         private StopwatchTimer _scoreTimer;
+        private int _score;
         private void Awake()
         {
             _textMeshPro = GetComponent<TMP_Text>();
@@ -21,8 +23,15 @@ namespace TheCreators.UI
         private void Update()
         {
             _scoreTimer.Tick(Time.deltaTime);
-            _textMeshPro.text = "Score: " + Mathf.Round(_scoreTimer.GetTime());
+            _score = (int)Mathf.Round(_scoreTimer.GetTime());
+            _textMeshPro.text = "Score: " + _score;
         }
+        public void ResumeScoring() => _scoreTimer.Resume();
         public void StopScoring() => _scoreTimer.Stop();
+        public void StoreHighScore()
+        {
+            if (Settings.HighScore < _score)
+                Settings.HighScore = _score;
+        }
     }
 }

@@ -50,5 +50,10 @@ namespace TheCreators.CoreSystem.CoreComponents
             if (CurrentStamina > MAX_STAMINA) CurrentStamina = MAX_STAMINA;
             GameEventBus.OnStaminaBarUpdate.Invoke(CurrentStamina, MAX_STAMINA);
         }
+        public void ResetStaminaBar()
+        {
+            CurrentStamina = MAX_STAMINA;
+            GameEventBus.OnStaminaBarUpdate.Invoke(CurrentStamina, MAX_STAMINA);
+        }
     }
 }

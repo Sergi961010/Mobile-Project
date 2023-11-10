@@ -203,4 +203,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbd3b240e4ffb3240aec20c742803b08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  staminaProgressUI: {fileID: 2204326014095028987}
+  progressImage: {fileID: 2204326014095028987}

@@ -26,7 +26,7 @@ namespace TheCreators
         }
         public void EnableRewardAdButton()
         {
-            _rewardAdButton.gameObject.SetActive(true);
+            _rewardAdButton.SetActive(true);
         }
     }
 }

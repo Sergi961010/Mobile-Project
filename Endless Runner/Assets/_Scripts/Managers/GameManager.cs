@@ -1,21 +1,31 @@
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 namespace TheCreators.Managers
 {
     public class GameManager : MonoBehaviour
     {
+        private bool _adDisplayed = false;
+        [SerializeField] private UiManager _uiManager;
+        public UnityEvent GameOverEvent;
         private void OnEnable()
         {
             Application.targetFrameRate = 60;
         }
-        public void Pause()
+        public void CheckIfShouldDisplayAd()
         {
-            Time.timeScale = 0f;
+            if (!_adDisplayed)
+            {
+                _uiManager.EnableRewardAdButton();
+                _adDisplayed = true;
+            }
+            else
+                GameOver();
         }
-        public void Resume()
+        public void GameOver()
         {
-            Time.timeScale = 1f;
+            GameOverEvent.Invoke();
         }
-
     }
 }

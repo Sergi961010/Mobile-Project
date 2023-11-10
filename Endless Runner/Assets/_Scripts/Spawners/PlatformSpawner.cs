@@ -1,5 +1,7 @@
 using UnityEngine;
 using TheCreators.PoolingSystem;
+using TheCreators.CustomEventSystem;
+using TheCreators.ScriptableObjects.Spawners;
 
 namespace TheCreators.Platforms
 {
@@ -10,7 +12,7 @@ namespace TheCreators.Platforms
         [SerializeField] private Transform _startingPlatform;
         [SerializeField] private Transform _playerTransform;
 
-        [SerializeField] private GameObject[] prefabs;
+        [SerializeField] private LevelPartSpawnerConfiguration _configuration;
 
         private Vector2 _lastEndPosition;
 
@@ -25,15 +27,26 @@ namespace TheCreators.Platforms
                 SpawnLevelPart();
             }
         }
+        private GameObject GetRandomLevelPart()
+        {
+            System.Random random = new();
+            double roll = random.NextDouble() * _configuration.accumulatedWeights;
+            for (int i = 0; i < _configuration.levelParts.Count; i++)
+            {
+                if (_configuration.levelParts[i].weight >= roll)
+                    return PoolsManager.Instance.GetObject(_configuration.levelParts[i].prefab);
+            }
+            return PoolsManager.Instance.GetObject(_configuration.levelParts[0].prefab);
+        }
         private void SpawnLevelPart()
         {
-            int random = Random.Range(0, prefabs.Length);
-            GameObject platformToSpawn = PoolsManager.Instance.GetObject(prefabs[random]);
-            float platformToSpawnHalfSize = platformToSpawn.GetComponentInChildren<BoxCollider2D>().size.x / 2;
+            GameObject levelPartToSpawn = GetRandomLevelPart();
+            float platformToSpawnHalfSize = levelPartToSpawn.GetComponentInChildren<BoxCollider2D>().size.x / 2;
             Vector2 spawnPosition = new(_lastEndPosition.x + platformToSpawnHalfSize, _lastEndPosition.y);
-            platformToSpawn.SetActive(true);
-            platformToSpawn.transform.position = spawnPosition;
-            _lastEndPosition = platformToSpawn.transform.Find("EndPosition").position;
+            levelPartToSpawn.SetActive(true);
+            levelPartToSpawn.transform.position = spawnPosition;
+            _lastEndPosition = levelPartToSpawn.transform.Find("EndPosition").position;
+            GameEventBus.OnPlatformSpawn.Invoke(levelPartToSpawn);
         }
     }
 }

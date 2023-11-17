@@ -12,18 +12,9 @@ namespace TheCreators.CoreSystem.CoreComponents
             base.Awake();
             Rigidbody = GetComponentInParent<Rigidbody2D>();
         }
-        private void OnEnable()
-        {
-            SetXVelocity(6);
-        }
         private void OnDisable()
         {
             ResetVelocity();
-        }
-        public void SetXVelocity(float value)
-        {
-            workspace.Set(value, workspace.y);
-            Rigidbody.velocity = workspace;
         }
         public void ResetVelocity()
         {
@@ -48,9 +39,8 @@ namespace TheCreators.CoreSystem.CoreComponents
         }
         public void HandleDigTranslation(float endYPosition)
         {
-            float newPositionX = Mathf.MoveTowards(transform.position.x, transform.position.x + Rigidbody.velocity.x, (Rigidbody.velocity.x * 1.5f) * Time.fixedDeltaTime);
-            float newPositionY = Mathf.MoveTowards(transform.position.y, endYPosition, (Rigidbody.velocity.x * 1.5f) * Time.fixedDeltaTime);
-            Vector2 newPosition = new(newPositionX, newPositionY);
+            float newPositionY = Mathf.MoveTowards(transform.position.y, endYPosition, (6f * 1.5f) * Time.fixedDeltaTime);
+            Vector2 newPosition = new(Rigidbody.position.x, newPositionY);
             Rigidbody.MovePosition(newPosition);
         }
         private float CalculateJumpForce(float jumpHeight, float jumpTimeToApex)

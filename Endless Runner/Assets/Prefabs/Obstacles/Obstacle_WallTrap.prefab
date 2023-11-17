@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7272905618833520862}
-  - component: {fileID: 8443396167426459412}
-  - component: {fileID: 7288189116600089375}
-  - component: {fileID: 3230186662336103749}
-  - component: {fileID: -5066007862178343545}
+  - component: {fileID: 4025986601609639297}
+  - component: {fileID: 4380411815134650109}
+  - component: {fileID: 6825473979639802437}
+  - component: {fileID: 7802007345985644331}
   m_Layer: 8
   m_Name: Obstacle_WallTrap
   m_TagString: Obstacle
@@ -35,7 +35,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &8443396167426459412
+--- !u!95 &4025986601609639297
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -55,7 +55,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!212 &7288189116600089375
+--- !u!212 &4380411815134650109
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,9 +93,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingLayerID: -1582710527
+  m_SortingLayer: 7
+  m_SortingOrder: -1
   m_Sprite: {fileID: 486265215, guid: 052adedd8b47aaf409857e3bbe109088, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -107,7 +107,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &3230186662336103749
+--- !u!70 &6825473979639802437
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -123,7 +123,7 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0015157887, y: 0.07947211}
   m_Size: {x: 0.6503884, y: 1.3008107}
   m_Direction: 0
---- !u!114 &-5066007862178343545
+--- !u!114 &7802007345985644331
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

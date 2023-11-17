@@ -2,7 +2,8 @@ using UnityEngine;
 
 namespace TheCreators.Obstacles
 {
-    public class Obstacle : MonoBehaviour
+    [RequireComponent(typeof(Collider2D))]
+    public class CollisionController : MonoBehaviour
     {
         private Animator _animator;
         private void Awake()

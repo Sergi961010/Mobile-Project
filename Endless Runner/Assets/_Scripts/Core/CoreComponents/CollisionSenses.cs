@@ -26,7 +26,8 @@ namespace TheCreators.CoreSystem.CoreComponents
         }
         private void OnCollisionEnter2D(Collision2D collision)
         {
-            if (collision.gameObject.CompareTag("Obstacle"))
+            Collider2D collider = collision.GetContact(0).collider;
+            if (collider.gameObject.CompareTag("Obstacle"))
             {
                 StartCoroutine(Death.Die());
             }

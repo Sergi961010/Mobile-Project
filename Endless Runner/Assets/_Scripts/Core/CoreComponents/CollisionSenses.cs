@@ -24,13 +24,5 @@ namespace TheCreators.CoreSystem.CoreComponents
         {
             Gizmos.DrawWireSphere(_groundCheck.position, _groundCheckRadius);
         }
-        private void OnCollisionEnter2D(Collision2D collision)
-        {
-            Collider2D collider = collision.GetContact(0).collider;
-            if (collider.gameObject.CompareTag("Obstacle"))
-            {
-                StartCoroutine(Death.Die());
-            }
-        }
     }
 }

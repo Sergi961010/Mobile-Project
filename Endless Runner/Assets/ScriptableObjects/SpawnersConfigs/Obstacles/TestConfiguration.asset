@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: TestConfiguration
   m_EditorClassIdentifier: 
   levelParts:
-  - {fileID: 11400000, guid: f5e2e60df76c97f49aa66b3274b1399f, type: 2}
-  accumulatedWeights: 100
+  - {fileID: 11400000, guid: baf34b39c629f754e930cc6e98c2a9fe, type: 2}
+  accumulatedWeights: 50

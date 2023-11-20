@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -21,7 +22,7 @@ namespace TheCreators.PoolingSystem
         }
         #endregion
         [SerializeField] private Transform _poolsContainer;
-        private readonly Dictionary<string, Queue<GameObject>> _poolDictionary = new();
+        private readonly Dictionary<string, Queue<GameObject>> _objectPool = new();
         private void Awake()
         {
             #region Singleton
@@ -35,34 +36,31 @@ namespace TheCreators.PoolingSystem
             }
             #endregion
         }
-        public GameObject GetObjectFromPool(string poolType)
+        public GameObject GetObject(GameObject objectToSpawn)
         {
-            if (!_poolDictionary.ContainsKey(poolType))
-            {
-                Debug.LogWarning("Pool with tag: " + tag + " doesn't exist");
-                return null;
-            }
-
-            GameObject objectToSpawn = _poolDictionary[poolType].Dequeue();
-            _poolDictionary[poolType].Enqueue(objectToSpawn);
-
-            return objectToSpawn;
-        }
-        public GameObject GetObject(GameObject gameObject)
-        {
-            if (_poolDictionary.TryGetValue(gameObject.name, out Queue<GameObject> objectList))
+            if (_objectPool.TryGetValue(objectToSpawn.name, out Queue<GameObject> objectList))
             {
                 if (objectList.Count == 0)
-                    return CreateNewObject(gameObject);
+                    return CreateNewObject(objectToSpawn);
                 else
                 {
-                    GameObject go = objectList.Dequeue();
-                    go.SetActive(true);
-                    return go;
+                    GameObject returnObject = objectList.Dequeue();
+                    returnObject.SetActive(true);
+                    return returnObject;
                 }
             }
             else
-                return CreateNewObject(gameObject);
+                return CreateNewObject(objectToSpawn);
+        }
+        public void ReturnObjectToPool(GameObject gameObject)
+        {
+            if (_objectPool.TryGetValue(gameObject.name, out Queue<GameObject> objectList))
+                objectList.Enqueue(gameObject);
+            else
+            {
+                CreateNewPool(gameObject);
+            }
+            gameObject.SetActive(false);
         }
         private GameObject CreateNewObject(GameObject gameObject)
         {
@@ -70,17 +68,11 @@ namespace TheCreators.PoolingSystem
             go.name = gameObject.name;
             return go;
         }
-        public void ReturnGameObject(GameObject gameObject)
+        private void CreateNewPool(GameObject gameObject)
         {
-            if (_poolDictionary.TryGetValue(gameObject.name, out Queue<GameObject> objectList))
-                objectList.Enqueue(gameObject);
-            else
-            {
-                Queue<GameObject> newObjectQueue = new();
-                newObjectQueue.Enqueue(gameObject);
-                _poolDictionary.Add(gameObject.name, newObjectQueue);
-            }
-            gameObject.SetActive(false);
+            Queue<GameObject> newObjectQueue = new();
+            newObjectQueue.Enqueue(gameObject);
+            _objectPool.Add(gameObject.name, newObjectQueue);
         }
     }
 }

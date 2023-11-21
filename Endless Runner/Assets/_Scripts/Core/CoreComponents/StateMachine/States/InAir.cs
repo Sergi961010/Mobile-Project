@@ -48,13 +48,13 @@ namespace TheCreators.CoreSystem.CoreComponents.StateMachine
         }
         public override void LogicUpdate()
         {
-            if (CollisionSenses.Grounded) TransitionToRun();
+            if (CollisionSenses.Grounded) TransitionToLand();
             if (InputController.IsFlying && Stamina.CurrentStamina >= flyTransitionStaminaTreshold)
                 TransitionToFly();
         }
-        private void TransitionToRun()
+        private void TransitionToLand()
         {
-            StateMachine.StateMachine.SwitchState(StateMachine.runState);
+            StateMachine.StateMachine.SwitchState(StateMachine.landState);
         }
         private void TransitionToFly()
         {

@@ -1,10 +1,11 @@
 using System.Collections;
+using TheCreators.Interfaces;
 using UnityEngine;
 using UnityEngine.Events;
 
 namespace TheCreators.CoreSystem.CoreComponents
 {
-    public class Death : BaseCoreComponent
+    public class Death : BaseCoreComponent, IDamageable
     {
         private readonly PlayerAnimator _playerAnimator;
         private PlayerAnimator PlayerAnimator
@@ -43,6 +44,10 @@ namespace TheCreators.CoreSystem.CoreComponents
             yield return new WaitForSeconds(_animationClip.length);
             SpriteRendererComponent.gameObject.SetActive(false);
             DeathEvent.Invoke();
+        }
+        public void Damage()
+        {
+            StartCoroutine(Die());
         }
     }
 }

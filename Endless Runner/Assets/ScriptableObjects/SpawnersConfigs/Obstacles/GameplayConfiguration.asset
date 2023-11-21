@@ -13,14 +13,11 @@ MonoBehaviour:
   m_Name: GameplayConfiguration
   m_EditorClassIdentifier: 
   levelParts:
-  - {fileID: 11400000, guid: f5e2e60df76c97f49aa66b3274b1399f, type: 2}
   - {fileID: 11400000, guid: baf34b39c629f754e930cc6e98c2a9fe, type: 2}
-  - {fileID: 11400000, guid: 67798671975d0a548be25565be1ca38b, type: 2}
-  - {fileID: 11400000, guid: 29ccc90cd2f140240be7f5af1e145a3a, type: 2}
-  - {fileID: 11400000, guid: 7b7515d9d71d6434fafbe7b155147f25, type: 2}
-  - {fileID: 11400000, guid: 8f81f58f1450b2e48b5cc5732add3ab7, type: 2}
-  - {fileID: 11400000, guid: f1918fca87d236c428a5e18f47b6955d, type: 2}
-  - {fileID: 11400000, guid: b6e8dcfff0b8f3941904157265d31bb7, type: 2}
-  - {fileID: 11400000, guid: 0a9f20d4ac944894baa6247168bac816, type: 2}
   - {fileID: 11400000, guid: 2f9b2ead8279902489df87df1a645784, type: 2}
-  accumulatedWeights: 490
+  - {fileID: 11400000, guid: 0a9f20d4ac944894baa6247168bac816, type: 2}
+  - {fileID: 11400000, guid: f1918fca87d236c428a5e18f47b6955d, type: 2}
+  - {fileID: 11400000, guid: 7b7515d9d71d6434fafbe7b155147f25, type: 2}
+  - {fileID: 11400000, guid: 29ccc90cd2f140240be7f5af1e145a3a, type: 2}
+  - {fileID: 11400000, guid: 8f81f58f1450b2e48b5cc5732add3ab7, type: 2}
+  accumulatedWeights: 235

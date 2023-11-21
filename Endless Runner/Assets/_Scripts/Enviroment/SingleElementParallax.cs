@@ -1,31 +1,34 @@
+using TheCreators.Managers;
 using UnityEngine;
 
-namespace TheCreators
+namespace TheCreators.Enviroment
 {
     public class SingleElementParallax : MonoBehaviour
     {
-        private Camera _camera;
-        [SerializeField] private Transform _player;
-        private float _startPositionX;
-        private float _startZ, _spriteWidth;
-        private float DistanceFromPlayer => transform.position.z - _player.position.z;
-        private float ClippingPlane => _camera.transform.position.z + (DistanceFromPlayer > 0 ? _camera.farClipPlane : _camera.nearClipPlane);
-        private float ParallaxFactor => Mathf.Abs(DistanceFromPlayer / ClippingPlane);
-        private float TravelDistance => _camera.transform.position.x * ParallaxFactor;
-        private float OffsetDistance => _camera.transform.position.x * (1 - ParallaxFactor);
-        void Start()
+        [SerializeField] private float _parallaxFactor;
+        private float _gameSpeed;
+        private float _spriteWidth;
+        void Awake()
         {
-            _startPositionX = transform.position.x;
-            _startZ = transform.position.z;
+            _gameSpeed = GameManager.GameSpeed;
             _spriteWidth = GetComponent<SpriteRenderer>().bounds.size.x;
-            _camera = Camera.main;
         }
         void Update()
         {
-            transform.position = new Vector3(_startPositionX + TravelDistance, transform.position.y, _startZ);
-            if (OffsetDistance > _startPositionX + _spriteWidth)
+            _gameSpeed = GameManager.GameSpeed;
+            Scroll();
+            CheckReset();
+        }
+        private void Scroll()
+        {
+            float delta = _gameSpeed * _parallaxFactor * Time.deltaTime;
+            transform.position -= new Vector3(delta, 0, 0);
+        }
+        private void CheckReset()
+        {
+            if (transform.position.x < -_spriteWidth)
             {
-                _startPositionX += _spriteWidth * 2;
+                transform.position = new Vector3(_spriteWidth, 0, 0);
             }
         }
     }

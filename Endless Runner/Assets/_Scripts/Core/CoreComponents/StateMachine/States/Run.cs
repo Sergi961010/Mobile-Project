@@ -25,7 +25,6 @@ namespace TheCreators.CoreSystem.CoreComponents.StateMachine
         {
             get => _stateMachine != null ? _stateMachine : _context.GetCoreComponent<StateMachineComponent>();
         }
-        public float _speed = 6f;
         public float digTransitionStaminaTreshold = 20f;
         public override void Enter()
         {

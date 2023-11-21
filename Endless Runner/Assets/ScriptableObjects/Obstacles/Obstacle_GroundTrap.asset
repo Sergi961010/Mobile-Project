@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 19f30a475847d2548ba5d5d74856a189, type: 3}
-  m_Name: LevelPart_HardDown
+  m_Name: Obstacle_GroundTrap
   m_EditorClassIdentifier: 
-  prefab: {fileID: 7482232070326527552, guid: 39dd100aaa783e240a81d565e737ef88, type: 3}
+  prefab: {fileID: 7482232070326527552, guid: 82bcc983b0b1a4f44923f9922ecdd59a, type: 3}
   chance: 50
-  weight: 400
+  weight: 50

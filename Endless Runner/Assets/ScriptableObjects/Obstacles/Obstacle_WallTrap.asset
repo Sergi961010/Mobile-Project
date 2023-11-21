@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 19f30a475847d2548ba5d5d74856a189, type: 3}
-  m_Name: LevelPart_MustDig
+  m_Name: Obstacle_WallTrap
   m_EditorClassIdentifier: 
-  prefab: {fileID: 7482232070326527552, guid: 2be6cd5bdc84480409ae1ca6b5d028b0, type: 3}
-  chance: 35
-  weight: 315
+  prefab: {fileID: 7482232070326527552, guid: 39dd100aaa783e240a81d565e737ef88, type: 3}
+  chance: 50
+  weight: 170

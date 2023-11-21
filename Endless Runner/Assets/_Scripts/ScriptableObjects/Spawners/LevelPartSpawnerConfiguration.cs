@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using TheCreators.ScriptableObjects.LevelParts;
+using TheCreators.ScriptableObjects.Obstacles;
 using UnityEngine;
 
 namespace TheCreators.ScriptableObjects.Spawners
@@ -7,7 +7,7 @@ namespace TheCreators.ScriptableObjects.Spawners
     [CreateAssetMenu(menuName = "Spawner config/Level parts spawner", fileName = "NewLevelPartSpawnerConfig")]
     public class LevelPartSpawnerConfiguration : ScriptableObject
     {
-        public List<LevelPart> levelParts = new();
+        public List<Obstacle> levelParts = new();
         [ReadOnly] public double accumulatedWeights;
         private void OnValidate()
         {

@@ -1,7 +1,5 @@
-using TheCreators.Enums;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.SceneManagement;
 
 namespace TheCreators.Managers
 {
@@ -10,11 +8,19 @@ namespace TheCreators.Managers
         private bool _adDisplayed = false;
         [SerializeField] private UiManager _uiManager;
         public UnityEvent GameOverEvent;
+
+        public static float GameSpeed = 6f;
         private void OnEnable()
         {
             Application.targetFrameRate = 60;
         }
-        public void CheckIfShouldDisplayAd()
+        public void OnPlayerDeath() => CheckIfShouldDisplayAd();
+        public void OnPlayerCollisionWithObstacle() { }
+        public void GameOver()
+        {
+            GameOverEvent.Invoke();
+        }
+        private void CheckIfShouldDisplayAd()
         {
             if (!_adDisplayed)
             {
@@ -23,10 +29,6 @@ namespace TheCreators.Managers
             }
             else
                 GameOver();
-        }
-        public void GameOver()
-        {
-            GameOverEvent.Invoke();
         }
     }
 }

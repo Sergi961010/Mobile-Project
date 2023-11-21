@@ -303,17 +303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59210a1e972dbab4092069d3a167cbe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _startingPlatform: {fileID: 591340839}
-  _playerTransform: {fileID: 591340838}
-  prefabs:
-  - {fileID: 7482232070326527552, guid: 82bcc983b0b1a4f44923f9922ecdd59a, type: 3}
-  - {fileID: 2425247845215489570, guid: 108b395b39ec89940a26cb9438e1353b, type: 3}
-  - {fileID: 7482232070326527552, guid: 8351a5eca3ee127498f124a2a6e002b8, type: 3}
-  - {fileID: 7482232070326527552, guid: 7f5ef6dfb4f883c43a4b05acacded5a5, type: 3}
-  - {fileID: 7482232070326527552, guid: e076a25b0b6069a4aa0432393e3f3f09, type: 3}
-  - {fileID: 7482232070326527552, guid: fee1d829b061c4e4ea06354a329b9bff, type: 3}
-  - {fileID: 7482232070326527552, guid: b42a051ae82ef8742b2c5dd597ac0f10, type: 3}
-  - {fileID: 7482232070326527552, guid: 946337682cd04c54a9f80ee6d9809a83, type: 3}
+  _configuration: {fileID: 0}
 --- !u!1001 &443486550
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -431,11 +421,6 @@ PrefabInstance:
 --- !u!4 &591340838 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 149566141361529240, guid: 2f9173dfa3883e4409c45065d54fbf2c, type: 3}
-  m_PrefabInstance: {fileID: 591340837}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &591340839 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4336163425091478569, guid: 2f9173dfa3883e4409c45065d54fbf2c, type: 3}
   m_PrefabInstance: {fileID: 591340837}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &616065643

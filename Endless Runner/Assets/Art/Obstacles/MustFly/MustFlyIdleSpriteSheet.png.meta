@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 86a4d7fccb7451a4cb7a0446379296c1
+guid: 3b54d83ad788b7d43941d3f71b0a433c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -44,7 +44,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 135
@@ -117,349 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 6000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f02ffcc3f7a09bb43ac8ea8f2a9ca056
-      internalID: 16451265
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_1
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 6000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0c0315f5324eb8e4487441eacb6bf730
-      internalID: 1274382235
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_2
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 6000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57fbd7217cc197444bc404b1f337b4f2
-      internalID: 2043548477
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_3
-      rect:
-        serializedVersion: 2
-        x: 3000
-        y: 6000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d22b09de372f51543ad4a1db3dc325d0
-      internalID: 1409815758
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_4
-      rect:
-        serializedVersion: 2
-        x: 4000
-        y: 6000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b16f1b763a3f534280cbb317063f5fa
-      internalID: -2010776015
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_5
-      rect:
-        serializedVersion: 2
-        x: 5000
-        y: 6000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b930f1abdd50ac1409103ff32aca4fb9
-      internalID: 373765408
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_6
-      rect:
-        serializedVersion: 2
-        x: 6000
-        y: 6000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 89539740aa3e5ac42a583dfa1b1f2632
-      internalID: 232689433
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_7
-      rect:
-        serializedVersion: 2
-        x: 7000
-        y: 6000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 528394484c18ff84aa342a92fbe7cf7e
-      internalID: 534277872
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 5000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 05c5bc2db82eb1c4b92cafacee2d90c5
-      internalID: 667651354
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_9
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 5000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6b55c1893741a4447bd17b4e6b481f8a
-      internalID: -1531713552
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_10
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 5000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: db1f5b1f337cb844c8e1230903b5699d
-      internalID: -886455578
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_11
-      rect:
-        serializedVersion: 2
-        x: 3000
-        y: 5000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: df328bbb10da4a7419541a07f2d5c936
-      internalID: 746084730
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_12
-      rect:
-        serializedVersion: 2
-        x: 4000
-        y: 5000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc7b0c683bfa7c1409e2a77ba398d205
-      internalID: 2084543021
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_13
-      rect:
-        serializedVersion: 2
-        x: 5000
-        y: 5000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 00e3992f9192676429c17b6962bc5ede
-      internalID: -2126562099
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_14
-      rect:
-        serializedVersion: 2
-        x: 6000
-        y: 5000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f2c5c44cfab8ffd4496dc8927559f07b
-      internalID: 1823899903
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_15
-      rect:
-        serializedVersion: 2
-        x: 7000
-        y: 5000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6990428988870ac468723547588d689c
-      internalID: 1772840765
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_16
+      name: MustFlyIdleSpriteSheet 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 4000
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -467,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a6f0db64b5ed5749b1b239e6fecc3eb
-      internalID: 84489476
+      spriteID: e947f9abf1787be44931dcbb9f68b2e3
+      internalID: 1712092772
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_17
+      name: MustFlyIdleSpriteSheet 1_1
       rect:
         serializedVersion: 2
         x: 1000
         y: 4000
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -488,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6242da4e2f139246adb91617df58bb2
-      internalID: -1760137525
+      spriteID: bfe499c187de07442ac5f084d745fdd5
+      internalID: 2002483864
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_18
+      name: MustFlyIdleSpriteSheet 1_2
       rect:
         serializedVersion: 2
         x: 2000
         y: 4000
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -509,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c31f78e93a5a63e4ba021ff6f7599ac9
-      internalID: -721181353
+      spriteID: 1d6c750ca8bc60c4cb48888e27e40546
+      internalID: -1747364007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_19
+      name: MustFlyIdleSpriteSheet 1_3
       rect:
         serializedVersion: 2
         x: 3000
         y: 4000
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -530,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08a0114f0295d7b499fe2331d7ed6e4c
-      internalID: 658525848
+      spriteID: 1ea535793b055d641b8c6019f6afcf60
+      internalID: -955264540
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_20
+      name: MustFlyIdleSpriteSheet 1_4
       rect:
         serializedVersion: 2
         x: 4000
         y: 4000
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -551,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7e41377a47ca5b4cac365cc381db7dc
-      internalID: 528854227
+      spriteID: 480dd4f7fe1fb6a469bf2687b41df47f
+      internalID: 1955089470
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_21
+      name: MustFlyIdleSpriteSheet 1_5
       rect:
         serializedVersion: 2
         x: 5000
         y: 4000
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -572,20 +236,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 666382f7e16c77c4885a7e793dbe9ac6
-      internalID: 661425739
+      spriteID: 689d5cb6518600f468cfdea53cf158bb
+      internalID: -1986465274
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_22
+      name: MustFlyIdleSpriteSheet 1_6
       rect:
         serializedVersion: 2
-        x: 6000
-        y: 4000
+        x: 0
+        y: 3500
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -593,20 +257,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae7e357bd835d314f9042cc1524ae8f1
-      internalID: 286138793
+      spriteID: ea1a0763d43256c468b8355fe6f4bc28
+      internalID: -2102740501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_23
+      name: MustFlyIdleSpriteSheet 1_7
       rect:
         serializedVersion: 2
-        x: 7000
-        y: 4000
+        x: 1000
+        y: 3500
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -614,20 +278,104 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d9e44ae7137cef4db266e3e616ec78e
-      internalID: -1362596076
+      spriteID: bd95c805b52e9f94a82692f84036aa43
+      internalID: -317765278
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_24
+      name: MustFlyIdleSpriteSheet 1_8
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3500
+        width: 1000
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5df1ee8e5d2ee7d4385ececa42a17c26
+      internalID: 290635119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MustFlyIdleSpriteSheet 1_9
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3500
+        width: 1000
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71bd38dd4f2364e488e409cba19e2a91
+      internalID: -284617339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MustFlyIdleSpriteSheet 1_10
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 3500
+        width: 1000
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b1502c53a34dd4f8d0a084c5013118
+      internalID: 394765084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MustFlyIdleSpriteSheet 1_11
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 3500
+        width: 1000
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed39a8c139fe0148a333882f6c5713d
+      internalID: -1310689452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MustFlyIdleSpriteSheet 1_12
       rect:
         serializedVersion: 2
         x: 0
         y: 3000
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -635,20 +383,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba296925428b58b47b86f99bc6c710bf
-      internalID: 2140174644
+      spriteID: bf84ceba9fe0d004f941d27c74c83766
+      internalID: -1443956070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_25
+      name: MustFlyIdleSpriteSheet 1_13
       rect:
         serializedVersion: 2
         x: 1000
         y: 3000
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -656,20 +404,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5e25e6853f61bb4eae2f9d040c81174
-      internalID: 621919256
+      spriteID: 3d86533bd3cf37e49a0ecc64501ad96f
+      internalID: 382448042
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_26
+      name: MustFlyIdleSpriteSheet 1_14
       rect:
         serializedVersion: 2
         x: 2000
         y: 3000
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -677,20 +425,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bbb819b033b3de4dbea3413334ccb16
-      internalID: 1249980630
+      spriteID: 81004bf30d529504eb2894c3fe9005bb
+      internalID: -485827055
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_27
+      name: MustFlyIdleSpriteSheet 1_15
       rect:
         serializedVersion: 2
         x: 3000
         y: 3000
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -698,20 +446,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 607d7e59039a500489d9955f5253074a
-      internalID: -65846333
+      spriteID: 2a4c1e48be01c994eb3578d10aabd697
+      internalID: 1501899367
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_28
+      name: MustFlyIdleSpriteSheet 1_16
       rect:
         serializedVersion: 2
         x: 4000
         y: 3000
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -719,20 +467,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8acb69246aa2be446989f6545fd1b639
-      internalID: -1959965899
+      spriteID: 37ffabdaf72b91a4a8fb77b5b95493ea
+      internalID: -2108694015
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_29
+      name: MustFlyIdleSpriteSheet 1_17
       rect:
         serializedVersion: 2
         x: 5000
         y: 3000
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -740,20 +488,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 885f9e0e53d49d249be11703299f9e16
-      internalID: -1284533358
+      spriteID: 4f91a92ef5629c544ac270c5e1c2ec2e
+      internalID: 783729537
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_30
+      name: MustFlyIdleSpriteSheet 1_18
       rect:
         serializedVersion: 2
-        x: 6000
-        y: 3000
+        x: 0
+        y: 2500
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -761,20 +509,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 467d402df78a28e4499d0d3c0da47ab4
-      internalID: 1877389935
+      spriteID: 53f6f983b9b2e134182d5898057d0394
+      internalID: 554868247
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_31
+      name: MustFlyIdleSpriteSheet 1_19
       rect:
         serializedVersion: 2
-        x: 7000
-        y: 3000
+        x: 1000
+        y: 2500
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -782,20 +530,104 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4298ca7470372384785ada2430abf474
-      internalID: -1353778701
+      spriteID: 485313ac3bc01d7478be030605a23f3b
+      internalID: -262086404
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_32
+      name: MustFlyIdleSpriteSheet 1_20
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2500
+        width: 1000
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5880085013da44dbecc66ff5549a88
+      internalID: 151273124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MustFlyIdleSpriteSheet 1_21
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2500
+        width: 1000
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf5b77ef66631214aaa3932d93548a48
+      internalID: 521321050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MustFlyIdleSpriteSheet 1_22
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 2500
+        width: 1000
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f9671fb1482ec04b984db1481fcebad
+      internalID: -1721757168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MustFlyIdleSpriteSheet 1_23
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 2500
+        width: 1000
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb6243045fc96bd438949c09d882db23
+      internalID: -667939292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MustFlyIdleSpriteSheet 1_24
       rect:
         serializedVersion: 2
         x: 0
         y: 2000
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -803,20 +635,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d940efdaeeece2447923737d0b3211cb
-      internalID: 181563196
+      spriteID: 587614c6da715ce46b53f3291f1947ca
+      internalID: -1152478925
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_33
+      name: MustFlyIdleSpriteSheet 1_25
       rect:
         serializedVersion: 2
         x: 1000
         y: 2000
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -824,20 +656,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dcc4603b9716f548ac3374f80005aaf
-      internalID: -1875476757
+      spriteID: f9ae98273ac8e704eb170aed36d17e5f
+      internalID: -1468813547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_34
+      name: MustFlyIdleSpriteSheet 1_26
       rect:
         serializedVersion: 2
         x: 2000
         y: 2000
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -845,20 +677,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48b23c9efb03bbe4aa8b296bd12b3073
-      internalID: 758466044
+      spriteID: 56d3234d56cf2834f82833760e23bd5d
+      internalID: -2005279137
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_35
+      name: MustFlyIdleSpriteSheet 1_27
       rect:
         serializedVersion: 2
         x: 3000
         y: 2000
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -866,20 +698,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58fc37633907aa142808a36cdb4913f5
-      internalID: 1617337525
+      spriteID: f14ee4668f8765b4097d0006f5faf558
+      internalID: 1654178092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_36
+      name: MustFlyIdleSpriteSheet 1_28
       rect:
         serializedVersion: 2
         x: 4000
         y: 2000
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -887,20 +719,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a94e11c1524e7d4aa9bc2f688a74392
-      internalID: 1178022793
+      spriteID: c2a45d7637a49d344aea407b6a0138ed
+      internalID: -1645427491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_37
+      name: MustFlyIdleSpriteSheet 1_29
       rect:
         serializedVersion: 2
         x: 5000
         y: 2000
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -908,20 +740,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70ad1295619bc6a4c83bcd41bd420c42
-      internalID: 1218494842
+      spriteID: 871663b7a48dec54793e7c8091be19df
+      internalID: -1653249792
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_38
+      name: MustFlyIdleSpriteSheet 1_30
       rect:
         serializedVersion: 2
-        x: 6000
-        y: 2000
+        x: 0
+        y: 1500
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -929,20 +761,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ce0b82ad50c4bd488fed7e094319473
-      internalID: -1344784079
+      spriteID: b5164487abc6cbd4b9a4133ccf0be80a
+      internalID: 2095225038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_39
+      name: MustFlyIdleSpriteSheet 1_31
       rect:
         serializedVersion: 2
-        x: 7000
-        y: 2000
+        x: 1000
+        y: 1500
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -950,20 +782,104 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe7ba6e5ad8da2e4ab439d5db53e91ab
-      internalID: 1038687048
+      spriteID: 771a3ddaa5a0efc4eb12f9b590847f96
+      internalID: -1616395570
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_40
+      name: MustFlyIdleSpriteSheet 1_32
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1500
+        width: 1000
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7aae3078b7d0e4496ebd6b1c2253d0
+      internalID: -1679866670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MustFlyIdleSpriteSheet 1_33
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1500
+        width: 1000
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26a50a9b5c7b6af4388a887abddff8f8
+      internalID: -902057813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MustFlyIdleSpriteSheet 1_34
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1500
+        width: 1000
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ad13339871275743a6a9210a1585901
+      internalID: 397785528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MustFlyIdleSpriteSheet 1_35
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 1500
+        width: 1000
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92b7fe3781882d42b65d94b44c9bcc3
+      internalID: 164417658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MustFlyIdleSpriteSheet 1_36
       rect:
         serializedVersion: 2
         x: 0
         y: 1000
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -971,20 +887,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d810585771f880a4991906d9fb0fb56e
-      internalID: -345267188
+      spriteID: 18f5bd259fc11fb45913e7a01e0f433c
+      internalID: 341866844
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_41
+      name: MustFlyIdleSpriteSheet 1_37
       rect:
         serializedVersion: 2
         x: 1000
         y: 1000
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -992,20 +908,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9a04a504f6101541836d8a44405037c
-      internalID: -1776701535
+      spriteID: 13bb6c796f5cdc34586536638b942015
+      internalID: -1164363334
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_42
+      name: MustFlyIdleSpriteSheet 1_38
       rect:
         serializedVersion: 2
         x: 2000
         y: 1000
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1013,20 +929,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b5618e095702374d97aedee3d72df23
-      internalID: 68055357
+      spriteID: 8a05a93e4e2f94a498a84b0f8e269a3e
+      internalID: -643879911
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_43
+      name: MustFlyIdleSpriteSheet 1_39
       rect:
         serializedVersion: 2
         x: 3000
         y: 1000
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1034,20 +950,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c660a577fa465e7438f65a5237d88ee3
-      internalID: -585700521
+      spriteID: 46d3ed7fca3b16543b242bd3357fefad
+      internalID: 566339900
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_44
+      name: MustFlyIdleSpriteSheet 1_40
       rect:
         serializedVersion: 2
         x: 4000
         y: 1000
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1055,20 +971,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d6c6f2b1ce3f244a8996c401d66f7f7
-      internalID: -106734119
+      spriteID: beeea3b506db2cd4abc4e7dad6626c3d
+      internalID: -746031544
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_45
+      name: MustFlyIdleSpriteSheet 1_41
       rect:
         serializedVersion: 2
         x: 5000
         y: 1000
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1076,20 +992,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e84f36eb843166348abedc91aefd14fc
-      internalID: -1977891940
+      spriteID: 99f7a8103436e6243bff53d3c13a8654
+      internalID: 1157310533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_46
+      name: MustFlyIdleSpriteSheet 1_42
       rect:
         serializedVersion: 2
-        x: 6000
-        y: 1000
+        x: 0
+        y: 500
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1097,20 +1013,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5344296812a25df4981ed8f9d628ec9d
-      internalID: 515373416
+      spriteID: 5e02144256066354d80e6512ff788af6
+      internalID: 1628427738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_47
+      name: MustFlyIdleSpriteSheet 1_43
       rect:
         serializedVersion: 2
-        x: 7000
-        y: 1000
+        x: 1000
+        y: 500
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1118,20 +1034,104 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d810831434fb10a4a99f5892aceabc68
-      internalID: 597211090
+      spriteID: 652953175213c1f449535c3e3e1297cf
+      internalID: 237510220
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_48
+      name: MustFlyIdleSpriteSheet 1_44
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 500
+        width: 1000
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5138a2e801012da41839d2c6b4039f50
+      internalID: 1260669271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MustFlyIdleSpriteSheet 1_45
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 500
+        width: 1000
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a25a30b5b2502541866df124b0beb7c
+      internalID: -2039927580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MustFlyIdleSpriteSheet 1_46
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 500
+        width: 1000
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 152887ff8ba0bd54fa66b24817f0435c
+      internalID: 912034823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MustFlyIdleSpriteSheet 1_47
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 500
+        width: 1000
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ecdf76ee59ffd45bc8883083cbf074
+      internalID: -1052842363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MustFlyIdleSpriteSheet 1_48
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 1000
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1139,29 +1139,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4982a88a0e2a1c34d917147efaf18da5
-      internalID: 2092558554
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MustFlyIdleSpriteSheet_49
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 0
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1ba3c9a5edd7f9644ab731b52e2eba0e
-      internalID: 786844005
+      spriteID: 4c016e850c5cd194baa8e1e18e1c1bef
+      internalID: 1974599339
       vertices: []
       indices: 
       edges: []
@@ -1177,56 +1156,55 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MustFlyIdleSpriteSheet_19: 658525848
-      MustFlyIdleSpriteSheet_48: 2092558554
-      MustFlyIdleSpriteSheet_10: -886455578
-      MustFlyIdleSpriteSheet_23: -1362596076
-      MustFlyIdleSpriteSheet_45: -1977891940
-      MustFlyIdleSpriteSheet_3: 1409815758
-      MustFlyIdleSpriteSheet_49: 786844005
-      MustFlyIdleSpriteSheet_28: -1959965899
-      MustFlyIdleSpriteSheet_18: -721181353
-      MustFlyIdleSpriteSheet_32: 181563196
-      MustFlyIdleSpriteSheet_44: -106734119
-      MustFlyIdleSpriteSheet_25: 621919256
-      MustFlyIdleSpriteSheet_4: -2010776015
-      MustFlyIdleSpriteSheet_9: -1531713552
-      MustFlyIdleSpriteSheet_27: -65846333
-      MustFlyIdleSpriteSheet_36: 1178022793
-      MustFlyIdleSpriteSheet_37: 1218494842
-      MustFlyIdleSpriteSheet_6: 232689433
-      MustFlyIdleSpriteSheet_42: 68055357
-      MustFlyIdleSpriteSheet_12: 2084543021
-      MustFlyIdleSpriteSheet_35: 1617337525
-      MustFlyIdleSpriteSheet_34: 758466044
-      MustFlyIdleSpriteSheet_39: 1038687048
-      MustFlyIdleSpriteSheet_31: -1353778701
-      MustFlyIdleSpriteSheet_21: 661425739
-      MustFlyIdleSpriteSheet_22: 286138793
-      MustFlyIdleSpriteSheet_24: 2140174644
-      MustFlyIdleSpriteSheet_7: 534277872
-      MustFlyIdleSpriteSheet_13: -2126562099
-      MustFlyIdleSpriteSheet_1: 1274382235
-      MustFlyIdleSpriteSheet_5: 373765408
-      MustFlyIdleSpriteSheet_20: 528854227
-      MustFlyIdleSpriteSheet_46: 515373416
-      MustFlyIdleSpriteSheet_2: 2043548477
-      MustFlyIdleSpriteSheet_8: 667651354
-      MustFlyIdleSpriteSheet_17: -1760137525
-      MustFlyIdleSpriteSheet_11: 746084730
-      MustFlyIdleSpriteSheet_38: -1344784079
-      MustFlyIdleSpriteSheet_30: 1877389935
-      MustFlyIdleSpriteSheet_47: 597211090
-      MustFlyIdleSpriteSheet_33: -1875476757
-      MustFlyIdleSpriteSheet_40: -345267188
-      MustFlyIdleSpriteSheet_16: 84489476
-      MustFlyIdleSpriteSheet_43: -585700521
-      MustFlyIdleSpriteSheet_0: 16451265
-      MustFlyIdleSpriteSheet_41: -1776701535
-      MustFlyIdleSpriteSheet_14: 1823899903
-      MustFlyIdleSpriteSheet_26: 1249980630
-      MustFlyIdleSpriteSheet_29: -1284533358
-      MustFlyIdleSpriteSheet_15: 1772840765
+      MustFlyIdleSpriteSheet 1_48: 1974599339
+      MustFlyIdleSpriteSheet 1_28: -1645427491
+      MustFlyIdleSpriteSheet 1_26: -2005279137
+      MustFlyIdleSpriteSheet 1_0: 1712092772
+      MustFlyIdleSpriteSheet 1_34: 397785528
+      MustFlyIdleSpriteSheet 1_1: 2002483864
+      MustFlyIdleSpriteSheet 1_40: -746031544
+      MustFlyIdleSpriteSheet 1_21: 521321050
+      MustFlyIdleSpriteSheet 1_44: 1260669271
+      MustFlyIdleSpriteSheet 1_3: -955264540
+      MustFlyIdleSpriteSheet 1_35: 164417658
+      MustFlyIdleSpriteSheet 1_10: 394765084
+      MustFlyIdleSpriteSheet 1_23: -667939292
+      MustFlyIdleSpriteSheet 1_38: -643879911
+      MustFlyIdleSpriteSheet 1_36: 341866844
+      MustFlyIdleSpriteSheet 1_11: -1310689452
+      MustFlyIdleSpriteSheet 1_15: 1501899367
+      MustFlyIdleSpriteSheet 1_31: -1616395570
+      MustFlyIdleSpriteSheet 1_16: -2108694015
+      MustFlyIdleSpriteSheet 1_14: -485827055
+      MustFlyIdleSpriteSheet 1_19: -262086404
+      MustFlyIdleSpriteSheet 1_7: -317765278
+      MustFlyIdleSpriteSheet 1_30: 2095225038
+      MustFlyIdleSpriteSheet 1_47: -1052842363
+      MustFlyIdleSpriteSheet 1_6: -2102740501
+      MustFlyIdleSpriteSheet 1_9: -284617339
+      MustFlyIdleSpriteSheet 1_17: 783729537
+      MustFlyIdleSpriteSheet 1_32: -1679866670
+      MustFlyIdleSpriteSheet 1_33: -902057813
+      MustFlyIdleSpriteSheet 1_8: 290635119
+      MustFlyIdleSpriteSheet 1_45: -2039927580
+      MustFlyIdleSpriteSheet 1_13: 382448042
+      MustFlyIdleSpriteSheet 1_18: 554868247
+      MustFlyIdleSpriteSheet 1_46: 912034823
+      MustFlyIdleSpriteSheet 1_24: -1152478925
+      MustFlyIdleSpriteSheet 1_2: -1747364007
+      MustFlyIdleSpriteSheet 1_42: 1628427738
+      MustFlyIdleSpriteSheet 1_39: 566339900
+      MustFlyIdleSpriteSheet 1_25: -1468813547
+      MustFlyIdleSpriteSheet 1_5: -1986465274
+      MustFlyIdleSpriteSheet 1_41: 1157310533
+      MustFlyIdleSpriteSheet 1_29: -1653249792
+      MustFlyIdleSpriteSheet 1_20: 151273124
+      MustFlyIdleSpriteSheet 1_43: 237510220
+      MustFlyIdleSpriteSheet 1_4: 1955089470
+      MustFlyIdleSpriteSheet 1_22: -1721757168
+      MustFlyIdleSpriteSheet 1_12: -1443956070
+      MustFlyIdleSpriteSheet 1_27: 1654178092
+      MustFlyIdleSpriteSheet 1_37: -1164363334
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -44,7 +44,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 135
@@ -1226,8 +1226,8 @@ TextureImporter:
       Shadowheart-Spritesheet_12: 1182533496
       Shadowheart-Spritesheet_40: -1100486016
       Shadowheart-Spritesheet_16: 1202129379
-      Shadowheart-Spritesheet_26: -458099612
       Shadowheart-Spritesheet_37: -516146646
+      Shadowheart-Spritesheet_26: -458099612
       Shadowheart-Spritesheet_6: -1851138070
       Shadowheart-Spritesheet_39: -977079890
       Shadowheart-Spritesheet_10: -1702122019

@@ -1,3 +1,4 @@
+using TheCreators.Managers;
 using UnityEngine;
 
 namespace TheCreators.Obstacles
@@ -8,7 +9,7 @@ namespace TheCreators.Obstacles
 		[SerializeField, HideInInspector] private Rigidbody2D _rigidbody2D;
         private void FixedUpdate()
         {
-            _rigidbody2D.MovePosition(_rigidbody2D.position + (GameplaySettings.GameSpeed * Time.deltaTime * Vector2.left));
+            _rigidbody2D.MovePosition(_rigidbody2D.position + (GameManager.GameSpeed * Time.deltaTime * Vector2.left));
         }
         private void OnValidate()
         {

@@ -44,7 +44,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 135
@@ -1199,7 +1199,6 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Shadowheart-Spritesheet_45: -1813130659
-      Shadowheart-Spritesheet_57: 1817887281
       Shadowheart-Spritesheet_31: -1384040338
       Shadowheart-Spritesheet_18: 444410731
       Shadowheart-Spritesheet_43: 994489704
@@ -1208,18 +1207,14 @@ TextureImporter:
       Shadowheart-Spritesheet_46: 1032108748
       Shadowheart-Spritesheet_47: -1880656644
       Shadowheart-Spritesheet_41: 279283532
-      Shadowheart-Spritesheet_51: 1280231435
       Shadowheart-Spritesheet_4: -414174859
       Shadowheart-Spritesheet_36: 585668728
-      Shadowheart-Spritesheet_53: 1897658724
       Shadowheart-Spritesheet_1: 951127044
       Shadowheart-Spritesheet_28: -2018028015
-      Shadowheart-Spritesheet_59: -1061689944
       Shadowheart-Spritesheet_13: 857558716
       Shadowheart-Spritesheet_9: -383909181
       Shadowheart-Spritesheet_38: -895881069
       Shadowheart-Spritesheet_29: 1923141261
-      Shadowheart-Spritesheet_55: -1479294941
       Shadowheart-Spritesheet_2: -1030786782
       Shadowheart-Spritesheet_32: 2043588043
       Shadowheart-Spritesheet_23: -1183042429
@@ -1229,8 +1224,6 @@ TextureImporter:
       Shadowheart-Spritesheet_17: 2035610757
       Shadowheart-Spritesheet_50: 1538145601
       Shadowheart-Spritesheet_12: 1182533496
-      Shadowheart-Spritesheet_56: -2010120099
-      Shadowheart-Spritesheet_52: -605669109
       Shadowheart-Spritesheet_40: -1100486016
       Shadowheart-Spritesheet_16: 1202129379
       Shadowheart-Spritesheet_26: -458099612
@@ -1238,7 +1231,6 @@ TextureImporter:
       Shadowheart-Spritesheet_6: -1851138070
       Shadowheart-Spritesheet_39: -977079890
       Shadowheart-Spritesheet_10: -1702122019
-      Shadowheart-Spritesheet_54: -1270626954
       Shadowheart-Spritesheet_34: -1993062456
       Shadowheart-Spritesheet_22: -810832639
       Shadowheart-Spritesheet_19: 1250561931
@@ -1257,7 +1249,6 @@ TextureImporter:
       Shadowheart-Spritesheet_25: 702869978
       Shadowheart-Spritesheet_14: 1874385220
       Shadowheart-Spritesheet_30: -2101778157
-      Shadowheart-Spritesheet_58: 1794014439
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

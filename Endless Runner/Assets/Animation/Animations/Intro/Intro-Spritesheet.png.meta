@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 052adedd8b47aaf409857e3bbe109088
+guid: 185b4ddc8e4ed534db27c2485c1704fd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -44,7 +44,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 135
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WallTrapIddleSpriteSheet_0
+      name: Intro-Spritesheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79bb6575869898a4f9ff6673763c1edf
-      internalID: 486265215
+      spriteID: e160218153c7b8747b51b4361e1ec2b3
+      internalID: 50778177
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapIddleSpriteSheet_1
+      name: Intro-Spritesheet_1
       rect:
         serializedVersion: 2
         x: 250
@@ -152,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c27e88be62c35f34a8cc7da3e3684135
-      internalID: 420164550
+      spriteID: fc5229de88624cf43a351f4da2ba97f2
+      internalID: -2021484778
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapIddleSpriteSheet_2
+      name: Intro-Spritesheet_2
       rect:
         serializedVersion: 2
         x: 500
@@ -173,14 +173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c7f13c549b34674780aac9d2f4670b8
-      internalID: 951888789
+      spriteID: 0b9a4a451deb42a4cbc5c445d483d2a6
+      internalID: 1284402832
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapIddleSpriteSheet_3
+      name: Intro-Spritesheet_3
       rect:
         serializedVersion: 2
         x: 750
@@ -194,14 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21d9e158cbfbff14e9072bb59dae6d9f
-      internalID: 1659336473
+      spriteID: 7a1fbb4cf14a68c4abf731c1a011ba0e
+      internalID: 773188444
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapIddleSpriteSheet_4
+      name: Intro-Spritesheet_4
       rect:
         serializedVersion: 2
         x: 1000
@@ -215,14 +215,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 309104f97bc2f3646bdd26c8c16c5f23
-      internalID: 689042482
+      spriteID: 1382d676e1947b743a65a56372737796
+      internalID: -964778637
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapIddleSpriteSheet_5
+      name: Intro-Spritesheet_5
       rect:
         serializedVersion: 2
         x: 1250
@@ -236,14 +236,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16ca3771ba5edf24cac8a8299a1df282
-      internalID: -549645165
+      spriteID: da672849652eb7649824392df22ac405
+      internalID: -1895251203
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapIddleSpriteSheet_6
+      name: Intro-Spritesheet_6
       rect:
         serializedVersion: 2
         x: 1500
@@ -257,14 +257,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d49ddb8986f87a4b8b7f1018184b6bd
-      internalID: -1194876081
+      spriteID: afff9e0c9938ce940b3c819426b4904e
+      internalID: 968010609
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapIddleSpriteSheet_7
+      name: Intro-Spritesheet_7
       rect:
         serializedVersion: 2
         x: 1750
@@ -278,14 +278,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4aa87ec159e216c46a9a325c14022459
-      internalID: 914969646
+      spriteID: 99f2c047869674645a2496fae37dd26d
+      internalID: -465815486
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapIddleSpriteSheet_8
+      name: Intro-Spritesheet_8
       rect:
         serializedVersion: 2
         x: 2000
@@ -299,14 +299,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1636cc60fddc344f83b83fc256b6bfc
-      internalID: 1274229205
+      spriteID: 93ee9d30477b79c44bb55b1e4106088f
+      internalID: 1729707329
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapIddleSpriteSheet_9
+      name: Intro-Spritesheet_9
       rect:
         serializedVersion: 2
         x: 2250
@@ -320,14 +320,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd4cd7c20b85f1249bf18a0b9714d47a
-      internalID: -607028059
+      spriteID: 60bc195a9149bf34b807a8cf62a6bf36
+      internalID: 156177606
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapIddleSpriteSheet_10
+      name: Intro-Spritesheet_10
       rect:
         serializedVersion: 2
         x: 2500
@@ -341,14 +341,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2171d1384230d340b03462f0c2c176e
-      internalID: 1966032979
+      spriteID: c367d414094e3284fb743780be8f2095
+      internalID: -1302069412
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapIddleSpriteSheet_11
+      name: Intro-Spritesheet_11
       rect:
         serializedVersion: 2
         x: 2750
@@ -362,14 +362,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2730196041d8af440bb3d0bd27ebca42
-      internalID: -1545493492
+      spriteID: 8e435cd8c24cdf44ead95b4b38c93206
+      internalID: -1721179535
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapIddleSpriteSheet_12
+      name: Intro-Spritesheet_12
       rect:
         serializedVersion: 2
         x: 0
@@ -383,14 +383,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6220f02f53d4f874282f85459b440d15
-      internalID: 1568426560
+      spriteID: ead521eee4b2cc34697063d4833d6feb
+      internalID: -718942866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapIddleSpriteSheet_13
+      name: Intro-Spritesheet_13
       rect:
         serializedVersion: 2
         x: 250
@@ -404,14 +404,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6dded8b949447248920e732dd9fb6ee
-      internalID: 15795311
+      spriteID: f41534f9598c5a349ba5adfcf368d261
+      internalID: 492495812
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapIddleSpriteSheet_14
+      name: Intro-Spritesheet_14
       rect:
         serializedVersion: 2
         x: 500
@@ -425,14 +425,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb26b8cfa9d70b84fb333aa2c1ba0a96
-      internalID: 1054079130
+      spriteID: 73605031047021a4290c088a5c3efac5
+      internalID: -1974388804
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapIddleSpriteSheet_15
+      name: Intro-Spritesheet_15
       rect:
         serializedVersion: 2
         x: 750
@@ -446,119 +446,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca88b54b615ad73458373e48dd0f7ad9
-      internalID: 1601878438
+      spriteID: 7463eef242542fc45a4aff5a58164599
+      internalID: -1788678757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapIddleSpriteSheet_16
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 0
-        width: 250
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 032d7eee3c56efc4283dbd309d141fe2
-      internalID: -487715768
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WallTrapIddleSpriteSheet_17
-      rect:
-        serializedVersion: 2
-        x: 1250
-        y: 0
-        width: 250
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e4c393cf6feab2f42bead3f43be6be90
-      internalID: -1126015303
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WallTrapIddleSpriteSheet_18
-      rect:
-        serializedVersion: 2
-        x: 1500
-        y: 0
-        width: 250
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5214184994ed5674b8688d4b403cd16c
-      internalID: 1456896035
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WallTrapIddleSpriteSheet_19
-      rect:
-        serializedVersion: 2
-        x: 1750
-        y: 0
-        width: 250
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 94b36b66dd4b9eb4fbf13d3ee57c9806
-      internalID: 376204245
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WallTrapIddleSpriteSheet_20
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 0
-        width: 250
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e1f9453a9e2fc2e4686eca1b6e4e6706
-      internalID: 116491271
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WallTrapIddleSpriteSheet_21
+      name: Intro-Spritesheet_16
       rect:
         serializedVersion: 2
         x: 2250
@@ -572,14 +467,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53f9391135c4ff144b8891e86601f013
-      internalID: -494773104
+      spriteID: 41e40d778f635f9489fd08154af698d3
+      internalID: 1607074784
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapIddleSpriteSheet_22
+      name: Intro-Spritesheet_17
       rect:
         serializedVersion: 2
         x: 2500
@@ -593,14 +488,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25b6fce42291a5e4c9ea507e8928e572
-      internalID: -603628036
+      spriteID: 19164c59a8315d44693ffa3f767ea234
+      internalID: -484895810
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallTrapIddleSpriteSheet_23
+      name: Intro-Spritesheet_18
       rect:
         serializedVersion: 2
         x: 2750
@@ -614,8 +509,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4be5aee21c860fa4094feefbcd9134e4
-      internalID: 2009033633
+      spriteID: 9dbee0f78d2d9ae4db9597226f6c5508
+      internalID: 243354178
       vertices: []
       indices: 
       edges: []
@@ -631,30 +526,25 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      WallTrapIddleSpriteSheet_22: -603628036
-      WallTrapIddleSpriteSheet_17: -1126015303
-      WallTrapIddleSpriteSheet_19: 376204245
-      WallTrapIddleSpriteSheet_9: -607028059
-      WallTrapIddleSpriteSheet_15: 1601878438
-      WallTrapIddleSpriteSheet_16: -487715768
-      WallTrapIddleSpriteSheet_8: 1274229205
-      WallTrapIddleSpriteSheet_3: 1659336473
-      WallTrapIddleSpriteSheet_0: 486265215
-      WallTrapIddleSpriteSheet_12: 1568426560
-      WallTrapIddleSpriteSheet_4: 689042482
-      WallTrapIddleSpriteSheet_2: 951888789
-      WallTrapIddleSpriteSheet_13: 15795311
-      WallTrapIddleSpriteSheet_7: 914969646
-      WallTrapIddleSpriteSheet_21: -494773104
-      WallTrapIddleSpriteSheet_14: 1054079130
-      WallTrapIddleSpriteSheet_18: 1456896035
-      WallTrapIddleSpriteSheet_10: 1966032979
-      WallTrapIddleSpriteSheet_23: 2009033633
-      WallTrapIddleSpriteSheet_1: 420164550
-      WallTrapIddleSpriteSheet_20: 116491271
-      WallTrapIddleSpriteSheet_6: -1194876081
-      WallTrapIddleSpriteSheet_11: -1545493492
-      WallTrapIddleSpriteSheet_5: -549645165
+      Intro-Spritesheet_5: -1895251203
+      Intro-Spritesheet_7: -465815486
+      Intro-Spritesheet_10: -1302069412
+      Intro-Spritesheet_13: 492495812
+      Intro-Spritesheet_11: -1721179535
+      Intro-Spritesheet_16: 1607074784
+      Intro-Spritesheet_3: 773188444
+      Intro-Spritesheet_2: 1284402832
+      Intro-Spritesheet_0: 50778177
+      Intro-Spritesheet_14: -1974388804
+      Intro-Spritesheet_9: 156177606
+      Intro-Spritesheet_8: 1729707329
+      Intro-Spritesheet_17: -484895810
+      Intro-Spritesheet_18: 243354178
+      Intro-Spritesheet_4: -964778637
+      Intro-Spritesheet_15: -1788678757
+      Intro-Spritesheet_12: -718942866
+      Intro-Spritesheet_1: -2021484778
+      Intro-Spritesheet_6: 968010609
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

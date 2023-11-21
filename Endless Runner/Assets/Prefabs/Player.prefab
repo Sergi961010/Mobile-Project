@@ -187,6 +187,7 @@ MonoBehaviour:
   digEnterState: {fileID: 11400000, guid: 15a203e782756dc489a51e6bfa96495d, type: 2}
   digLoopState: {fileID: 11400000, guid: aff6c37948336e5489fc1e801da81cea, type: 2}
   digExitState: {fileID: 11400000, guid: 3c68fc5f15f11f84c96d0f80d2bb079a, type: 2}
+  landState: {fileID: 11400000, guid: a068da5b12c0b9e4fab93b2839ba7128, type: 2}
 --- !u!1 &2381080032258948686
 GameObject:
   m_ObjectHideFlags: 0

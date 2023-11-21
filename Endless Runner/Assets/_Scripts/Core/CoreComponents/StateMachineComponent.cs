@@ -12,6 +12,7 @@ namespace TheCreators.CoreSystem.CoreComponents
         public DigEnter digEnterState;
         public DigLoop digLoopState;
         public DigExit digExitState;
+        public Land landState;
         #endregion
 
         public NewPlayerStateMachine StateMachine { get; private set; }
@@ -29,6 +30,7 @@ namespace TheCreators.CoreSystem.CoreComponents
             digEnterState.Init(Core);
             digLoopState.Init(Core);
             digExitState.Init(Core);
+            landState.Init(Core);
 
             StateMachine.Initialize(runState);
         }

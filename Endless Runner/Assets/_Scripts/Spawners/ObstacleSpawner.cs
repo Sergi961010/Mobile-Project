@@ -35,7 +35,7 @@ namespace TheCreators.Spawners
             }
             return PoolsManager.Instance.GetObject(_configuration.levelParts[0].prefab);
         }
-        private void SpawnObstacle()
+        public void SpawnObstacle()
         {
             GameObject obstacleToSpawn = GetRandomObstacle();
             obstacleToSpawn.SetActive(true);

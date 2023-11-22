@@ -36,13 +36,9 @@ namespace TheCreators.CoreSystem.CoreComponents
         public UnityEvent DeathEvent;
         public IEnumerator Die()
         {
-            InputController.DisableInput();
-            StateMachine.gameObject.SetActive(false);
-            Movement.Rigidbody.isKinematic = true;
-            Movement.gameObject.SetActive(false);
             PlayerAnimator.PlayAnimation(_animationClip);
             yield return new WaitForSeconds(_animationClip.length);
-            SpriteRendererComponent.gameObject.SetActive(false);
+            Core.transform.parent.gameObject.SetActive(false);
             DeathEvent.Invoke();
         }
         public void Damage()

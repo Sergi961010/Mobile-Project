@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1248cf5b6244ecd4db93ef1457dad80f
+guid: b90c4c973f7e3074d89ba6fa30e07882
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,217 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI-PowerButton-Spritesheet_0
+      name: ExitButtonSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6199d2b940ec96489fc6ccf74094906
+      internalID: -1990220532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExitButtonSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94817510e34b36e408d43806c1d32f03
+      internalID: -272906785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExitButtonSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5269331d15a550545996e33dc98fd44f
+      internalID: -1565012547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExitButtonSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6122d758723054ebd0447c3a1a0c0c
+      internalID: -429901544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExitButtonSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 106ce1155e54fa241a4aee96a754fccf
+      internalID: 1072054575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExitButtonSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f9a3cd2f8ae169498845e19b4de272f
+      internalID: 1449662449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExitButtonSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 292bd82d38832d446979c7af46ebb112
+      internalID: 979705347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExitButtonSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a83b231108bcda49a89e1bdc7db2417
+      internalID: 1995851938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExitButtonSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ccfea5d531f2f4a8761fa549bec1ce
+      internalID: 1771121995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExitButtonSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ce31a417c375f8478164fe4f2bb7446
+      internalID: 1068534086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExitButtonSpriteSheet_10
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +341,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 706683f6208a59644baeb3d4453a06d9
-      internalID: 536850089
+      spriteID: a30b698bc7b86a141b37e515ceb840af
+      internalID: 2105203127
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI-PowerButton-Spritesheet_1
+      name: ExitButtonSpriteSheet_11
       rect:
         serializedVersion: 2
         x: 250
@@ -152,14 +362,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 141b51504f0d61e4ea81c754a9d43565
-      internalID: -204018091
+      spriteID: d017da814a0bf534ab0ce5bd22b535ae
+      internalID: -687103147
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI-PowerButton-Spritesheet_2
+      name: ExitButtonSpriteSheet_12
       rect:
         serializedVersion: 2
         x: 500
@@ -173,14 +383,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96cf052b691b13844bfd422eb28e3a96
-      internalID: -1006876260
+      spriteID: 174c088786268a24a9e6c03ee0b893aa
+      internalID: 1400082753
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI-PowerButton-Spritesheet_3
+      name: ExitButtonSpriteSheet_13
       rect:
         serializedVersion: 2
         x: 750
@@ -194,14 +404,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a99911ea71e1c57449feb8c9d0b77de3
-      internalID: 679856796
+      spriteID: 375356bf0b9200e499f400357cfa7af5
+      internalID: 1281595901
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI-PowerButton-Spritesheet_4
+      name: ExitButtonSpriteSheet_14
       rect:
         serializedVersion: 2
         x: 1000
@@ -215,161 +425,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a2356a768769f847b48f31a5c81eab3
-      internalID: 812703109
+      spriteID: f4b9f8915ab56a34fabc38bef871b329
+      internalID: 546201666
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI-PowerButton-Spritesheet_5
-      rect:
-        serializedVersion: 2
-        x: 1250
-        y: 250
-        width: 250
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93408c8a4fb856f4fa4fe464cbc0e84f
-      internalID: 1592868726
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI-PowerButton-Spritesheet_6
-      rect:
-        serializedVersion: 2
-        x: 1500
-        y: 250
-        width: 250
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e4d60736b1119144a49a51da7893c6f
-      internalID: 1896268192
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI-PowerButton-Spritesheet_7
-      rect:
-        serializedVersion: 2
-        x: 1750
-        y: 250
-        width: 250
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 957185d635326034bbaff1d59d23fb1a
-      internalID: 1279613688
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI-PowerButton-Spritesheet_8
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 250
-        width: 250
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c861c91224649ca4bae256b0a6cf591b
-      internalID: -711674525
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI-PowerButton-Spritesheet_9
-      rect:
-        serializedVersion: 2
-        x: 2250
-        y: 250
-        width: 250
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7ebde5b3340ef904d85458bc2e0bbac5
-      internalID: -1493934605
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI-PowerButton-Spritesheet_10
-      rect:
-        serializedVersion: 2
-        x: 2500
-        y: 250
-        width: 250
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 153391ab6e8d6c543911e853dc5966c7
-      internalID: 1439385329
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI-PowerButton-Spritesheet_11
-      rect:
-        serializedVersion: 2
-        x: 2750
-        y: 250
-        width: 250
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c1c89bdf57708541839125de648f0b4
-      internalID: -465859070
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI-PowerButton-Spritesheet_12
+      name: ExitButtonSpriteSheet_15
       rect:
         serializedVersion: 2
         x: 0
@@ -383,14 +446,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02c655231c2b0fd46958755a0f11738c
-      internalID: 1174393039
+      spriteID: 0c0614efa7a5a4e478c5ef70d40a7c65
+      internalID: -530142532
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI-PowerButton-Spritesheet_13
+      name: ExitButtonSpriteSheet_16
       rect:
         serializedVersion: 2
         x: 250
@@ -404,14 +467,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 540bc6be6fb39fa4b9a143a3636129bb
-      internalID: 1609823846
+      spriteID: bbe5d6c51c1017948b3078017cba96f3
+      internalID: 1857861057
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI-PowerButton-Spritesheet_14
+      name: ExitButtonSpriteSheet_17
       rect:
         serializedVersion: 2
         x: 500
@@ -425,14 +488,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02a97725281c98246b23b66c7423558e
-      internalID: 1909796059
+      spriteID: 0cc59c2dd3736914596db12113f8187d
+      internalID: 1344704365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI-PowerButton-Spritesheet_15
+      name: ExitButtonSpriteSheet_18
       rect:
         serializedVersion: 2
         x: 750
@@ -446,14 +509,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97c2f4dd5a734174cb2f2a9457c2205f
-      internalID: 992641529
+      spriteID: b54be1068755877469b7081241d936e2
+      internalID: -529174307
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI-PowerButton-Spritesheet_16
+      name: ExitButtonSpriteSheet_19
       rect:
         serializedVersion: 2
         x: 1000
@@ -467,8 +530,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0e98ffcdfa12674ebd2e32cbcecfad3
-      internalID: -234127498
+      spriteID: 0f5eee81bcab67345a5a4582bfb5347d
+      internalID: 1326156841
       vertices: []
       indices: 
       edges: []
@@ -484,30 +547,26 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      UI-PowerButton-Spritesheet_2: -1006876260
-      UI-PowerButton-Spritesheet_14: 1909796059
-      UI-PowerButton-Spritesheet_17: 1985701453
-      UI-PowerButton-Spritesheet_13: 1609823846
-      UI-PowerButton-Spritesheet_8: -711674525
-      UI-PowerButton-Spritesheet_11: -465859070
-      UI-PowerButton-Spritesheet_12: 1174393039
-      UI-PowerButton-Spritesheet_4: 812703109
-      UI-PowerButton-Spritesheet_0: 536850089
-      UI-PowerButton-Spritesheet_6: 1896268192
-      UI-PowerButton-Spritesheet_16: -234127498
-      UI-PowerButton-Spritesheet_3: 679856796
-      UI-PowerButton-Spritesheet_21: 1052329222
-      UI-PowerButton-Spritesheet_1: -204018091
-      UI-PowerButton-Spritesheet_23: 1711408278
-      UI-PowerButton-Spritesheet_22: -68587104
-      UI-PowerButton-Spritesheet_9: -1493934605
-      UI-PowerButton-Spritesheet_5: 1592868726
-      UI-PowerButton-Spritesheet_15: 992641529
-      UI-PowerButton-Spritesheet_20: 381618413
-      UI-PowerButton-Spritesheet_10: 1439385329
-      UI-PowerButton-Spritesheet_18: 1647579277
-      UI-PowerButton-Spritesheet_7: 1279613688
-      UI-PowerButton-Spritesheet_19: 1392442282
+      ExitButtonSpriteSheet_11: -687103147
+      ExitButtonSpriteSheet_18: -529174307
+      ExitButtonSpriteSheet_9: 1068534086
+      ExitButtonSpriteSheet_1: -272906785
+      ExitButtonSpriteSheet_13: 1281595901
+      ExitButtonSpriteSheet_0: -1990220532
+      ExitButtonSpriteSheet_4: 1072054575
+      ExitButtonSpriteSheet_5: 1449662449
+      ExitButtonSpriteSheet_2: -1565012547
+      ExitButtonSpriteSheet_14: 546201666
+      ExitButtonSpriteSheet_16: 1857861057
+      ExitButtonSpriteSheet_15: -530142532
+      ExitButtonSpriteSheet_6: 979705347
+      ExitButtonSpriteSheet_12: 1400082753
+      ExitButtonSpriteSheet_7: 1995851938
+      ExitButtonSpriteSheet_10: 2105203127
+      ExitButtonSpriteSheet_17: 1344704365
+      ExitButtonSpriteSheet_19: 1326156841
+      ExitButtonSpriteSheet_8: 1771121995
+      ExitButtonSpriteSheet_3: -429901544
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

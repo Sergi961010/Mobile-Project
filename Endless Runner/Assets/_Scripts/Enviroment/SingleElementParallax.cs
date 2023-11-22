@@ -7,11 +7,11 @@ namespace TheCreators.Enviroment
     {
         [SerializeField] private float _parallaxFactor;
         private float _gameSpeed;
-        private float _spriteWidth;
+        private float _cameraWidth;
         void Awake()
         {
             _gameSpeed = GameManager.GameSpeed;
-            _spriteWidth = GetComponent<SpriteRenderer>().bounds.size.x;
+            _cameraWidth = CalculateCameraWidth();
         }
         void Update()
         {
@@ -26,10 +26,17 @@ namespace TheCreators.Enviroment
         }
         private void CheckReset()
         {
-            if (transform.position.x < -_spriteWidth)
+            if (transform.position.x < -_cameraWidth)
             {
-                transform.position = new Vector3(_spriteWidth, 0, 0);
+                transform.position = new Vector3(_cameraWidth, transform.position.y, 0);
             }
+        }
+        private float CalculateCameraWidth()
+        {
+            Camera camera = Camera.main;
+            float height = camera.orthographicSize * 2f;
+            float width = height * camera.aspect;
+            return width;
         }
     }
 }

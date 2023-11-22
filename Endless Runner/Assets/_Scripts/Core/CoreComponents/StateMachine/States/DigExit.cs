@@ -44,7 +44,7 @@ namespace TheCreators.CoreSystem.CoreComponents.StateMachine
         {
             Movement.Rigidbody.isKinematic = false;
             Stamina.CanRegenerate = true;
-            SpriteRendererComponent.ChangeSortingOrder(0);
+            SpriteRendererComponent.ChangeSortingOrder(-1);
         }
         public override void LogicUpdate()
         {

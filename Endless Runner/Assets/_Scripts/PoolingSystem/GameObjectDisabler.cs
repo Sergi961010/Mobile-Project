@@ -6,7 +6,7 @@ namespace TheCreators.PoolingSystem
     {
         private void OnTriggerExit2D(Collider2D collision)
         {
-            if (collision.GetComponent<PooledObject>() != null)
+            if (collision.GetComponent<PoolObject>() != null)
                 collision.gameObject.SetActive(false);
         }
     }

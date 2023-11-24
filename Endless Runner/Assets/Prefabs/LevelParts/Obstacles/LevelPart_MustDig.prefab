@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4788295584219744813}
+  - component: {fileID: 1074979068567833559}
   m_Layer: 0
   m_Name: StaminaSpawns
   m_TagString: Untagged
@@ -35,6 +36,27 @@ Transform:
   m_Father: {fileID: 8980366224617906998}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1074979068567833559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2245588832123073543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f199e55f489aa84b9df9ef69f4726ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPointStrategyType: 0
+  spawnPoints:
+  - {fileID: 9091801256204832984}
+  - {fileID: 2476943549173873451}
+  - {fileID: 7399979633605050587}
+  - {fileID: 6505164866620595761}
+  staminaCollectibleData:
+  - {fileID: 11400000, guid: bfabb8deb8b55404a8f9e0d614b3963b, type: 2}
+  maxSpawns: 2
 --- !u!1 &2611159337477422491
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,6 +194,8 @@ GameObject:
   - component: {fileID: 8908693312144138828}
   - component: {fileID: 191811182674718409}
   - component: {fileID: 941477500028469999}
+  - component: {fileID: -6269145458325173418}
+  - component: {fileID: -7267086909444599338}
   m_Layer: 0
   m_Name: LevelPart_MustDig
   m_TagString: Untagged
@@ -268,6 +292,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody2D: {fileID: 191811182674718409}
+--- !u!114 &-6269145458325173418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7482232070326527552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8f44d41ae285a04fa628a80ed633e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-7267086909444599338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7482232070326527552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5745c4cf3837a39448ea210ac2104186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4518063119973204988
 PrefabInstance:
   m_ObjectHideFlags: 0

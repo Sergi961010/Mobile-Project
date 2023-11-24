@@ -71,6 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2784135982756909002}
+  - component: {fileID: 6290956034481050368}
   m_Layer: 0
   m_Name: StaminaSpawns
   m_TagString: Untagged
@@ -97,6 +98,27 @@ Transform:
   m_Father: {fileID: 8980366224617906998}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6290956034481050368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3177301600983131160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f199e55f489aa84b9df9ef69f4726ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPointStrategyType: 0
+  spawnPoints:
+  - {fileID: 7952635683020216218}
+  - {fileID: 8740746987198463847}
+  - {fileID: 5218606909408515738}
+  - {fileID: 8090963269435571692}
+  staminaCollectibleData:
+  - {fileID: 11400000, guid: bfabb8deb8b55404a8f9e0d614b3963b, type: 2}
+  maxSpawns: 2
 --- !u!1 &7284113999064969925
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,6 +163,8 @@ GameObject:
   - component: {fileID: -7922433100541687721}
   - component: {fileID: -7059925922397809779}
   - component: {fileID: -6179503771386105099}
+  - component: {fileID: 6694377664834769239}
+  - component: {fileID: -7832582040414762124}
   m_Layer: 0
   m_Name: LevelPart_FlyTopScreen
   m_TagString: Untagged
@@ -237,6 +261,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody2D: {fileID: -7059925922397809779}
+--- !u!114 &6694377664834769239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7482232070326527552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8f44d41ae285a04fa628a80ed633e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-7832582040414762124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7482232070326527552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5745c4cf3837a39448ea210ac2104186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7500635875969958941
 GameObject:
   m_ObjectHideFlags: 0

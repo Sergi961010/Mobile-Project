@@ -1,10 +1,10 @@
 ﻿using TheCreators.ProgrammingPatterns.Visitor;
-using TheCreators.ScriptableObjects.PowerUps;
+using TheCreators.SpawnSystem;
 using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
-    public PowerUp PowerUp;
+    public StaminaCollectibleData data;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -12,8 +12,8 @@ public class Pickup : MonoBehaviour
             var visitable = collision.gameObject.transform.parent.gameObject.GetComponentInChildren<IVisitable>();
             if (visitable != null)
             {
-                visitable.Accept(PowerUp);
-                Destroy(gameObject);
+                visitable.Accept(data);
+                gameObject.SetActive(false);
             }
         }
     }

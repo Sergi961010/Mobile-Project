@@ -102,6 +102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4619030341812420455}
+  - component: {fileID: 6379489202776550375}
   m_Layer: 0
   m_Name: StaminaSpawns
   m_TagString: Untagged
@@ -129,6 +130,28 @@ Transform:
   m_Father: {fileID: 8980366224617906998}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6379489202776550375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2464981080791465311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f199e55f489aa84b9df9ef69f4726ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPointStrategyType: 1
+  spawnPoints:
+  - {fileID: 2410401075991356815}
+  - {fileID: 2964614641526941369}
+  - {fileID: 5020440974359413013}
+  - {fileID: 8467405486959245601}
+  - {fileID: 7237866473932686251}
+  staminaCollectibleData:
+  - {fileID: 11400000, guid: bfabb8deb8b55404a8f9e0d614b3963b, type: 2}
+  maxSpawns: 2
 --- !u!1 &6772145753986562467
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,7 +195,8 @@ GameObject:
   - component: {fileID: 6119876667654467156}
   - component: {fileID: 8559999968813851091}
   - component: {fileID: 4262075762740910244}
-  - component: {fileID: 3986380578410463595}
+  - component: {fileID: -6355119185823610951}
+  - component: {fileID: -9181512310568910020}
   m_Layer: 0
   m_Name: LevelPart_FlyDownScreen
   m_TagString: Untagged
@@ -257,7 +281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody2D: {fileID: 6119876667654467156}
---- !u!114 &3986380578410463595
+--- !u!114 &-6355119185823610951
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -266,7 +290,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 7482232070326527552}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bff284873e0e1b48b2e0e9c8aaf18d8, type: 3}
+  m_Script: {fileID: 11500000, guid: a8f44d41ae285a04fa628a80ed633e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-9181512310568910020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7482232070326527552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5745c4cf3837a39448ea210ac2104186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8276050701791556288

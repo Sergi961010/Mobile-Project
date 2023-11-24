@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1967339752417507697}
-  - component: {fileID: 1967339752417507698}
+  - component: {fileID: 3030991336263049700}
   m_Layer: 9
   m_Name: ObstacleSpawner
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1967339752417507698
+--- !u!114 &3030991336263049700
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,9 +41,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1967339752417507696}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59210a1e972dbab4092069d3a167cbe3, type: 3}
+  m_Script: {fileID: 11500000, guid: 383ae52c765f4d641be320bada0f5cc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _startingPlatform: {fileID: 0}
-  _playerTransform: {fileID: 0}
-  _configuration: {fileID: 11400000, guid: 07a15c76558bcb84685563d5bd1dba6c, type: 2}
+  spawnPointStrategyType: 0
+  spawnPoints:
+  - {fileID: 1967339752417507697}
+  obstacleData:
+  - {fileID: 11400000, guid: 2aa5a66697d5632498887721b5ee33ad, type: 2}
+  - {fileID: 11400000, guid: b810287a23f81664995e274d61f3f180, type: 2}
+  - {fileID: 11400000, guid: 86ce756509d009f4cbccd31a3f866e0f, type: 2}
+  - {fileID: 11400000, guid: 92e2c5b8ff6594a48999e5164e504272, type: 2}
+  - {fileID: 11400000, guid: 50d2bff9d266b1f4eac4a3fadf3ac4a5, type: 2}
+  - {fileID: 11400000, guid: 978d0f23835360043bda935fc6181f6b, type: 2}
+  - {fileID: 11400000, guid: 3f722367b14498b4f93267f46b1d0600, type: 2}
+  spawnInterval: 2

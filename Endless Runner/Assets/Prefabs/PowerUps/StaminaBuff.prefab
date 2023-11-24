@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5762523452590335423}
   - component: {fileID: -8040150087073905534}
   - component: {fileID: -7156502886126025922}
+  - component: {fileID: 1123944934333899046}
   m_Layer: 0
   m_Name: StaminaBuff
   m_TagString: Untagged
@@ -182,3 +183,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody2D: {fileID: -8040150087073905534}
+--- !u!114 &1123944934333899046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8506372675112558590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bff284873e0e1b48b2e0e9c8aaf18d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

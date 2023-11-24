@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 91d67d2b3fa30284aa07cd52fe31eaaa
+guid: 78601de06081eec43a66c7e034ee6e0e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Landing-Spritesheet_0
+      name: Character-Landing-SpritesheetUpdate_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16a82dd1af8c33743b4a262b5488e44d
-      internalID: 1333869053
+      spriteID: d9f146286c48e814782429735d2b33ab
+      internalID: -1545263631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Landing-Spritesheet_1
+      name: Character-Landing-SpritesheetUpdate_1
       rect:
         serializedVersion: 2
         x: 250
@@ -152,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a03bcaa8d19d81c4faa20cb8f9d4be2c
-      internalID: -1790211693
+      spriteID: e9bfbd6718e714c44878cc2be6db3000
+      internalID: -529735491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Landing-Spritesheet_2
+      name: Character-Landing-SpritesheetUpdate_2
       rect:
         serializedVersion: 2
         x: 500
@@ -173,14 +173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec48b04245333534fb052d241d47a521
-      internalID: 92155664
+      spriteID: 4cbec5bace3013549b85fbc17b1077d8
+      internalID: -338634822
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Landing-Spritesheet_3
+      name: Character-Landing-SpritesheetUpdate_3
       rect:
         serializedVersion: 2
         x: 750
@@ -194,14 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9870e3ffcafea2e4cab2182abf08b932
-      internalID: -1721254290
+      spriteID: ff2602561b0f55a46a1d6f4645c2ae3a
+      internalID: 109096984
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Landing-Spritesheet_4
+      name: Character-Landing-SpritesheetUpdate_4
       rect:
         serializedVersion: 2
         x: 1000
@@ -215,8 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a489f393da78aff47bc885b4dba27460
-      internalID: -185950151
+      spriteID: 511d508b5cffa3140bb28779503d0513
+      internalID: -870132127
       vertices: []
       indices: 
       edges: []
@@ -232,11 +232,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Landing-Spritesheet_4: -185950151
-      Landing-Spritesheet_1: -1790211693
-      Landing-Spritesheet_2: 92155664
-      Landing-Spritesheet_3: -1721254290
-      Landing-Spritesheet_0: 1333869053
+      Character-Landing-SpritesheetUpdate_1: -529735491
+      Character-Landing-SpritesheetUpdate_4: -870132127
+      Character-Landing-SpritesheetUpdate_3: 109096984
+      Character-Landing-SpritesheetUpdate_2: -338634822
+      Character-Landing-SpritesheetUpdate_0: -1545263631
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

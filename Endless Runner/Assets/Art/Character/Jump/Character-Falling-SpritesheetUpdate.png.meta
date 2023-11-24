@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 552bc584139e46e40aae87a691a439c7
+guid: 0e51b37aaf9471e45ad6741d3b586ec0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Character-Falling-Spritesheet_0
+      name: Character-Falling-SpritesheetUpdate_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb3caf5bc4006e740bf8bece9634928f
-      internalID: 681264402
+      spriteID: 5e3485a6c1ddd0446a58f12933875894
+      internalID: 699565440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Falling-Spritesheet_1
+      name: Character-Falling-SpritesheetUpdate_1
       rect:
         serializedVersion: 2
         x: 250
@@ -152,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18a7918549d23334cbff44e151f6a53a
-      internalID: -1466101200
+      spriteID: 32f085dc98569b3488dd55b765fff08b
+      internalID: 786725040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Falling-Spritesheet_2
+      name: Character-Falling-SpritesheetUpdate_2
       rect:
         serializedVersion: 2
         x: 500
@@ -173,14 +173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a0a42768d95fd043a5786736d6a2a1d
-      internalID: -759048940
+      spriteID: ee4bca8526a0514478e23d13e45b063a
+      internalID: -877898551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Falling-Spritesheet_3
+      name: Character-Falling-SpritesheetUpdate_3
       rect:
         serializedVersion: 2
         x: 750
@@ -194,8 +194,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf72c7a9bb7150c4ea6a3f0b8cf46177
-      internalID: 1860019881
+      spriteID: 135956879e385fa488291e0ec63e0a6f
+      internalID: -747873680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character-Falling-SpritesheetUpdate_4
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af8c18626ff84141a69b09efed58ddd
+      internalID: -1297144401
       vertices: []
       indices: 
       edges: []
@@ -211,10 +232,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Character-Falling-Spritesheet_2: -759048940
-      Character-Falling-Spritesheet_0: 681264402
-      Character-Falling-Spritesheet_3: 1860019881
-      Character-Falling-Spritesheet_1: -1466101200
+      Character-Falling-SpritesheetUpdate_1: 786725040
+      Character-Falling-SpritesheetUpdate_3: -747873680
+      Character-Falling-SpritesheetUpdate_0: 699565440
+      Character-Falling-SpritesheetUpdate_4: -1297144401
+      Character-Falling-SpritesheetUpdate_2: -877898551
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

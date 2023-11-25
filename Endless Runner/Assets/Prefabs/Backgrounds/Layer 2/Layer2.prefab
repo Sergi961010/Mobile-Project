@@ -51,7 +51,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3337456876492199364, guid: a025f60a15d37d94fb63003522d39fbc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14
+      value: 5.41
       objectReference: {fileID: 0}
     - target: {fileID: 3337456876492199364, guid: a025f60a15d37d94fb63003522d39fbc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -97,8 +97,27 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 873298251
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4647065574685166112, guid: a025f60a15d37d94fb63003522d39fbc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a025f60a15d37d94fb63003522d39fbc, type: 3}
+--- !u!1 &4759712167120944924 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1428976301000535595, guid: a025f60a15d37d94fb63003522d39fbc, type: 3}
+  m_PrefabInstance: {fileID: 5897844832806605111}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2270941445196694604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4759712167120944924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6cbbd12d3beb66468b7df912541a206, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parallaxFactor: 0.5
 --- !u!4 &9189698360176477427 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3337456876492199364, guid: a025f60a15d37d94fb63003522d39fbc, type: 3}
@@ -121,7 +140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3337456876492199364, guid: a025f60a15d37d94fb63003522d39fbc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.16
+      value: 15.78
       objectReference: {fileID: 0}
     - target: {fileID: 3337456876492199364, guid: a025f60a15d37d94fb63003522d39fbc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -167,8 +186,27 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 873298251
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4647065574685166112, guid: a025f60a15d37d94fb63003522d39fbc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a025f60a15d37d94fb63003522d39fbc, type: 3}
+--- !u!1 &4734154264176542779 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1428976301000535595, guid: a025f60a15d37d94fb63003522d39fbc, type: 3}
+  m_PrefabInstance: {fileID: 5937897597467519504}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &572693488433882240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4734154264176542779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6cbbd12d3beb66468b7df912541a206, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parallaxFactor: 0.5
 --- !u!4 &8950518602091659220 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3337456876492199364, guid: a025f60a15d37d94fb63003522d39fbc, type: 3}
@@ -241,8 +279,27 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 873298251
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6955094917076611014, guid: b6b0161d696423f4ebaaa86e41b2b331, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b6b0161d696423f4ebaaa86e41b2b331, type: 3}
+--- !u!1 &4755905337202635403 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2099715073143802678, guid: b6b0161d696423f4ebaaa86e41b2b331, type: 3}
+  m_PrefabInstance: {fileID: 6855588105204660669}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8731405387416532636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4755905337202635403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6cbbd12d3beb66468b7df912541a206, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parallaxFactor: 0.5
 --- !u!4 &6382173471754295247 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 554499083424493170, guid: b6b0161d696423f4ebaaa86e41b2b331, type: 3}

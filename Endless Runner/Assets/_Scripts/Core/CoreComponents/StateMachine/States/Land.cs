@@ -15,7 +15,17 @@ namespace TheCreators.CoreSystem.CoreComponents.StateMachine
         {
             get => _stateMachine != null ? _stateMachine : _context.GetCoreComponent<StateMachineComponent>();
         }
-
+        private readonly InputController _inputController;
+        private InputController InputController
+        {
+            get => _inputController != null ? _inputController : _context.GetCoreComponent<InputController>();
+        }
+        private readonly StaminaComponent _stamina;
+        private StaminaComponent Stamina
+        {
+            get => _stamina != null ? _stamina : _context.GetCoreComponent<StaminaComponent>();
+        }
+        public float digTransitionStaminaTreshold = 20f;
         private float _stateDuration;
         public override void Enter()
         {
@@ -25,12 +35,18 @@ namespace TheCreators.CoreSystem.CoreComponents.StateMachine
         public override void LogicUpdate()
         {
             _stateDuration -= Time.deltaTime;
+            if (InputController.CanBurrow && Stamina.CurrentStamina >= digTransitionStaminaTreshold)
+                TransitionToDig();
             if (_stateDuration <= 0)
                 TransitionToRun();
         }
         private void TransitionToRun()
         {
             StateMachine.StateMachine.SwitchState(StateMachine.runState);
+        }
+        private void TransitionToDig()
+        {
+            StateMachine.StateMachine.SwitchState(StateMachine.digEnterState);
         }
     }
 }

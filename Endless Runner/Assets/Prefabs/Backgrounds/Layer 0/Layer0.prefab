@@ -299,4 +299,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6cbbd12d3beb66468b7df912541a206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _parallaxFactor: 0.05
+  _parallaxFactor: 0.1

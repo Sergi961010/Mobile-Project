@@ -47,8 +47,17 @@ namespace TheCreators.Managers
             }
             GameSpeed = 6f;
             _player.transform.position = playerStartingPosition;
-            _player.SetActive(true);
+            EnablePlayer();
             _obstacleSpawner.SpawnObstacle();
+        }
+        private void EnablePlayer()
+        {
+            _player.SetActive(true);
+            Transform core = _player.transform.Find("Core");
+            foreach (Transform child in core)
+            {
+                child.gameObject.SetActive(true);
+            }
         }
     }
 }

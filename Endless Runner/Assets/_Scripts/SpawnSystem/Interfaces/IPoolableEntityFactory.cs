@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace TheCreators.SpawnSystem
 {
-    public interface IEntityFactory<T> where T : PoolObject
+    public interface IPoolableEntityFactory<T> where T : PoolEntity
     {
         T Create(Transform spawnPoint);
     }

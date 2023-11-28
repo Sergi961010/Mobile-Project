@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using TheCreators.PoolingSystem;
 using UnityEngine;
 
 namespace TheCreators.SpawnSystem
 {
-    public class PoolObjectFactory<T> : IEntityFactory<T> where T : PoolObject
+    public class PoolEntityWeightedFactory<T> : IPoolableEntityFactory<T> where T : PoolEntity
     {
         readonly EntityData[] data;
-        readonly Dictionary<string, ObjectPool<PoolingSystem.PoolObject>> _objectPools = new();
-        public PoolObjectFactory(EntityData[] data)
+        readonly Dictionary<string, ObjectPool<PoolEntity>> _objectPools = new();
+        public PoolEntityWeightedFactory(EntityData[] data)
         {
             this.data = data;
             InitPools();
@@ -28,7 +27,7 @@ namespace TheCreators.SpawnSystem
             }
             return _objectPools[data[0].prefab.name].PullGameObject(spawnPoint.position).GetComponent<T>();
         }
-        private double CalculateAccumulatedWeights()
+        double CalculateAccumulatedWeights()
         {
             double result = 0;
             foreach (var item in data)
@@ -41,7 +40,7 @@ namespace TheCreators.SpawnSystem
         {
             foreach (var item in data)
             {
-                _objectPools.Add(item.prefab.name, new ObjectPool<PoolingSystem.PoolObject>(item.prefab));
+                _objectPools.Add(item.prefab.name, new ObjectPool<PoolEntity>(item.prefab));
             }
         }
     }

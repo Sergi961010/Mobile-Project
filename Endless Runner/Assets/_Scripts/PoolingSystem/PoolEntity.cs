@@ -3,16 +3,16 @@ using UnityEngine;
 
 namespace TheCreators.PoolingSystem
 {
-    public class PoolObject : MonoBehaviour, IPoolable<PoolObject>
+    public class PoolEntity : MonoBehaviour, IPoolable<PoolEntity>
     {
-        private Action<PoolObject> returnToPool;
+        private Action<PoolEntity> returnToPool;
 
         private void OnDisable()
         {
             ReturnToPool();
         }
 
-        public void Initialize(Action<PoolObject> returnAction)
+        public void Initialize(Action<PoolEntity> returnAction)
         {
             //cache reference to return action
             this.returnToPool = returnAction;

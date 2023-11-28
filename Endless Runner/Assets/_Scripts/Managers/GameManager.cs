@@ -39,7 +39,7 @@ namespace TheCreators.Managers
         }
         private void RestartGame()
         {
-            PooledObject[] obstaclesToClear = FindObjectsByType<PooledObject>(0);
+            PoolEntity[] obstaclesToClear = FindObjectsByType<PoolEntity>(0);
             foreach (var item in obstaclesToClear)
             {
                 item.gameObject.SetActive(false);

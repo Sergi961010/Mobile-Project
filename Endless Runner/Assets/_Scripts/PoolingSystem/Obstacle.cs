@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace TheCreators
 {
-	public class Obstacle : PoolObject
+	public class Obstacle : PoolEntity
 	{
 		
 	}

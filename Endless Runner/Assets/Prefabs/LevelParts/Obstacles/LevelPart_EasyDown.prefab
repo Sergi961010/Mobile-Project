@@ -243,7 +243,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7482232070326527552}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5745c4cf3837a39448ea210ac2104186, type: 3}
+  m_Script: {fileID: 11500000, guid: 90d7db5b129331d4dbf5d18b2195ea8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8263671932141479589
@@ -295,13 +295,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f199e55f489aa84b9df9ef69f4726ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPointStrategyType: 1
-  spawnPoints:
-  - {fileID: 6761720222087230607}
-  - {fileID: 6674562967885034600}
-  - {fileID: 624542621854524140}
-  - {fileID: 6844449287671715744}
-  - {fileID: 3461576528355827128}
   staminaCollectibleData:
   - {fileID: 11400000, guid: bfabb8deb8b55404a8f9e0d614b3963b, type: 2}
   maxSpawns: 2

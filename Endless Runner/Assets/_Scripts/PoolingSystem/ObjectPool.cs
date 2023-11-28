@@ -29,7 +29,6 @@ namespace TheCreators.PoolingSystem
                 t = pooledObjects.Pop();
             else
                 t = GameObject.Instantiate(prefab).GetComponent<T>();
-
             t.gameObject.SetActive(true); //ensure the object is on
             t.Initialize(Push);
 

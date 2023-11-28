@@ -1,12 +1,13 @@
-﻿using UnityEngine;
+﻿using TheCreators.PoolingSystem;
+using UnityEngine;
 
 namespace TheCreators.SpawnSystem
 {
-    public class PoolObjectSpawner<T> where T : PoolObject
+    public class PoolObjectSpawner<T> where T : PoolEntity
     {
-        readonly IEntityFactory<T> entityFactory;
+        readonly IPoolableEntityFactory<T> entityFactory;
         readonly ISpawnPointStrategy spawnPointStrategy;
-        public PoolObjectSpawner(IEntityFactory<T> entityFactory, ISpawnPointStrategy spawnPointStrategy)
+        public PoolObjectSpawner(IPoolableEntityFactory<T> entityFactory, ISpawnPointStrategy spawnPointStrategy)
         {
             this.entityFactory = entityFactory;
             this.spawnPointStrategy = spawnPointStrategy;

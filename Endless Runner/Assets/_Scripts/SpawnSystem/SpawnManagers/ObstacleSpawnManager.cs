@@ -1,4 +1,5 @@
 ﻿using TheCreators.CustomEventSystem;
+using TheCreators.PoolingSystem;
 using TheCreators.Utilities;
 using UnityEngine;
 
@@ -8,13 +9,13 @@ namespace TheCreators.SpawnSystem
     {
         [SerializeField] ObstacleData[] obstacleData;
         [SerializeField] float spawnInterval = 2f;
-        PoolObjectSpawner<PoolObject> spawner;
+        PoolObjectSpawner<PoolEntity> spawner;
         CountdownTimer spawnTimer;
         protected override void Awake()
         {
             base.Awake();
-            spawner = new PoolObjectSpawner<PoolObject>(
-                new PoolObjectFactory<PoolObject>(obstacleData),
+            spawner = new PoolObjectSpawner<PoolEntity>(
+                new PoolEntityWeightedFactory<PoolEntity>(obstacleData),
                 spawnPointStrategy);
             spawnTimer = new CountdownTimer(spawnInterval);
             spawnTimer.OnTimerStop += () =>

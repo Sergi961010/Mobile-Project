@@ -1,7 +1,7 @@
 using UnityEngine;
 using TheCreators.PoolingSystem;
 using TheCreators.CustomEventSystem;
-using TheCreators.ScriptableObjects.Spawners;
+using TheCreators.SpawnSystem;
 
 namespace TheCreators.Spawners
 {
@@ -11,7 +11,7 @@ namespace TheCreators.Spawners
 
         private Transform _previousObstacleTransform;
 
-        [SerializeField] private LevelPartSpawnerConfiguration _configuration;
+        [SerializeField] private WeightedSpawnerData data;
 
         private void Start()
         {
@@ -27,13 +27,13 @@ namespace TheCreators.Spawners
         private GameObject GetRandomObstacle()
         {
             System.Random random = new();
-            double roll = random.NextDouble() * _configuration.accumulatedWeights;
-            for (int i = 0; i < _configuration.levelParts.Count; i++)
+            double roll = random.NextDouble() * data.accumulatedWeights;
+            for (int i = 0; i < data.data.Count; i++)
             {
-                if (_configuration.levelParts[i].weight >= roll)
-                    return PoolsManager.Instance.GetObject(_configuration.levelParts[i].prefab);
+                if (data.data[i].weight >= roll)
+                    return PoolsManager.Instance.GetObject(data.data[i].prefab);
             }
-            return PoolsManager.Instance.GetObject(_configuration.levelParts[0].prefab);
+            return PoolsManager.Instance.GetObject(data.data[0].prefab);
         }
         public void SpawnObstacle()
         {

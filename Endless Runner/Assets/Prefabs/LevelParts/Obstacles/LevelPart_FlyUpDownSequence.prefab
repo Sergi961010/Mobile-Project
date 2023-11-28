@@ -106,6 +106,8 @@ GameObject:
   - component: {fileID: -5061744686024954999}
   - component: {fileID: -1958591815923561385}
   - component: {fileID: -3128890341183700503}
+  - component: {fileID: -7264305298206765569}
+  - component: {fileID: -1090530011905771744}
   m_Layer: 0
   m_Name: LevelPart_FlyUpDownSequence
   m_TagString: Untagged
@@ -203,6 +205,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody2D: {fileID: -1958591815923561385}
+--- !u!114 &-7264305298206765569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7482232070326527552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8f44d41ae285a04fa628a80ed633e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-1090530011905771744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7482232070326527552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5745c4cf3837a39448ea210ac2104186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8370013335984899956
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,6 +269,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4661148346298621369}
+  - component: {fileID: 7759819164237633661}
   m_Layer: 0
   m_Name: StaminaSpawns
   m_TagString: Untagged
@@ -270,6 +297,28 @@ Transform:
   m_Father: {fileID: 8980366224617906998}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7759819164237633661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8598939447099700983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f199e55f489aa84b9df9ef69f4726ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPointStrategyType: 0
+  spawnPoints:
+  - {fileID: 3776056497018357440}
+  - {fileID: 3996226372729936329}
+  - {fileID: 5878892093898067228}
+  - {fileID: 718184376225444269}
+  - {fileID: 3674345463363742493}
+  staminaCollectibleData:
+  - {fileID: 11400000, guid: bfabb8deb8b55404a8f9e0d614b3963b, type: 2}
+  maxSpawns: 2
 --- !u!1 &8721206754273668495
 GameObject:
   m_ObjectHideFlags: 0

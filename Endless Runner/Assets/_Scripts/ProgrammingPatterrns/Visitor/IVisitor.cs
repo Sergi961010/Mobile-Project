@@ -1,9 +1,9 @@
-﻿using TheCreators.CoreSystem.CoreComponents;
+﻿using UnityEngine;
 
 namespace TheCreators.ProgrammingPatterns.Visitor
 {
     public interface IVisitor
     {
-        void Visit(StaminaComponent staminaComponent);
+        void Visit<T>(T visitable) where T : Component, IVisitable;
     }
 }

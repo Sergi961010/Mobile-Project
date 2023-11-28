@@ -60,6 +60,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  audioEvent: {fileID: 11400000, guid: 27b735d4bff828340aa53e15093f61d3, type: 2}
 --- !u!1 &518054411637792717
 GameObject:
   m_ObjectHideFlags: 0

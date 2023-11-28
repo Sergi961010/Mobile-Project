@@ -22,7 +22,8 @@ namespace TheCreators.Enviroment
         private void Scroll()
         {
             float delta = _gameSpeed * _parallaxFactor * Time.deltaTime;
-            transform.position -= new Vector3(delta, 0, 0);
+            Vector3 targetPosition = new(transform.position.x - delta, transform.position.y, transform.position.z);
+            transform.position = Vector3.Lerp(transform.position, targetPosition, 10f);
         }
         private void CheckReset()
         {

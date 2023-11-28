@@ -176,6 +176,7 @@ GameObject:
   - component: {fileID: 3925581335652854120}
   - component: {fileID: 5368435870352406649}
   - component: {fileID: 473631593}
+  - component: {fileID: 255023295917487143}
   m_Layer: 7
   m_Name: InputController
   m_TagString: Untagged
@@ -234,6 +235,35 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: TheCreators.CoreSystem.CoreComponents.InputController,
           Assembly-CSharp
         m_MethodName: DisableInput
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &255023295917487143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3093075206971265541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc04ed9c80ddd984cad020653c56c0da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 4951652490aba78498f6524fe581ee06, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5368435870352406649}
+        m_TargetAssemblyTypeName: TheCreators.CoreSystem.CoreComponents.InputController,
+          Assembly-CSharp
+        m_MethodName: EnableInput
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

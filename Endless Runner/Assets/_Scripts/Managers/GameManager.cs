@@ -1,5 +1,4 @@
 using TheCreators.PoolingSystem;
-using TheCreators.Spawners;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -10,7 +9,6 @@ namespace TheCreators.Managers
         private bool _adDisplayed = false;
         [SerializeField] private UiManager _uiManager;
         [SerializeField] private GameObject _player;
-        [SerializeField] private ObstacleSpawner _obstacleSpawner;
         public UnityEvent GameOverEvent;
 
         public static float GameSpeed { get; private set; }
@@ -47,7 +45,6 @@ namespace TheCreators.Managers
             GameSpeed = 6f;
             _player.transform.position = playerStartingPosition;
             EnablePlayer();
-            _obstacleSpawner.SpawnObstacle();
         }
         private void EnablePlayer()
         {

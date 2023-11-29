@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d65559e5d7af29c45b4bfa598ed0f397, type: 3}
   m_Name: standardStaminaCollectible
   m_EditorClassIdentifier: 
-  prefab: {fileID: 8506372675112558590, guid: a5b24459401fecb4bb733f7a7cc90da9, type: 3}
+  prefab: {fileID: 3988770214289645185, guid: d573f0cd15109e146a366fc9250d2ecb, type: 3}
   chance: 100
   weight: 0
   amount: 10

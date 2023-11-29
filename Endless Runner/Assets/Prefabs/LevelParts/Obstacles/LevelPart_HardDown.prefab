@@ -80,13 +80,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f199e55f489aa84b9df9ef69f4726ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPointStrategyType: 0
-  spawnPoints:
-  - {fileID: 3409026384490641694}
-  - {fileID: 2998872543357688276}
-  - {fileID: 4470065528580930950}
-  - {fileID: 866601158298575330}
-  - {fileID: 2754867746037251978}
   staminaCollectibleData:
   - {fileID: 11400000, guid: bfabb8deb8b55404a8f9e0d614b3963b, type: 2}
   maxSpawns: 2
@@ -145,7 +138,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6066960945831007791}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 0, z: 0}
+  m_LocalPosition: {x: -2.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -176,7 +169,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7085248241001560371}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 0, z: 0}
+  m_LocalPosition: {x: 2.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -223,11 +216,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8980366224617906998}
-  - component: {fileID: 418130635363048557}
   - component: {fileID: 3055029741073068287}
   - component: {fileID: 9046130667267050621}
   - component: {fileID: -5039005069900251047}
-  - component: {fileID: -2684790933532882422}
+  - component: {fileID: 418130635363048557}
   - component: {fileID: -5275434438933811177}
   m_Layer: 0
   m_Name: LevelPart_HardDown
@@ -253,18 +245,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &418130635363048557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7482232070326527552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bff284873e0e1b48b2e0e9c8aaf18d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &3055029741073068287
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -325,7 +305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody2D: {fileID: 9046130667267050621}
---- !u!114 &-2684790933532882422
+--- !u!114 &418130635363048557
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -334,9 +314,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7482232070326527552}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8f44d41ae285a04fa628a80ed633e11, type: 3}
+  m_Script: {fileID: 11500000, guid: 47935760080ff9d42928aefe7c775555, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnPlayerCollisionWithObstacle:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &-5275434438933811177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -346,7 +329,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7482232070326527552}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5745c4cf3837a39448ea210ac2104186, type: 3}
+  m_Script: {fileID: 11500000, guid: 90d7db5b129331d4dbf5d18b2195ea8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1620967548228201331

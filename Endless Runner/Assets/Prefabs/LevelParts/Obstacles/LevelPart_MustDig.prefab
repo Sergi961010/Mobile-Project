@@ -48,12 +48,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f199e55f489aa84b9df9ef69f4726ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPointStrategyType: 0
-  spawnPoints:
-  - {fileID: 9091801256204832984}
-  - {fileID: 2476943549173873451}
-  - {fileID: 7399979633605050587}
-  - {fileID: 6505164866620595761}
   staminaCollectibleData:
   - {fileID: 11400000, guid: bfabb8deb8b55404a8f9e0d614b3963b, type: 2}
   maxSpawns: 2
@@ -190,7 +184,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8980366224617906998}
-  - component: {fileID: 418130635363048557}
   - component: {fileID: 8908693312144138828}
   - component: {fileID: 191811182674718409}
   - component: {fileID: 941477500028469999}
@@ -220,18 +213,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &418130635363048557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7482232070326527552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bff284873e0e1b48b2e0e9c8aaf18d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &8908693312144138828
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -313,7 +294,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7482232070326527552}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5745c4cf3837a39448ea210ac2104186, type: 3}
+  m_Script: {fileID: 11500000, guid: 90d7db5b129331d4dbf5d18b2195ea8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &4518063119973204988

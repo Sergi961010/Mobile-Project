@@ -228,6 +228,9 @@ MonoBehaviour:
   _onPause:
     m_PersistentCalls:
       m_Calls: []
+  _onResume:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3521650987960394989
 GameObject:
   m_ObjectHideFlags: 0

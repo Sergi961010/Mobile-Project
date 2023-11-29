@@ -34,7 +34,7 @@ namespace TheCreators.SpawnSystem
         public void Spawn() => spawner.Spawn();
         private Transform[] GetSpawnPoints(GameObject obstacle)
         {
-            List<Transform> spawnPointsTransforms = new(obstacle.GetComponentsInChildren<Transform>());
+            List<Transform> spawnPointsTransforms = new(obstacle.transform.Find("StaminaSpawns").GetComponentsInChildren<Transform>());
             spawnPointsTransforms.RemoveAt(0);
             return spawnPointsTransforms.ToArray();
         }

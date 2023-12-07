@@ -10,6 +10,11 @@ namespace TheCreators.SpawnSystem
         [SerializeField] StaminaCollectibleData[] staminaCollectibleData;
         [SerializeField] int maxSpawns = 2;
         PoolObjectSpawner<PoolEntity> spawner;
+        private void Awake()
+        {
+            spawner = new PoolObjectSpawner<PoolEntity>(
+                new PoolEntityFactory<PoolEntity>(staminaCollectibleData));
+        }
         private void OnEnable()
         {
             GameEventBus.OnPlatformSpawn.AddListener(OnObstacleSpawn);
@@ -23,9 +28,7 @@ namespace TheCreators.SpawnSystem
             int index = Random.Range(0, maxSpawns);
             Transform[] spawnPoints = GetSpawnPoints(obstacle);
             ISpawnPointStrategy spawnPointStrategy = new RandomSpawnPointStrategy(spawnPoints);
-            spawner = new PoolObjectSpawner<PoolEntity>(
-                new PoolEntityFactory<PoolEntity>(staminaCollectibleData),
-                spawnPointStrategy);
+            spawner.SetSpawnPointStrategy(spawnPointStrategy);
             for (int i = 0; i < index; i++)
             {
                 Spawn();

@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace TheCreators.CoreSystem.CoreComponents
 {
-    public class BaseCoreComponent : MonoBehaviour
+    public class CoreComponent : MonoBehaviour
     {
         protected Core Core;
 

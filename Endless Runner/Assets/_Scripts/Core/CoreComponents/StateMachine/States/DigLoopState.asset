@@ -15,4 +15,4 @@ MonoBehaviour:
   animations:
   - {fileID: 7400000, guid: b98e33c0f2718be44a2922b843bfcb89, type: 2}
   audioEvent: {fileID: 11400000, guid: fefce70b0816dd04fbc62f16bb52274e, type: 2}
-  staminaCost: 20
+  staminaCost: 0

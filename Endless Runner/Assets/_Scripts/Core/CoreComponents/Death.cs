@@ -7,7 +7,7 @@ using UnityEngine.Events;
 
 namespace TheCreators.CoreSystem.CoreComponents
 {
-    public class Death : BaseCoreComponent, IDamageable
+    public class Death : CoreComponent, IDamageable
     {
         private readonly PlayerAnimator _playerAnimator;
         private PlayerAnimator PlayerAnimator

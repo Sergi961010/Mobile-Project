@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace TheCreators.CoreSystem.CoreComponents
 {
-    public class StaminaComponent : BaseCoreComponent, IVisitable
+    public class StaminaComponent : CoreComponent, IVisitable
     {
         private const float MAX_STAMINA = 100f;
         public float CurrentStamina { get; private set; }

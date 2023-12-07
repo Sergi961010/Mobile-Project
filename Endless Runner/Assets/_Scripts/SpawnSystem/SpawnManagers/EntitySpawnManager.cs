@@ -10,7 +10,8 @@ namespace TheCreators.SpawnSystem
         protected enum SpawnPointStrategyType
         {
             Simple,
-            Random
+            Random,
+            Default
         }
         protected virtual void Awake()
         {

@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace TheCreators.CoreSystem.CoreComponents
 {
-    public class Movement : BaseCoreComponent
+    public class Movement : CoreComponent
     {
         public Rigidbody2D Rigidbody { get; private set; }
         private Vector2 workspace;

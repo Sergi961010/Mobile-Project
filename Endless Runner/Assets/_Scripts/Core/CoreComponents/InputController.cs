@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace TheCreators.CoreSystem.CoreComponents
 {
-    public class InputController : BaseCoreComponent
+    public class InputController : CoreComponent
     {
         private readonly CollisionSenses _collisionSenses;
         private CollisionSenses CollisionSenses

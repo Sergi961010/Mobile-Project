@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace TheCreators.CoreSystem.CoreComponents
 {
-    public class CollisionSenses : BaseCoreComponent
+    public class CollisionSenses : CoreComponent
     {
         private readonly Death _death;
         private Death Death

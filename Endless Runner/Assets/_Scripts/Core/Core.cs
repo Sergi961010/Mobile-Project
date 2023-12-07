@@ -7,15 +7,15 @@ namespace TheCreators.CoreSystem
 {
     public class Core : MonoBehaviour
     {
-        private readonly List<BaseCoreComponent> _coreComponents = new();
-        public void AddComponent(BaseCoreComponent component)
+        private readonly List<CoreComponent> _coreComponents = new();
+        public void AddComponent(CoreComponent component)
         {
             if (!_coreComponents.Contains(component))
             {
                 _coreComponents.Add(component);
             }
         }
-        public T GetCoreComponent<T>() where T : BaseCoreComponent
+        public T GetCoreComponent<T>() where T : CoreComponent
         {
             var component = _coreComponents.OfType<T>().FirstOrDefault();
             if (component == null)

@@ -19,4 +19,4 @@ MonoBehaviour:
   audioEvent: {fileID: 11400000, guid: 8737a935f02ba514d9bc94a386d5c5da, type: 2}
   defaultForce: 5
   smoothFactor: 0.2
-  staminaCost: 20
+  staminaCost: 0

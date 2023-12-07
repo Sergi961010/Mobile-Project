@@ -2790,7 +2790,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e49042d564173843b2c41bb9e477d64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _poolsContainer: {fileID: 510066490}
 --- !u!1 &1382370067
 GameObject:
   m_ObjectHideFlags: 0

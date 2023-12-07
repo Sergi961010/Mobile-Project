@@ -1,6 +1,6 @@
 namespace TheCreators.CoreSystem.CoreComponents.StateMachine
 {
-    public class NewPlayerStateMachine
+    public class PlayerStateMachine
     {
         public IState CurrentState { get; set; }
         public void Initialize(IState startingState)

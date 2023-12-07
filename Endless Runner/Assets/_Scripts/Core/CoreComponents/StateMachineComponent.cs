@@ -2,7 +2,7 @@ using TheCreators.CoreSystem.CoreComponents.StateMachine;
 
 namespace TheCreators.CoreSystem.CoreComponents
 {
-    public class StateMachineComponent : BaseCoreComponent
+    public class StateMachineComponent : CoreComponent
     {
         #region States
         public Run runState;
@@ -15,11 +15,11 @@ namespace TheCreators.CoreSystem.CoreComponents
         public Land landState;
         #endregion
 
-        public NewPlayerStateMachine StateMachine { get; private set; }
+        public PlayerStateMachine StateMachine { get; private set; }
         protected override void Awake()
         {
             base.Awake();
-            StateMachine = new NewPlayerStateMachine();
+            StateMachine = new PlayerStateMachine();
         }
         private void Start()
         {

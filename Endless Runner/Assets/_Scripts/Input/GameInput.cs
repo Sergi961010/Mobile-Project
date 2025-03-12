@@ -53,6 +53,24 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Burrow"",
+                    ""type"": ""Button"",
+                    ""id"": ""eb5a826e-bc3f-474d-9c4f-698e6f57f436"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Unburrow"",
+                    ""type"": ""Button"",
+                    ""id"": ""ed3e4dfa-e447-4d20-925d-2deb24bc0cfd"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -69,8 +87,30 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""62018743-8a42-4e16-a032-4ba52f8a66bf"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""8c8d4fe2-3988-47d7-bcb1-869a5ebf4ebf"",
                     ""path"": ""<Touchscreen>/Press"",
+                    ""interactions"": ""Hold(duration=0.1)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Fly"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ea14350a-5ed3-491e-a622-5a265fdc1388"",
+                    ""path"": ""<Keyboard>/space"",
                     ""interactions"": ""Hold(duration=0.1)"",
                     ""processors"": """",
                     ""groups"": """",
@@ -110,6 +150,28 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
                     ""action"": ""PrimaryTouch"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""db78d4a5-6d6d-4685-bf6b-95afd2c79119"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Burrow"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""fc945a9a-d462-4ccf-b019-206aab715d6a"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Unburrow"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -121,6 +183,8 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
         m_Gameplay_Jump = m_Gameplay.FindAction("Jump", throwIfNotFound: true);
         m_Gameplay_Fly = m_Gameplay.FindAction("Fly", throwIfNotFound: true);
         m_Gameplay_PrimaryTouch = m_Gameplay.FindAction("PrimaryTouch", throwIfNotFound: true);
+        m_Gameplay_Burrow = m_Gameplay.FindAction("Burrow", throwIfNotFound: true);
+        m_Gameplay_Unburrow = m_Gameplay.FindAction("Unburrow", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -183,6 +247,8 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
     private readonly InputAction m_Gameplay_Jump;
     private readonly InputAction m_Gameplay_Fly;
     private readonly InputAction m_Gameplay_PrimaryTouch;
+    private readonly InputAction m_Gameplay_Burrow;
+    private readonly InputAction m_Gameplay_Unburrow;
     public struct GameplayActions
     {
         private @GameInput m_Wrapper;
@@ -190,6 +256,8 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
         public InputAction @Jump => m_Wrapper.m_Gameplay_Jump;
         public InputAction @Fly => m_Wrapper.m_Gameplay_Fly;
         public InputAction @PrimaryTouch => m_Wrapper.m_Gameplay_PrimaryTouch;
+        public InputAction @Burrow => m_Wrapper.m_Gameplay_Burrow;
+        public InputAction @Unburrow => m_Wrapper.m_Gameplay_Unburrow;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -208,6 +276,12 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
                 @PrimaryTouch.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnPrimaryTouch;
                 @PrimaryTouch.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnPrimaryTouch;
                 @PrimaryTouch.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnPrimaryTouch;
+                @Burrow.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnBurrow;
+                @Burrow.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnBurrow;
+                @Burrow.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnBurrow;
+                @Unburrow.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnUnburrow;
+                @Unburrow.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnUnburrow;
+                @Unburrow.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnUnburrow;
             }
             m_Wrapper.m_GameplayActionsCallbackInterface = instance;
             if (instance != null)
@@ -221,6 +295,12 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
                 @PrimaryTouch.started += instance.OnPrimaryTouch;
                 @PrimaryTouch.performed += instance.OnPrimaryTouch;
                 @PrimaryTouch.canceled += instance.OnPrimaryTouch;
+                @Burrow.started += instance.OnBurrow;
+                @Burrow.performed += instance.OnBurrow;
+                @Burrow.canceled += instance.OnBurrow;
+                @Unburrow.started += instance.OnUnburrow;
+                @Unburrow.performed += instance.OnUnburrow;
+                @Unburrow.canceled += instance.OnUnburrow;
             }
         }
     }
@@ -230,5 +310,7 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
         void OnJump(InputAction.CallbackContext context);
         void OnFly(InputAction.CallbackContext context);
         void OnPrimaryTouch(InputAction.CallbackContext context);
+        void OnBurrow(InputAction.CallbackContext context);
+        void OnUnburrow(InputAction.CallbackContext context);
     }
 }

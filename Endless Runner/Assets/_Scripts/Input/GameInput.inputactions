@@ -31,6 +31,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Burrow",
+                    "type": "Button",
+                    "id": "eb5a826e-bc3f-474d-9c4f-698e6f57f436",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Unburrow",
+                    "type": "Button",
+                    "id": "ed3e4dfa-e447-4d20-925d-2deb24bc0cfd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -47,8 +65,30 @@
                 },
                 {
                     "name": "",
+                    "id": "62018743-8a42-4e16-a032-4ba52f8a66bf",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "8c8d4fe2-3988-47d7-bcb1-869a5ebf4ebf",
                     "path": "<Touchscreen>/Press",
+                    "interactions": "Hold(duration=0.1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Fly",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ea14350a-5ed3-491e-a622-5a265fdc1388",
+                    "path": "<Keyboard>/space",
                     "interactions": "Hold(duration=0.1)",
                     "processors": "",
                     "groups": "",
@@ -88,6 +128,28 @@
                     "action": "PrimaryTouch",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "db78d4a5-6d6d-4685-bf6b-95afd2c79119",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Burrow",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fc945a9a-d462-4ccf-b019-206aab715d6a",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Unburrow",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

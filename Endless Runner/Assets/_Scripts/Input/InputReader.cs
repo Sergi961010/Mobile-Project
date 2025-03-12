@@ -61,6 +61,21 @@ namespace TheCreators.Input
                     break;
             }
         }
+
+        public void OnBurrow(InputAction.CallbackContext context)
+        {
+            if (context.phase != InputActionPhase.Started) return;
+            if (!EventSystem.current.IsPointerOverGameObject())
+                Burrow.Invoke();
+        }
+
+        public void OnUnburrow(InputAction.CallbackContext context)
+        {
+            if (context.phase != InputActionPhase.Started) return;
+            if (!EventSystem.current.IsPointerOverGameObject())
+                Unburrow.Invoke();
+        }
+
         private void DetectSwipe(Vector2 startPosition, Vector2 endPosition)
         {
             if (Vector2.Distance(startPosition, endPosition) >= minimumDistance)

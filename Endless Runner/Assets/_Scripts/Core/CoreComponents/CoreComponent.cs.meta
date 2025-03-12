@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Endless Runner/Assets/_Scripts/Core/CoreComponents/Stamina.cs.meta
+guid: 8b3ba717c5218304589a6be27f4b626f
+========
+guid: 5e7d85bd10baaf3419d978affd6e3ab3
+>>>>>>>> refs/heads/develop:Endless Runner/Assets/_Scripts/Core/CoreComponents/CoreComponent.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

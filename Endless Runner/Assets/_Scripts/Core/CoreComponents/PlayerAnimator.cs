@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace TheCreators.CoreSystem.CoreComponents
 {
-    public class PlayerAnimator : BaseCoreComponent
+    public class PlayerAnimator : CoreComponent
     {
         private Animator _animator;
         private bool isLocked = false;

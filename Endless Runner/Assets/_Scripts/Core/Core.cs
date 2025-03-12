@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using TheCreators.CoreSystem.CoreComponents;
 using UnityEngine;
 
@@ -5,26 +7,20 @@ namespace TheCreators.CoreSystem
 {
     public class Core : MonoBehaviour
     {
-        public Movement Movement { get; private set; }
-        public InputController InputController { get; private set; }
-        public StateMachineComponent StateMachine { get; private set; }
-        public CollisionSenses CollisionSenses { get; private set; }
-        public PlayerAnimator PlayerAnimator { get; private set; }
-        public SpriteRendererComponent SpriteRenderer { get; private set; }
-        public Death Death { get; private set; }
-        public Invulnerability Invulnerability { get; private set; }
-        public Stamina Stamina { get; private set; }
-        private void Awake()
+        private readonly List<CoreComponent> _coreComponents = new();
+        public void AddComponent(CoreComponent component)
         {
-            Movement = GetComponentInChildren<Movement>();
-            InputController = GetComponentInChildren<InputController>();
-            StateMachine = GetComponentInChildren<StateMachineComponent>();
-            CollisionSenses = GetComponentInChildren<CollisionSenses>();
-            PlayerAnimator = GetComponentInChildren<PlayerAnimator>();
-            SpriteRenderer = GetComponentInChildren<SpriteRendererComponent>();
-            Death = GetComponentInChildren<Death>();
-            Invulnerability = GetComponentInChildren<Invulnerability>();
-            Stamina = GetComponentInChildren<Stamina>();
+            if (!_coreComponents.Contains(component))
+            {
+                _coreComponents.Add(component);
+            }
+        }
+        public T GetCoreComponent<T>() where T : CoreComponent
+        {
+            var component = _coreComponents.OfType<T>().FirstOrDefault();
+            if (component == null)
+                Debug.LogWarning($"{typeof(T)} not found on {transform.parent.name}");
+            return component;
         }
     }
 }

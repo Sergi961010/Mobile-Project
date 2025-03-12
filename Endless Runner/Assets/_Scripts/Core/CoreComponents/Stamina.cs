@@ -4,7 +4,7 @@ using UnityEngine.Events;
 
 namespace TheCreators.CoreSystem.CoreComponents
 {
-    public class Stamina : BaseCoreComponent
+    public class Stamina : CoreComponent
     {
         private const float MAX_STAMINA = 100f;
         public float CurrentStamina { get; private set; }

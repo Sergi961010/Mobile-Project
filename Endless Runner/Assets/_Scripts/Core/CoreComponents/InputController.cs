@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace TheCreators.CoreSystem.CoreComponents
 {
-    public class InputController : BaseCoreComponent
+    public class InputController : CoreComponent
     {
         [SerializeField] private InputReader _inputReader;
 
@@ -89,8 +89,8 @@ namespace TheCreators.CoreSystem.CoreComponents
         }
         private void OnFly(bool performed)
         {
-            Debug.Log(Core.CollisionSenses.CanFly);
-            if (performed && Core.CollisionSenses.CanFly) IsFlying = true;
+            Debug.Log(Core.GetCoreComponent<CollisionSenses>().CanFly);
+            if (performed && Core.GetCoreComponent<CollisionSenses>().CanFly) IsFlying = true;
             else IsFlying = false;
         }
         private void OnBurrow()

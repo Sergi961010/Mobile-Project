@@ -1,9 +1,10 @@
+using TheCreators.CoreSystem.CoreComponents.StateMachine;
 using TheCreators.Player.StateMachine;
 using TheCreators.Player.StateMachine.States;
 
 namespace TheCreators.CoreSystem.CoreComponents
 {
-    public class StateMachineComponent : BaseCoreComponent
+    public class StateMachineComponent : CoreComponent
     {
         #region States
         public Run runState;
@@ -13,13 +14,14 @@ namespace TheCreators.CoreSystem.CoreComponents
         public DigEnter digEnterState;
         public DigLoop digLoopState;
         public DigExit digExitState;
+        public Land landState;
         #endregion
 
-        public NewPlayerStateMachine StateMachine { get; private set; }
+        public PlayerStateMachine StateMachine { get; private set; }
         protected override void Awake()
         {
             base.Awake();
-            StateMachine = new NewPlayerStateMachine();
+            StateMachine = new PlayerStateMachine();
         }
         private void Start()
         {
@@ -30,6 +32,7 @@ namespace TheCreators.CoreSystem.CoreComponents
             digEnterState.Init(Core);
             digLoopState.Init(Core);
             digExitState.Init(Core);
+            landState.Init(Core);
 
             StateMachine.Initialize(runState);
         }

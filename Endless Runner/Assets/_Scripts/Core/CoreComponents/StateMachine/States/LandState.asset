@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 708ad7b95d4d34140b8254198343461e, type: 3}
+  m_Name: LandState
+  m_EditorClassIdentifier: 
+  animations:
+  - {fileID: 7400000, guid: c0ee916c8216b7b4ebcea1b96bbcd1a8, type: 2}
+  audioEvent: {fileID: 11400000, guid: 78d3fd303c823ea40a2a0dfc6d3b0272, type: 2}
+  digTransitionStaminaTreshold: 20

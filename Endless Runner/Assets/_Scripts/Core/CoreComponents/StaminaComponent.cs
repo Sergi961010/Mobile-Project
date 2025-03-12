@@ -4,32 +4,15 @@ using UnityEngine;
 
 namespace TheCreators.CoreSystem.CoreComponents
 {
-    public class StaminaComponent : BaseCoreComponent, IVisitable
+    public class StaminaComponent : CoreComponent, IVisitable
     {
         private const float MAX_STAMINA = 100f;
         public float CurrentStamina { get; private set; }
-        [SerializeField] private float _regenerationValue = 5f;
         public bool CanRegenerate { get; set; }
         private void Start()
         {
             CurrentStamina = MAX_STAMINA;
             CanRegenerate = false;
-        }
-        private void Update()
-        {
-            if (CanRegenerate && CurrentStamina < MAX_STAMINA)
-            {
-                RegenerateStamina();
-            }
-        }
-        private void RegenerateStamina()
-        {
-            CurrentStamina += _regenerationValue * Time.deltaTime;
-            GameEventBus.OnStaminaBarUpdate.Invoke(CurrentStamina, MAX_STAMINA);
-            if (CurrentStamina >= MAX_STAMINA)
-            {
-                CurrentStamina = MAX_STAMINA;
-            }
         }
         public void SubstractStamina(float value)
         {

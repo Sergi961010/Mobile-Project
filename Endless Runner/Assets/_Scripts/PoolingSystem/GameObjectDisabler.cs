@@ -1,15 +1,13 @@
 using UnityEngine;
 
-namespace TheCreators
+namespace TheCreators.PoolingSystem
 {
     public class GameObjectDisabler : MonoBehaviour
     {
         private void OnTriggerExit2D(Collider2D collision)
         {
-            if (collision.transform.parent == null)
+            if (collision.GetComponent<PoolEntity>() != null)
                 collision.gameObject.SetActive(false);
-            else
-                collision.transform.parent.gameObject.SetActive(false);
         }
     }
 }

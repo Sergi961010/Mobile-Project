@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65559e5d7af29c45b4bfa598ed0f397, type: 3}
+  m_Name: standardStaminaCollectible
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 3988770214289645185, guid: b53ec46eb2e44fe4e8d91f7a42805491, type: 3}
+  chance: 100
+  weight: 0
+  amount: 10

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Endless Runner/Assets/_Scripts/Core/CoreComponents/StateMachine/NewStateFactory.cs.meta
+guid: 708ad7b95d4d34140b8254198343461e
+========
+guid: 3fa2d082e17dd9b46bccc6a2878e4780
+>>>>>>>> refs/heads/develop:Endless Runner/Assets/_Scripts/Core/CoreComponents/StateMachine/States/Land.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

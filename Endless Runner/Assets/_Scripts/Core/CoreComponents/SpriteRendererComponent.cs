@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace TheCreators.CoreSystem.CoreComponents
 {
-    public class SpriteRendererComponent : BaseCoreComponent
+    public class SpriteRendererComponent : CoreComponent
     {
         public SpriteRenderer SpriteRenderer { get; private set; }
         protected override void Awake()
